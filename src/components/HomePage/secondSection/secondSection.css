@@ -1,0 +1,32 @@
+    .industryCard:hover .paragraph {
+        color: #C5A363 !important;
+    }
+
+    .industryCard:hover .bg-icon {
+        background-color: #C5A363 !important;
+        color: white !important;
+    }
+
+    .industryCard:hover .icon {
+        color: white !important;
+    }
+
+
+    .industryCard:hover {
+        animation: scaleEffect 0.4s ease-in-out;
+
+    }
+
+    @keyframes scaleEffect {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(0.8);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }

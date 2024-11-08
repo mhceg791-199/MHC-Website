@@ -1,0 +1,33 @@
+.border-b-half {
+    position: relative;
+    /* Position relative to place the pseudo-element */
+}
+
+.border-b-half::after {
+    content: '';
+    position: absolute;
+    bottom: -16px  ;
+    left: 0;
+    width: 50%;
+    /* Start with half width */
+    height: 4px;
+    /* Adjust the height of the border */
+    background-color: var(--mainGold);
+    /* Use the mainGold variable */
+    transition: width 0.3s ease;
+    /* Smooth transition for width change */
+}
+
+.border-b-half:hover::after {
+    width: 100%;
+    /* Expand to full width on hover */
+}
+
+h2:hover .border-b-half {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.headerSection:hover {
+    color: var(--mainGold);
+}

@@ -1,0 +1,14 @@
+.rounded-card {
+    background-color: #34363B;
+    padding: 40px;
+    border-radius: 16px; /* Matches rounded-xl */
+    clip-path: path(
+      "M 0 0 H 100% V calc(100% - 50px) Q 100% 100% calc(100% - 50px) 100% H 0 Z"
+    );
+  }
+  
+
+  
+  .text-white {
+    color: white;
+  }
