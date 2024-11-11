@@ -2,6 +2,7 @@ import React from "react";
 import ProjectSlider from "../../../components/ProjectsDetailsPage/ProjectCard/projectSilder/SliderOfProjects";
 import FirstSection from "../../../components/ProjectsDetailsPage/FirstSection/FirstSection";
 import ProjectDetails from "../../../components/ProjectsDetailsPage/ProjectCard/ProjectDetails/ProjectDetails";
+import Navbar from "../../../components/shared/Navbar/Navbar";
 
 function ArupProjects() {
   const projectsDetails = [
@@ -66,6 +67,7 @@ function ArupProjects() {
   };
   return (
     <>
+      <Navbar />
       <FirstSection data={firstSectionDetails} />
 
       {projectsDetails.map((project, index) => (

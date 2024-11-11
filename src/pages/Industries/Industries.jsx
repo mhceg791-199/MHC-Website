@@ -6,6 +6,7 @@ import { GoLightBulb } from "react-icons/go";
 import { FaHelmetSafety } from "react-icons/fa6";
 import { HiOutlineWrenchScrewdriver } from "react-icons/hi2";
 import { useLocation } from "react-router-dom";
+import Navbar from "../../components/shared/Navbar/Navbar";
 
 function IndustriesPage() {
   const Location = useLocation();
@@ -43,6 +44,7 @@ function IndustriesPage() {
   }, [Location]);
   return (
     <>
+      <Navbar />
       <div ref={architecturalRef}>
         <IndustryCard
           img="/industryPage/1.jpg"

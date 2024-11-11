@@ -1,10 +1,12 @@
 import React from "react";
 import IntroductionOfSignatureProjects from "../../components/SignatureProjects/IntroductionOfSignatureProjects/IntroductionOfSignatureProjects";
 import Holdings from "../../components/SignatureProjects/Holdings/Holdings";
+import Navbar from "../../components/shared/Navbar/Navbar";
 
 function SignatureProjectsPage() {
   return (
     <>
+      <Navbar />
       <div className="grid md:grid-cols-2 grid-cols-1 h-screen  ">
         <div className="col-span-1 flex flex-col p-10 justify-center items-start mt-10">
           <IntroductionOfSignatureProjects />

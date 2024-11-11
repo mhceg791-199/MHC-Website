@@ -37,7 +37,7 @@ import PlusIcon from "./plusIcon";
 import { useNavigate } from "react-router-dom";
 import SocialMedia from "../../Footer/SocialMedia/SocialMedia";
 
-export function SidebarWithBurgerMenu() {
+export function SidebarWithBurgerMenu({ inHomePage }) {
   const [open, setOpen] = React.useState(0);
   const [openAlert, setOpenAlert] = React.useState(true);
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
@@ -60,7 +60,9 @@ export function SidebarWithBurgerMenu() {
         {isDrawerOpen ? (
           <XMarkIcon className="h-8 w-8 stroke-2" />
         ) : (
-          <Bars3Icon className="h-8 w-8 stroke-2" />
+          <Bars3Icon
+            className={`h-8 w-8 stroke-2 ${inHomePage && "text-white"}`}
+          />
         )}
       </IconButton>
       <Drawer

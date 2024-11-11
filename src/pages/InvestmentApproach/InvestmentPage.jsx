@@ -2,6 +2,7 @@ import React from "react";
 import InvestmentBrief from "../../components/InvestmentPage/InvestmentBrief/InvestmentBrief";
 import PazelCard from "../../components/InvestmentPage/PazelCard/PazelCard";
 import NormalCard from "../../components/InvestmentPage/NormalCard/NormalCard";
+import Navbar from "../../components/shared/Navbar/Navbar";
 
 function InvestmentPage() {
   const investmentDetails = {
@@ -33,6 +34,7 @@ function InvestmentPage() {
   };
   return (
     <>
+      <Navbar />
       <div className="md:px-10 px-5">
         <InvestmentBrief />
         <div className="my-10 gap-10 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">

@@ -6,6 +6,7 @@ import OurValues from "../../components/whoWeAre/OurValues/OurValues";
 import Holdings from "../../components/whoWeAre/Holdings/Holdings";
 import OurJourney from "../../components/whoWeAre/ourJourney/OurJourney";
 import { useLocation } from "react-router-dom";
+import Navbar from "../../components/shared/Navbar/Navbar";
 
 function WhoWeAre() {
   const firstSectionRef = useRef(null); // Add reference for Management section
@@ -41,6 +42,7 @@ function WhoWeAre() {
   }, [location]);
   return (
     <>
+      <Navbar />
       <div ref={firstSectionRef}>
         <FirstSection />
       </div>
