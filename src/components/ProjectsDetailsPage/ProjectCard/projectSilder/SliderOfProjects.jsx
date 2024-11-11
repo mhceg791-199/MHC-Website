@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
-import NextArrow from "./Arrows/NextArrow";
-import PreArrow from "./Arrows/PreArrow";
+import NextArrow from "../../../shared/Arrows/NextArrow";
+import PreArrow from "../../../shared/Arrows/PreArrow";
 
 function ProjectSlider({ data }) {
   var settings = {

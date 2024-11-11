@@ -1,0 +1,110 @@
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 50;
+    cursor: pointer;
+    color: #ffd700;
+    /* Adjust color as needed */
+}
+
+.swiper-button-prev-custom {
+    left: 10px;
+}
+
+.swiper-button-next-custom {
+    right: 10px;
+}
+
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+    color: #ffc107;
+    /* Hover color */
+}
+
+.active {
+    width: 7rem !important;
+    height: 7rem !important;
+    background-color: var(--mainGold) !important;
+    animation: scaleDownUp 0.6s ease-in-out;
+    /* Apply animation */
+    /* animation-iteration-count: infinite; */
+    /* Make it repeat if you want the effect continuously */
+}
+
+@keyframes scaleDownUp {
+    0% {
+        transform: scale(1);
+        /* Initial state */
+    }
+
+    50% {
+        transform: scale(0.8);
+        /* Scale down to 80% */
+    }
+
+    100% {
+        transform: scale(1);
+        /* Scale back to original size */
+    }
+}
+
+@keyframes enlargeBesideActive {
+    0% {
+        width: 2.5rem;
+        /* Start at 2.5rem */
+        height: 2.5rem;
+        /* Start at 2.5rem */
+    }
+
+    100% {
+        width: 4rem;
+        /* End at 4rem */
+        height: 4rem;
+        /* End at 4rem */
+    }
+}
+
+.besideActive {
+    width: 2.5rem;
+    /* Initial width */
+    height: 2.5rem;
+    /* Initial height */
+    animation: enlargeBesideActive 0.6s ease-in-out;
+    /* Apply the animation */
+}
+
+/* Optional: Add a smooth transition effect for size change */
+.besideActive {
+    transition: width 0.6s ease-in-out, height 0.6s ease-in-out;
+}
+
+.besideActive {
+    width: 4rem;
+    height: 4rem;
+}
+
+.sliderItem:hover {
+    background-color: var(--mainGold);
+    transition: 0.6s;
+}
+
+.active>p {
+    color: #ffffff !important;
+    font-size: 1.25rem !important;
+    font-size: 28px;
+    font-weight: 600;
+    opacity: 1 !important;
+
+
+}
+
+.active+p {
+    color: #000000 !important;
+    font-size: 1rem !important;
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+    opacity: 1 !important;
+
+}

@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+  import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 
 function Slider() {
   return (

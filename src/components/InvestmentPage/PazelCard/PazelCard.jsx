@@ -17,13 +17,13 @@ function PazelCard({ data }) {
 
   return (
     <>
-      <div className="rounded-2xl p-10 pb-0 bg-[#34363B]  rounded-bl-none">
+      <div className="rounded-2xl p-10 ps-2 pt-5 pb-0 bg-[#34363B]  rounded-bl-none">
         <h3 className="text-mainGold mb-3">{title}</h3>
         <p className="text-white">{texts.text1}</p>
       </div>
       <div className="rounded-2xl   rounded-br-2xl  ">
         <div className="grid grid-cols-5 ">
-          <div className="col-span-4 pb-10 ps-10 rounded-tl-none  rounded-2xl rounded-tr-none bg-[#34363B]">
+          <div className="col-span-4 pb-5 ps-2 rounded-tl-none  rounded-2xl rounded-tr-none bg-[#34363B]">
             <p className="text-white ">{texts.text2}</p>
           </div>
           <div className="col-span-1 relative bg-white rounded-2xl rounded-r-none rounded-bl-none">
