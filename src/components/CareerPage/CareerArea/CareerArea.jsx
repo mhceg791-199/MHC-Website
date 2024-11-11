@@ -25,7 +25,6 @@ function CareerArea() {
   return (
     <>
       <div>
- 
         <CareerModal />
       </div>
       <div className="px-10">
@@ -48,7 +47,10 @@ function CareerArea() {
           ))}
         </div>
         <div className="m-auto flex justify-center m">
-          <button className="bg-mainGold px-14 rounded-full text-white mb-10 py-5 text-3xl ">
+          <button
+            onClick={openModal}
+            className="bg-mainGold px-14 rounded-full text-white mb-10 py-5 text-3xl "
+          >
             JOIN OUT TEAM
           </button>
         </div>

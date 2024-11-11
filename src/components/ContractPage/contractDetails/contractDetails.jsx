@@ -31,9 +31,9 @@ function ContractDetails() {
       <div className="mt-10">
         {details.map((d) => (
           <>
-            <div className="flex items-center my-1">
+            <div className="flex items-center my-3">
               <i class={` ${d.icon} text-mainGold me-2`}></i>
-              <Paragraph p={d.text} className="!my-0 text-lg" />
+              <p className={` sm:text-small md:text-2xl `}>{d.text}</p>
             </div>
           </>
         ))}

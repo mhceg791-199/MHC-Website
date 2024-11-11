@@ -97,7 +97,7 @@ function CareerForm() {
       <ToastContainer />
       {console.log(formik)}
       {/* <p>{formik.errors}</p> */}
-      <form onSubmit={formik.handleSubmit} className="mb-5">
+      <form onSubmit={formik.handleSubmit} className="mb-5 ">
         <div className="grid gap-6 mb-3 md:grid-cols-2">
           {/* Name input */}
           <div>
@@ -107,7 +107,7 @@ function CareerForm() {
               name="firstName"
               onChange={formik.handleChange}
               value={formik.values.firstName}
-              className="bg-gray text-white text-sm block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:border-mainGold focus:ring-mainGold focus:outline-none placeholder-gray-700"
+              className="bg-gray text-gray-900 text-sm block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:border-mainGold focus:ring-mainGold focus:outline-none placeholder-gray-700"
               placeholder="First Name"
               required
             />
@@ -124,7 +124,7 @@ function CareerForm() {
               name="lastName"
               onChange={formik.handleChange}
               value={formik.values.lastName}
-              className="bg-gray text-white text-sm block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:border-mainGold focus:ring-mainGold focus:outline-none placeholder-gray-700"
+              className="bg-gray text-gray-900 text-sm block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:border-mainGold focus:ring-mainGold focus:outline-none placeholder-gray-700"
               placeholder="Last Name"
               required
             />
@@ -139,7 +139,7 @@ function CareerForm() {
             name="phone"
             onChange={formik.handleChange}
             value={formik.values.phone}
-            className="bg-gray text-white text-sm block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:border-mainGold focus:ring-mainGold focus:outline-none placeholder-gray-700"
+            className="bg-gray text-gray-900 text-sm block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:border-mainGold focus:ring-mainGold focus:outline-none placeholder-gray-700"
             placeholder="Phone Number"
             required
           />
@@ -151,7 +151,7 @@ function CareerForm() {
             name="email"
             onChange={formik.handleChange}
             value={formik.values.email}
-            className="bg-gray text-white text-sm block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:border-mainGold focus:ring-mainGold focus:outline-none placeholder-gray-700"
+            className="bg-gray text-gray-900 text-sm block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:border-mainGold focus:ring-mainGold focus:outline-none placeholder-gray-700"
             placeholder="Email"
             required
           />
@@ -251,7 +251,7 @@ function CareerForm() {
             name="message"
             onChange={formik.handleChange}
             value={formik.values.message}
-            className="bg-gray text-white text-sm block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:border-mainGold focus:ring-mainGold focus:outline-none placeholder-gray-700"
+            className="bg-gray text-gray-900 text-sm block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:border-mainGold focus:ring-mainGold focus:outline-none placeholder-gray-700"
             placeholder="Why would you apply in the selected position?"
             rows={6}
             required
@@ -259,15 +259,15 @@ function CareerForm() {
         </div>
 
         {/* File input */}
-        <div className="bg-black relative">
+        <div className=" relative">
           <button
             onClick={() => inputFile.current.click()}
-            className="absolute bg-black px-3 text-sm h-full"
+            className="absolute bg-gray-200 text-gray-800 px-3 text-sm h-full"
           >
             Attach CV
           </button>
           <input
-            className="block w-full text-sm text-gray-900 cursor-pointer  bg-gray dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+            className="block w-full text-sm text-white cursor-pointer  bg-gray dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
             aria-describedby="file_input_help"
             id="file_input"
             name="cv"
@@ -280,7 +280,7 @@ function CareerForm() {
         </div>
 
         <p
-          className="mt-1 text-sm text-gray-500 dark:text-gray-300"
+          className="mt-1 text-sm text-gray-100 dark:text-gray-300"
           id="file_input_help"
         >
           SVG, PNG, JPG or PDF (Max size: 5MB).
