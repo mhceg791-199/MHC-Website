@@ -14,7 +14,7 @@ function IndustryCard({
   return (
     <div className="">
       <img className="w-full lg:h-[70vh] object-cover" src={img} alt="" />
-      <div className="bg-lightGray relative translate-y-[-20%]  sm:mx-10  p-8 md:px-14">
+      <div className="bg-lightGray relative md:translate-y-[-20%] translate-y-[-3%]  sm:mx-10  p-8 md:px-14">
         <div className="flex items-stretch">
           <Icon className="text-[65px] border-[3px] me-5 border-mainGold text-mainGold rounded-full p-3" />
           <SectionHeader

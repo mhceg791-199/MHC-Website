@@ -28,9 +28,6 @@
     height: 7rem !important;
     background-color: var(--mainGold) !important;
     animation: scaleDownUp 0.6s ease-in-out;
-    /* Apply animation */
-    /* animation-iteration-count: infinite; */
-    /* Make it repeat if you want the effect continuously */
 }
 
 @keyframes scaleDownUp {
@@ -84,6 +81,22 @@
     width: 4rem;
     height: 4rem;
 }
+
+@media screen and (max-width: 992px) {
+
+    .besideActive {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .active {
+        width: 4rem !important;
+        height: 4rem !important;
+        animation: scaleDownUp 0.6s ease-in-out;
+    }
+
+}
+
 
 .sliderItem:hover {
     background-color: var(--mainGold);

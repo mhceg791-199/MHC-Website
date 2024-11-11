@@ -3,15 +3,18 @@ import SectionHeader from "../../shared/sectionHeader/sectionHeader";
 import Paragraph from "../../shared/paragraph";
 import TextWirhArrow from "../../shared/TextWithArrow/TextWirhArrow";
 import "./Holdings.css";
+import { Link } from "react-router-dom";
 function Holdings() {
   const holdings = [
     {
       logo: "/whoWeArePage/wolsey.png",
       text: "Established in 2006, is a leading provider of innovative and luxurious corporate solutions designed to elevate businesses and enhance professional environments. With a commitment to quality and excellence, we offer a diverse range of services, including bespoke office designs, high-end furnishings, and tailored consultancy to meet the unique needs of our clients.",
+      link: "/wolsey-projects",
     },
     {
       logo: "/whoWeArePage/arup.png",
       text: "Established in 1988, is a dynamic and innovative company specializing in design and engineering solutions for the built environment. With a commitment to excellence and sustainability, we provide a wide range of services, including architecture, interior design, and project management.",
+      link: "/arup-projects",
     },
     {
       logo: "/whoWeArePage/mhceg.png",
@@ -22,17 +25,19 @@ function Holdings() {
     <>
       <SectionHeader firstWord="HOLDINGS" />
       <br />
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
         {holdings.map((h, index) => (
           <React.Fragment key={index}>
             <div className="col-span-1  border-lightGray onHover border-2 ">
               <div className=" p-10 py-0 pb-5 flex h-full flex-col ">
                 <img className="p-10" src={h.logo} alt="" />
                 <Paragraph p={h.text} />
-                <TextWirhArrow
-                  className="justify-center opacity-0 mt-auto readMore"
-                  text="Read More"
-                />
+                <Link to={h.link}>
+                  <TextWirhArrow
+                    className="justify-center opacity-0 mt-auto readMore"
+                    text="Read More"
+                  />
+                </Link>
               </div>
             </div>
           </React.Fragment>

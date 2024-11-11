@@ -6,20 +6,16 @@ import "swiper/css";
 import "./timeLine.css";
 function TimeLine() {
   const timeLineDetails = [
-    { data: 1999, name: "ARUP" },
-    { data: 1999, name: "WOLSEY" },
-    { data: 1999, name: "KALLER" },
-    { data: 1999, name: "ARUP" },
-    { data: 1999, name: "ARUP" },
-    { data: 1999, name: "ARUP" },
-    { data: 1999, name: "ARUP" },
+    { data: 1988, name: "ARUP" },
+    { data: 2006, name: "WOLSEY" },
+    { data: 2023, name: "MHCEG" },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <>
-      <div className="relative w-[90%] m-auto h-full flex justify-center items-center">
+      <div className="relative md:w-[90%] w-full !py-50 m-auto h-full flex justify-center  items-center">
         <div className="swiper-button-prev-custom">
           <i className="fa-solid fa-chevron-left text-white bg-mainGold absolute -left-5 z-20 top-[50%] translate-y-[-50%] py-4 px-3 text-xl cursor-pointer"></i>
         </div>
@@ -27,16 +23,29 @@ function TimeLine() {
           <i className="fa-solid fa-chevron-right text-white bg-mainGold absolute -right-5 z-20 top-[50%] translate-y-[-50%] py-4 px-3 text-xl cursor-pointer"></i>
         </div>
         <Swiper
-          className="  w-full h-full relative flex justify-center items-center "
+          className="  w-full h-full relative flex  justify-center items-center "
           spaceBetween={0}
-          slidesPerView={7}
+          slidesPerView={3}
           centeredSlides={true}
-          loop={true}
+          breakpoints={{
+            0: {
+              slidesPerView: 1, // for small screens (e.g., 640px and up)
+            },
+            768: {
+              slidesPerView: 1, // for medium screens (e.g., 768px and up)
+            },
+            992: {
+              slidesPerView: 3, // for larger screens (e.g., 1024px and up)
+            },
+            1024: {
+              slidesPerView: 3, // for larger screens (e.g., 1024px and up)
+            },
+          }}
+          // loop={true}
           navigation={{
             nextEl: ".swiper-button-next-custom",
             prevEl: ".swiper-button-prev-custom",
           }}
-
           modules={[EffectCoverflow, Navigation, Pagination]}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
           onSwiper={(swiper) => console.log(swiper)}
@@ -45,7 +54,7 @@ function TimeLine() {
 
           {timeLineDetails.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="w-full h-full  flex flex-col items-center  justify-center">
+              <div className="w-full h-full pb-20 md:pb-0 flex flex-col items-center   justify-center">
                 <div
                   className={`w-10 sliderItem h-10 border-4            ${
                     activeIndex === index ? "active" : ""
