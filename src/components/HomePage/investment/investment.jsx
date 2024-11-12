@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 function Investment() {
   return (
     <>
+    <img className=" icon" src="/images/icon.svg" alt="" />
       <div className="grid md:grid-cols-3 gap-10 grid-cols-2">
         <div className="col-span-2 flex items-start flex-col justify-center  md:pe-40">
           <SectionHeader firstWord="INVESTMENT" secondWord="APPROACH" />
