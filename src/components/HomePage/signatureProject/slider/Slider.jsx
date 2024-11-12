@@ -7,12 +7,12 @@ import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 
 function Slider() {
   const images = [
-    "/signatureProjects/wolsey/p12.jpg",
-    "/signatureProjects/wolsey/p22.jpg",
-    "/signatureProjects/arup-datta/p12.jpg",
-    "/signatureProjects/arup-datta/p22.jpg",
-    "/signatureProjects/arup-datta/p32.jpg",
-    "/signatureProjects/arup-datta/p42.jpg",
+    "/signatureProjects/arup-datta/p32.webp",
+    "/signatureProjects/arup-datta/p12.webp",
+    "/signatureProjects/arup-datta/p42.webp",
+    "/signatureProjects/arup-datta/p43.webp",
+    "/signatureProjects/arup-datta/p13.webp",
+
   ];
   return (
     <div className="w-full">
