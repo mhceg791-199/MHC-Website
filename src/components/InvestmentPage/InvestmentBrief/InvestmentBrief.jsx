@@ -17,7 +17,7 @@ function InvestmentBrief() {
             success."
               />
 
-              <img src="./investmentPage/2.png" alt="" />
+              <img className="w-[70%]" src="./investmentPage/2.png" alt="" />
             </div>
           </div>
 

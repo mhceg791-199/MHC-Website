@@ -9,6 +9,15 @@ function TimeLine() {
     { data: 1988, name: "ARUP" },
     { data: 2006, name: "WOLSEY" },
     { data: 2023, name: "MHCEG" },
+    { data: 1988, name: "ARUP" },
+    { data: 2006, name: "WOLSEY" },
+    { data: 2023, name: "MHCEG" },
+    { data: 1988, name: "ARUP" },
+    { data: 2006, name: "WOLSEY" },
+    { data: 2023, name: "MHCEG" },
+    { data: 1988, name: "ARUP" },
+    { data: 2006, name: "WOLSEY" },
+    { data: 2023, name: "MHCEG" },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -25,8 +34,9 @@ function TimeLine() {
         <Swiper
           className="  w-full h-full relative flex  justify-center items-center "
           spaceBetween={0}
-          slidesPerView={3}
+          slidesPerView={7}
           centeredSlides={true}
+          loop={true}
           breakpoints={{
             0: {
               slidesPerView: 1, // for small screens (e.g., 640px and up)
@@ -35,10 +45,10 @@ function TimeLine() {
               slidesPerView: 1, // for medium screens (e.g., 768px and up)
             },
             992: {
-              slidesPerView: 3, // for larger screens (e.g., 1024px and up)
+              slidesPerView: 7, // for larger screens (e.g., 1024px and up)
             },
             1024: {
-              slidesPerView: 3, // for larger screens (e.g., 1024px and up)
+              slidesPerView: 7, // for larger screens (e.g., 1024px and up)
             },
           }}
           // loop={true}

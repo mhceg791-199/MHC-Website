@@ -16,7 +16,7 @@ function InvestmentPage() {
     },
     pz3: {
       title: "TRANSPARENCY & AGILITY",
-      text: "Mosaic Holding Corporation is dedicated to transparent operations, offering clients regular, detailed performance reports that foster trust. Our adaptive approach ensures tailored investment solutions that align with market dynamics and each client's unique needs, driving long-term success and sustainability",
+      text: "Mosaic Holding Corporation is dedicated to transparent operations, offering clients regular, detailed performance reports that foster trust. Our adaptive approach ensures tailored investment solutions that align with market dynamics and each client's unique needs, driving long-term success and sustainability.",
     },
     normal1: {
       title: "COMPREHENSIVE MARKET ANALYSIS",

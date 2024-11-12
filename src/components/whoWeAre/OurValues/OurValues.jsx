@@ -15,7 +15,7 @@ function OurValues() {
           <div className="lg:absolute bottom-0 p-5 left-0 lg:w-3/5">
             <SectionHeader firstWord="MISSION" />
             <Paragraph
-              p="MHC is dedicated to enhancing the success of established mid-cap companies by providing comprehensive support,resources, and strategic insight. Through targeted acquisitions and a hands-on approach to value creation, we aim to build a synergistic portfolio of industry leaders
+              p="MHC is dedicated to enhancing the success of established mid-cap companies by providing comprehensive support ,resources, and strategic insight. Through targeted acquisitions and a hands-on approach to value creation, we aim to build a synergistic portfolio of industry leaders
 committed to innovation, quality, and positive impact in their fields."
             />
           </div>

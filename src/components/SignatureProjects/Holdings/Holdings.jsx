@@ -25,7 +25,7 @@ function Holdings() {
       {holding.map((hold, index) => (
         <div key={index} className="flex items-center my-3  justify-start ps-5">
           <Link to={hold.link}>
-            <img className="pe-4" src={hold.logo} alt="" />
+            <img className="me-3 w-20 h-20" src={hold.logo} alt="" />
           </Link>
           <p className={`mt-0  sm:text-small text-[12px] `}>{hold.text}</p>
         </div>

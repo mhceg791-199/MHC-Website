@@ -51,7 +51,7 @@ function CareerArea() {
             onClick={openModal}
             className="bg-mainGold px-14 rounded-full text-white mb-10 py-5 text-3xl "
           >
-            JOIN OUT TEAM
+            JOIN OUR TEAM
           </button>
         </div>
       </div>
