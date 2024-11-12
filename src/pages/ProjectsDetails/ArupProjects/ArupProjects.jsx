@@ -8,9 +8,9 @@ function ArupProjects() {
   const projectsDetails = [
     {
       images: [
-        { src: "/signatureProjects/arup-datta/p11.jpg", width: 420 },
-        { src: "/signatureProjects/arup-datta/p12.jpg", width: 600 },
-        { src: "/signatureProjects/arup-datta/p13.jpg", width: 420 },
+        { src: "/signatureProjects/arup-datta/p11.webp", width: 420 },
+        { src: "/signatureProjects/arup-datta/p12.webp", width: 600 },
+        { src: "/signatureProjects/arup-datta/p13.webp", width: 420 },
 
         ,
       ],
@@ -22,9 +22,9 @@ function ArupProjects() {
     },
     {
       images: [
-        { src: "/signatureProjects/arup-datta/p21.jpg", width: 420 },
-        { src: "/signatureProjects/arup-datta/p22.jpg", width: 600 },
-        { src: "/signatureProjects/arup-datta/p23.jpg", width: 420 },
+        { src: "/signatureProjects/arup-datta/p21.webp", width: 420 },
+        { src: "/signatureProjects/arup-datta/p22.webp", width: 600 },
+        { src: "/signatureProjects/arup-datta/p23.webp", width: 420 },
       ],
       title: "Multigenerational Housing, Calgary, Alberta",
       texts: [
@@ -35,9 +35,9 @@ function ArupProjects() {
     },
     {
       images: [
-        { src: "/signatureProjects/arup-datta/p31.jpg", width: 420 },
-        { src: "/signatureProjects/arup-datta/p32.jpg", width: 600 },
-        { src: "/signatureProjects/arup-datta/p33.jpg", width: 420 },
+        { src: "/signatureProjects/arup-datta/p31.webp", width: 420 },
+        { src: "/signatureProjects/arup-datta/p32.webp", width: 600 },
+        { src: "/signatureProjects/arup-datta/p33.webp", width: 420 },
       ],
       title: "Callaghan Ravines, Edmonton, Alberta",
       texts: [
@@ -47,9 +47,9 @@ function ArupProjects() {
     },
     {
       images: [
-        { src: "/signatureProjects/arup-datta/p41.jpg", width: 420 },
-        { src: "/signatureProjects/arup-datta/p42.jpg", width: 600 },
-        { src: "/signatureProjects/arup-datta/p43.jpg", width: 420 },
+        { src: "/signatureProjects/arup-datta/p41.webp", width: 420 },
+        { src: "/signatureProjects/arup-datta/p42.webp", width: 600 },
+        { src: "/signatureProjects/arup-datta/p43.webp", width: 420 },
       ],
       title: "South Pointe Lexus, Edmonton, Alberta, Canada",
       texts: [
@@ -60,7 +60,7 @@ function ArupProjects() {
   ];
 
   const firstSectionDetails = {
-    poster: "/signatureProjects/arup-datta/poster.jpg",
+    poster: "/signatureProjects/arup-datta/poster.webp",
     logo: "/signatureProjects/arup.png",
     title: { firstWord: "ARUP DATTA", secondWord: "ARCHITECT" },
     text: "As the founding principal of ARUP DATTA ARCHITECT LTD (ADAL) has been involved in designing major Architectural and Master Planning projects in Canada and abroad for over 40 years. Mr. Datta has led design teams for large mixed-use complexes, educational, cultural and institutional projects in Canada, USA, Europe, Africa, Middle East and S.E. Asia.",

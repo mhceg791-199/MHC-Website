@@ -22,7 +22,7 @@ function ProjectSlider({ data }) {
         {data.map(({ src, width }, index) => (
           <React.Fragment key={index}>
             <div style={{ width }} className="bg-black h-[418px]">
-              <img className="w-full h-full" src={src} alt="" />
+              <img className="w-full h-full border-4 border-white" src={src} alt="" />
             </div>
           </React.Fragment>
         ))}
