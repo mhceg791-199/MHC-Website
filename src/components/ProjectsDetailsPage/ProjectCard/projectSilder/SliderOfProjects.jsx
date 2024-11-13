@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import NextArrow from "../../../shared/Arrows/NextArrow";
 import PreArrow from "../../../shared/Arrows/PreArrow";
-
+import "./SliderOfProjects.css";
 function ProjectSlider({ data }) {
+  const [isMobile, setIsMobil] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobil(window.innerWidth <= 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   var settings = {
     className: "slider variable-width",
-    dots: true,
     infinite: true,
 
     slidesToShow: 1,
     slidesToScroll: 1,
-    variableWidth: true,
+    variableWidth: !isMobile,
     nextArrow: <NextArrow />,
     prevArrow: <PreArrow />,
   };
