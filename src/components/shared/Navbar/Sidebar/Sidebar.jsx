@@ -77,29 +77,6 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
           className="h-[calc(100vh-2rem)] w-full p-4"
         >
           <List>
-            {/* <Accordion>
-              <ListItem
-                className={`p-0 hover:bg-transparent ${
-                  open === 1 ? "bg-transparent" : " "
-                }`}
-                selected={open === 1}
-              >
-                <AccordionHeader
-                  onClick={() => handleOpen(1)}
-                  className="border-b-0 p-3 px-0"
-                >
-                  <Typography
-                    color="white"
-                    className={`mr-auto font-normal hover:text-mainGold ${
-                      open === 1 ? "text-mainGold" : ""
-                    }`}
-                  >
-                    HOME PAGE
-                  </Typography>
-                </AccordionHeader>
-              </ListItem>
-     
-            </Accordion> */}
             <Accordion open={open === 1}>
               {" "}
               <ListItem

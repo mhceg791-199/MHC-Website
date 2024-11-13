@@ -13,7 +13,7 @@ function SectionHeader({
       <h2 className="text-large  headerSection font-bold ">
         {type == "horizontal" ? (
           <>
-            <span className={`${line ? "border-b-half" : ""}`}>
+            <span className={`${line ? "hoverOneLine" : ""}`}>
               <span className=" ">{firstWord}</span>
               <span> {secondWord}</span>
             </span>
