@@ -74,7 +74,7 @@ function CareerForm() {
       formdata.append("cv", cv);
 
       const { data } = await axios.post(
-        "http://localhost:3001/v1/api/candidate",
+        "https://mhc-backend.vercel.app/v1/api/candidate",
         formdata
       );
       toast.success("Application Sent Successfully!", {
