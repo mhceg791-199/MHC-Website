@@ -5,7 +5,7 @@ function ProjectDetails({ data }) {
   const { title, texts } = data;
   return (
     <>
-      <div className="px-10 mb-14">
+      <div className="px-10 mb-8">
         <h2 className="text-center my-5 mt-10 text-xl font-bold">{title}</h2>
         {texts.map((text, index) => (
           <React.Fragment key={index}>

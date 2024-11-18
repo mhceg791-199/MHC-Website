@@ -16,6 +16,7 @@ function Holdings() {
     {
       text: "MHCEG Consultancy",
       logo: "/signatureProjects/mhceg.png",
+      link: "/mhceg-projects",
     },
   ];
   return (

@@ -12,9 +12,9 @@ function IndustryCard({
   icon,
 }) {
   return (
-    <div className="">
-      <img className="w-full lg:h-[70vh] object-cover" src={img} alt="" />
-      <div className="bg-lightGray relative md:translate-y-[-20%] translate-y-[-3%]  sm:mx-10  p-8 md:px-14">
+    <div className="bg-bl mb-0">
+      <img className="w-full lg:h-[60vh] object-cover" src={img} alt="" />
+      <div className="bg-lightGray relative md:translate-y-[-12%] translate-y-[-3%]  sm:mx-10  p-8 md:px-14">
         <div className="flex items-center">
           <div className=" border-[3px] me-5 border-mainGold text-mainGold rounded-full flex justify-center  w-24 h-24 items-center ">
             <img className="w-[50%] " src={icon} alt="" />

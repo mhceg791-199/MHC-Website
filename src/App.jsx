@@ -17,6 +17,7 @@ import SignatureProjectsPage from "./pages/SignatureProjects/SignatureProjects";
 import CareerPage from "./pages/Career/CareerPage";
 import CareerModelProvider from "./context/CareerContext";
 import InvestmentPage from "./pages/InvestmentApproach/InvestmentPage";
+import MhcegProjects from "./pages/ProjectsDetails/MhcegProjects/MhcegProjects";
 function App() {
   return (
     <>
@@ -30,6 +31,7 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/tearms-conditions" element={<TermsPage />} />
             <Route path="/wolsey-projects" element={<WolseyProjects />} />
+            <Route path="/mhceg-projects" element={<MhcegProjects />} />
             <Route path="/arup-projects" element={<ArupProjects />} />
             <Route path="/careers" element={<CareerPage />} />
             <Route path="/investment-approach" element={<InvestmentPage />} />

@@ -19,6 +19,7 @@ function Holdings() {
     {
       logo: "/whoWeArePage/mhceg.png",
       text: "A division of MHC established in mid-2023, delivers integrated expertise across architecture, structural and electromechanical engineering, and the oil and gas sectors. Specializing in innovative design and engineering solutions, MHCEG excels in developing advanced structural frameworks and optimizing electromechanical systems for a wide range of projects.",
+      link: "/mhceg-projects",
     },
   ];
   return (
@@ -31,7 +32,7 @@ function Holdings() {
             <div className="col-span-1  border-lightGray onHover border-2 ">
               <div className=" p-10 py-0 pb-5 flex h-full flex-col ">
                 <img className="p-10 pb-0" src={h.logo} alt="" />
-                <Paragraph p={h.text} />
+                <Paragraph p={h.text} text={"center"} />
                 <Link to={h.link}>
                   <TextWirhArrow
                     className="justify-center opacity-0 mt-auto readMore"

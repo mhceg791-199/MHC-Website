@@ -43,7 +43,7 @@ function TimeLine() {
           centeredSlides={true}
           loop={true}
           autoplay={{
-            delay: 3000, // Set autoplay delay in milliseconds (3 seconds)
+            delay: 1500, // Set autoplay delay in milliseconds (3 seconds)
             disableOnInteraction: false, // Continue autoplay even after user interaction
           }}
           breakpoints={{

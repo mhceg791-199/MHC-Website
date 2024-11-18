@@ -32,9 +32,8 @@ function Slider() {
         centeredSlides={true}
         preventClicks={true}
         autoplay={{
-          delay: 3000, // Set autoplay delay in milliseconds (3 seconds)
+          delay: 1500, // Set autoplay delay in milliseconds (3 seconds)
           disableOnInteraction: false, // Continue autoplay even after user interaction
-     
         }}
         coverflowEffect={{
           rotate: 0,

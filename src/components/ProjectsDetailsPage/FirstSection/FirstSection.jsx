@@ -18,8 +18,7 @@ function FirstSection({ data }) {
         </div>
         <Paragraph p={text} />
         <br />
-        <br />
-        <br />
+
       
         <div className="bg-gray-400 rounded-xl w-full h-[1px] mt-5"></div>
       </div>
