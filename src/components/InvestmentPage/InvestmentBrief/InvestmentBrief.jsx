@@ -5,7 +5,7 @@ import Paragraph from "../../shared/paragraph";
 function InvestmentBrief() {
   return (
     <>
-      <div className="mt-20">
+      <div className="mt-28">
         <SectionHeader firstWord="INVESTMENT" secondWord="APPROACH" />
         <div className="grid md:grid-cols-2 grid-cols-1">
           <div className="col-span-1">

@@ -5,9 +5,9 @@ import SocialMedia from "./SocialMedia/SocialMedia";
 function Footer() {
   return (
     <>
-      <div className="grid md:grid-cols-10 grid-cols-1 p-5 gap-y-5 bg-mainGold text-white">
-        <div className="md:col-span-2 col-span-1 flex justify-center ">
-          <img className="px-20" src="/images/logo.png" alt="" />
+      <div className="grid md:grid-cols-10 grid-cols-1 p-5 gap-5 bg-mainGold text-white">
+        <div className="md:col-span-2 col-span-1 flex justify-center lg:px-8">
+          <img className="object-contain" src="/images/logo.png" alt="" />
         </div>
         <div className="md:col-span-5 col-span-1 flex md:items-start items-center flex-col justify-center  ">
           <p className="text-sm">

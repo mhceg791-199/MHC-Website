@@ -17,7 +17,7 @@ const Management = React.forwardRef(() => {
       <div className="grid grid-cols-6 ">
         <div className="col-span-2 lg:col-span-1">
           <img
-            className="w-full h-full"
+            className="object-contain"
             src="/whoWeArePage/management.jpg"
             alt=""
           />
@@ -39,7 +39,7 @@ const Management = React.forwardRef(() => {
             several influential government positions, including serving as
             Second Vice Chairman of the Executive Council of…"
           />
-          <TextWirhArrow text="MANAGEMENT TEAM" />
+          {/* <TextWirhArrow text="MANAGEMENT TEAM" /> */}
         </div>
       </div>
       <br />

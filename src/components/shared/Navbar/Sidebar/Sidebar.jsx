@@ -158,6 +158,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
               <AccordionBody className="py-1">
                 <List className="p-0 !text-gray-500">
                   <ListItem
+                    className="hover:bg-secondGold hover:text-white"
                     onClick={() => handleNavigate("/who-we-are", "management")}
                   >
                     <ListItemPrefix>
@@ -169,6 +170,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     Management team
                   </ListItem>
                   <ListItem
+                    className="hover:bg-secondGold hover:text-white"
                     onClick={() => handleNavigate("/who-we-are", "values")}
                   >
                     <ListItemPrefix>
@@ -180,6 +182,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     Our values
                   </ListItem>
                   <ListItem
+                    className="hover:bg-secondGold hover:text-white"
                     onClick={() => handleNavigate("/who-we-are", "journey")}
                   >
                     <ListItemPrefix>
@@ -191,6 +194,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     Our journey
                   </ListItem>
                   <ListItem
+                    className="hover:bg-secondGold hover:text-white"
                     onClick={() => handleNavigate("/who-we-are", "holdings")}
                   >
                     <ListItemPrefix>
@@ -237,6 +241,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
               <AccordionBody className="py-1">
                 <List className="p-0 !text-gray-500">
                   <ListItem
+                    className="hover:bg-secondGold hover:text-white"
                     onClick={() =>
                       handleNavigate("/industries", "architechture")
                     }
@@ -250,6 +255,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     Architecture and Urban architecture
                   </ListItem>
                   <ListItem
+                    className="hover:bg-secondGold hover:text-white"
                     onClick={() => handleNavigate("/industries", "engineer")}
                   >
                     <ListItemPrefix>
@@ -261,6 +267,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     Engineering
                   </ListItem>
                   <ListItem
+                    className="hover:bg-secondGold hover:text-white"
                     onClick={() => handleNavigate("/industries", "oil")}
                   >
                     <ListItemPrefix>
@@ -272,6 +279,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     Oil & gas
                   </ListItem>
                   <ListItem
+                    className="hover:bg-secondGold hover:text-white"
                     onClick={() => handleNavigate("/industries", "marine")}
                   >
                     <ListItemPrefix>
@@ -283,6 +291,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     Marine and offshore structures
                   </ListItem>
                   <ListItem
+                    className="hover:bg-secondGold hover:text-white"
                     onClick={() => handleNavigate("/industries", "energy")}
                   >
                     <ListItemPrefix>
@@ -329,8 +338,9 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                 </AccordionHeader>
               </ListItem>
               <AccordionBody className="py-1">
-                <List className="p-0 !text-gray-500">
+                <List className="p-0  !text-gray-500">
                   <ListItem
+                    className="hover:bg-secondGold hover:text-white"
                     onClick={() =>
                       handleNavigate("/wolsey-projects", "architecture")
                     }
@@ -344,6 +354,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     Wolsey Projects
                   </ListItem>
                   <ListItem
+                    className="hover:bg-secondGold hover:text-white"
                     onClick={() => handleNavigate("/arup-projects", "engineer")}
                   >
                     <ListItemPrefix>
@@ -503,18 +514,60 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
               </AccordionBody> */}
             </Accordion>
             <hr className="my-2 border-white-50 " />
-            <ListItem onClick={() => handleNavigate("/privacy-policy")}>
-              <ListItemPrefix>
-                <UserCircleIcon className="h-5 w-5 opacity-0" />
-              </ListItemPrefix>
-              Privacy Policy
-            </ListItem>
-            <ListItem onClick={() => handleNavigate("/tearms-conditions")}>
-              <ListItemPrefix>
-                <UserCircleIcon className="h-5 w-5 opacity-0" />
-              </ListItemPrefix>
-              Terms and conditions
-            </ListItem>
+            <Accordion open={open === 1}>
+              {" "}
+              <ListItem
+                className={`p-0 item hover:bg-transparent mainItem ${
+                  open != 1 ? "bg-transparent" : "bg-transparent"
+                }`}
+                selected={open === 2}
+              >
+                <AccordionHeader className="border-b-0 p-3 px-0 !hover:text-mainGold ">
+                  <ListItemPrefix>
+                    <PlusIcon
+                      className={`mx-auto h-5 w-5 text-white borderIcon opacity-0  transition-transform `}
+                      condition={open == 2}
+                    />
+                  </ListItemPrefix>
+                  <Typography
+                    onClick={() => handleNavigate("/privacy-policy")}
+                    color="white"
+                    className={`mr-auto font-normal itemText ${
+                      open === 1 ? "text-mainGold" : ""
+                    }`}
+                  >
+                    Privacy Policy
+                  </Typography>
+                </AccordionHeader>
+              </ListItem>
+            </Accordion>
+            <Accordion open={open === 1}>
+              {" "}
+              <ListItem
+                className={`p-0 item hover:bg-transparent mainItem ${
+                  open != 1 ? "bg-transparent" : "bg-transparent"
+                }`}
+                selected={open === 2}
+              >
+                <AccordionHeader className="border-b-0 p-3 px-0 !hover:text-mainGold ">
+                  <ListItemPrefix>
+                    <PlusIcon
+                      className={`mx-auto h-5 w-5 text-white borderIcon opacity-0  transition-transform `}
+                      condition={open == 2}
+                    />
+                  </ListItemPrefix>
+                  <Typography
+                    onClick={() => handleNavigate("/tearms-conditions")}
+                    color="white"
+                    className={`mr-auto font-normal itemText ${
+                      open === 1 ? "text-mainGold" : ""
+                    }`}
+                  >
+                    Terms and conditions
+                  </Typography>
+                </AccordionHeader>
+              </ListItem>
+            </Accordion>
             <hr className="my-2 border-white-50 mb-10" />
             <SocialMedia />
           </List>

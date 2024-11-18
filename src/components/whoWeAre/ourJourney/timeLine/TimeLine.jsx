@@ -1,7 +1,12 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation"; // Import Swiper navigation styles
-import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+import {
+  EffectCoverflow,
+  Navigation,
+  Pagination,
+  Autoplay,
+} from "swiper/modules";
 import "swiper/css";
 import "./timeLine.css";
 function TimeLine() {
@@ -37,6 +42,10 @@ function TimeLine() {
           slidesPerView={7}
           centeredSlides={true}
           loop={true}
+          autoplay={{
+            delay: 3000, // Set autoplay delay in milliseconds (3 seconds)
+            disableOnInteraction: false, // Continue autoplay even after user interaction
+          }}
           breakpoints={{
             0: {
               slidesPerView: 1, // for small screens (e.g., 640px and up)
@@ -56,7 +65,7 @@ function TimeLine() {
             nextEl: ".swiper-button-next-custom",
             prevEl: ".swiper-button-prev-custom",
           }}
-          modules={[EffectCoverflow, Navigation, Pagination]}
+          modules={[EffectCoverflow, Navigation, Pagination, Autoplay]}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
           onSwiper={(swiper) => console.log(swiper)}
         >

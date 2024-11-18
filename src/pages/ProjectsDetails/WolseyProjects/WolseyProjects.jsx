@@ -22,9 +22,11 @@ function WolseyProjects() {
     },
     {
       images: [
-        { src: "/signatureProjects/wolsey/p21.jpg", width: 420 },
-        { src: "/signatureProjects/wolsey/p22.jpg", width: 600 },
-        { src: "/signatureProjects/wolsey/p23.jpg", width: 420 },
+        { src: "/signatureProjects/wolsey/p21.webp", width: 420 },
+        { src: "/signatureProjects/wolsey/p22.webp", width: 600 },
+        { src: "/signatureProjects/wolsey/p23.webp", width: 420 },
+        { src: "/signatureProjects/wolsey/p24.webp", width: 420 },
+        { src: "/signatureProjects/wolsey/p25.webp", width: 420 },
       ],
       title: "Hyundai Calgary Dealership",
       texts: [

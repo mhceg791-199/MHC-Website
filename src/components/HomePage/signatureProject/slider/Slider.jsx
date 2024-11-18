@@ -3,17 +3,27 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+import {
+  EffectCoverflow,
+  Navigation,
+  Pagination,
+  Autoplay,
+} from "swiper/modules";
 
 function Slider() {
   const images = [
-    "/signatureProjects/arup-datta/p32.webp",
     "/signatureProjects/arup-datta/p12.webp",
+    "/signatureProjects/arup-datta/p32.webp",
     "/signatureProjects/arup-datta/p42.webp",
     "/signatureProjects/arup-datta/p43.webp",
     "/signatureProjects/arup-datta/p13.webp",
-
+    "/signatureProjects/arup-datta/p12.webp",
+    "/signatureProjects/arup-datta/p32.webp",
+    "/signatureProjects/arup-datta/p42.webp",
+    "/signatureProjects/arup-datta/p43.webp",
+    "/signatureProjects/arup-datta/p13.webp",
   ];
+
   return (
     <div className="w-full">
       <Swiper
@@ -21,6 +31,11 @@ function Slider() {
         grabCursor={true}
         centeredSlides={true}
         preventClicks={true}
+        autoplay={{
+          delay: 3000, // Set autoplay delay in milliseconds (3 seconds)
+          disableOnInteraction: false, // Continue autoplay even after user interaction
+     
+        }}
         coverflowEffect={{
           rotate: 0,
           stretch: 80,
@@ -45,7 +60,7 @@ function Slider() {
             slidesPerView: 3, // for larger screens (e.g., 1024px and up)
           },
         }}
-        modules={[EffectCoverflow, Navigation, Pagination]}
+        modules={[EffectCoverflow, Navigation, Pagination, Autoplay]}
       >
         {images.map((img, index) => (
           <SwiperSlide key={index} style={{ padding: "10px" }}>

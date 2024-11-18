@@ -25,7 +25,7 @@ experience for lasting success"
           <div className="relative w-full investmentImg overflow-hidden">
             <img
               className="w-full object-contain   relative"
-              src="/homePage/investment.jpg"
+              src="/homePage/investment.webp"
               alt="investment approach"
             />
             <div className="InvestmentLayer   flex flex-col   p-10">

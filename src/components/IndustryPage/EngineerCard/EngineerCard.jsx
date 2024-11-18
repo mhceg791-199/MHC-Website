@@ -10,12 +10,18 @@ function EngineerCard() {
       <div className="">
         <img
           className="w-full lg:h-[70vh] object-cover"
-          src="/industryPage/2.jpg"
+          src="/industryPage/2.webp"
           alt=""
         />
         <div className="bg-lightGray relative translate-y-[-10%]  sm:mx-10  p-8 md:px-14">
-          <div className="flex items-stretch">
-            <MdOutlineEngineering className="text-[65px] border-[3px] me-5 border-mainGold text-mainGold rounded-full p-3" />
+          <div className="flex items-center">
+            <div className=" border-[3px] me-5 border-mainGold text-mainGold rounded-full flex justify-center  w-24 h-24 items-center ">
+              <img
+                className="w-[50%] "
+                src="/homePage/icons/icon2.png"
+                alt=""
+              />
+            </div>{" "}
             <SectionHeader firstWord="Engineering" />
           </div>
           <Paragraph p="Mosaic Holding Corporation’s engineering arm is multi-disciplinary, encompassing several specialized fields:" />
@@ -38,10 +44,7 @@ function EngineerCard() {
           </div>
           <Paragraph p="This division focuses on the design, operation, and maintenance of mechanical systems that drive HVAC, plumbing, and other critical building infrastructure. MHC’s mechanical engineering, which is valued at $440 billion globally services ensure systems operate at optimal performance, enhancing both energy efficiency and comfort for end users." />
           <br />
-          <br />
-          <br />
-          <br />
-          <br />
+
           <div className="bg-gray-400 rounded-xl w-full h-[1px] mt-5"></div>
         </div>
       </div>

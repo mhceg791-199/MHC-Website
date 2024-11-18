@@ -49,7 +49,7 @@ function CareerArea() {
         <div className="m-auto flex justify-center m">
           <button
             onClick={openModal}
-            className="bg-mainGold px-14 rounded-full text-white mb-10 py-5 text-3xl "
+            className="bg-mainGold px-14 rounded-full text-white mb-10 py-4 text-xl "
           >
             JOIN OUR TEAM
           </button>

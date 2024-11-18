@@ -10,6 +10,7 @@ module.exports = withMT({
       },
       colors: {
         mainGold: "#C5A363",
+        secondGold: "rgba(197, 163, 99, 0.5)",
         lightGray: "#EDEDED",
       },
     },

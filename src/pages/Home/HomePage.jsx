@@ -29,7 +29,7 @@ function HomePage() {
       >
         <Link to="/">
           <img
-            className=" p-2  w-[28%]"
+            className={`${isScrolled ? "w-[28%]" : "w-[35%]"} p-2  `}
             src={isScrolled ? "/images/logoWithBlack.png" : "/images/logo.png"}
             alt=""
           />

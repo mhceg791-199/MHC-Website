@@ -9,14 +9,16 @@ function IndustryCard({
   secondWord,
   type = "vertical",
   p,
-  icon: Icon,
+  icon,
 }) {
   return (
     <div className="">
       <img className="w-full lg:h-[70vh] object-cover" src={img} alt="" />
       <div className="bg-lightGray relative md:translate-y-[-20%] translate-y-[-3%]  sm:mx-10  p-8 md:px-14">
-        <div className="flex items-stretch">
-          <Icon className="text-[65px] border-[3px] me-5 border-mainGold text-mainGold rounded-full p-3" />
+        <div className="flex items-center">
+          <div className=" border-[3px] me-5 border-mainGold text-mainGold rounded-full flex justify-center  w-24 h-24 items-center ">
+            <img className="w-[50%] " src={icon} alt="" />
+          </div>
           <SectionHeader
             firstWord={firstWord}
             secondWord={secondWord}
@@ -25,10 +27,7 @@ function IndustryCard({
         </div>
         <Paragraph p={p} />
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
+  
         <div className="bg-gray-400 rounded-xl w-full h-[1px] mt-5"></div>
       </div>
     </div>

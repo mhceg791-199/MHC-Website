@@ -23,14 +23,20 @@ function Holdings() {
       <h2 className="mb-8 text-xl font-bold"> Spotlights</h2>
 
       {holding.map((hold, index) => (
-        <div key={index} className="flex items-center my-3  justify-start ps-5">
-          <Link to={hold.link}>
-            <img className="me-3 w-20 h-20" src={hold.logo} alt="" />
+        <div
+          key={index}
+          className="grid grid-cols-4 xl:w-[75%] w-full  my-3  justify-start "
+        >
+          <Link className="col-span-1 flex justify-start   " to={hold.link}>
+            <img className="me-3 object-cover" src={hold.logo} alt="" />
           </Link>
-          <p className={`mt-0  sm:text-small text-[12px] `}>{hold.text}</p>
+          <p
+            className={`mt-0 col-span-3  flex items-center justify-start ps-5 sm:text-small text-[12px] `}
+          >
+            {hold.text}
+          </p>
         </div>
       ))}
-
     </>
   );
 }
