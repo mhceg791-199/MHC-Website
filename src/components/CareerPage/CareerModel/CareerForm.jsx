@@ -283,7 +283,7 @@ function CareerForm() {
           className="mt-1 text-sm text-gray-100 dark:text-gray-300"
           id="file_input_help"
         >
-          SVG, PNG, JPG or PDF (Max size: 5MB).
+          PDF (Max size: 5MB).
         </p>
         {isLoading ? (
           <button
