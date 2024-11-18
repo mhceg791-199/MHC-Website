@@ -365,6 +365,18 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     </ListItemPrefix>
                     Arup Projects
                   </ListItem>
+                  <ListItem
+                    className="hover:bg-secondGold hover:text-white"
+                    onClick={() => handleNavigate("/mhceg-projects", "engineer")}
+                  >
+                    <ListItemPrefix>
+                      <ChevronRightIcon
+                        strokeWidth={3}
+                        className="h-3 w-5 opacity-0"
+                      />
+                    </ListItemPrefix>
+                    Mhceg projects
+                  </ListItem>
                 </List>
               </AccordionBody>
             </Accordion>
