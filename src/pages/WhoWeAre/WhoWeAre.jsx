@@ -24,9 +24,9 @@ function WhoWeAre() {
 
   useEffect(() => {
     // Check if location has a state with scrollTo section
-    if (location.state?.scrollTo === "management") {
-      scrollToSection(managementRef);
-    }
+    // if (location.state?.scrollTo === "management") {
+    //   scrollToSection(managementRef);
+    // }
     if (location.state?.scrollTo === "firstSection") {
       scrollToSection(firstSectionRef);
     }
@@ -52,9 +52,9 @@ function WhoWeAre() {
         <AboutMHC />
         <br />
         <br />
-        <div ref={managementRef}>
+        {/* <div ref={managementRef}>
           <Management />
-        </div>
+        </div> */}
         <br />
         <div ref={valuesRef}>
           <OurValues />

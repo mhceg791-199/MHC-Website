@@ -24,7 +24,7 @@ function ProjectSlider({ data }) {
     prevArrow: <PreArrow />,
   };
   return (
-    <div className="slider-container  mt-10 mx-0 overflow-hidden">
+    <div className="slider-container mt-[-10px] mx-0 overflow-hidden">
       <Slider {...settings}>
         {console.log(data)}
         {data.map(({ src, width }, index) => (

@@ -157,7 +157,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
               </ListItem>
               <AccordionBody className="py-1">
                 <List className="p-0 !text-gray-500">
-                  <ListItem
+                  {/* <ListItem
                     className="hover:bg-secondGold hover:text-white"
                     onClick={() => handleNavigate("/who-we-are", "management")}
                   >
@@ -168,7 +168,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                       />
                     </ListItemPrefix>
                     Management team
-                  </ListItem>
+                  </ListItem> */}
                   <ListItem
                     className="hover:bg-secondGold hover:text-white"
                     onClick={() => handleNavigate("/who-we-are", "values")}
