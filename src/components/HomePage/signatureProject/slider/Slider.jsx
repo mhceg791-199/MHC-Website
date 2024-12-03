@@ -3,25 +3,58 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "./Slider.css";
 import {
   EffectCoverflow,
   Navigation,
   Pagination,
   Autoplay,
 } from "swiper/modules";
+import useNavigateWithScroll from "../../../../Hooks/useNavigateWithScroll";
 
 function Slider() {
+  const navigateWithScroll = useNavigateWithScroll();
   const images = [
-    "/signatureProjects/arup-datta/p12.webp",
-    "/signatureProjects/arup-datta/p32.webp",
-    "/signatureProjects/arup-datta/p42.webp",
-    "/signatureProjects/arup-datta/p43.webp",
-    "/signatureProjects/arup-datta/p13.webp",
-    "/signatureProjects/arup-datta/p12.webp",
-    "/signatureProjects/arup-datta/p32.webp",
-    "/signatureProjects/arup-datta/p42.webp",
-    "/signatureProjects/arup-datta/p43.webp",
-    "/signatureProjects/arup-datta/p13.webp",
+    {
+      src: "/signatureProjects/arup-datta/p12.webp",
+      sectionName: "walden",
+    },
+    {
+      src: "/signatureProjects/arup-datta/p32.webp",
+      sectionName: "Callaghan",
+    },
+    {
+      src: "/signatureProjects/arup-datta/p42.webp",
+      sectionName: "Lexus",
+    },
+    {
+      src: "/signatureProjects/arup-datta/p43.webp",
+      sectionName: "Lexus",
+    },
+    {
+      src: "/signatureProjects/arup-datta/p13.webp",
+      sectionName: "walden",
+    },
+    {
+      src: "/signatureProjects/arup-datta/p12.webp",
+      sectionName: "walden",
+    },
+    {
+      src: "/signatureProjects/arup-datta/p32.webp",
+      sectionName: "Callaghan",
+    },
+    {
+      src: "/signatureProjects/arup-datta/p42.webp",
+      sectionName: "Lexus",
+    },
+    {
+      src: "/signatureProjects/arup-datta/p43.webp",
+      sectionName: "Lexus",
+    },
+    {
+      src: "/signatureProjects/arup-datta/p13.webp",
+      sectionName: "Lexus",
+    },
   ];
 
   return (
@@ -66,27 +99,21 @@ function Slider() {
             {/* Padding to make space for the thick border */}
             <div className="relative border-x-[8px] border-white rounded-lg overflow-hidden">
               {/* Thicker white border */}
-              <div className="overlay absolute inset-0 bg-black opacity-50 transition-opacity"></div>
+              <div
+                onClick={() => {
+                  navigateWithScroll("/arup", img.sectionName);
+                }}
+                className="overlay absolute inset-0 bg-black opacity-50 transition-opacity"
+              ></div>
               <img
                 className="w-full h-full object-cover"
-                src={img}
+                src={img.src}
                 alt={`Slide ${index + 1}`}
               />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-
-      <style jsx>{`
-        /* Hide overlay on the active (center) slide */
-        .swiper-slide-active .overlay {
-          opacity: 0 !important;
-        }
-        /* Optional: adjust border thickness on hover if needed */
-        .swiper-slide:hover .border-4 {
-          border-width: 6px;
-        }
-      `}</style>
     </div>
   );
 }

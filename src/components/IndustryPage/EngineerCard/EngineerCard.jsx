@@ -22,7 +22,7 @@ function EngineerCard() {
                 alt=""
               />
             </div>{" "}
-            <SectionHeader firstWord="Engineering" />
+            <SectionHeader firstWord="Engineering" link="/wolsey" />
           </div>
           <Paragraph p="Mosaic Holding Corporation’s engineering arm is multi-disciplinary, encompassing several specialized fields:" />
           <br />

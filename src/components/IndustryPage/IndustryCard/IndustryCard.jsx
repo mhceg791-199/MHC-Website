@@ -10,6 +10,7 @@ function IndustryCard({
   type = "vertical",
   p,
   icon,
+  link,
 }) {
   return (
     <div className="bg-bl mb-0">
@@ -23,11 +24,12 @@ function IndustryCard({
             firstWord={firstWord}
             secondWord={secondWord}
             type={type}
+            link={link}
           />
         </div>
         <Paragraph p={p} />
         <br />
-  
+
         <div className="bg-gray-400 rounded-xl w-full h-[1px] mt-5"></div>
       </div>
     </div>

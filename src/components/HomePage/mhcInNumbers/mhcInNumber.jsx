@@ -4,9 +4,9 @@ import { useInView } from "react-intersection-observer";
 
 function MhcInNumber() {
   const { ref, inView } = useInView({ triggerOnce: true }); // Detects if in view once
-  const five = useCountUp(5, inView);
-  const twenty = useCountUp(20, inView);
-  const threeThouthan = useCountUp(3000, inView);
+  const five = useCountUp(5, inView, 1000);
+  const twenty = useCountUp(20, inView, 4000);
+  const threeThouthan = useCountUp(3000, inView, 20000);
   return (
     <>
       <div ref={ref} className="md:p-10 p-5 bg-mainGold text-white">

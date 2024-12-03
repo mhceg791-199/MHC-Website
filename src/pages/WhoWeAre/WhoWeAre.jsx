@@ -5,45 +5,28 @@ import FirstSection from "../../components/whoWeAre/firstSection/FirstSection";
 import OurValues from "../../components/whoWeAre/OurValues/OurValues";
 import Holdings from "../../components/whoWeAre/Holdings/Holdings";
 import OurJourney from "../../components/whoWeAre/ourJourney/OurJourney";
-import { useLocation } from "react-router-dom";
 import Navbar from "../../components/shared/Navbar/Navbar";
+import useScrollToSection from "../../Hooks/useScrollToSection";
 
 function WhoWeAre() {
-  const firstSectionRef = useRef(null); // Add reference for Management section
+  const firstSection = useRef(null); // Add reference for Management section
   const managementRef = useRef(null); // Add reference for Management section
-  const valuesRef = useRef(null); // Add reference for Management section
-  const journeyRef = useRef(null); // Add reference for Management section
-  const holdingsRef = useRef(null); // Add reference for Management section
-  const location = useLocation();
-  const scrollToSection = (ref) => {
-    const offsetTop = ref.current.offsetTop;
-    window.scrollTo({
-      top: offsetTop - 70,
-    });
+  const values = useRef(null); // Add reference for Management section
+  const journey = useRef(null); // Add reference for Management section
+  const holdings = useRef(null); // Add reference for Management section
+
+  const refs = {
+    firstSection,
+    values,
+    journey,
+    holdings,
   };
 
-  useEffect(() => {
-    // Check if location has a state with scrollTo section
-    // if (location.state?.scrollTo === "management") {
-    //   scrollToSection(managementRef);
-    // }
-    if (location.state?.scrollTo === "firstSection") {
-      scrollToSection(firstSectionRef);
-    }
-    if (location.state?.scrollTo === "values") {
-      scrollToSection(valuesRef);
-    }
-    if (location.state?.scrollTo === "journey") {
-      scrollToSection(journeyRef);
-    }
-    if (location.state?.scrollTo === "holdings") {
-      scrollToSection(holdingsRef);
-    }
-  }, [location]);
+  useScrollToSection(refs);
   return (
     <>
       <Navbar />
-      <div ref={firstSectionRef}>
+      <div ref={firstSection}>
         <FirstSection />
       </div>
       <br />
@@ -56,14 +39,14 @@ function WhoWeAre() {
           <Management />
         </div> */}
         <br />
-        <div ref={valuesRef}>
+        <div ref={values}>
           <OurValues />
         </div>
       </div>
-      <div ref={journeyRef} className="px-8 bg-lightGray py-8">
+      <div ref={journey} className="px-8 bg-lightGray py-8">
         <OurJourney />
       </div>
-      <div ref={holdingsRef} className="px-8 py-8">
+      <div ref={holdings} className="px-8 py-8">
         <Holdings />
       </div>
     </>

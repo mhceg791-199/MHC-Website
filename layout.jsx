@@ -1,5 +1,5 @@
 import React from "react";
-  import Footer from "./src/components/shared/Footer/Footer";
+import Footer from "./src/components/shared/Footer/Footer";
 
 function Layout({ children }) {
   return (

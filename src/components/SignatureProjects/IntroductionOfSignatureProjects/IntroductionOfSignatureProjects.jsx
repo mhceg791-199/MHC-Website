@@ -5,12 +5,8 @@ import Paragraph from "../../shared/paragraph";
 function IntroductionOfSignatureProjects() {
   return (
     <>
-      <div className="mb-5"> 
-        <SectionHeader
-          firstWord="SINGNATURE"
-          secondWord="PROJECTS"
-          type="verticle"
-        />
+      <div className="mb-5">
+        <SectionHeader firstWord="HOLDINGS" />
       </div>
       <Paragraph
         p="Mosaic Holding Corporation’s acquisitions are engaged in 

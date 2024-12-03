@@ -13,11 +13,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ArupProjects from "./pages/ProjectsDetails/ArupProjects/ArupProjects";
 import WolseyProjects from "./pages/ProjectsDetails/WolseyProjects/WolseyProjects";
-import SignatureProjectsPage from "./pages/SignatureProjects/SignatureProjects";
 import CareerPage from "./pages/Career/CareerPage";
 import CareerModelProvider from "./context/CareerContext";
 import InvestmentPage from "./pages/InvestmentApproach/InvestmentPage";
 import MhcegProjects from "./pages/ProjectsDetails/MhcegProjects/MhcegProjects";
+import HoldingsPage from "./pages/Holdings/Holdings";
 function App() {
   return (
     <>
@@ -30,15 +30,12 @@ function App() {
             <Route path="/contact-us" element={<ContactPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/tearms-conditions" element={<TermsPage />} />
-            <Route path="/wolsey-projects" element={<WolseyProjects />} />
-            <Route path="/mhceg-projects" element={<MhcegProjects />} />
-            <Route path="/arup-projects" element={<ArupProjects />} />
+            <Route path="/wolsey" element={<WolseyProjects />} />
+            <Route path="/mhceg" element={<MhcegProjects />} />
+            <Route path="/arup" element={<ArupProjects />} />
             <Route path="/careers" element={<CareerPage />} />
             <Route path="/investment-approach" element={<InvestmentPage />} />
-            <Route
-              path="/signatureProjects"
-              element={<SignatureProjectsPage />}
-            />
+            <Route path="/holdings" element={<HoldingsPage />} />
           </Routes>
         </CareerModelProvider>
       </Layout>

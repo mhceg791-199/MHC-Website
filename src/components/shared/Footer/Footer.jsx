@@ -7,7 +7,11 @@ function Footer() {
     <>
       <div className="grid md:grid-cols-10 grid-cols-1 p-5 gap-5 bg-mainGold text-white">
         <div className="md:col-span-2 col-span-1 flex justify-center lg:px-8">
-          <img className="object-contain" src="/images/logo.png" alt="" />
+          <img
+            className="object-contain md:w-3/4 w-1/2 m-auto"
+            src="/images/logo.png"
+            alt=""
+          />
         </div>
         <div className="md:col-span-5 col-span-1 flex md:items-start items-center flex-col justify-center  ">
           <p className="text-sm">

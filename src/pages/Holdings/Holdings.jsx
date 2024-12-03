@@ -3,7 +3,7 @@ import IntroductionOfSignatureProjects from "../../components/SignatureProjects/
 import Holdings from "../../components/SignatureProjects/Holdings/Holdings";
 import Navbar from "../../components/shared/Navbar/Navbar";
 
-function SignatureProjectsPage() {
+function HoldingsPage() {
   return (
     <>
       <Navbar />
@@ -19,4 +19,4 @@ function SignatureProjectsPage() {
   );
 }
 
-export default SignatureProjectsPage;
+export default HoldingsPage;

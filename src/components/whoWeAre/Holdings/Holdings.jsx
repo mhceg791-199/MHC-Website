@@ -9,17 +9,17 @@ function Holdings() {
     {
       logo: "/whoWeArePage/wolsey.png",
       text: "Established in 2006, is a leading provider of innovative and luxurious corporate solutions designed to elevate businesses and enhance professional environments. With a commitment to quality and excellence, we offer a diverse range of services, including bespoke office designs, high-end furnishings, and tailored consultancy to meet the unique needs of our clients.",
-      link: "/wolsey-projects",
+      link: "/wolsey",
     },
     {
       logo: "/whoWeArePage/arup.png",
       text: "Established in 1988, is a dynamic and innovative company specializing in design and engineering solutions for the built environment. With a commitment to excellence and sustainability, we provide a wide range of services, including architecture, interior design, and project management.",
-      link: "/arup-projects",
+      link: "/arup",
     },
     {
       logo: "/whoWeArePage/mhceg.png",
       text: "A division of MHC established in mid-2023, delivers integrated expertise across architecture, structural and electromechanical engineering, and the oil and gas sectors. Specializing in innovative design and engineering solutions, MHCEG excels in developing advanced structural frameworks and optimizing electromechanical systems for a wide range of projects.",
-      link: "/mhceg-projects",
+      link: "/mhceg",
     },
   ];
   return (

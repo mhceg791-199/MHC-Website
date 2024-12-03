@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "react";
 import "./Sidebar.css";
 import {
   IconButton,
@@ -7,29 +6,15 @@ import {
   List,
   ListItem,
   ListItemPrefix,
-  ListItemSuffix,
-  Chip,
   Accordion,
   AccordionHeader,
   AccordionBody,
-  Alert,
-  Input,
   Drawer,
   Card,
 } from "@material-tailwind/react";
-import {
-  PresentationChartBarIcon,
-  ShoppingBagIcon,
-  UserCircleIcon,
-  Cog6ToothIcon,
-  InboxIcon,
-  PowerIcon,
-} from "@heroicons/react/24/solid";
+
 import {
   ChevronRightIcon,
-  ChevronDownIcon,
-  CubeTransparentIcon,
-  MagnifyingGlassIcon,
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
@@ -39,7 +24,6 @@ import SocialMedia from "../../Footer/SocialMedia/SocialMedia";
 
 export function SidebarWithBurgerMenu({ inHomePage }) {
   const [open, setOpen] = React.useState(0);
-  const [openAlert, setOpenAlert] = React.useState(true);
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
 
   const handleNavigate = (pageName, section) => {
@@ -67,7 +51,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
       </IconButton>
       <Drawer
         placement="right"
-        className="bg-black"
+        className={`p-0 bg-black ${isDrawerOpen ? "w-full" : "w-auto"}`}
+        style={{ width: isDrawerOpen ? "80vw" : "auto" }}
         open={isDrawerOpen}
         onClose={closeDrawer}
       >
@@ -107,23 +92,6 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                   </Typography>
                 </AccordionHeader>
               </ListItem>
-              {/* <AccordionBody className="py-1">
-                <List className="p-0  ">
-                  <ListItem
-                    className={`${
-                      open == 2 ? "bg-transparent" : "bg-transparent"
-                    } hover:bg-transparen !text-gray-500 `}
-                  >
-                    <ListItemPrefix>
-                      <ChevronRightIcon
-                        strokeWidth={3}
-                        className="h-3 w-5  opacity-0  "
-                      />
-                    </ListItemPrefix>
-                    Management team
-                  </ListItem>
-                </List>
-              </AccordionBody> */}
             </Accordion>
             <Accordion open={open === 2}>
               <ListItem
@@ -157,18 +125,6 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
               </ListItem>
               <AccordionBody className="py-1">
                 <List className="p-0 !text-gray-500">
-                  {/* <ListItem
-                    className="hover:bg-secondGold hover:text-white"
-                    onClick={() => handleNavigate("/who-we-are", "management")}
-                  >
-                    <ListItemPrefix>
-                      <ChevronRightIcon
-                        strokeWidth={3}
-                        className="h-3 w-5 opacity-0"
-                      />
-                    </ListItemPrefix>
-                    Management team
-                  </ListItem> */}
                   <ListItem
                     className="hover:bg-secondGold hover:text-white"
                     onClick={() => handleNavigate("/who-we-are", "values")}
@@ -326,14 +282,14 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     color="white"
                     onClick={(e) => {
                       e.stopPropagation(); // Prevent the Accordion from opening
-                      navigate("/signatureProjects");
+                      navigate("/holdings");
                       setIsDrawerOpen(false);
                     }}
                     className={`mr-auto itemText font-normal ${
                       open === 4 ? "text-mainGold" : ""
                     }`}
                   >
-                    SIGNATURE PROJECTS
+                    HOLDINGS
                   </Typography>
                 </AccordionHeader>
               </ListItem>
@@ -341,9 +297,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                 <List className="p-0  !text-gray-500">
                   <ListItem
                     className="hover:bg-secondGold hover:text-white"
-                    onClick={() =>
-                      handleNavigate("/wolsey-projects", "architecture")
-                    }
+                    onClick={() => handleNavigate("/wolsey", "architecture")}
                   >
                     <ListItemPrefix>
                       <ChevronRightIcon
@@ -351,11 +305,11 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                         className="h-3 w-5 opacity-0"
                       />
                     </ListItemPrefix>
-                    Wolsey Projects
+                    Wolsey
                   </ListItem>
                   <ListItem
                     className="hover:bg-secondGold hover:text-white"
-                    onClick={() => handleNavigate("/arup-projects", "engineer")}
+                    onClick={() => handleNavigate("/arup", "engineer")}
                   >
                     <ListItemPrefix>
                       <ChevronRightIcon
@@ -363,11 +317,11 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                         className="h-3 w-5 opacity-0"
                       />
                     </ListItemPrefix>
-                    Arup Projects
+                    Arup
                   </ListItem>
                   <ListItem
                     className="hover:bg-secondGold hover:text-white"
-                    onClick={() => handleNavigate("/mhceg-projects", "engineer")}
+                    onClick={() => handleNavigate("/mhceg", "engineer")}
                   >
                     <ListItemPrefix>
                       <ChevronRightIcon
@@ -375,7 +329,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                         className="h-3 w-5 opacity-0"
                       />
                     </ListItemPrefix>
-                    Mhceg projects
+                    Mhceg
                   </ListItem>
                 </List>
               </AccordionBody>
@@ -410,23 +364,6 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                   </Typography>
                 </AccordionHeader>
               </ListItem>
-              {/* <AccordionBody className="py-1">
-                <List className="p-0  ">
-                  <ListItem
-                    className={`${
-                      open == 2 ? "bg-transparent" : "bg-transparent"
-                    } hover:bg-transparen !text-gray-500 `}
-                  >
-                    <ListItemPrefix>
-                      <ChevronRightIcon
-                        strokeWidth={3}
-                        className="h-3 w-5  opacity-0  "
-                      />
-                    </ListItemPrefix>
-                    Management team
-                  </ListItem>
-                </List>
-              </AccordionBody> */}
             </Accordion>
             <Accordion open={open === 1}>
               {" "}
@@ -458,23 +395,6 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                   </Typography>
                 </AccordionHeader>
               </ListItem>
-              {/* <AccordionBody className="py-1">
-                <List className="p-0  ">
-                  <ListItem
-                    className={`${
-                      open == 2 ? "bg-transparent" : "bg-transparent"
-                    } hover:bg-transparen !text-gray-500 `}
-                  >
-                    <ListItemPrefix>
-                      <ChevronRightIcon
-                        strokeWidth={3}
-                        className="h-3 w-5  opacity-0  "
-                      />
-                    </ListItemPrefix>
-                    Management team
-                  </ListItem>
-                </List>
-              </AccordionBody> */}
             </Accordion>
 
             <Accordion open={open === 1}>

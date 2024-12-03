@@ -6,17 +6,17 @@ function Holdings() {
     {
       text: "Wolsey",
       logo: "/signatureProjects/wolsey.png",
-      link: "/wolsey-projects",
+      link: "/wolsey",
     },
     {
       text: "Arup Datta Architect",
       logo: "/signatureProjects/arup.png",
-      link: "/arup-projects",
+      link: "/arup",
     },
     {
       text: "MHCEG Consultancy",
       logo: "/signatureProjects/mhceg.png",
-      link: "/mhceg-projects",
+      link: "/mhceg",
     },
   ];
   return (

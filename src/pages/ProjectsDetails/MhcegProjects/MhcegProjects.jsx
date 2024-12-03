@@ -25,7 +25,9 @@ function MhcegProjects() {
     poster: "/signatureProjects/mhceg/poster.webp",
     logo: "/signatureProjects/mhceg.png",
     title: { firstWord: "MHCEG", secondWord: "CONSULTANCY" },
-    text: "MHCEG Commitment to sustainable development and enhancing the quality of life in MENA, Canada and the rest of the worldis at the forefront of our mission. With our expertise, collaborative approach, and unwavering commitment to excellence, westriveto exceed our clients' expectations and contribute to the progress of local communities.",
+    text: [
+      "A division of MHC established in mid-2023, delivers integrated expertise across architecture, structural and electromechanical engineering, and the oil and gas sectors. Specializing in innovative design and engineering solutions, MHCEG excels in developing advanced structural frameworks and optimizing electromechanical systems for a wide range of projects. Its architectural capabilities focus on sustainable, functional designs that meet modern urban and industrial demands. In the oil and gas sector, MHCEG supports efficient exploration, extraction, and processing, driving energy solutions with a focus on sustainability and technological advancement. Powered by MHC’s resources, MHCEG consistently provides comprehensive, cost-effective services that address the complex needs of its clients while shaping the future of infrastructure and energy.",
+    ],
   };
   return (
     <>

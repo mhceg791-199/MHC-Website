@@ -1,16 +1,17 @@
 import React from "react";
 import "./sectionHeader.css";
+import { Link } from "react-router-dom";
 
 function SectionHeader({
   firstWord,
   secondWord,
   type = "horizontal",
   line = true,
-  className,
+  link = "",
 }) {
   return (
     <>
-      <h2 className="text-large  headerSection font-bold ">
+      <Link to={link} className="text-large  headerSection font-bold ">
         {type == "horizontal" ? (
           <>
             <span className={`${line ? "hoverOneLine" : ""}`}>
@@ -30,7 +31,7 @@ function SectionHeader({
             </span>
           </>
         )}
-      </h2>
+      </Link>
     </>
   );
 }

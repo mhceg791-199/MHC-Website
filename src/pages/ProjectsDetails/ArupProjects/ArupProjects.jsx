@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useRef } from "react";
 import ProjectSlider from "../../../components/ProjectsDetailsPage/ProjectCard/projectSilder/SliderOfProjects";
 import FirstSection from "../../../components/ProjectsDetailsPage/FirstSection/FirstSection";
 import ProjectDetails from "../../../components/ProjectsDetailsPage/ProjectCard/ProjectDetails/ProjectDetails";
 import Navbar from "../../../components/shared/Navbar/Navbar";
+import useScrollToSection from "../../../Hooks/useScrollToSection";
+import IndustriesOfHolding from "../../../components/ProjectsDetailsPage/IndustriesOfHolding/IndustriesOfHolding";
 
 function ArupProjects() {
+  const wolden = useRef(null);
+  const Multigenerational = useRef(null);
+  const Callaghan = useRef(null);
+  const Lexus = useRef(null);
+  const refs = { wolden, Multigenerational, Callaghan, Lexus };
+  useScrollToSection(refs);
+
   const projectsDetails = [
     {
       images: [
@@ -19,6 +28,7 @@ function ArupProjects() {
         "The Canadian property award winner in 2015-2016 in Architecture Multi- Residence, stands out for integrating modern and sustainable design elements with community-centric spaces. Key features include natural light optimization, energy efficiency, and a high-density layout that promotes environmental responsibility. The project has been recognized for its innovation in creating functional yet visually striking living spaces that emphasize sustainability and enhance urban lifestyles. ",
         "The master plan meticulously adheres to all Multi-Family M2 zoning and ARP guidelines, achieving a harmonious blend of architectural style and regulatory compliance. Building elevation and massing strategies have been skillfully integrated to complement the existing architecture while maximizing natural light and minimizing shadow impact. This thoughtfully designed complex comprises 276 units across three structures: a 125-unit assisted living facility, an affordable senior residence accommodating 85 residents, and a western-facing building with 66 rental units, each designed to foster a vibrant and inclusive community.",
       ],
+      sectionRef: wolden,
     },
     {
       images: [
@@ -32,6 +42,7 @@ function ArupProjects() {
         "Located in the northeast community of Skyview Ranch, this project spans 2.58 hectares and embodies a vision for creating an exceptional Seniors Assisted Living facility—a true 'community within a community.' The development offers 120 assisted living units, a daycare accommodating 72 children, and a versatile amenity area with seating for 200. It also features spaces for a library, crafts, a bistro, health services, and communal and family dining, along with a multi-family housing building with approximately 40 units. Additionally, it integrates a previously completed seniors' residence by the same client.",
         "Carefully designed to capture optimal natural light across all building surfaces, the project includes beautifully landscaped 'pocket parks,' which are fully connected by pathways and link seamlessly with the regional pathway network. These inviting outdoor spaces are designed to be enjoyed by both residents and the broader community.",
       ],
+      sectionRef: Multigenerational,
     },
     {
       images: [
@@ -44,6 +55,7 @@ function ArupProjects() {
         "A significant residential multifamily design that has garnered industry recognition for its innovative architecture and sustainable features, earning The Canadian property award 2014-2015 in Architecture Multi-Residence. This project integrates modern aesthetics with functional design elements, emphasizing energy efficiency and community-focused layouts. Its accolades reflect excellence in architectural design and environmental consciousness, distinguishing it as a forward-thinking contribution to residential architecture. ",
         "Masterfully designed across 6.41 hectares in a distinctive prairie landscape, this timeless 'Heritage Resort' development provides an unparalleled, eco-friendly lifestyle within the vibrant city of Edmonton. The residence offerings include a range of villas, townhomes, luxury apartment buildings with 11 and 17 stories, a 32-unit apartment-style structure, and three high-rise towers, collectively comprising 353 premium condominium units. Exterior finishes feature high-quality materials such as stone, brick, acrylic stucco, curtain wall glazing, and concrete.",
       ],
+      sectionRef: Callaghan,
     },
     {
       images: [
@@ -56,23 +68,63 @@ function ArupProjects() {
         "This commercial mixed-use project has earned recognition for its innovative design that seamlessly blends retail, office, and other functional spaces. Celebrated for its architectural excellence and commitment to sustainability, it has received The Canadian property award winner in 2014-2015 for best Retail Architecture, demonstrating a high standard in creating vibrant, multi-purpose urban environments. ",
         "Located at the prominent intersection of Ellerslie Road and Calgary Trail in South Edmonton, this 50,700-square-foot luxury auto retail complex is one of Alberta’s largest. It features a showroom for new, pre-owned, and hybrid vehicles, a full-service area, car wash, and Edmonton's first car display tower. The project optimizes onsite parking and incorporates eye-catching elements like media walls, ramps, and a striking Lexus-branded canopy, creating an iconic landmark for the city. With double-height glazing, an open retail layout, a lounge, and a waterfall feature, it provides a premier customer experience. The project has earned approval from the Edmonton Urban Design Committee.",
       ],
+      sectionRef: Lexus,
     },
   ];
-
+  const industries = [
+    {
+      name: "Master and Urban Planning",
+    },
+    {
+      name: "Interior Design",
+    },
+    {
+      name: "Residential (Single and multifamily)",
+    },
+    {
+      name: "Commercial",
+    },
+    {
+      name: "Administrative",
+    },
+    {
+      name: "Health Care, Cultural Buildings",
+    },
+    {
+      name: "Theme Park",
+    },
+    {
+      name: "Set Designs",
+    },
+    {
+      name: "Water Features",
+    },
+    {
+      name: "Building Booklet and Permits",
+    },
+  ];
   const firstSectionDetails = {
     poster: "/signatureProjects/arup-datta/poster.webp",
     logo: "/signatureProjects/arup.png",
     title: { firstWord: "ARUP DATTA", secondWord: "ARCHITECT" },
-    text: "As the founding principal of ARUP DATTA ARCHITECT LTD (ADAL) has been involved in designing major Architectural and Master Planning projects in Canada and abroad for over 40 years. Mr. Datta has led design teams for large mixed-use complexes, educational, cultural and institutional projects in Canada, USA, Europe, Africa, Middle East and S.E. Asia.",
+    text: [
+      "A proud subsidiary of Mosaic Holding Corporation, is a globally renowned multidisciplinary firm with over 40 years of expertise in exceptional design and architecture. Backed by a skilled team of architects, interior designers, and project managers, ADAL delivers innovative solutions across residential, commercial, and institutional sectors.",
+      "The firm excels in master planning, interior design, and diverse architectural projects, providing technical services such as building booklets and permit facilitation, ensuring seamless project execution.",
+      "ADAL’s founder, Arup Datta, is a celebrated architect and graduate of IIT Kharagpur, who brought his expertise to Canada in 1974 and founded the firm in 1988. His visionary leadership has guided ADAL to deliver award-winning designs across Canada, the USA, Europe, and beyond. Recognized for blending budget-consciousness with aesthetic excellence, Mr. Datta’s approach emphasizes functionality, sustainability, and community impact.",
+      "Operating in Canada, the USA, and across Asia and the Middle East, ADAL continues to shape transformative spaces worldwide, with a legacy rooted in innovation, quality, and enduring design.",
+    ],
   };
   return (
     <>
       <Navbar />
       <FirstSection data={firstSectionDetails} />
+      <IndustriesOfHolding industries={industries} />
 
       {projectsDetails.map((project, index) => (
         <React.Fragment key={index}>
-          <ProjectSlider data={project.images} />
+          <div ref={project.sectionRef}>
+            <ProjectSlider data={project.images} />
+          </div>
           <ProjectDetails data={project} />
         </React.Fragment>
       ))}

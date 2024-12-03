@@ -6,11 +6,11 @@ import MhcInNumber from "../../components/HomePage/mhcInNumbers/mhcInNumber";
 import Investment from "../../components/HomePage/investment/investment";
 import { Link } from "react-router-dom";
 import { SidebarWithBurgerMenu } from "../../components/shared/Navbar/Sidebar/Sidebar";
+import useNavigateWithScroll from "../../Hooks/useNavigateWithScroll";
 
 function HomePage() {
   const [isScrolled, setIsScrolled] = useState(false);
   const secondSection = useRef(null);
-
   useEffect(() => {
     const handleScroll = () => {
       const sectionOffset = secondSection.current?.offsetTop || 0;

@@ -1,0 +1,8 @@
+/* Hide overlay on the active (center) slide */
+.swiper-slide-active .overlay {
+  opacity: 0 !important;
+}
+/* Optional: adjust border thickness on hover if needed */
+.swiper-slide:hover .border-4 {
+  border-width: 6px;
+}
