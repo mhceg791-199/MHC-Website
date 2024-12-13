@@ -26,12 +26,13 @@ function Holdings() {
     <>
       <SectionHeader firstWord="HOLDINGS" />
       <br />
+      <br />
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
         {holdings.map((h, index) => (
           <React.Fragment key={index}>
-            <div className="col-span-1  border-lightGray onHover border-2 ">
-              <div className=" p-10 py-0 pb-5 flex h-full flex-col ">
-                <img className="p-10 pb-0" src={h.logo} alt="" />
+            <div className="col-span-1 px-5 border-lightGray onHover border-2 ">
+              <div className="  py-0 pb-5 flex h-full flex-col ">
+                <img className=" p-5 w-3/4 m-auto" src={h.logo} alt="" />
                 <Paragraph p={h.text} text={"center"} />
                 <Link to={h.link}>
                   <TextWirhArrow

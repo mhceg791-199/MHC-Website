@@ -25,7 +25,7 @@ function IndustriesOfHolding({ industries }) {
             {industries.map(({ name, icon }, index) => (
               <React.Fragment key={index}>
                 <div className=" industryCard flex flex-col justify-start   items-center md:py-10 py-5 ">
-                  <div className="text-xl text-mainGold">{icon}</div>
+                  <div className="text-2xl text-mainGold">{icon}</div>
                   <p className="text-center mt-2 paragraph font-bold">{name}</p>
                 </div>
               </React.Fragment>

@@ -140,9 +140,9 @@ function WolseyProjects() {
       {projectsDetails.map((project, index) => (
         <React.Fragment key={index}>
           <div ref={project.sectionRef}>
-            <ProjectSlider data={project.images} />
+            <ProjectDetails data={project} />
           </div>
-          <ProjectDetails data={project} />
+          <ProjectSlider data={project.images} />
         </React.Fragment>
       ))}
     </>

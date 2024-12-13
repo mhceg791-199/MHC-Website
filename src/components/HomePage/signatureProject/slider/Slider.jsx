@@ -52,9 +52,28 @@ function Slider() {
       sectionName: "Lexus",
     },
     {
-      src: "/signatureProjects/arup-datta/p13.webp",
+      src: "/signatureProjects/wolsey/p11.webp",
       sectionName: "Lexus",
     },
+    {
+      src: "/signatureProjects/wolsey/p12.webp",
+      sectionName: "Lexus",
+    },
+    {
+      src: "/signatureProjects/wolsey/p14.webp",
+      sectionName: "Lexus",
+    },
+    {
+      src: "/signatureProjects/wolsey/p15.webp",
+      sectionName: "Lexus",
+    },
+
+    {
+      src: "/signatureProjects/wolsey/p22.webp",
+      sectionName: "Lexus",
+    },
+
+
   ];
 
   return (
@@ -65,7 +84,7 @@ function Slider() {
         centeredSlides={true}
         preventClicks={true}
         autoplay={{
-          delay: 1500, // Set autoplay delay in milliseconds (3 seconds)
+          delay: 2500, // Set autoplay delay in milliseconds (3 seconds)
           disableOnInteraction: false, // Continue autoplay even after user interaction
         }}
         coverflowEffect={{
@@ -106,7 +125,7 @@ function Slider() {
                 className="overlay absolute inset-0  bg-black opacity-50 transition-opacity"
               ></div>
               <img
-                className="w-full h-full  object-cover "
+                className="w-full  object-cover "
                 src={img.src}
                 alt={`Slide ${index + 1}`}
               />
@@ -114,7 +133,6 @@ function Slider() {
           </SwiperSlide>
         ))}
       </Swiper>
-      
     </div>
   );
 }

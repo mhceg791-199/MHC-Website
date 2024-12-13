@@ -9,7 +9,7 @@ function MhcInNumber() {
   const threeThouthan = useCountUp(3000, inView, 20000);
   return (
     <>
-      <div ref={ref} className="md:p-10 p-5 bg-mainGold text-white">
+      <div ref={ref} className="md:p-8 p-5 bg-mainGold text-white">
         <h2 className="text-large font-bold mb-10">MHC in Numbers</h2>
         <div ref={ref} className="grid grid-cols-3">
           <div className="col-span-1 flex justify-center items-center">
@@ -17,12 +17,10 @@ function MhcInNumber() {
               <div className="col-span-6 flex">
                 <div className="text-white text-start flex items-center relative">
                   <span className="absolute top-[-20px] py-0 w-full lg:text-xl md:text-sm text-xs bg-mainGold">
-                    ContinentsContinentsContinents
+                    Continents
                   </span>
-                  <span className="absolute top-[-20px] py-0 w-full lg:text-xl md:text-sm text-xs bg-mainGold">
-                    ContinentsContinentsContinents
-                  </span>
-                  <span className="font-bold text-5xl md:text-6xl lg:text-[120px]">
+
+                  <span className="font-bold text-5xl md:text-6xl lg:text-[90px]">
                     0<span>{five}</span>
                   </span>
                 </div>
@@ -42,7 +40,7 @@ function MhcInNumber() {
                   <span className="absolute top-[-20px] py-0 w-full lg:text-xl md:text-sm text-xs bg-mainGold">
                     Countries
                   </span>
-                  <span className="font-bold text-5xl md:text-6xl lg:text-[120px]">
+                  <span className="font-bold text-5xl md:text-6xl lg:text-[90px]">
                     {twenty}
                   </span>
                 </div>
@@ -61,7 +59,7 @@ function MhcInNumber() {
                   <span className="absolute top-[-20px] py-0 w-full lg:text-xl md:text-lg text-xs bg-mainGold">
                     Projects
                   </span>
-                  <span className="font-bold text-5xl md:text-6xl lg:text-[120px]">
+                  <span className="font-bold text-5xl md:text-6xl lg:text-[90px]">
                     {threeThouthan}
                   </span>
                 </div>
