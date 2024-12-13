@@ -16,10 +16,13 @@ import {
   FaWarehouse,
 } from "react-icons/fa";
 function WolseyProjects() {
+  const Aqsarniit = useRef(null);
+  const CKE = useRef(null);
+  const Warman = useRef(null);
+  const Mission = useRef(null);
   const vanuatu = useRef(null);
-  const hyundai = useRef(null);
 
-  const refs = { vanuatu, hyundai };
+  const refs = { Aqsarniit, CKE, Warman, Mission, vanuatu };
   useScrollToSection(refs);
   const projectsDetails = [
     {
@@ -36,7 +39,7 @@ function WolseyProjects() {
       texts: [
         "The hotel designed by Bird Construction in Iqaluit, Nunavut, is named the Aqsarniit Hotel and Conference Centre. It is located at 1730 Federal Road, Iqaluit, Nunavut, X0A 1L0. This modern facility includes 94 guest rooms and suites, a 7,200-square-foot conference center, dining facilities, and a lounge. Its design reflects Inuit culture, with features such as LED-lit glass evoking the Northern Lights and a drum circle-inspired conference space​",
       ],
-      sectionRef: vanuatu,
+      sectionRef: Aqsarniit,
     },
     {
       images: [
@@ -53,7 +56,7 @@ function WolseyProjects() {
       texts: [
         "The CKE Community Centre, designed by Casola Koppe Architects, is located at 1015 - 73 Avenue SW, Calgary, Alberta, T2V 0R9. This facility serves the Chinook Park, Kelvin Grove, and Eagle Ridge neighborhoods, offering spaces for events, recreational programs, and community activities.",
       ],
-      sectionRef: hyundai,
+      sectionRef: CKE,
     },
     {
       images: [
@@ -66,7 +69,7 @@ function WolseyProjects() {
       texts: [
         "The Warman buildings originally associated with CTM Design Services Ltd. are located in Warman, Saskatchewan, Canada. These facilities have undergone developments, and one notable project in the city is the Warman Home Centre Communiplex (previously referred to as the Legends Centre). The Communiplex serves as a hub for recreation and cultural activities and is central to the city's continued growth. Recent expansions and upgrades have added modern features to the facility",
       ],
-      sectionRef: hyundai,
+      sectionRef: Warman,
     },
     {
       images: [
@@ -80,7 +83,7 @@ function WolseyProjects() {
         "The 'Mission 19' development designed by Advent Development Corporation Ltd., led by architect Harvey Russell, is a residential project located in Calgary, Alberta. The project has garnered attention for its design and potential contribution to the city's multi-residential landscape. Unfortunately, I wasn't able to find detailed pictures or exact plans for this project at this moment.",
       ],
 
-      sectionRef: hyundai,
+      sectionRef: Mission,
     },
   ];
   const industries = [

@@ -18,62 +18,91 @@ function Slider() {
     {
       src: "/signatureProjects/arup-datta/p12.webp",
       sectionName: "walden",
+      page: "/arup",
     },
     {
       src: "/signatureProjects/arup-datta/p32.webp",
       sectionName: "Callaghan",
+      page: "/arup",
     },
     {
       src: "/signatureProjects/arup-datta/p42.webp",
       sectionName: "Lexus",
+      page: "/arup",
     },
     {
       src: "/signatureProjects/arup-datta/p43.webp",
       sectionName: "Lexus",
+      page: "/arup",
     },
     {
       src: "/signatureProjects/arup-datta/p13.webp",
       sectionName: "walden",
+      page: "/arup",
     },
     {
       src: "/signatureProjects/arup-datta/p12.webp",
       sectionName: "walden",
+      page: "/arup",
     },
     {
       src: "/signatureProjects/arup-datta/p32.webp",
       sectionName: "Callaghan",
+      page: "/arup",
     },
     {
       src: "/signatureProjects/arup-datta/p42.webp",
       sectionName: "Lexus",
+      page: "/arup",
     },
     {
       src: "/signatureProjects/arup-datta/p43.webp",
       sectionName: "Lexus",
+      page: "/arup",
     },
     {
       src: "/signatureProjects/wolsey/p11.webp",
-      sectionName: "Lexus",
+      sectionName: "Aqsarniit",
+      page: "/wolsey",
     },
     {
       src: "/signatureProjects/wolsey/p12.webp",
-      sectionName: "Lexus",
+      sectionName: "Aqsarniit",
+      page: "/wolsey",
     },
     {
       src: "/signatureProjects/wolsey/p14.webp",
-      sectionName: "Lexus",
+      sectionName: "Aqsarniit",
+      page: "/wolsey",
     },
     {
       src: "/signatureProjects/wolsey/p15.webp",
-      sectionName: "Lexus",
+      sectionName: "Aqsarniit",
+      page: "/wolsey",
     },
 
     {
       src: "/signatureProjects/wolsey/p22.webp",
-      sectionName: "Lexus",
+      sectionName: "CKE",
+      page: "/wolsey",
+    },
+    {
+      src: "/signatureProjects/wolsey/p29.webp",
+
+      sectionName: "CKE",
+      page: "/wolsey",
+    },
+    {
+      src: "/signatureProjects/wolsey/p28.webp",
+      sectionName: "CKE",
+      page: "/wolsey",
     },
 
-
+    {
+      src: "/signatureProjects/wolsey/p26.webp",
+      sectionName: "CKE",
+      page: "/wolsey",
+    },
   ];
 
   return (
@@ -116,14 +145,14 @@ function Slider() {
         {images.map((img, index) => (
           <SwiperSlide key={index} style={{ padding: "10px" }}>
             {/* Padding to make space for the thick border */}
-            <div className="relative border-x-[8px] border-white rounded-lg overflow-hidden">
+            <div
+              onClick={() => {
+                navigateWithScroll(img.page, img.sectionName);
+              }}
+              className="relative border-x-[8px] border-white rounded-lg overflow-hidden"
+            >
               {/* Thicker white border */}
-              <div
-                onClick={() => {
-                  navigateWithScroll("/arup", img.sectionName);
-                }}
-                className="overlay absolute inset-0  bg-black opacity-50 transition-opacity"
-              ></div>
+              <div className="overlay absolute inset-0  bg-black opacity-50 transition-opacity"></div>
               <img
                 className="w-full  object-cover "
                 src={img.src}
