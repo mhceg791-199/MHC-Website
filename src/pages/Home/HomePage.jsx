@@ -3,10 +3,10 @@ import SecondSection from "../../components/HomePage/secondSection/secondSection
 import FirstSection from "../../components/HomePage/firstSection/firstSection";
 import SignatureProject from "../../components/HomePage/signatureProject/signatureProject";
 import MhcInNumber from "../../components/HomePage/mhcInNumbers/mhcInNumber";
-import Investment from "../../components/HomePage/investment/investment";
 import { Link } from "react-router-dom";
 import { SidebarWithBurgerMenu } from "../../components/shared/Navbar/Sidebar/Sidebar";
 import useNavigateWithScroll from "../../Hooks/useNavigateWithScroll";
+import Holdings from "../../components/whoWeAre/Holdings/Holdings";
 
 function HomePage() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,12 +40,12 @@ function HomePage() {
       <div ref={secondSection}>
         <SecondSection />
       </div>
-      <div className="md:p-10 p-5">
-        <SignatureProject />
-      </div>
       <MhcInNumber />
       <div className="md:p-10 p-5">
-        <Investment />
+        <Holdings />
+      </div>
+      <div className="md:p-10 p-5">
+        <SignatureProject />
       </div>
     </>
   );

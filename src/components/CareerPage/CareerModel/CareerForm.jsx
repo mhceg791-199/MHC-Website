@@ -95,11 +95,8 @@ function CareerForm() {
   return (
     <>
       <ToastContainer />
-      {console.log(formik)}
-      {/* <p>{formik.errors}</p> */}
       <form onSubmit={formik.handleSubmit} className="mb-5 ">
         <div className="grid gap-6 mb-3 md:grid-cols-2">
-          {/* Name input */}
           <div>
             <input
               type="text"

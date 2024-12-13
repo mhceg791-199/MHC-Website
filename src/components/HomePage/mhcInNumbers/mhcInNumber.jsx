@@ -17,7 +17,10 @@ function MhcInNumber() {
               <div className="col-span-6 flex">
                 <div className="text-white text-start flex items-center relative">
                   <span className="absolute top-[-20px] py-0 w-full lg:text-xl md:text-sm text-xs bg-mainGold">
-                    Continents
+                    ContinentsContinentsContinents
+                  </span>
+                  <span className="absolute top-[-20px] py-0 w-full lg:text-xl md:text-sm text-xs bg-mainGold">
+                    ContinentsContinentsContinents
                   </span>
                   <span className="font-bold text-5xl md:text-6xl lg:text-[120px]">
                     0<span>{five}</span>

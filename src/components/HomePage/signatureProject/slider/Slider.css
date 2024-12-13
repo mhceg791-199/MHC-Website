@@ -6,3 +6,17 @@
 .swiper-slide:hover .border-4 {
   border-width: 6px;
 }
+
+/* Add transition to the image for smooth scaling */
+.relative img {
+  transition: transform 0.8s ease-in-out; /* Smooth zoom effect */
+}
+
+.relative:hover img {
+  transform: scale(1.2); /* Slight zoom on hover */
+}
+
+/* Optional: Adjust overlay opacity when hovering */
+.relative:hover .overlay {
+  opacity: 0.3; /* Make overlay slightly transparent */
+}

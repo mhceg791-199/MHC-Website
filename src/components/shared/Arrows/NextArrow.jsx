@@ -6,7 +6,7 @@ function NextArrow(props) {
     <>
       <i
         onClick={onClick}
-        className="fa-solid fa-chevron-left text-white bg-mainGold py-4 absolute top-[50%] left-3 px-3 text-3xl cursor-pointer "
+        className="fa-solid fa-chevron-left text-white bg-mainGold py-2 absolute top-[50%] -translate-y-[50%] left-0 px-3 text-xl cursor-pointer "
       ></i>
     </>
   );

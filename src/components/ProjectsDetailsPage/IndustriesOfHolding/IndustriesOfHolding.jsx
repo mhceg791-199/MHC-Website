@@ -1,20 +1,36 @@
 import React from "react";
 import SectionHeader from "../../shared/sectionHeader/sectionHeader";
+import Slider from "react-slick";
+import NextArrow from "../../shared/Arrows/NextArrow";
+import PreArrow from "../../shared/Arrows/PreArrow";
 
 function IndustriesOfHolding({ industries }) {
+  var settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    nextArrow: <NextArrow />,
+    prevArrow: <PreArrow />,
+  };
   return (
     <>
       <div className="md:p-10 p-5  bg-lightGray">
         <SectionHeader firstWord="Industries" />
 
-        <div className="grid md:grid-cols-3 lg:grid-cols-3 grid-cols-2 md:px-20 px-5 mt-10 ">
-          {industries.map(({ name }, index) => (
-            <React.Fragment key={index}>
-              <div className="col-span-1 industryCard flex flex-col justify-start   items-center md:p-10 py-5 ">
-                <p className="text-center mt-2 paragraph font-bold">{name}</p>
-              </div>
-            </React.Fragment>
-          ))}
+        <div className="  mt-10 ">
+          <Slider {...settings}>
+            {industries.map(({ name, icon }, index) => (
+              <React.Fragment key={index}>
+                <div className=" industryCard flex flex-col justify-start   items-center md:py-10 py-5 ">
+                  <div className="text-xl text-mainGold">{icon}</div>
+                  <p className="text-center mt-2 paragraph font-bold">{name}</p>
+                </div>
+              </React.Fragment>
+            ))}
+          </Slider>
         </div>
       </div>
     </>

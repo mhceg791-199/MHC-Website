@@ -33,7 +33,7 @@ experience for lasting success"
               <h2 className="font-bold text-3xl text-white">APPROACH</h2>
 
               <div className="flex items-center mt-4">
-                <Link to="investment-approach">
+                <Link to="/investment-approach">
                   <p className="me-3 text-white">Discover more</p>
                 </Link>
                 <i className="fa-solid font-light mt-1 fa-arrow-right-long text-white"></i>
@@ -41,7 +41,7 @@ experience for lasting success"
             </div>
           </div>
         </div>
-      </div>
+      </div>  
     </>
   );
 }

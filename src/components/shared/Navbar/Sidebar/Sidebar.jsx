@@ -51,7 +51,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
       </IconButton>
       <Drawer
         placement="right"
-        className={`p-0 bg-black ${isDrawerOpen ? "w-full" : "w-auto"}`}
+        className={`p-0  bg-black ${isDrawerOpen ? "w-full" : "w-auto"}`}
         style={{ width: isDrawerOpen ? "80vw" : "auto" }}
         open={isDrawerOpen}
         onClose={closeDrawer}
@@ -151,7 +151,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                   </ListItem>
                   <ListItem
                     className="hover:bg-secondGold hover:text-white"
-                    onClick={() => handleNavigate("/who-we-are", "holdings")}
+                    onClick={() => handleNavigate("/who-we-are", "investment")}
                   >
                     <ListItemPrefix>
                       <ChevronRightIcon
@@ -159,7 +159,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                         className="h-3 w-5 opacity-0"
                       />
                     </ListItemPrefix>
-                    Holdings
+                    Investment
                   </ListItem>
                 </List>
               </AccordionBody>

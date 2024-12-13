@@ -4,8 +4,17 @@ import FirstSection from "../../../components/ProjectsDetailsPage/FirstSection/F
 import ProjectDetails from "../../../components/ProjectsDetailsPage/ProjectCard/ProjectDetails/ProjectDetails";
 import Navbar from "../../../components/shared/Navbar/Navbar";
 import useScrollToSection from "../../../Hooks/useScrollToSection";
-import IndustriesOfHolding from "../../../components/ProjectsDetailsPage/IndustriesOfHolding/IndustriesOfHolding";
-
+import {
+  FaBuilding,
+  FaCar,
+  FaCubes,
+  FaHome,
+  FaStore,
+  FaTools,
+  FaTree,
+  FaUniversity,
+  FaWarehouse,
+} from "react-icons/fa";
 function WolseyProjects() {
   const vanuatu = useRef(null);
   const hyundai = useRef(null);
@@ -15,16 +24,17 @@ function WolseyProjects() {
   const projectsDetails = [
     {
       images: [
-        { src: "/signatureProjects/wolsey/p11.jpg", width: 420 },
-        { src: "/signatureProjects/wolsey/p12.jpg", width: 600 },
-        { src: "/signatureProjects/wolsey/p13.jpg", width: 420 },
+        { src: "/signatureProjects/wolsey/p11.webp", width: 420 },
+        { src: "/signatureProjects/wolsey/p12.webp", width: 600 },
+        { src: "/signatureProjects/wolsey/p13.webp", width: 420 },
+        { src: "/signatureProjects/wolsey/p14.webp", width: 600 },
+        { src: "/signatureProjects/wolsey/p15.webp", width: 420 },
 
         ,
       ],
-      title: "The Vanuatu Temple",
+      title: "Aqsarniit Hotel and Conference Centre",
       texts: [
-        "strategically situated in the heart of Port Vila, is envisioned as a sacred 9,000-square-foot single-story structure composed of prefabricated modules, blending modern construction techniques with timeless architectural principles. Designed to embody serenity and reverence, this religious edifice serves as a tranquil house of worship, where individuals and families can gather for reflection, prayer, and communal activities. The layout thoughtfully incorporates spaces for worship and meditation, fostering an environment conducive to spiritual growth and connection.",
-        "Surrounded by the stunning natural beauty of Vanuatu, the temple is strategically placed to harmonize with its picturesque landscape, allowing visitors to experience the calming influence of nature while engaging in their spiritual practices. The design emphasizes open spaces and natural light, creating an inviting atmosphere that encourages contemplation and community bonding. In addition to its primary purpose as a place of worship, the temple aims to strengthen the local community by hosting events, educational programs, and gatherings that promote faith and unity among residents. Ultimately, the Vanuatu Temple stands as a beacon of hope and spirituality, reflecting the values and aspirations of those it serves while contributing to the rich cultural tapestry of the region.",
+        "The hotel designed by Bird Construction in Iqaluit, Nunavut, is named the Aqsarniit Hotel and Conference Centre. It is located at 1730 Federal Road, Iqaluit, Nunavut, X0A 1L0. This modern facility includes 94 guest rooms and suites, a 7,200-square-foot conference center, dining facilities, and a lounge. Its design reflects Inuit culture, with features such as LED-lit glass evoking the Northern Lights and a drum circle-inspired conference space​",
       ],
       sectionRef: vanuatu,
     },
@@ -33,44 +43,85 @@ function WolseyProjects() {
         { src: "/signatureProjects/wolsey/p21.webp", width: 420 },
         { src: "/signatureProjects/wolsey/p22.webp", width: 600 },
         { src: "/signatureProjects/wolsey/p24.webp", width: 420 },
-        { src: "/signatureProjects/wolsey/p25.webp", width: 420 },
+        { src: "/signatureProjects/wolsey/p25.webp", width: 600 },
+        { src: "/signatureProjects/wolsey/p26.webp", width: 420 },
+        { src: "/signatureProjects/wolsey/p27.webp", width: 600 },
+        { src: "/signatureProjects/wolsey/p28.webp", width: 420 },
+        { src: "/signatureProjects/wolsey/p29.webp", width: 600 },
       ],
-      title: "Hyundai Calgary Dealership",
+      title: "CKE Community Center",
       texts: [
-        "Currently under construction, stands at the forefront of MHC's ambitious New Dealership Experience (NDE), a transformative initiative designed to revolutionize customer interaction with the Hyundai brand. This innovative dealership embodies a commitment to redefining the automotive retail experience by integrating cutting-edge technology, modern design, and a focus on customer satisfaction. Inspired by the tranquility of Nature Emotion Park, the state-of-the-art facility spans an impressive 2,500 square meters, seamlessly blending indoor and outdoor elements to create an inviting atmosphere that enhances the overall shopping experience. The design prioritizes a customer-centric approach, incorporating interactive displays, comfortable lounges, and dedicated areas for consultations, ensuring that every visitor feels welcomed and valued. As part of the NDE, this dealership aims to deliver a holistic experience that resonates with the principles of 'Modern Premium,' reflecting Hyundai's commitment to quality, innovation, and sustainability.",
+        "The CKE Community Centre, designed by Casola Koppe Architects, is located at 1015 - 73 Avenue SW, Calgary, Alberta, T2V 0R9. This facility serves the Chinook Park, Kelvin Grove, and Eagle Ridge neighborhoods, offering spaces for events, recreational programs, and community activities.",
       ],
+      sectionRef: hyundai,
+    },
+    {
+      images: [
+        { src: "/signatureProjects/wolsey/p31.webp", width: 420 },
+        { src: "/signatureProjects/wolsey/p32.webp", width: 600 },
+        { src: "/signatureProjects/wolsey/p34.webp", width: 420 },
+        { src: "/signatureProjects/wolsey/p35.webp", width: 600 },
+      ],
+      title: "Warman Home Centre Communiplex",
+      texts: [
+        "The Warman buildings originally associated with CTM Design Services Ltd. are located in Warman, Saskatchewan, Canada. These facilities have undergone developments, and one notable project in the city is the Warman Home Centre Communiplex (previously referred to as the Legends Centre). The Communiplex serves as a hub for recreation and cultural activities and is central to the city's continued growth. Recent expansions and upgrades have added modern features to the facility",
+      ],
+      sectionRef: hyundai,
+    },
+    {
+      images: [
+        { src: "/signatureProjects/wolsey/p41.webp", width: 420 },
+        { src: "/signatureProjects/wolsey/p42.webp", width: 600 },
+        { src: "/signatureProjects/wolsey/p43.webp", width: 420 },
+        { src: "/signatureProjects/wolsey/p44.webp", width: 600 },
+      ],
+      title: "Mission 19",
+      texts: [
+        "The 'Mission 19' development designed by Advent Development Corporation Ltd., led by architect Harvey Russell, is a residential project located in Calgary, Alberta. The project has garnered attention for its design and potential contribution to the city's multi-residential landscape. Unfortunately, I wasn't able to find detailed pictures or exact plans for this project at this moment.",
+      ],
+
       sectionRef: hyundai,
     },
   ];
   const industries = [
     {
-      name: "Multifamily ",
+      name: "Multifamily",
+      icon: <FaBuilding />,
     },
     {
-      name: " Retail Commercial",
+      name: "Retail Commercial",
+      icon: <FaStore />,
     },
     {
-      name: " Office Warehouse",
+      name: "Office Warehouse",
+      icon: <FaWarehouse />,
     },
     {
       name: "Dealerships",
+      icon: <FaCar />,
     },
     {
       name: "Specialty Fabrication",
+      icon: <FaTools />,
     },
     {
       name: "Municipal Institution",
+      icon: <FaUniversity />,
     },
     {
       name: "Landscape Elements",
+      icon: <FaTree />,
     },
     {
       name: "Modular Structures",
+      icon: <FaCubes />,
     },
     {
       name: "Single Family Residential",
+      icon: <FaHome />,
     },
   ];
+
   const firstSectionDetails = {
     poster: "/signatureProjects/wolsey/poster.jpg",
     logo: "/signatureProjects/wolsey.png",
@@ -84,8 +135,8 @@ function WolseyProjects() {
   return (
     <>
       <Navbar />
-      <FirstSection data={firstSectionDetails} />
-      <IndustriesOfHolding industries={industries} />
+      <FirstSection data={firstSectionDetails} industries={industries} />
+      {/* <IndustriesOfHolding industries={industries} /> */}
       {projectsDetails.map((project, index) => (
         <React.Fragment key={index}>
           <div ref={project.sectionRef}>

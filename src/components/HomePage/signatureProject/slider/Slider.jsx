@@ -103,10 +103,10 @@ function Slider() {
                 onClick={() => {
                   navigateWithScroll("/arup", img.sectionName);
                 }}
-                className="overlay absolute inset-0 bg-black opacity-50 transition-opacity"
+                className="overlay absolute inset-0  bg-black opacity-50 transition-opacity"
               ></div>
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full  object-cover "
                 src={img.src}
                 alt={`Slide ${index + 1}`}
               />
@@ -114,6 +114,7 @@ function Slider() {
           </SwiperSlide>
         ))}
       </Swiper>
+      
     </div>
   );
 }

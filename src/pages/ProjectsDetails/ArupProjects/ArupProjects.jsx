@@ -5,6 +5,19 @@ import ProjectDetails from "../../../components/ProjectsDetailsPage/ProjectCard/
 import Navbar from "../../../components/shared/Navbar/Navbar";
 import useScrollToSection from "../../../Hooks/useScrollToSection";
 import IndustriesOfHolding from "../../../components/ProjectsDetailsPage/IndustriesOfHolding/IndustriesOfHolding";
+import {
+  FaCity,
+  FaPaintBrush,
+  FaHome,
+  FaBuilding,
+  FaRegClipboard,
+  FaHospital,
+  FaTree,
+  FaTheaterMasks,
+  FaWater,
+  FaFileContract,
+} from "react-icons/fa";
+import { FaPaintbrush } from "react-icons/fa6";
 
 function ArupProjects() {
   const wolden = useRef(null);
@@ -74,33 +87,43 @@ function ArupProjects() {
   const industries = [
     {
       name: "Master and Urban Planning",
+      icon: <FaCity />,
     },
     {
       name: "Interior Design",
+      icon: <FaPaintbrush />,
     },
     {
       name: "Residential (Single and multifamily)",
+      icon: <FaHome />,
     },
     {
       name: "Commercial",
+      icon: <FaBuilding />,
     },
     {
       name: "Administrative",
+      icon: <FaRegClipboard />,
     },
     {
       name: "Health Care, Cultural Buildings",
+      icon: <FaHospital />,
     },
     {
       name: "Theme Park",
+      icon: <FaTree />,
     },
     {
       name: "Set Designs",
+      icon: <FaTheaterMasks />,
     },
     {
       name: "Water Features",
+      icon: <FaWater />,
     },
     {
       name: "Building Booklet and Permits",
+      icon: <FaFileContract />,
     },
   ];
   const firstSectionDetails = {
@@ -117,8 +140,7 @@ function ArupProjects() {
   return (
     <>
       <Navbar />
-      <FirstSection data={firstSectionDetails} />
-      <IndustriesOfHolding industries={industries} />
+      <FirstSection data={firstSectionDetails} industries={industries} />
 
       {projectsDetails.map((project, index) => (
         <React.Fragment key={index}>

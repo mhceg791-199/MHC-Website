@@ -7,19 +7,19 @@ import Holdings from "../../components/whoWeAre/Holdings/Holdings";
 import OurJourney from "../../components/whoWeAre/ourJourney/OurJourney";
 import Navbar from "../../components/shared/Navbar/Navbar";
 import useScrollToSection from "../../Hooks/useScrollToSection";
+import Investment from "../../components/HomePage/investment/investment";
 
 function WhoWeAre() {
   const firstSection = useRef(null); // Add reference for Management section
-  const managementRef = useRef(null); // Add reference for Management section
   const values = useRef(null); // Add reference for Management section
   const journey = useRef(null); // Add reference for Management section
-  const holdings = useRef(null); // Add reference for Management section
+  const investment = useRef(null); // Add reference for Management section
 
   const refs = {
     firstSection,
     values,
     journey,
-    holdings,
+    investment,
   };
 
   useScrollToSection(refs);
@@ -46,8 +46,8 @@ function WhoWeAre() {
       <div ref={journey} className="px-8 bg-lightGray py-8">
         <OurJourney />
       </div>
-      <div ref={holdings} className="px-8 py-8">
-        <Holdings />
+      <div ref={investment} className="px-8 py-8">
+        <Investment />
       </div>
     </>
   );

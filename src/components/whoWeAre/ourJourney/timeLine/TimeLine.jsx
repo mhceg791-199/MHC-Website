@@ -31,10 +31,10 @@ function TimeLine() {
     <>
       <div className="relative md:w-[90%] w-full !py-50 m-auto h-full flex justify-center  items-center">
         <div className="swiper-button-prev-custom">
-          <i className="fa-solid fa-chevron-left text-white bg-mainGold absolute -left-5 z-20 top-[50%] translate-y-[-50%] py-4 px-3 text-xl cursor-pointer"></i>
+          <i className="fa-solid fa-chevron-left text-white bg-mainGold absolute -left-5  top-[50%] translate-y-[-50%] py-4 px-3 text-xl -z-10 cursor-pointer"></i>
         </div>
         <div className="swiper-button-next-custom">
-          <i className="fa-solid fa-chevron-right text-white bg-mainGold absolute -right-5 z-20 top-[50%] translate-y-[-50%] py-4 px-3 text-xl cursor-pointer"></i>
+          <i className="fa-solid fa-chevron-right text-white bg-mainGold absolute -right-5  top-[50%] translate-y-[-50%] py-4 px-3 text-xl cursor-pointer"></i>
         </div>
         <Swiper
           className="  w-full h-full relative flex  justify-center items-center "
