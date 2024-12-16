@@ -5,12 +5,6 @@ import Paragraph from "../../shared/paragraph";
 function OurValues() {
   return (
     <>
-      <SectionHeader firstWord="OUR" secondWord="VALUES" />
-      <br />
-      <div className="md:w-3/4">
-        <Paragraph p="At Mosaic Holding Corporation, our management team comprises professionals with diverse expertise, dedicated to driving innovation and sustainable growth across all our acquisitions." />
-      </div>
-      <br />
       <div className="grid lg:grid-cols-3 grid-cols-1">
         <div className="lg:col-span-2 col-span-1 relative">
           <img className="w-full" src="/whoWeArePage/mission.png" alt="" />
@@ -37,7 +31,18 @@ committed to innovation, quality, and positive impact in their fields."
 development."
           />
         </div>
+        <br />
       </div>
+      <div className="p-5">
+        <SectionHeader firstWord="OUR" secondWord="VALUES" />
+        <br />
+        <div className="md:w-3/4">
+          <Paragraph p="At Mosaic Holding Corporation, our management team comprises professionals with diverse expertise, dedicated to driving innovation and sustainable growth across all our acquisitions." />
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
     </>
   );
 }

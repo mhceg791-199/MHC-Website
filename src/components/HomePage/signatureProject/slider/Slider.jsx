@@ -154,7 +154,7 @@ function Slider() {
               {/* Thicker white border */}
               <div className="overlay absolute inset-0  bg-black opacity-50 transition-opacity"></div>
               <img
-                className="w-full  object-cover "
+                className="w-full scallUpOnHover object-cover "
                 src={img.src}
                 alt={`Slide ${index + 1}`}
               />

@@ -33,12 +33,11 @@ function WhoWeAre() {
       <br />
       <div className="px-8">
         <AboutMHC />
-        <br />
-        <br />
+     <br />
         {/* <div ref={managementRef}>
           <Management />
         </div> */}
-        <br />
+
         <div ref={values}>
           <OurValues />
         </div>

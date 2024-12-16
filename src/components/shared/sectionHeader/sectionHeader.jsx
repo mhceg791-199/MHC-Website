@@ -11,7 +11,12 @@ function SectionHeader({
 }) {
   return (
     <>
-      <Link to={link} className="text-large  headerSection font-bold ">
+      <Link
+        to={link}
+        className={`${
+          link ? "cursor-pointer" : "cursor-default"
+        } text-large   headerSection font-bold `}
+      >
         {type == "horizontal" ? (
           <>
             <span className={`${line ? "hoverOneLine" : ""}`}>

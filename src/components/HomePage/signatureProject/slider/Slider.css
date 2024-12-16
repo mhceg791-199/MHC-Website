@@ -8,11 +8,11 @@
 }
 
 /* Add transition to the image for smooth scaling */
-.relative img {
+.relative .scallUpOnHover {
   transition: transform 0.8s ease-in-out; /* Smooth zoom effect */
 }
 
-.relative:hover img {
+.relative:hover .scallUpOnHover {
   transform: scale(1.2); /* Slight zoom on hover */
 }
 

@@ -11,7 +11,7 @@ function AboutMHC() {
         secondWord="HOLDING CORPORATION"
       />
       <br />
-      <div className="md:w-3/4 text-justify">
+      <div className="md:w-3/4 m-auto text-justify">
         <Paragraph
           p="Established in mid-2023, “Mosaic Holding Corporation” (MHC)  has quickly become a respected name through a series of 
         strategic acquisitions. Specialised in SME leveraged buyout (LBO) acquisitions, strategically targeting mid-cap companies with significant growth potential."
