@@ -26,7 +26,7 @@ function SectionHeader({
           </>
         ) : (
           <>
-            <span
+          <span
               className={` ${
                 line ? "border-b-half" : ""
               } sm:text-large text-[20px] font-semibold tracking-wider`}
