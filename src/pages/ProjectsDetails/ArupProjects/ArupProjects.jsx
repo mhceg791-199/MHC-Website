@@ -18,6 +18,8 @@ import {
   FaFileContract,
 } from "react-icons/fa";
 import { FaPaintbrush } from "react-icons/fa6";
+import ArupInNumber from "../../../components/ArupPage/ArupInNumber/ArupInNumber";
+import PinnedImage from "../../../components/ArupPage/pinnedImg/PinnedImg";
 
 function ArupProjects() {
   const wolden = useRef(null);
@@ -141,15 +143,17 @@ function ArupProjects() {
     <>
       <Navbar />
       <FirstSection data={firstSectionDetails} industries={industries} />
-
-      {projectsDetails.map((project, index) => (
+      <ArupInNumber />
+      {/* <PinnedImage /> */}
+      {/* <SliderOfProjects /> */}
+      {/* {projectsDetails.map((project, index) => (
         <React.Fragment key={index}>
           <div ref={project.sectionRef}>
             <ProjectSlider data={project.images} />
           </div>
           <ProjectDetails data={project} />
         </React.Fragment>
-      ))}
+      ))} */}
     </>
   );
 }

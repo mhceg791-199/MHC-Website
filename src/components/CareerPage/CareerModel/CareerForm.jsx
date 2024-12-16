@@ -183,61 +183,8 @@ function CareerForm() {
               value="Accountantant Manager"
               label="Accountantant Manager"
             />
-            <option value="Engineering Manager" label="Engineering Manager" />
-            <option value="Head Of Structural" label="Head Of Structural" />
-            <option value="Sr. Structural Eng." label="Sr. Structural Eng." />
-            <option
-              value="Intermediate Structural Eng."
-              label="Intermediate Structural Eng."
-            />
-            <option
-              value="Junior Structural Eng."
-              label="Junior Structural Eng."
-            />
-            <option
-              value="Structural Intern Eng."
-              label="Structural Intern Eng."
-            />
-            <option
-              value="Energy Technical Lead"
-              label="Energy Technical Lead"
-            />
-            <option value="Electrical Eng." label="Electrical Eng." />
-            <option
-              value="Head Of Architectural"
-              label="Head Of Architectural"
-            />
-            <option value="BIM Team Leader" label="BIM Team Leader" />
-            <option
-              value="Sr. BIM Architectural Eng."
-              label="Sr. BIM Architectural Eng."
-            />
-            <option
-              value="Junior BIM Architectural Eng."
-              label="Junior BIM Architectural Eng."
-            />
-            <option
-              value="Architectural Intern Eng."
-              label="Architectural Intern Eng."
-            />
-
-            <option
-              value="Head of Project Control"
-              label="Head of Project Control"
-            />
-            <option value="Project Control Eng." label="Project Control Eng." />
-
-            <option value="Account Manager" label="Account Manager" />
-            <option value="Content Creator" label="Content Creator" />
-            <option value="Graphic Designer" label="Graphic Designer" />
-            <option
-              value="Web Design & Developer"
-              label="Web Design & Developer"
-            />
 
             <option value="Office Manager" label="Office Manager" />
-            <option value="Runner" label="Runner" />
-            <option value="Office Boy" label="Office Boy" />
           </select>
         </div>
 

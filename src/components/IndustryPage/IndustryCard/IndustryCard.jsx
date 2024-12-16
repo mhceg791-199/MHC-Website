@@ -27,7 +27,9 @@ function IndustryCard({
             link={link}
           />
         </div>
-        <Paragraph p={p} />
+        <div className="md:px-16 text-justify">
+          <Paragraph p={p} />
+        </div>
         <br />
 
         <div className="bg-gray-400 rounded-xl w-full h-[1px] mt-5"></div>

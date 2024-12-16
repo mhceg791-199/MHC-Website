@@ -82,24 +82,24 @@ function Slider() {
     },
 
     {
-      src: "/signatureProjects/wolsey/p22.webp",
+      src: "/signatureProjects/wolsey/p43.webp",
       sectionName: "CKE",
       page: "/wolsey",
     },
     {
-      src: "/signatureProjects/wolsey/p29.webp",
+      src: "/signatureProjects/wolsey/p35.webp",
 
       sectionName: "CKE",
       page: "/wolsey",
     },
     {
-      src: "/signatureProjects/wolsey/p28.webp",
+      src: "/signatureProjects/wolsey/p11.webp",
       sectionName: "CKE",
       page: "/wolsey",
     },
 
     {
-      src: "/signatureProjects/wolsey/p26.webp",
+      src: "/signatureProjects/wolsey/p41.webp",
       sectionName: "CKE",
       page: "/wolsey",
     },
@@ -118,13 +118,13 @@ function Slider() {
         }}
         coverflowEffect={{
           rotate: 0,
-          stretch: 80,
+          stretch: 10,
           depth: 500,
           modifier: 1,
           slideShadows: false,
         }}
-        style={{ width: "100%" }}
-        slidesPerView={3}
+        style={{ width: "90%" }}
+        slidesPerView={2}
         loop={true}
         breakpoints={{
           0: {
@@ -146,9 +146,9 @@ function Slider() {
           <SwiperSlide key={index} style={{ padding: "10px" }}>
             {/* Padding to make space for the thick border */}
             <div
-              onClick={() => {
-                navigateWithScroll(img.page, img.sectionName);
-              }}
+              // onClick={() => {
+              //   navigateWithScroll(img.page, img.sectionName);
+              // }}
               className="relative border-x-[8px] border-white rounded-lg overflow-hidden"
             >
               {/* Thicker white border */}

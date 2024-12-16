@@ -14,10 +14,28 @@ function IndustriesOfHolding({ industries }) {
     autoplaySpeed: 1500,
     nextArrow: <NextArrow />,
     prevArrow: <PreArrow />,
+    responsive: [
+      {
+        breakpoint: 1024, // For screens smaller than 1024px
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 768, // For screens smaller than 768px
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+    ],
   };
   return (
     <>
-      <div className="md:p-10 p-5  bg-lightGray">
+      <div className="md:p-10 p-5  bg-lightGray ">
         <SectionHeader firstWord="Industries" />
 
         <div className="  mt-10 ">
@@ -25,8 +43,10 @@ function IndustriesOfHolding({ industries }) {
             {industries.map(({ name, icon }, index) => (
               <React.Fragment key={index}>
                 <div className=" industryCard flex flex-col justify-start   items-center md:py-10 py-5 ">
-                  <div className="text-2xl text-mainGold">{icon}</div>
-                  <p className="text-center mt-2 paragraph font-bold">{name}</p>
+                  <div className="text-3xl text-mainGold">{icon}</div>
+                  <p className="text-center mt-2 paragraph font-semibold">
+                    {name}
+                  </p>
                 </div>
               </React.Fragment>
             ))}

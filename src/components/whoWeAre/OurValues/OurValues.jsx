@@ -7,7 +7,9 @@ function OurValues() {
     <>
       <SectionHeader firstWord="OUR" secondWord="VALUES" />
       <br />
-      <Paragraph p="At Mosaic Holding Corporation, our management team comprises professionals with diverse expertise, dedicated to driving innovation and sustainable growth across all our acquisitions." />
+      <div className="md:w-3/4">
+        <Paragraph p="At Mosaic Holding Corporation, our management team comprises professionals with diverse expertise, dedicated to driving innovation and sustainable growth across all our acquisitions." />
+      </div>
       <br />
       <div className="grid lg:grid-cols-3 grid-cols-1">
         <div className="lg:col-span-2 col-span-1 relative">
@@ -32,7 +34,7 @@ committed to innovation, quality, and positive impact in their fields."
           </h2>
           <Paragraph
             p="To become a premier force in fostering innovation and excellence across critical industries, empowering our portfolio companies to achieve unprecedented growth through strategic investment, operational expertise, and a steadfast commitment to sustainable 
-development ."
+development."
           />
         </div>
       </div>

@@ -15,6 +15,7 @@ import {
   FaUniversity,
   FaWarehouse,
 } from "react-icons/fa";
+import WolseyInNumbers from "../../../components/WolseyPage/wolsetInNumbers/wolseyInNumbers";
 function WolseyProjects() {
   const Aqsarniit = useRef(null);
   const CKE = useRef(null);
@@ -140,14 +141,15 @@ function WolseyProjects() {
       <Navbar />
       <FirstSection data={firstSectionDetails} industries={industries} />
       {/* <IndustriesOfHolding industries={industries} /> */}
-      {projectsDetails.map((project, index) => (
+      {/* {projectsDetails.map((project, index) => (
         <React.Fragment key={index}>
           <div ref={project.sectionRef}>
             <ProjectDetails data={project} />
           </div>
           <ProjectSlider data={project.images} />
         </React.Fragment>
-      ))}
+      ))} */}
+      <WolseyInNumbers />
     </>
   );
 }

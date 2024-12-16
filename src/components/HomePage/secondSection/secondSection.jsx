@@ -64,8 +64,6 @@ function SecondSection() {
             <React.Fragment key={index}>
               <div
                 onMouseEnter={() => {
-                  console.log(index);
-
                   setIndexHoverd(index);
                 }}
                 onMouseLeave={() => {
@@ -77,7 +75,6 @@ function SecondSection() {
                   onClick={() => handleNavigate("/industries", link)}
                   className="flex cursor-pointer items-center justify-center w-12 h-12 rounded-full border-2 bg-icon border-mainGold p-2"
                 >
-
                   <img
                     src={indexHovered === index ? hoveringIcon : icon}
                     alt=""

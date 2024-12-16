@@ -18,11 +18,13 @@ function FirstSection({ data, industries }) {
             link={link}
           />
         </div>
-        {text.map((t, index) => (
-          <React.Fragment key={index}>
-            <Paragraph p={t} />
-          </React.Fragment>
-        ))}
+        <div className="md:px-16 text-justify">
+          {text.map((t, index) => (
+            <React.Fragment key={index}>
+              <Paragraph p={t} />
+            </React.Fragment>
+          ))}
+        </div>
         <IndustriesOfHolding industries={industries} />
         <br />
 

@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import SectionHeader from "../../shared/sectionHeader/sectionHeader";
 import Paragraph from "../../shared/paragraph";
 import CareerModal from "../CareerModel/CareerModel";
+import { careerModalContext } from "../../../context/CareerContext";
 
 function CareersDetails() {
+  const { setOpen } = useContext(careerModalContext);
+  const openModal = () => {
+    setOpen(true);
+  };
   return (
     <>
+      <CareerModal />
       <div className="h-[70vh]">
         <img
           className="w-full object-cover h-full"
@@ -40,11 +46,21 @@ unique experiences each team member brings to our shared mission."
         <h3 className="text-center text-mainGold text-large font-semibold">
           READY TO JOIN US
         </h3>
-        <Paragraph
-          p="If you are inspired to shape the future alongside a team that values your ambitions and supports your growth, Mosaic Holding Corporation is the place for you. Discover our current opportunities and join a company that invests in your 
-potential to drive industry evolution."
-          text="center"
-        />
+        <div className="w-11/12 text-center m-auto">
+          <Paragraph
+            p="If you are inspired to shape the future alongside a team that values your ambitions and supports your growth, Mosaic Holding Corporation is the place for you. Discover our current opportunities and join a company that invests in your 
+          potential to drive industry evolution."
+            text="center"
+          />
+        </div>
+        <div className="m-auto flex justify-center mt-10">
+          <button
+            onClick={openModal}
+            className="bg-mainGold px-14 rounded-full text-white  py-4 text-xl "
+          >
+            JOIN OUR TEAM
+          </button>
+        </div>
       </div>
     </>
   );

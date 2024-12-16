@@ -10,16 +10,18 @@ function Investment() {
         <div className="col-span-2 flex items-start flex-col justify-center  md:pe-40">
           <SectionHeader firstWord="INVESTMENT" secondWord="APPROACH" />
           <br />
-          <Paragraph
-            p="Mosaic Holding Corporation’s Investment Approach drives sustainable 
-growth with tailored, risk-managed strategies. Focused on market 
-analysis and diversification, Mosaic reduces risks while enhancing stability"
-          />
-          <Paragraph
-            p="By investing in high-value, growth-oriented assets and maintaining 
-transparency, Mosaic ensures an adaptable, client-focused investment 
-experience for lasting success"
-          />
+          <div className="text-justify">
+            <Paragraph
+              p="Mosaic Holding Corporation’s Investment Approach drives sustainable 
+            growth with tailored, risk-managed strategies. Focused on market 
+            analysis and diversification, Mosaic reduces risks while enhancing stability"
+            />
+            <Paragraph
+              p="By investing in high-value, growth-oriented assets and maintaining 
+            transparency, Mosaic ensures an adaptable, client-focused investment 
+            experience for lasting success."
+            />
+          </div>
         </div>
         <div className="md:col-span-1 md:p-0 p-14 col-span-2 relative flex items-center">
           <div className="relative w-full investmentImg overflow-hidden">
@@ -41,7 +43,7 @@ experience for lasting success"
             </div>
           </div>
         </div>
-      </div>  
+      </div>
     </>
   );
 }

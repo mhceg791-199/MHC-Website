@@ -6,6 +6,7 @@ module.exports = withMT({
     extend: {
       fontSize: {
         large: "28px",
+        xLarge: "35px",
         small: "18px",
       },
       colors: {
