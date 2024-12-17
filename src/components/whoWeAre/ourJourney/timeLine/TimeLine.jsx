@@ -29,9 +29,9 @@ function TimeLine() {
 
   return (
     <>
-      <div className="relative md:w-[90%] w-full !py-50 m-auto h-full flex justify-center  items-center">
-        <div className="swiper-button-prev-custom">
-          <i className="fa-solid fa-chevron-left text-white bg-mainGold absolute -left-5  top-[50%] translate-y-[-50%] py-4 px-3 text-xl -z-10 cursor-pointer"></i>
+      <div className="relative md:w-[90%] w-full  !py-50 m-auto h-full flex justify-center  items-center">
+        <div className="swiper-button-prev-custom -z-10">
+          <i className="fa-solid fa-chevron-left  text-white bg-mainGold absolute -left-5  top-[50%] translate-y-[-50%] py-4 px-3 text-xl -z-10 cursor-pointer"></i>
         </div>
         <div className="swiper-button-next-custom">
           <i className="fa-solid fa-chevron-right text-white bg-mainGold absolute -right-5  top-[50%] translate-y-[-50%] py-4 px-3 text-xl cursor-pointer"></i>

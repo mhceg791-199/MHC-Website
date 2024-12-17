@@ -6,10 +6,12 @@ function AboutMHC() {
   return (
     <>
       <br />
-      <SectionHeader
-        firstWord="ABOUT MOSAIC"
-        secondWord="HOLDING CORPORATION"
-      />
+      <div className="md:w-3/4 m-auto">
+        <SectionHeader
+          firstWord="ABOUT MOSAIC"
+          secondWord="HOLDING CORPORATION"
+        />
+      </div>
       <br />
       <div className="md:w-3/4 m-auto text-justify">
         <Paragraph

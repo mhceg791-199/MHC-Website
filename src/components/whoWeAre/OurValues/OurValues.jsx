@@ -8,15 +8,11 @@ function OurValues() {
       <div className="grid lg:grid-cols-3 grid-cols-1">
         <div className=" col-span-3">
           <div className="bg-[url('/whoWeArePage/mission.webp')] bg-center w-[100%] h-[70vh] bg-fixed"></div>
-          {/* <img
-            className="w-[100%] h-[70vh] object-cover "
-            src="/whoWeArePage/mission.webp"
-            alt=""
-          /> */}
+
           <div className=" p-5  lg:w-3/5">
             <h2 className="text-large  headerSection font-bold ">
               <span>
-                <span className=" ">MISSION</span>
+                <SectionHeader firstWord="MISSION" />
               </span>
             </h2>{" "}
             <Paragraph
@@ -28,7 +24,7 @@ committed to innovation, quality, and positive impact in their fields."
         <div className="col-span-2 flex flex-col justify-center p-5">
           <h2 className="text-large  headerSection font-bold ">
             <span>
-              <span className=" ">VISION</span>
+              <SectionHeader firstWord="VISION" />
             </span>
           </h2>
           <Paragraph
