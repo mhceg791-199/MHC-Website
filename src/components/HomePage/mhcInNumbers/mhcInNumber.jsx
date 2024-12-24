@@ -1,6 +1,6 @@
 import React from "react";
-import useCountUp from "../../../Hooks/useCountUp";
 import { useInView } from "react-intersection-observer";
+import useCountUp from "../../../Hooks/useCountUp";
 
 function MhcInNumber() {
   const { ref, inView } = useInView({ triggerOnce: true }); // Detects if in view once
