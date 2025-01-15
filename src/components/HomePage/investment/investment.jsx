@@ -23,7 +23,7 @@ function Investment() {
             />
           </div>
         </div>
-        <div className="md:col-span-1 sm:p-4 p-14 col-span-2  relative flex items-center">
+        <div className="md:col-span-1 p-4 col-span-2  relative flex items-center">
           <div className="relative w-full investmentImg overflow-hidden">
             <img
               className="w-full object-contain   relative"
