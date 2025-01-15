@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 function Investment() {
   return (
     <>
-      <div className="grid md:grid-cols-3 gap-10 grid-cols-2">
-        <div className="col-span-2 flex items-start flex-col justify-center  md:pe-40">
+      <div className="grid md:grid-cols-3 md:gap-10 grid-cols-2">
+        <div className="col-span-2 flex items-start flex-col justify-center  lg:pe-40">
           <SectionHeader firstWord="INVESTMENT" secondWord="APPROACH" />
           <br />
           <div className="text-justify">
@@ -23,14 +23,14 @@ function Investment() {
             />
           </div>
         </div>
-        <div className="md:col-span-1 md:p-0 p-14 col-span-2 relative flex items-center">
+        <div className="md:col-span-1 sm:p-4 p-14 col-span-2  relative flex items-center">
           <div className="relative w-full investmentImg overflow-hidden">
             <img
               className="w-full object-contain   relative"
               src="/homePage/investment.webp"
               alt="investment approach"
             />
-            <div className="InvestmentLayer   flex flex-col   p-10">
+            <div className="InvestmentLayer   flex flex-col   lg:p-10 p-3">
               <h2 className="font-bold text-3xl text-white">INVESTMENT</h2>
               <h2 className="font-bold text-3xl text-white">APPROACH</h2>
 

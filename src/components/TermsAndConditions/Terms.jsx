@@ -46,7 +46,7 @@ function Terms() {
         secondWord="CONDITIONS"
         paragraph="Welcome to Mosaic Holding Corporation’s (“MHC”) website. By accessing and using this site, you agree to comply with the terms and conditions outlined herein. If you do not agree with any part of these terms, please refrain from using our website."
       />
-      <div className="px-20 mb-28">
+      <div className="md:px-20 px-3 mb-28">
         {terms.map(({ title, paragraph }, index) => (
           <React.Fragment key={index}>
             <TitleWithText title={title} paragraph={paragraph} />
