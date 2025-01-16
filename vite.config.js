@@ -4,6 +4,9 @@ import { visualizer } from "rollup-plugin-visualizer";
 
 // https://vite.dev/config/
 export default defineConfig({
+  build: {
+    outDir: "../../var/www/mosaicholding.com", // Replace with your desired directory path
+  },
   plugins: [
     react(),
     visualizer({
