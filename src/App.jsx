@@ -18,6 +18,7 @@ import CareerModelProvider from "./context/CareerContext";
 import InvestmentPage from "./pages/InvestmentApproach/InvestmentPage";
 import MhcegProjects from "./pages/ProjectsDetails/MhcegProjects/MhcegProjects";
 import HoldingsPage from "./pages/Holdings/Holdings";
+import KallerProjects from "./pages/ProjectsDetails/KallerProjects/KallerProjects";
 function App() {
   return (
     <>
@@ -33,6 +34,7 @@ function App() {
             <Route path="/wolsey" element={<WolseyProjects />} />
             <Route path="/mhceg" element={<MhcegProjects />} />
             <Route path="/arup" element={<ArupProjects />} />
+            <Route path="/kaller" element={<KallerProjects />} />
             <Route path="/careers" element={<CareerPage />} />
             <Route path="/investment-approach" element={<InvestmentPage />} />
             <Route path="/holdings" element={<HoldingsPage />} />

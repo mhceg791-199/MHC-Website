@@ -11,7 +11,7 @@ function HoldingsPage() {
         <div className="col-span-1 flex flex-col p-10 justify-center items-start mt-10">
           <IntroductionOfSignatureProjects />
         </div>
-        <div className="col-span-1  flex flex-col justify-center lg:p-24 p-10  items-start bg-lightGray">
+        <div className="col-span-1  flex flex-col justify-center lg:p-8 lg:px-24 p-10  items-start bg-lightGray">
           <Holdings />
         </div>
       </div>
