@@ -9,7 +9,7 @@
 
 /* Add transition to the image for smooth scaling */
 .relative .scallUpOnHover {
-  transition: transform 0.8s ease-in-out; /* Smooth zoom effect */
+  transition: transform 0.5s ease-in-out; /* Smooth zoom effect */
 }
 
 .relative:hover .scallUpOnHover {
