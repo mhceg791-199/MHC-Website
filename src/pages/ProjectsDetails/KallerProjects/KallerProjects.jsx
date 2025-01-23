@@ -127,7 +127,7 @@ function KallerProjects() {
     <>
       <Navbar />
       <FirstSection data={firstSectionDetails} industries={industries} />
-      <ArupInNumber />
+      {/* <ArupInNumber /> */}
       {/* <PinnedImage /> */}
       {/* <SliderOfProjects /> */}
       {/* {projectsDetails.map((project, index) => (
