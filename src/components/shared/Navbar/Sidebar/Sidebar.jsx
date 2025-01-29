@@ -319,9 +319,18 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     </ListItemPrefix>
                     Arup
                   </ListItem>
+                  <ListItem className="hover:bg-secondGold hover:text-white">
+                    <ListItemPrefix>
+                      <ChevronRightIcon
+                        strokeWidth={3}
+                        className="h-3 w-5 opacity-0"
+                      />
+                    </ListItemPrefix>
+                    MHCEG
+                  </ListItem>
                   <ListItem
                     className="hover:bg-secondGold hover:text-white"
-                    onClick={() => handleNavigate("/mhceg", "engineer")}
+                    onClick={() => handleNavigate("/kaller", "engineer")}
                   >
                     <ListItemPrefix>
                       <ChevronRightIcon
@@ -329,7 +338,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                         className="h-3 w-5 opacity-0"
                       />
                     </ListItemPrefix>
-                    Mhceg
+                    Kaller
                   </ListItem>
                 </List>
               </AccordionBody>

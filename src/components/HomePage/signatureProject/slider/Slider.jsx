@@ -118,11 +118,7 @@ function Slider() {
       sectionName: "CKE",
       page: "/wolsey",
     },
-    {
-      src: "/signatureProjects/9.webp",
-      sectionName: "CKE",
-      page: "/wolsey",
-    },
+
   ];
 
   return (
@@ -133,7 +129,7 @@ function Slider() {
         centeredSlides={true}
         preventClicks={true}
         autoplay={{
-          delay: 3200, // Set autoplay delay in milliseconds (3 seconds)
+          delay: 2000, // Set autoplay delay in milliseconds (3 seconds)
           disableOnInteraction: false, // Continue autoplay even after user interaction
         }}
         coverflowEffect={{

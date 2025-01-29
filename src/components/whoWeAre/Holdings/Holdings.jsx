@@ -8,18 +8,23 @@ function Holdings() {
   const holdings = [
     {
       logo: "/whoWeArePage/wolsey.png",
-      text: "Established in 2006, is a leading provider of innovative and luxurious corporate solutions designed to elevate businesses and enhance professional environments. With a commitment to quality and excellence, we offer a diverse range of services, including bespoke office designs, high-end furnishings, and tailored consultancy to meet the unique needs of our clients.",
+      text: "Established in 2006, we provide innovative corporate solutions, offering office designs, furnishings, and consultancy. Committed to excellence, we create professional environments that enhance businesses, ensuring projects meet clients’ unique needs with superior quality, functionality, and attention to detail.",
       link: "/wolsey",
+    },
+
+    {
+      logo: "/whoWeArePage/mhceg.png",
+      text: "A division of MHC, launched in 2023, we specialize in architecture, structural engineering, electromechanical systems, and oil and gas. Our expertise ensures efficient frameworks and optimized electromechanical systems, delivering innovative, high-performance engineering solutions for various industries and complex projects.",
+    },
+    {
+      logo: "/whoWeArePage/kaller.png",
+      text: "Founded by Joseph B. Kaller in 1984, Kaller Architecture specializes in residential, commercial, and interior design. We offer architectural and engineering services, focusing on corporate interiors, delivering high-quality, client-centered solutions built on integrity, innovation, and long-term professional relationships.",
+      link: "/kaller",
     },
     {
       logo: "/whoWeArePage/arup.png",
-      text: "Established in 1988, is a dynamic and innovative company specializing in design and engineering solutions for the built environment. With a commitment to excellence and sustainability, we provide a wide range of services, including architecture, interior design, and project management.",
+      text: "Founded in 1988, we specialize in design and engineering solutions for the built environment. We focus on sustainability, providing architecture, interior design, and project management services that ensure excellence, creativity, and functionality tailored to meet clients’ unique project requirements.",
       link: "/arup",
-    },
-    {
-      logo: "/whoWeArePage/mhceg.png",
-      text: "A division of MHC established in mid-2023, delivers integrated expertise across architecture, structural and electromechanical engineering, and the oil and gas sectors. Specializing in innovative design and engineering solutions, MHCEG excels in developing advanced structural frameworks and optimizing electromechanical systems for a wide range of projects.",
-      link: "/mhceg",
     },
   ];
   return (
@@ -27,19 +32,21 @@ function Holdings() {
       <SectionHeader firstWord="HOLDINGS" />
       <br />
       <br />
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
         {holdings.map((h, index) => (
           <React.Fragment key={index}>
             <div className="col-span-1 px-5 border-lightGray onHover border-2 ">
               <div className="  py-0 pb-5 flex h-full flex-col ">
-                <img className=" p-5 w-3/4 m-auto" src={h.logo} alt="" />
+                <img className=" p-5 w-3/4 m-auto my-0" src={h.logo} alt="" />
                 <Paragraph p={h.text} text={"center"} />
-                <Link to={h.link}>
-                  <TextWirhArrow
-                    className="justify-center opacity-0 mt-auto readMore"
-                    text="Read More"
-                  />
-                </Link>
+                {h.link && (
+                  <Link to={h.link}>
+                    <TextWirhArrow
+                      className="justify-center opacity-0 mt-auto readMore"
+                      text="Read More"
+                    />
+                  </Link>
+                )}
               </div>
             </div>
           </React.Fragment>
