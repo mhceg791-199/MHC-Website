@@ -49,6 +49,6 @@ function Holdings() {
       ))}
     </>
   );
-}
+} 
 
 export default Holdings;
