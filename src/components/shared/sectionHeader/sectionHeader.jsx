@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 function SectionHeader({
   firstWord,
   secondWord,
+  fontSize = "large",
   type = "horizontal",
   line = true,
   link = "",
@@ -13,9 +14,10 @@ function SectionHeader({
     <>
       <Link
         to={link}
+        target="_blank"
         className={`${
           link ? "cursor-pointer" : "cursor-default"
-        } text-large   headerSection font-bold `}
+        } text-${fontSize}   headerSection font-bold `}
       >
         {type == "horizontal" ? (
           <>
@@ -26,7 +28,7 @@ function SectionHeader({
           </>
         ) : (
           <>
-          <span
+            <span
               className={` ${
                 line ? "border-b-half" : ""
               } sm:text-large text-[20px] font-semibold tracking-wider`}

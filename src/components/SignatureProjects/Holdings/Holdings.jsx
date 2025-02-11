@@ -18,7 +18,7 @@ function Holdings() {
       logo: "/signatureProjects/mhceg.png",
     },
     {
-      text: "Kaller",
+      text: "Kaller Architecture",
       logo: "/signatureProjects/kaller.png",
       link: "/kaller",
     },
@@ -41,7 +41,7 @@ function Holdings() {
             <img className="me-3 object-cover p-1" src={hold.logo} alt="" />
           </Link>
           <p
-            className={`mt-0 col-span-3  flex items-center justify-start ps-5 sm:text-small text-[12px] `}
+            className={`mt-0 col-span-3 flex items-center justify-start ps-5 sm:text-small text-[12px] `}
           >
             {hold.text}
           </p>
@@ -49,6 +49,6 @@ function Holdings() {
       ))}
     </>
   );
-} 
+}
 
 export default Holdings;

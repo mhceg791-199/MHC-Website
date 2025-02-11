@@ -8,7 +8,7 @@ function OurJourney() {
       <SectionHeader firstWord="OUR" secondWord="JOURNEY" />
       <div className="grid md:grid-cols-7 grid-cols-3 mt-9">
         <div className="md:col-span-1  col-start-2 text-white  bg-mainGold flex flex-col justify-center items-center m-auto  p-6 lg:text-large text-base">
-          <div className="flex flex-col md:py-14 items-center ">
+          <div className="flex flex-col md:py-14 lg:items-center items-start">
             <p className="mb-1">OUR</p>
             <p className="mb-1">JOURNEY</p>
             <p className="mb-1">BEGINS IN</p>

@@ -3,12 +3,16 @@ import SectionHeader from "../../shared/sectionHeader/sectionHeader";
 import Paragraph from "../../shared/paragraph";
 import TextWirhArrow from "../../shared/TextWithArrow/TextWirhArrow";
 import "./Holdings.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 function Holdings() {
+  const navigate = useNavigate();
+  const handleNavigate = (pageName, section) => {
+    navigate(pageName, { state: { scrollTo: section } });
+  };
   const holdings = [
     {
       logo: "/whoWeArePage/wolsey.png",
-      text: "Established in 2006, we provide innovative corporate solutions, offering office designs, furnishings, and consultancy. Committed to excellence, we create professional environments that enhance businesses, ensuring projects meet clients’ unique needs with superior quality, functionality, and attention to detail.",
+      text: "Founded in 2006, we provide innovative corporate solutions, offering office designs, furnishings, and consultancy. Committed to excellence, we create professional environments that enhance businesses, ensuring projects meet clients’ unique needs with superior quality, functionality, and attention to detail.",
       link: "/wolsey",
     },
 
@@ -40,12 +44,15 @@ function Holdings() {
                 <img className=" p-5 w-3/4 m-auto my-0" src={h.logo} alt="" />
                 <Paragraph p={h.text} text={"center"} />
                 {h.link && (
-                  <Link to={h.link}>
+                  <div
+                    className="cursor-pointer"
+                    onClick={() => handleNavigate(h.link, "firstSection")}
+                  >
                     <TextWirhArrow
                       className="justify-center opacity-0 mt-auto readMore"
                       text="Read More"
                     />
-                  </Link>
+                  </div>
                 )}
               </div>
             </div>

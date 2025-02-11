@@ -36,8 +36,8 @@ function ArupInNumber() {
         <div ref={ref} className="grid lg:grid-cols-4 gap-4 grid-cols-2 ">
           {numbersDetails.map(({ icon, text, number }, index) => (
             <React.Fragment key={index}>
-              <div className="col-span-1 text-center ">
-                <p className="text-lg">{text}</p>
+              <div className="col-span-1 text-center mb-2">
+                <p className="lg:text-lg text-sm">{text}</p>
                 <div className="flex justify-center lg:text-[60px] md:text-[30px] font-bold">
                   <p>{icon}</p>
                   <p>{number}</p>
@@ -50,25 +50,6 @@ function ArupInNumber() {
     </>
   );
 }
-/*
-         <div className="col-span-1 flex justify-center items-center">
-                <div className="grid grid-cols-3  md:m-auto me-auto">
-                  <div className="col-span-1 flex justify-end  items-end">
-                    <p className="text-white lg:text-[50px] md:text-[30px] text-[40px] h-auto text-center font-extrabold">
-                      {icon}
-                    </p>
-                  </div>
-                  <div className="col-span-2 flex">
-                    <div className="text-white text-start flex items-center flex-col ">
-                      <span className="py-0 w-full lg:text-xl md:text-sm text-xs bg-">
-                        {text}
-                      </span>
-                      <span className="font-bold text-5xl md:text-6xl lg:text-[90px]">
-                        {number}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>*/
+
 
 export default ArupInNumber;

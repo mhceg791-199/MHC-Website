@@ -15,7 +15,7 @@ function SecondSection() {
     {
       icon: "/homePage/icons/icon1.png",
       hoveringIcon: "/homePage/icons/icon1-white.png",
-      name: "Architecture and urban planning",
+      name: "Architecture and Urban Planning",
       link: "architechture",
     },
     {
@@ -29,13 +29,13 @@ function SecondSection() {
       link: "oil",
       icon: "/homePage/icons/icon3.png",
       hoveringIcon: "/homePage/icons/icon3-white.png",
-      name: "Oil and gas",
+      name: "Oil and Gas",
     },
     {
       link: "marine",
       icon: "/homePage/icons/icon4.png",
       hoveringIcon: "/homePage/icons/icon4-white.png",
-      name: "Marine and offshore structures",
+      name: "Marine and Offshore Structures",
     },
     {
       link: "energy",

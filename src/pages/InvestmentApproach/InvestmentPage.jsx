@@ -48,7 +48,7 @@ function InvestmentPage() {
             <PazelCard data={investmentDetails.pz2} />
           </div>
           <div className="lg:col-span-1 md:col-span-1 col-span-1">
-            <NormalCard data={investmentDetails.normal2} />
+            <PazelCard data={investmentDetails.normal2} />
           </div>
           <div className="lg:col-span-2 md:col-span-1 col-span-1">
             <NormalCard data={investmentDetails.normal3} />

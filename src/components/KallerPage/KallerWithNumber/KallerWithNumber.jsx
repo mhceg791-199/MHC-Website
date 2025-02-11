@@ -6,34 +6,25 @@ function KallerInNumbers() {
   const { ref, inView } = useInView({ triggerOnce: true }); // Detects if in view once
   const oneHundred = useCountUp(100, inView, 6000);
   const nintyFive = useCountUp(95, inView, 5900);
+  const ninteenEightyFour = useCountUp(1984, inView, 5900);
   const ten = useCountUp(10, inView, 2000);
   const twenty = useCountUp(20, inView, 4000);
   const oneThouthan = useCountUp(1000, inView, 20000);
+
   const numbersDetails = [
-    {
-      number: twenty,
-      icon: "+",
-      text: "Years of expertise",
-    },
-    {
-      number: twenty,
-      icon: "+",
-      text: "Wolsey’s full team",
-    },
-    {
-      number: oneHundred,
-      icon: "+",
-      text: "Client",
-    },
     {
       number: nintyFive,
       icon: "%",
-      text: "Recurring clients",
+      text: "Recurring Clients",
     },
     {
       number: ten,
       icon: "+",
-      text: "Countries",
+      text: "Team Members",
+    },
+    {
+      number: ninteenEightyFour,
+      text: "Established ",
     },
     {
       number: oneThouthan,
@@ -47,7 +38,7 @@ function KallerInNumbers() {
         <h2 className="text-xLarge font-bold mb-10">Kaller in Numbers</h2>
         <div
           ref={ref}
-          className="grid lg:grid-cols-6 gap-4 md:grid-cols-3 grid-cols-2"
+          className="grid lg:grid-cols-4 gap-4 md:grid-cols-3 grid-cols-2"
         >
           {numbersDetails.map(({ icon, text, number }, index) => (
             <React.Fragment key={index}>

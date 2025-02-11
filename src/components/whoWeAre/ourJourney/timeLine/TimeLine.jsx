@@ -11,15 +11,19 @@ import "swiper/css";
 import "./timeLine.css";
 function TimeLine() {
   const timeLineDetails = [
+    { data: 1984, name: "KALLER" },
     { data: 1988, name: "ARUP" },
     { data: 2006, name: "WOLSEY" },
     { data: 2023, name: "MHCEG" },
+    { data: 1984, name: "KALLER" },
     { data: 1988, name: "ARUP" },
     { data: 2006, name: "WOLSEY" },
     { data: 2023, name: "MHCEG" },
+    { data: 1984, name: "KALLER" },
     { data: 1988, name: "ARUP" },
     { data: 2006, name: "WOLSEY" },
     { data: 2023, name: "MHCEG" },
+    { data: 1984, name: "KALLER" },
     { data: 1988, name: "ARUP" },
     { data: 2006, name: "WOLSEY" },
     { data: 2023, name: "MHCEG" },

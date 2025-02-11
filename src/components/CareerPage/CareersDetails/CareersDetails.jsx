@@ -24,12 +24,12 @@ function CareersDetails() {
       </div>
       <div className="mt-5 p-10">
         <h3 className="text-large font-semibold  text-mainGold">
-          Your future with MHC
+          Your future with Mosiac Holding Corporation
         </h3>
         <h3 className="text-lg font-semibold mt-5 ">
-          Empower, innovate, excel:{" "}
+          Empower, Innovate, Excel:{" "}
         </h3>
-        <Paragraph p="Joining MHC means becoming part of a diverse network of forward-thinking professionals united by a shared passion for driving industry advancement. We empower our teams with the resources, knowledge, and support they need to excel, leveraging the combined technical and financial expertise within our organization. At MHC, you can be confident that your contributions will be integral to impactful projects across international markets." />
+        <Paragraph p="Joining Mosiac Holding Corporation means becoming part of a diverse network of forward-thinking professionals united by a shared passion for driving industry advancement. We empower our teams with the resources, knowledge, and support they need to excel, leveraging the combined technical and financial expertise within our organization. At MHC, you can be confident that your contributions will be integral to impactful projects across international markets." />
         <Paragraph
           p="Whether you’re an experienced engineer, an astute business strategist, or a passionate finance professional, MHC offers a range of rewarding careers tailored to those seeking dynamic and impactful work. We are continuously 
 expanding our expertise across our portfolio companies each bringing unique industry insights and robust 

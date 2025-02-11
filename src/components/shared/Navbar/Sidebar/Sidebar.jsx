@@ -208,7 +208,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                         className="h-3 w-5 opacity-0"
                       />
                     </ListItemPrefix>
-                    Architecture and Urban architecture
+                    Architecture and Urban Architecture
                   </ListItem>
                   <ListItem
                     className="hover:bg-secondGold hover:text-white"
@@ -232,7 +232,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                         className="h-3 w-5 opacity-0"
                       />
                     </ListItemPrefix>
-                    Oil & gas
+                    Oil & Gas
                   </ListItem>
                   <ListItem
                     className="hover:bg-secondGold hover:text-white"
@@ -244,7 +244,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                         className="h-3 w-5 opacity-0"
                       />
                     </ListItemPrefix>
-                    Marine and offshore structures
+                    Marine and Offshore Structures
                   </ListItem>
                   <ListItem
                     className="hover:bg-secondGold hover:text-white"
@@ -256,7 +256,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                         className="h-3 w-5 opacity-0"
                       />
                     </ListItemPrefix>
-                    Energy management
+                    Energy Management
                   </ListItem>
                 </List>
               </AccordionBody>

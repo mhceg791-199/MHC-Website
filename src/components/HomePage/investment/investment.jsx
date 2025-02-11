@@ -14,7 +14,7 @@ function Investment() {
             <Paragraph
               p="Mosaic Holding Corporation’s Investment Approach drives sustainable 
             growth with tailored, risk-managed strategies. Focused on market 
-            analysis and diversification, Mosaic reduces risks while enhancing stability"
+            analysis and diversification, Mosaic reduces risks while enhancing stability."
             />
             <Paragraph
               p="By investing in high-value, growth-oriented assets and maintaining 

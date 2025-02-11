@@ -15,10 +15,14 @@ function OurValues() {
                 <SectionHeader firstWord="MISSION" />
               </span>
             </h2>{" "}
-            <Paragraph
-              p="MHC is dedicated to enhancing the success of established mid-cap companies by providing comprehensive support ,resources, and strategic insight. Through targeted acquisitions and a hands-on approach to value creation, we aim to build a synergistic portfolio of industry leaders
-committed to innovation, quality, and positive impact in their fields."
-            />
+            <p className="mt-5 sm:text-base text-[12px] text-justify">
+              MHC is dedicated to enhancing the success of established mid-cap
+              companies by providing comprehensive support ,resources, and
+              strategic insight. Through targeted acquisitions and a hands-on
+              approach to value creation, we aim to build a synergistic
+              portfolio of industry leaders committed to innovation, quality,
+              and positive impact in their fields.
+            </p>
           </div>
         </div>
         <div className="col-span-2 flex flex-col justify-center p-5">

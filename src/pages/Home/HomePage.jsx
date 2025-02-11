@@ -5,7 +5,6 @@ import SignatureProject from "../../components/HomePage/signatureProject/signatu
 import MhcInNumber from "../../components/HomePage/mhcInNumbers/mhcInNumber";
 import { Link } from "react-router-dom";
 import { SidebarWithBurgerMenu } from "../../components/shared/Navbar/Sidebar/Sidebar";
-import useNavigateWithScroll from "../../Hooks/useNavigateWithScroll";
 import Holdings from "../../components/whoWeAre/Holdings/Holdings";
 
 function HomePage() {
@@ -24,7 +23,7 @@ function HomePage() {
     <>
       <div
         className={`flex justify-between items-center  px-10 fixed top-0 left-0 right-0 z-40 ${
-          isScrolled ? "bg-white animationNavbar" : ""
+          isScrolled ? "bg-white animationNavbar" : "bg-[rgba(0,0,0,0.5)]"
         }`}
       >
         <Link to="/">
