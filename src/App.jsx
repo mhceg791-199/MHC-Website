@@ -19,6 +19,7 @@ import InvestmentPage from "./pages/InvestmentApproach/InvestmentPage";
 import MhcegProjects from "./pages/ProjectsDetails/MhcegProjects/MhcegProjects";
 import HoldingsPage from "./pages/Holdings/Holdings";
 import KallerProjects from "./pages/ProjectsDetails/KallerProjects/KallerProjects";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 function App() {
   return (
     <>
@@ -38,6 +39,7 @@ function App() {
             <Route path="/careers" element={<CareerPage />} />
             <Route path="/investment-approach" element={<InvestmentPage />} />
             <Route path="/holdings" element={<HoldingsPage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </CareerModelProvider>
       </Layout>

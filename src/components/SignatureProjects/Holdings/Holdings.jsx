@@ -16,6 +16,7 @@ function Holdings() {
     {
       text: "MHCEG Consultancy",
       logo: "/signatureProjects/mhceg.png",
+      link: "/mhceg",
     },
     {
       text: "Kaller Architecture",
@@ -33,10 +34,8 @@ function Holdings() {
           className="grid grid-cols-4 xl:w-[75%] w-full my-1   justify-start "
         >
           <Link
-            className={`col-span-1 flex justify-start ${
-              !hold.link && "cursor-default"
-            }`}
-            to={hold.link && hold.link}
+            className="col-span-1 flex justify-start cursor-pointer "
+            to={hold.link}
           >
             <img className="me-3 object-cover p-1" src={hold.logo} alt="" />
           </Link>

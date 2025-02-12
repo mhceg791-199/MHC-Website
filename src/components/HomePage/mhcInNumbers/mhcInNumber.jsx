@@ -31,10 +31,10 @@ function MhcInNumber() {
           {numbersDetails.map(({ icon, text, number }, index) => (
             <React.Fragment key={index}>
               <div className="col-span-1 text-center ">
-                <p className="text-xl">{text}</p>
-                <div className="flex justify-center lg:text-[60px] md:text-[30px] font-bold">
-                  <p>{icon}</p>
+                <p className="md:text-large">{text}</p>
+                <div className="flex justify-center lg:text-[90px] md:text-[60px] text-[30px]  font-bold">
                   <p>{number}</p>
+                  <p>{icon}</p> 
                 </div>
               </div>
             </React.Fragment>

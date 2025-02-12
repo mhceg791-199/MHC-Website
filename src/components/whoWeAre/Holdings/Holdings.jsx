@@ -19,6 +19,7 @@ function Holdings() {
     {
       logo: "/whoWeArePage/mhceg.png",
       text: "A division of MHC, launched in 2023, we specialize in architecture, structural engineering, electromechanical systems, and oil and gas. Our expertise ensures efficient frameworks and optimized electromechanical systems, delivering innovative, high-performance engineering solutions for various industries and complex projects.",
+      link: "/mhceg",
     },
     {
       logo: "/whoWeArePage/kaller.png",
@@ -33,7 +34,7 @@ function Holdings() {
   ];
   return (
     <>
-      <SectionHeader firstWord="HOLDINGS" />
+      <SectionHeader firstWord="HOLDINGS" link="/holdings" />
       <br />
       <br />
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
@@ -43,17 +44,16 @@ function Holdings() {
               <div className="  py-0 pb-5 flex h-full flex-col ">
                 <img className=" p-5 w-3/4 m-auto my-0" src={h.logo} alt="" />
                 <Paragraph p={h.text} text={"center"} />
-                {h.link && (
-                  <div
-                    className="cursor-pointer"
-                    onClick={() => handleNavigate(h.link, "firstSection")}
-                  >
-                    <TextWirhArrow
-                      className="justify-center opacity-0 mt-auto readMore"
-                      text="Read More"
-                    />
-                  </div>
-                )}
+
+                <div
+                  className="cursor-pointer"
+                  onClick={() => handleNavigate(h.link, "firstSection")}
+                >
+                  <TextWirhArrow
+                    className="justify-center opacity-0 mt-auto readMore"
+                    text="Read More"
+                  />
+                </div>
               </div>
             </div>
           </React.Fragment>

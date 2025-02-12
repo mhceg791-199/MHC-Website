@@ -38,15 +38,15 @@ function KallerInNumbers() {
         <h2 className="text-xLarge font-bold mb-10">Kaller in Numbers</h2>
         <div
           ref={ref}
-          className="grid lg:grid-cols-4 gap-4 md:grid-cols-3 grid-cols-2"
+          className="grid lg:grid-cols-4 gap-4 md:grid-cols-2 grid-cols-2"
         >
           {numbersDetails.map(({ icon, text, number }, index) => (
             <React.Fragment key={index}>
               <div className="col-span-1 text-center ">
-                <p className="text-lg">{text}</p>
-                <div className="flex justify-center lg:text-[60px] md:text-[30px] font-bold">
+                <p className="md:text-large">{text}</p>
+                <div className="flex justify-center lg:text-[50px] md:text-[30px] font-bold">
+                  <p className="pe-1">{number}</p>
                   <p>{icon}</p>
-                  <p>{number}</p>
                 </div>
               </div>
             </React.Fragment>

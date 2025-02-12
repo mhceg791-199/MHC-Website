@@ -36,11 +36,11 @@ function ArupInNumber() {
         <div ref={ref} className="grid lg:grid-cols-4 gap-4 grid-cols-2 ">
           {numbersDetails.map(({ icon, text, number }, index) => (
             <React.Fragment key={index}>
-              <div className="col-span-1 text-center mb-2">
-                <p className="lg:text-lg text-sm">{text}</p>
-                <div className="flex justify-center lg:text-[60px] md:text-[30px] font-bold">
+                    <div className="col-span-1 text-center ">
+                <p className="md:text-large">{text}</p>
+                <div className="flex justify-center lg:text-[50px] md:text-[30px] font-bold">
+                  <p className="pe-1">{number}</p>
                   <p>{icon}</p>
-                  <p>{number}</p>
                 </div>
               </div>
             </React.Fragment>
