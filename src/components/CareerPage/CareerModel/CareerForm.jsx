@@ -29,7 +29,6 @@ function CareerForm() {
       .email("Invalid email address")
       .required("Email is required"),
     message: Yup.string().required("Message is required"),
-    position: Yup.string().required("position is required"),
     cv: Yup.mixed()
       .required("A CV is required")
       .test(
@@ -49,7 +48,6 @@ function CareerForm() {
     initialValues: {
       firstName: "",
       lastName: "",
-      position: "",
       phone: "",
       email: "",
       message: "",
@@ -67,14 +65,14 @@ function CareerForm() {
 
       formdata.append("firstName", firstName);
       formdata.append("lastName", lastName);
-      formdata.append("position", position);
       formdata.append("phone", phone);
       formdata.append("email", email);
       formdata.append("message", message);
       formdata.append("cv", cv);
+      formdata.append("websiteName", "MHC");
 
       const { data } = await axios.post(
-        "https://mhc-backend.vercel.app/v1/api/candidate",
+        "https://wolsey.ca/api/candidate",
         formdata
       );
       toast.success("Application Sent Successfully!", {
@@ -154,39 +152,7 @@ function CareerForm() {
           />
         </div>
 
-        {/* Industry dropdown */}
-        <div className="mb-3">
-          <select
-            id="position"
-            name="position"
-            onChange={formik.handleChange}
-            value={formik.values.position}
-            className="bg-gray !text-gray-700 text-sm block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 !dark:text-gray-700 focus:border-mainGold focus:ring-mainGold focus:outline-none placeholder-gray-700"
-            required
-          >
-            <option
-              className="text-gray-700"
-              value=""
-              label="Vacancies Available"
-            />
-            <option
-              className="!hover:bg-mainGold"
-              value="Legal Consultant"
-              label="Legal Consultant"
-            />
-            <option value="V.P Operations" label="V.P Operations" />
-            <option value="HR Generalist" label="HR Generalist" />
-            <option value="IT Manager" label="IT Manager" />
-            <option value="IT Administration" label="IT Administration" />
-            <option value="Financial consultant" label="Financial consultant" />
-            <option
-              value="Accountantant Manager"
-              label="Accountantant Manager"
-            />
-
-            <option value="Office Manager" label="Office Manager" />
-          </select>
-        </div>
+    
 
         {/* Message input */}
         <div className="mb-3">
@@ -196,7 +162,7 @@ function CareerForm() {
             onChange={formik.handleChange}
             value={formik.values.message}
             className="bg-gray text-gray-900 text-sm block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:border-mainGold focus:ring-mainGold focus:outline-none placeholder-gray-700"
-            placeholder="Why would you apply in the selected position?"
+            placeholder="Message"
             rows={6}
             required
           />
