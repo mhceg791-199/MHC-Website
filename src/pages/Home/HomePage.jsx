@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import  { useEffect, useRef, useState } from "react";
 import SecondSection from "../../components/HomePage/secondSection/secondSection";
 import FirstSection from "../../components/HomePage/firstSection/firstSection";
 import SignatureProject from "../../components/HomePage/signatureProject/signatureProject";

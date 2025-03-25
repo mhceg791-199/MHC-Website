@@ -3,7 +3,7 @@ import SectionHeader from "../../shared/sectionHeader/sectionHeader";
 import Paragraph from "../../shared/paragraph";
 import TextWirhArrow from "../../shared/TextWithArrow/TextWirhArrow";
 import "./Holdings.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 function Holdings() {
   const navigate = useNavigate();
   const handleNavigate = (pageName, section) => {
@@ -12,7 +12,7 @@ function Holdings() {
   const holdings = [
     {
       logo: "/whoWeArePage/wolsey.png",
-      text: "Founded in 2006, we provide innovative corporate solutions, offering office designs, furnishings, and consultancy. Committed to excellence, we create professional environments that enhance businesses, ensuring projects meet clients’ unique needs with superior quality, functionality, and attention to detail.",
+      text: "Founded in 2006 by Danny Wolsey, P.Eng., Wolsey Structural Engineering is a leader in innovative and sustainable structural solutions. With a portfolio spanning thousands of projects across multiple industries, Wolsey specializes in designing resilient, high-performance structures that meet the evolving demands of modern construction.",
       link: "/wolsey",
     },
 
