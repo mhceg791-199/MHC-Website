@@ -1,14 +1,24 @@
-import React from "react";
+import  { useRef } from "react";
 import InvestmentBrief from "../../components/InvestmentPage/InvestmentBrief/InvestmentBrief";
 import PazelCard from "../../components/InvestmentPage/PazelCard/PazelCard";
 import NormalCard from "../../components/InvestmentPage/NormalCard/NormalCard";
 import Navbar from "../../components/shared/Navbar/Navbar";
+import useScrollToSection from "../../Hooks/useScrollToSection.js";
 
 function InvestmentPage() {
+  const firstSection = useRef(null);
+
+
+  const refs = {
+    firstSection: firstSection,
+
+  };
+
+  useScrollToSection(refs);
   const investmentDetails = {
     pz1: {
       title: "SUSTAINABLE GROWTH STRATEGY",
-      text: "Mosaic Holding Corporation drives sustainable growth through a strategic, client-focused investment approach that combines rigorous analysis, advanced risk management, & strong ethical standards to achieve long-term financial success.",
+      text: "Mosaic Holding Corporation drives sustainable growth through a strategic, client-focused investment approach that combines rigorous analysis, advanced risk management, & strong ethical  standards to achieve long-term financial success.",
     },
     pz2: {
       title: "DIVERSIFIED PORTFOLIOS",
@@ -35,7 +45,7 @@ function InvestmentPage() {
   return (
     <>
       <Navbar />
-      <div className="md:px-10 px-5">
+      <div ref={firstSection} className="md:px-10 px-5">
         <InvestmentBrief />
         <div className="my-10 gap-10 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
           <div className="lg:col-span-1 md:col-span-1 col-span-1">

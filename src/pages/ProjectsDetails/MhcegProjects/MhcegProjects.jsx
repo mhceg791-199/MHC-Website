@@ -41,7 +41,7 @@ function MhcProjects() {
 
   useScrollToSection(refs);
   const firstSectionDetails = {
-    poster: "/signatureProjects/arup-datta/poster.webp",
+    poster: "/signatureProjects/mhceg/poster.jpg",
     logo: "/signatureProjects/mhceg.png",
     title: { firstWord: "Mosiac Holding", secondWord: "Corporation EG" },
     text: [

@@ -1,9 +1,12 @@
-import React from "react";
 import SectionHeader from "../../shared/sectionHeader/sectionHeader";
 import Paragraph from "../../shared/paragraph";
 import "./investment.css";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 function Investment() {
+  const navigate = useNavigate()
+  const handleNavigate = (pageName, section) => {
+    navigate(pageName, { state: { scrollTo: section } });
+  };
   return (
     <>
       <div className="grid md:grid-cols-3 md:gap-10 grid-cols-2">
@@ -35,9 +38,12 @@ function Investment() {
               <h2 className="font-bold text-3xl text-white">APPROACH</h2>
 
               <div className="flex items-center mt-4">
-                <Link to="/investment-approach">
-                  <p className="me-3 text-white">Discover more</p>
-                </Link>
+                <p
+                  onClick={() =>
+                    handleNavigate("/investment-approach", "firstSection")
+                  } >
+                  <p className="me-3 text-white cursor-pointer">Discover more</p>
+                </p>
                 <i className="fa-solid font-light mt-1 fa-arrow-right-long text-white"></i>
               </div>
             </div>

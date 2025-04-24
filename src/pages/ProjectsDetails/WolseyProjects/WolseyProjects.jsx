@@ -62,7 +62,7 @@ function WolseyProjects() {
 
   useScrollToSection(refs);
   const firstSectionDetails = {
-    poster: "/signatureProjects/wolsey/poster.jpg",
+    poster: "/signatureProjects/wolsey/poster.webp",
     logo: "/signatureProjects/wolsey.png",
     title: { firstWord: "WOLSEY STRUCTURAL ", secondWord: "ENGINEERING" },
     text: [

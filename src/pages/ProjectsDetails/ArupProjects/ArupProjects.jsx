@@ -71,7 +71,7 @@ function ArupProjects() {
     },
   ];
   const firstSectionDetails = {
-    poster: "/signatureProjects/arup-datta/poster.webp",
+    poster: "/signatureProjects/arup-datta/p12.webp",
     logo: "/signatureProjects/arup.png",
     title: { firstWord: "ARUP DATTA", secondWord: "ARCHITECT" },
     text: [

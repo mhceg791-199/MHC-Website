@@ -35,7 +35,7 @@ function EngineerCard() {
             />
           </div>
           <div className="md:px-16 text-justify">
-            <Paragraph p="Through Wolsey Structural Engineering, MHC provides top-tier structural solutions, ensuring the integrity and safety of building frameworks. This branch specializes in designing robust and efficient structures that withstand natural and man-made stresses. From high-rise buildings to complex infrastructure projects. This market is expected to reach $112 billion in 2024, with a compounded annual growth rate (CAGR) of 5.1%." />
+            <Paragraph p="Through Wolsey Structural Engineering, MHC provides top-tier structural solutions, ensuring the integrity and safety of building frameworks. This branch specializes in designing robust and efficient structures that withstand natural and man-made stresses. From high-rise buildings to complex infrastructure projects. This market is expected to reach $112 billion in 2024, The global market reached 112$ million and is expected to grow 1.5 annually" />
           </div>
           <br />
           <br />

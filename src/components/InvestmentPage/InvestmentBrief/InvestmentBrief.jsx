@@ -1,4 +1,3 @@
-import React from "react";
 import SectionHeader from "../../shared/sectionHeader/sectionHeader";
 import Paragraph from "../../shared/paragraph";
 

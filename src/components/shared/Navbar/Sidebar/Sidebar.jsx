@@ -364,7 +364,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                   <Typography
                     onClick={(e) => {
                       e.stopPropagation(); // Prevent the Accordion from opening
-                      navigate("/investment-approach");
+                      handleNavigate("/investment-approach", "firstSection")
                       setIsDrawerOpen(false);
                     }}
                     color="white"
