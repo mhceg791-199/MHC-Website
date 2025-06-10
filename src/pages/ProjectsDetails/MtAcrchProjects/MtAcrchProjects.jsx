@@ -14,7 +14,7 @@ function MtAcrchProjects() {
   const firstSectionDetails = {
     poster: "/signatureProjects/wolsey/poster.webp",
     logo: "/signatureProjects/mt-arch.png",
-    title: { firstWord: "MT-ARCH", secondWord: "ENGINEERING" },
+    title: { firstWord: "MT-ARCH", secondWord: "ARCHITECT" },
     text: [
       "MT-Arch, a subsidiary of Mosaic Holding Corporation, is a Calgary-based architectural firm known for its bold integration of experience and innovation. Established in 2005, the studio delivers full-spectrum architectural services that prioritize value, community, and creativity. ",
       "With a hands-on approach from concept to construction, MT-Arch specializes in more than just design, they manage projects, consult on development strategy, and serve as active liaisons with city authorities. Their comprehensive methodology spans consultation, community engagement, schematic design, detailed development, and construction oversight. The firm also ensures compliance with all municipal codes and facilitates smooth tendering and contract negotiations.",
