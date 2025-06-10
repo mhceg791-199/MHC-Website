@@ -32,7 +32,7 @@ function Holdings() {
       link: "/arup",
     },
     {
-      logo: "/whoWeArePage/arup.png",
+      logo: "/signatureProjects/mt-arch.png",
       text: "MT-Arch, a subsidiary of Mosaic Holding Corporation, is a Calgary-based architectural firm known for its bold integration of experience and innovation. Established in 2005, the studio delivers full-spectrum architectural services that prioritize value, community, and creativity",
       link: "/mt-arch",
     },
