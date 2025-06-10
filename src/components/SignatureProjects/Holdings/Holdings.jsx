@@ -23,6 +23,11 @@ function Holdings() {
       logo: "/signatureProjects/kaller.png",
       link: "/kaller",
     },
+    {
+      text: "MT-ARCH",
+      logo: "/signatureProjects/mt-arch.png",
+      link: "/mt-arch",
+    },
   ];
   return (
     <>

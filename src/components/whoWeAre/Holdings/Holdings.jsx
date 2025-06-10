@@ -31,13 +31,18 @@ function Holdings() {
       text: "Founded in 1988, we specialize in design and engineering solutions for the built environment. We focus on sustainability, providing architecture, interior design, and project management services that ensure excellence, creativity, and functionality tailored to meet clients’ unique project requirements.",
       link: "/arup",
     },
+    {
+      logo: "/whoWeArePage/arup.png",
+      text: "MT-Arch, a subsidiary of Mosaic Holding Corporation, is a Calgary-based architectural firm known for its bold integration of experience and innovation. Established in 2005, the studio delivers full-spectrum architectural services that prioritize value, community, and creativity",
+      link: "/mt-arch",
+    },
   ];
   return (
     <>
       <SectionHeader firstWord="HOLDINGS" link="/holdings" />
       <br />
       <br />
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
+      <div className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-6">
         {holdings.map((h, index) => (
           <React.Fragment key={index}>
             <div className="col-span-1 px-5 border-lightGray onHover border-2 ">

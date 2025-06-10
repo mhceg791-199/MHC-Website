@@ -20,6 +20,7 @@ import MhcegProjects from "./pages/ProjectsDetails/MhcegProjects/MhcegProjects";
 import HoldingsPage from "./pages/Holdings/Holdings";
 import KallerProjects from "./pages/ProjectsDetails/KallerProjects/KallerProjects";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+import MtAcrchProjects from "./pages/ProjectsDetails/MtAcrchProjects/MtAcrchProjects.jsx";
 function App() {
   return (
     <>
@@ -33,6 +34,7 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/tearms-conditions" element={<TermsPage />} />
             <Route path="/wolsey" element={<WolseyProjects />} />
+            <Route path="/mt-arch" element={<MtAcrchProjects />} />
             <Route path="/mhceg" element={<MhcegProjects />} />
             <Route path="/arup" element={<ArupProjects />} />
             <Route path="/kaller" element={<KallerProjects />} />

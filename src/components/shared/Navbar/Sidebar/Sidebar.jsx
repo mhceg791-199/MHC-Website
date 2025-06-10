@@ -343,6 +343,18 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     </ListItemPrefix>
                     MHCEG
                   </ListItem>
+                  <ListItem
+                    className="hover:bg-secondGold hover:text-white"
+                    onClick={() => handleNavigate("/mt-arch", "engineer")}
+                  >
+                    <ListItemPrefix>
+                      <ChevronRightIcon
+                        strokeWidth={3}
+                        className="h-3 w-5 opacity-0"
+                      />
+                    </ListItemPrefix>
+                    MT-ARCH
+                  </ListItem>
                 </List>
               </AccordionBody>
             </Accordion>

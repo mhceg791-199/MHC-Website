@@ -27,7 +27,10 @@ function FirstSection({ data, industries }) {
             </React.Fragment>
           ))}
         </div>
-        <IndustriesOfHolding industries={industries} />
+        {industries &&
+
+          <IndustriesOfHolding industries={industries} />
+        }
         <br />
 
         <div className="bg-gray-400 rounded-xl w-full h-[1px] mt-5"></div>
