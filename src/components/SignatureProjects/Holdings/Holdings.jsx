@@ -19,14 +19,14 @@ function Holdings() {
       link: "/mhceg",
     },
     {
+      text: "MT-ARCH",
+      logo: "/signatureProjects/mt--archCircle.png",
+      link: "/mt-arch",
+    },
+    {
       text: "Kaller Architecture",
       logo: "/signatureProjects/kaller.png",
       link: "/kaller",
-    },
-    {
-      text: "MT-ARCH",
-      logo: "/signatureProjects/mt-arch.png",
-      link: "/mt-arch",
     },
   ];
   return (
