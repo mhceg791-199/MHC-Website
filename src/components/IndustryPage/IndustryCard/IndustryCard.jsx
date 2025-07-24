@@ -1,5 +1,3 @@
-import React from "react";
-import { FaRegLightbulb } from "react-icons/fa";
 import SectionHeader from "../../shared/sectionHeader/sectionHeader";
 import Paragraph from "../../shared/paragraph";
 

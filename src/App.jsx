@@ -21,6 +21,7 @@ import HoldingsPage from "./pages/Holdings/Holdings";
 import KallerProjects from "./pages/ProjectsDetails/KallerProjects/KallerProjects";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import MtAcrchProjects from "./pages/ProjectsDetails/MtAcrchProjects/MtAcrchProjects.jsx";
+import NewsPage from "./pages/News/NewsPage.jsx";
 function App() {
   return (
     <>
@@ -39,6 +40,8 @@ function App() {
             <Route path="/arup" element={<ArupProjects />} />
             <Route path="/kaller" element={<KallerProjects />} />
             <Route path="/careers" element={<CareerPage />} />
+            <Route path="/news" element={<NewsPage />} />
+            <Route path="/news/:id" element={<CareerPage />} />
             <Route path="/investment-approach" element={<InvestmentPage />} />
             <Route path="/holdings" element={<HoldingsPage />} />
             <Route path="*" element={<NotFoundPage />} />

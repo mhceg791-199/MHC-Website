@@ -1,0 +1,18 @@
+.onHover:hover {
+    border-color: var(--mainGold);
+    transition: 0.2s;
+}
+
+.onHover {
+    transition: 0.2s;
+}
+
+.onHover:hover .readMore {
+    opacity: 1;
+    transition: 0.2s;
+
+}
+
+.readMore {
+    transition: 0.2s;
+}
