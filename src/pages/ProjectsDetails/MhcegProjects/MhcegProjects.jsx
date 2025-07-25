@@ -47,7 +47,7 @@ function MhcProjects() {
     text: [
       "At MHCEG Consultancy, a subsidiary of Mosaic Holding Corporation, we deliver high-quality, customized engineering solutions with efficiency and precision. Our expert team ensures excellence through innovation, integrity, and technical expertise. By leveraging advanced technologies and sustainable practices, we develop tailored strategies that optimize performance and drive long-term success.",
     ],
-    link: "https://mhceg-website.vercel.app/",
+    link: "https://mhc-eg.com/",
   };
   return (
     <>
