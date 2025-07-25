@@ -65,9 +65,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
             <Accordion open={open === 1}>
               {" "}
               <ListItem
-                className={`p-0 item hover:bg-transparent mainItem ${
-                  open != 1 ? "bg-transparent" : "bg-transparent"
-                }`}
+                className={`p-0 item hover:bg-transparent mainItem ${open != 1 ? "bg-transparent" : "bg-transparent"
+                  }`}
                 selected={open === 2}
               >
                 <AccordionHeader className="border-b-0 p-3 px-0 !hover:text-mainGold ">
@@ -84,9 +83,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                       setIsDrawerOpen(false);
                     }}
                     color="white"
-                    className={`mr-auto font-normal itemText ${
-                      open === 1 ? "text-mainGold" : ""
-                    }`}
+                    className={`mr-auto font-normal itemText ${open === 1 ? "text-mainGold" : ""
+                      }`}
                   >
                     HOME PAGE
                   </Typography>
@@ -95,9 +93,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
             </Accordion>
             <Accordion open={open === 2}>
               <ListItem
-                className={`p-0 item mainItem hover:bg-transparent ${
-                  open === 2 ? "bg-transparent" : "bg-transparent"
-                }`}
+                className={`p-0 item mainItem hover:bg-transparent ${open === 2 ? "bg-transparent" : "bg-transparent"
+                  }`}
                 selected={open === 2}
               >
                 <AccordionHeader
@@ -115,9 +112,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     onClick={() =>
                       handleNavigate("/who-we-are", "firstSection")
                     }
-                    className={`mr-auto itemText font-normal ${
-                      open === 2 ? "text-mainGold" : ""
-                    }`}
+                    className={`mr-auto itemText font-normal ${open === 2 ? "text-mainGold" : ""
+                      }`}
                   >
                     WHO WE ARE
                   </Typography>
@@ -166,9 +162,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
             </Accordion>
             <Accordion open={open === 3}>
               <ListItem
-                className={`p-0 item mainItem hover:bg-transparent ${
-                  open === 3 ? "bg-transparent" : "bg-transparent"
-                }`}
+                className={`p-0 item mainItem hover:bg-transparent ${open === 3 ? "bg-transparent" : "bg-transparent"
+                  }`}
                 selected={open === 3}
               >
                 <AccordionHeader
@@ -186,9 +181,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     onClick={() =>
                       handleNavigate("/industries", "architechture")
                     }
-                    className={`mr-auto itemText font-normal ${
-                      open === 3 ? "text-mainGold" : ""
-                    }`}
+                    className={`mr-auto itemText font-normal ${open === 3 ? "text-mainGold" : ""
+                      }`}
                   >
                     INDUSTRIES
                   </Typography>
@@ -208,8 +202,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                         className="h-3 w-5 opacity-0"
                       />
                     </ListItemPrefix>
-                    Architecture and Urban Architecture
-                  </ListItem>
+                    Architecture and Urban planning                  </ListItem>
                   <ListItem
                     className="hover:bg-secondGold hover:text-white"
                     onClick={() => handleNavigate("/industries", "engineer")}
@@ -263,9 +256,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
             </Accordion>
             <Accordion open={open === 4}>
               <ListItem
-                className={`p-0 item mainItem hover:bg-transparent ${
-                  open === 4 ? "bg-transparent" : "bg-transparent"
-                }`}
+                className={`p-0 item mainItem hover:bg-transparent ${open === 4 ? "bg-transparent" : "bg-transparent"
+                  }`}
                 selected={open === 4}
               >
                 <AccordionHeader
@@ -285,9 +277,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                       navigate("/holdings");
                       setIsDrawerOpen(false);
                     }}
-                    className={`mr-auto itemText font-normal ${
-                      open === 4 ? "text-mainGold" : ""
-                    }`}
+                    className={`mr-auto itemText font-normal ${open === 4 ? "text-mainGold" : ""
+                      }`}
                   >
                     HOLDINGS
                   </Typography>
@@ -361,9 +352,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
             <Accordion open={open === 1}>
               {" "}
               <ListItem
-                className={`p-0 item hover:bg-transparent mainItem ${
-                  open != 1 ? "bg-transparent" : "bg-transparent"
-                }`}
+                className={`p-0 item hover:bg-transparent mainItem ${open != 1 ? "bg-transparent" : "bg-transparent"
+                  }`}
                 selected={open === 2}
               >
                 <AccordionHeader className="border-b-0 p-3 px-0 !hover:text-mainGold ">
@@ -380,9 +370,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                       setIsDrawerOpen(false);
                     }}
                     color="white"
-                    className={`mr-auto font-normal itemText ${
-                      open === 1 ? "text-mainGold" : ""
-                    }`}
+                    className={`mr-auto font-normal itemText ${open === 1 ? "text-mainGold" : ""
+                      }`}
                   >
                     INVESTMENT APPROACH{" "}
                   </Typography>
@@ -392,9 +381,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
             <Accordion open={open === 1}>
               {" "}
               <ListItem
-                className={`p-0 item hover:bg-transparent mainItem ${
-                  open != 1 ? "bg-transparent" : "bg-transparent"
-                }`}
+                className={`p-0 item hover:bg-transparent mainItem ${open != 1 ? "bg-transparent" : "bg-transparent"
+                  }`}
                 selected={open === 2}
               >
                 <AccordionHeader className="border-b-0 p-3 px-0 !hover:text-mainGold ">
@@ -411,9 +399,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                       setIsDrawerOpen(false);
                     }}
                     color="white"
-                    className={`mr-auto font-normal itemText ${
-                      open === 1 ? "text-mainGold" : ""
-                    }`}
+                    className={`mr-auto font-normal itemText ${open === 1 ? "text-mainGold" : ""
+                      }`}
                   >
                     NEWS{" "}
                   </Typography>
@@ -423,9 +410,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
             <Accordion open={open === 1}>
               {" "}
               <ListItem
-                className={`p-0 item hover:bg-transparent mainItem ${
-                  open != 1 ? "bg-transparent" : "bg-transparent"
-                }`}
+                className={`p-0 item hover:bg-transparent mainItem ${open != 1 ? "bg-transparent" : "bg-transparent"
+                  }`}
                 selected={open === 2}
               >
                 <AccordionHeader className="border-b-0 p-3 px-0 !hover:text-mainGold ">
@@ -442,9 +428,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                       setIsDrawerOpen(false);
                     }}
                     color="white"
-                    className={`mr-auto font-normal itemText ${
-                      open === 1 ? "text-mainGold" : ""
-                    }`}
+                    className={`mr-auto font-normal itemText ${open === 1 ? "text-mainGold" : ""
+                      }`}
                   >
                     CAREERS{" "}
                   </Typography>
@@ -455,9 +440,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
             <Accordion open={open === 1}>
               {" "}
               <ListItem
-                className={`p-0 item hover:bg-transparent mainItem ${
-                  open != 1 ? "bg-transparent" : "bg-transparent"
-                }`}
+                className={`p-0 item hover:bg-transparent mainItem ${open != 1 ? "bg-transparent" : "bg-transparent"
+                  }`}
                 selected={open === 2}
               >
                 <AccordionHeader className="border-b-0 p-3 px-0 !hover:text-mainGold ">
@@ -474,9 +458,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                       setIsDrawerOpen(false);
                     }}
                     color="white"
-                    className={`mr-auto font-normal itemText ${
-                      open === 1 ? "text-mainGold" : ""
-                    }`}
+                    className={`mr-auto font-normal itemText ${open === 1 ? "text-mainGold" : ""
+                      }`}
                   >
                     CONTACT US
                   </Typography>
@@ -504,9 +487,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
             <Accordion open={open === 1}>
               {" "}
               <ListItem
-                className={`p-0 item hover:bg-transparent mainItem ${
-                  open != 1 ? "bg-transparent" : "bg-transparent"
-                }`}
+                className={`p-0 item hover:bg-transparent mainItem ${open != 1 ? "bg-transparent" : "bg-transparent"
+                  }`}
                 selected={open === 2}
               >
                 <AccordionHeader className="border-b-0 p-3 px-0 !hover:text-mainGold ">
@@ -519,9 +501,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                   <Typography
                     onClick={() => handleNavigate("/privacy-policy")}
                     color="white"
-                    className={`mr-auto font-normal itemText ${
-                      open === 1 ? "text-mainGold" : ""
-                    }`}
+                    className={`mr-auto font-normal itemText ${open === 1 ? "text-mainGold" : ""
+                      }`}
                   >
                     Privacy Policy
                   </Typography>
@@ -531,9 +512,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
             <Accordion open={open === 1}>
               {" "}
               <ListItem
-                className={`p-0 item hover:bg-transparent mainItem ${
-                  open != 1 ? "bg-transparent" : "bg-transparent"
-                }`}
+                className={`p-0 item hover:bg-transparent mainItem ${open != 1 ? "bg-transparent" : "bg-transparent"
+                  }`}
                 selected={open === 2}
               >
                 <AccordionHeader className="border-b-0 p-3 px-0 !hover:text-mainGold ">
@@ -546,9 +526,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                   <Typography
                     onClick={() => handleNavigate("/tearms-conditions")}
                     color="white"
-                    className={`mr-auto font-normal itemText ${
-                      open === 1 ? "text-mainGold" : ""
-                    }`}
+                    className={`mr-auto font-normal itemText ${open === 1 ? "text-mainGold" : ""
+                      }`}
                   >
                     Terms and conditions
                   </Typography>
