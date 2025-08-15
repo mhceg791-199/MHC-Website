@@ -12,28 +12,28 @@ function Holdings() {
   const holdings = [
     {
       logo: "/whoWeArePage/wolsey.png",
-      text: "Founded in 2006 by Danny Wolsey, P.Eng., Wolsey Structural Engineering is a leader in innovative and sustainable structural solutions. With a portfolio spanning thousands of projects across multiple industries, Wolsey specializes in designing resilient, high-performance structures that meet the evolving demands of modern construction.",
+      text: "Founded in 2006 by Danny Wolsey, P.Eng., Wolsey Structural Engineering is a leader in innovative and sustainable structural solutions. Acquired by MHC in 2023, the firm has delivered 1,000+ projects across 10+ countries, specializing in resilient, high-performance designs for modern construction. Under Danny Wolsey’s leadership, Wolsey continues to deliver cost-effective. ",
       link: "/wolsey",
     },
 
     {
       logo: "/whoWeArePage/mhceg.png",
-      text: "A division of MHC, launched in 2023, we specialize in architecture, structural engineering, electromechanical systems, and oil and gas. Our expertise ensures efficient frameworks and optimized electromechanical systems, delivering innovative, high-performance engineering solutions for various industries and complex projects.",
+      text: "Launched in 2023, MHC Egypt Consultancy (MHCEG) is the regional arm of MHC, offering integrated expertise in architecture, engineering, and oil & gas. Our team delivers high-quality, customized solutions through innovation, advanced technologies, and sustainable practices. MHCEG bridges global standards with Middle Eastern vision, ensuring optimized performance and long-term growth. ",
       link: "/mhceg",
     },
     {
       logo: "/whoWeArePage/kaller.png",
-      text: "Founded by Joseph B. Kaller in 1984, Kaller Architecture specializes in residential, commercial, and interior design. We offer architectural and engineering services, focusing on corporate interiors, delivering high-quality, client-centered solutions built on integrity, innovation, and long-term professional relationships.",
+      text: "Founded by Joseph B. Kaller in 1984, Kaller Architecture boasts 33 years of practice and 1,000+ projects across residential, commercial, and interior design. A MHC subsidiary, the firm excels in client-centered solutions, combining aesthetic innovation with functional excellence. Its enduring client relationships are built on integrity and a commitment to transformative design.",
       link: "/kaller",
     },
     {
       logo: "/whoWeArePage/arup.png",
-      text: "Founded in 1988, we specialize in design and engineering solutions for the built environment. We focus on sustainability, providing architecture, interior design, and project management services that ensure excellence, creativity, and functionality tailored to meet clients’ unique project requirements.",
+      text: "A globally renowned multidisciplinary firm with 28 years of domestic and 40+ years of international expertise, ADAL became a MHC subsidiary in 2023. Founded by Arup Datta (IIT Kharagpur alumnus), the firm delivers award-winning master planning, interior design, and architectural projects across Canada, the USA, Asia, and the Middle East. ADAL’s legacy blends sustainability, functionality, and community impact. ",
       link: "/arup",
     },
     {
       logo: "/signatureProjects/mt-arch.png",
-      text: "MT-Arch, a subsidiary of Mosaic Holding Corporation, is a Calgary-based architectural firm known for its bold integration of experience and innovation. Established in 2005, the studio delivers full-spectrum architectural services that prioritize value, community, and creativity",
+      text: "A Calgary-based MHC subsidiary established in 2005, MT-Arch merges bold creativity with hands-on project management. From schematic design to municipal compliance, the firm navigates complex regulations while prioritizing community value. Its full-spectrum services include development strategy, tendering, and construction oversight, shaping impactful environments across Alberta and beyond.",
       link: "/mt-arch",
     },
   ];

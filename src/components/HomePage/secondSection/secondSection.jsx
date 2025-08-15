@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, {  useState } from "react";
 import SectionHeader from "../../shared/sectionHeader/sectionHeader";
 import "./secondSection.css";
 import Paragraph from "../../shared/paragraph";
@@ -50,13 +50,7 @@ function SecondSection() {
       <div className="md:p-10 p-5  bg-lightGray">
         <SectionHeader firstWord="OUR" secondWord="IMPACT" />
         <Paragraph
-          p="Founded in 2023, Mosaic Holding Corporation (MHC) specializes in SME
-        leveraged buyouts, acquiring mid-cap companies with strong track
-        records. MHC provides critical technical, financial, and workforce
-        support across industries including architecture, structural,
-        electrical, and mechanical engineering, marine and offshore structures,
-        oil and gas, and energy management.
-      "
+          p="Founded in 1984, Mosaic Holding Corporation (MHC) brings 30+ years of expertise in SME leveraged buyouts, acquiring mid-cap companies with strong track records. With 4,000+ projects across 20+ countries, MHC provides critical technical, financial, and workforce support across industries including architecture, structural, electrical, and mechanical engineering, marine and offshore structures, oil and gas, and energy management."
         />
 
         <div className="grid md:grid-cols-3 lg:grid-cols-5 grid-cols-2 md:px-20 px-5 mt-10 ">

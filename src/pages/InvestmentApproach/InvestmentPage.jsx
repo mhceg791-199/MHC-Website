@@ -17,29 +17,29 @@ function InvestmentPage() {
   useScrollToSection(refs);
   const investmentDetails = {
     pz1: {
-      title: "SUSTAINABLE GROWTH STRATEGY",
-      text: "Mosaic Holding Corporation drives sustainable growth through a strategic, client-focused investment approach that combines rigorous analysis, advanced risk management, & strong ethical  standards to achieve long-term financial success.",
+      title: "Sophisticated Risk Mitigation Framework",
+      text: "Our risk management paradigm constitutes a fundamental pillar of our investment ethos, integrating cutting-edge analytical models with preemptive hedging strategies to navigate market volatility while optimizing performance. This sophisticated apparatus protects investor capital while enabling confident pursuit of strategic objectives.",
     },
     pz2: {
-      title: "DIVERSIFIED PORTFOLIOS",
-      text: "We prioritize diversification to manage risk and ensure steady returns. By spreading assets across sectors and regions, our portfolios remain resilient and adaptable, supporting clients' long-term financial goals amid market changes",
+      title: "Sustainable Value Creation Philosophy",
+      text: "Mosaic Holding Corporation cultivates enduring growth through a principled investment framework that synthesizes rigorous due diligence, comprehensive risk protocols, and unwavering ethical governance to deliver sustained financial excellence.",
     },
     pz3: {
-      title: "TRANSPARENCY & AGILITY",
-      text: "Mosaic Holding Corporation is dedicated to transparent operations, offering clients regular, detailed performance reports that foster trust. Our adaptive approach ensures tailored investment solutions that align with market dynamics and each client's unique needs, driving long-term success and sustainability.",
+      title: "Fundamentals-Driven Investment Selection",
+      text: "We strategically allocate capital to enterprises demonstrating robust underlying economics, defensible market positions, and scalable operational models. This disciplined methodology prioritizes sustainable value accretion while optimizing capital preservation across market cycles.",
     },
     normal1: {
-      title: "COMPREHENSIVE MARKET ANALYSIS",
-      text: "Our investment strategy is guided by expert analysts who rigorously research market trends, global indicators, and new opportunities. This approach enables adaptive, growth-focused strategies that balance short-term agility with long-term resilience for our clients.",
+      title: "Comprehensive Market Intelligence",
+      text: "Our investment methodology is steered by a cadre of specialized analysts who conduct exhaustive examination of macroeconomic trends, emerging sector opportunities, and global financial indicators. This disciplined approach facilitates dynamic, growth-oriented strategies that harmonize tactical responsiveness with structural stability for our clientele.",
     },
     normal2: {
-      title: "VALUE-DRIVEN INVESTMENTS",
-      text: "We invest in high-potential companies with strong fundamentals and market resilience, prioritizing long-term growth and stable returns. This approach ensures enduring value and maximizes clients’ capital.",
+      title: "Transparent Governance & Adaptive Execution",
+      text: "Mosaic Holding Corporation maintains rigorous transparency standards, providing stakeholders with granular performance analytics to foster institutional trust. Our nimble execution framework delivers bespoke solutions attuned to both client-specific requirements and prevailing market conditions, ensuring optimal alignment with long-term objectives.",
       className: "bg-[#E2C595]",
     },
     normal3: {
-      title: "ADVANCED RISK MANAGEMENT",
-      text: "Our risk management approach is core to our investment philosophy, combining advanced analytics and proactive strategies to mitigate market volatility and optimize returns. This dynamic framework safeguards capital and empowers clients to pursue their financial goals confidently.",
+      title: "Strategically Diversified Asset Allocation",
+      text: "We employ deliberate diversification across geographies and industry verticals to construct resilient portfolios. This measured approach ensures consistent performance while maintaining strategic flexibility to capitalize on evolving global opportunities.",
     },
   };
   return (

@@ -1,9 +1,12 @@
+import Navbar from "../../components/shared/Navbar/Navbar.jsx";
 import Paragraph from "../../components/shared/paragraph.jsx";
 import SectionHeader from "../../components/shared/sectionHeader/sectionHeader.jsx";
 
 function NewsPage() {
     return (
         <>
+            <Navbar />
+
             <div className="">
                 <img
                     className="w-full lg:h-[70vh] object-cover"
@@ -12,7 +15,7 @@ function NewsPage() {
                 />
                 <div className="bg-lightGray relative translate-y-[-10%]  sm:mx-10  p-8 md:px-14">
                     <div className="flex items-center">
-                        <SectionHeader firstWord="Cairo-Based Architectural Company Scores a Coup" link="https://calgaryherald.com/business/cairo-based-architectural-company-acquires-calgary-firms-selects-city-as-north-american-hq" />
+                        <SectionHeader firstWord=" Esteemed Cairo-based architecture practice secures landmark achievement." link="https://calgaryherald.com/business/cairo-based-architectural-company-acquires-calgary-firms-selects-city-as-north-american-hq" />
                     </div>
                     <Paragraph p="Since moving to Canada in 1974 from India, where he worked as an architect for two leading firms, Arup Datta has enjoyed a successful career, being involved in many exciting projects. Early on, he was recruited by the former Cohos Evamy and Partners and worked on the design of major Calgary office towers, including the Husky Tower and Bankers Hall." />
                     <br />

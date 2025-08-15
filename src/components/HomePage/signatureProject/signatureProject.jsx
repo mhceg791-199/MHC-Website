@@ -8,8 +8,7 @@ function SignatureProject() {
     <>
       <SectionHeader firstWord="OUR HOLDING'S" secondWord="PROJECTS" />
       <Paragraph
-        p="Mosaic Holding Corporation’s acquisitions are engaged in impactful projects across sectors, including complex Structural 
-Engineering, Innovative Architectural Design, and Sustainable Energy Management Solutions."
+        p="Mosaic Holding Corporation’s acquisitions are engaged in impactful projects across sectors, including complex Structural Engineering, Innovative Architectural Design, and Sustainable Energy Management Solutions, leveraging global expertise for regional transformation. "
       />
       <Slider />
     </>

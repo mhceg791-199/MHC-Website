@@ -15,15 +15,12 @@ function AboutMHC() {
       <br />
       <div className="md:w-3/4 m-auto text-justify">
         <Paragraph
-          p="Established in mid-2023, “Mosaic Holding Corporation” (MHC)  has quickly become a respected name through a series of 
-        strategic acquisitions. Specialised in SME leveraged buyout (LBO) acquisitions, strategically targeting mid-cap companies with significant growth potential."
+          p="Mosaic Holding Corporation (MHC) is a multinational investment firm with a 30-year legacy of operational excellence, formally structured in its current holding iteration in mid-2023. We specialize in strategic leveraged buyouts (LBOs) of mid-cap companies with proven expertise across architecture, engineering, energy, and marine infrastructure sectors. Our portfolio spans 4,000+ projects in 20+ countries, reflecting our global reach and local market proficiency. "
         />
         <Paragraph
-          p="With a sharp focus on acquiring companies with proven expertise, MHC operates in industries including Architecture, Structural, Electrical, and Mechanical Engineering, Marine and Offshore Structures, Oil and Gas, and Energy Management. Through our 
-        acquisition model, we not only integrate these companies into our portfolio but also provide the necessary resources, whether technical, financial, or manpower, to enhance their operations and elevate their market position. "
+          p="Through our unique acquisition model, we empower companies by providing comprehensive technical, financial, and operational support while preserving their brand identity and market strengths. Our current holdings include industry leaders such as Wolsey Structural Engineering (acquired 2023), ADAL ARUP DATTA ARCHITECT LTD. (acquired 2023), Kaller Architecture (33-year subsidiary), and MHCEG Consultancy (established 2023 as our Middle East gateway). "
         />
-        <Paragraph p="By offering comprehensive support and expertise, we empower our acquisitions to reach new levels of performance and success, aligning with MHC's commitment to excellence and innovation across all industries we serve. Today, we proudly own “Wolsey Structural Engineering” , “ARUP DATTA ARCHITECT”, “Kallar Architecture” and “MHCEG”, have roles in expanding our capabilities and reinforcing our commitment to delivering high-quality, luxurious solutions across diverse sectors." />
-        <Paragraph p="Our growth is driven by core values that define who we are—integrity, innovation, and collaboration. We prioritize fostering strong relationships with the companies we acquire, allowing them to thrive while maintaining their unique strengths. At MHC, we are dedicated to delivering exceptional results, combining luxury and precision in every project. As we continue to expand, these values will remain central to our mission, ensuring we consistently meet and exceed the expectations of our clients and partners." />
+        <Paragraph p="Guided by our core values of integrity, innovation, and cross-cultural collaboration, we maintain a 95% retention rate with acquired companies. MHC combines global best practices with regional expertise to transform mid-market firms into international contenders. As we expand through MHCEG in the Middle East, we remain committed to delivering sustainable growth and technical excellence across all our sectors of operation. " />
       </div>
     </>
   );

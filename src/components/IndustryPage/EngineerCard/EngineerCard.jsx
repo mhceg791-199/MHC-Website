@@ -21,9 +21,9 @@ function EngineerCard() {
                 alt=""
               />
             </div>{" "}
-            <SectionHeader firstWord="Engineering" link="/wolsey" />
+            <SectionHeader firstWord="Engineering Solutions" link="/wolsey" />
           </div>
-          <Paragraph p="Mosaic Holding Corporation’s engineering arm is multi-disciplinary, encompassing several specialized fields:" />
+          <Paragraph p="Our multi-disciplinary engineering expertise spans critical infrastructure domains: " />
           <br />
           <br />
           <div className=" md:px-16 flex items-stretch">
@@ -34,7 +34,7 @@ function EngineerCard() {
             />
           </div>
           <div className="md:px-16 text-justify">
-            <Paragraph p="Through Wolsey Structural Engineering, MHC provides top-tier structural solutions, ensuring the integrity and safety of building frameworks. This branch specializes in designing robust and efficient structures that withstand natural and man-made stresses. From high-rise buildings to complex infrastructure projects. This market is expected to reach $112 billion in 2024, The global market reached 112$ million and is expected to grow 1.5 annually" />
+            <Paragraph p="Through Wolsey Structural Engineering, MHC delivers cutting-edge structural solutions that ensure building integrity and longevity. We specialize in resilient designs for high-rises and complex infrastructure, addressing both natural and operational stresses. This $112 billion market (2024) maintains steady 5.1% CAGR growth, underscoring the enduring need for structural innovation." />
           </div>
           <br />
           <br />
@@ -46,7 +46,7 @@ function EngineerCard() {
             />
           </div>
           <div className="md:px-16 text-justify">
-            <Paragraph p="MHC offers comprehensive electrical engineering services, which are integral to the design, installation, and maintenance of electrical systems in various facilities. This includes the design of power systems, lighting, and controls that meet the latest standards of efficiency and sustainability. In 2024, it holds a market valuation of $234 billion, with a 6% CAGR projected through 2028." />
+            <Paragraph p="MHC's comprehensive electrical engineering services encompass power systems, lighting, and smart controls designed for efficiency and sustainability. Our solutions meet evolving global standards in this $234 billion market (2024), which projects 6% CAGR through 2028 as electrification and smart infrastructure demands accelerate." />
           </div>
           <br />
           <br />
@@ -58,7 +58,7 @@ function EngineerCard() {
             />
           </div>
           <div className="md:px-16 text-justify">
-            <Paragraph p="This division focuses on the design, operation, and maintenance of mechanical systems that drive HVAC, plumbing, and other critical building infrastructure. MHC’s mechanical engineering, which is valued at $440 billion globally services ensure systems operate at optimal performance, enhancing both energy efficiency and comfort for end users." />
+            <Paragraph p="We optimize critical building systems through advanced HVAC, plumbing, and mechanical infrastructure design. MHC's $440 billion global mechanical engineering services ensure peak operational performance while enhancing energy efficiency and user comfort across all project types." />
           </div>
           <br />
 

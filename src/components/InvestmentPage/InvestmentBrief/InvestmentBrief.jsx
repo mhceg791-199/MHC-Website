@@ -10,10 +10,7 @@ function InvestmentBrief() {
           <div className="col-span-1">
             <div className="mt-3">
               <Paragraph
-                p="Mosaic Holding Corporation’s investment approach is a cohesive strategy that unites precision, ethics, and client focus into a cohesive strategy for sustainable growth.Through market analysis, diversified investments, and 
-            proactive risk management, each element complements the 
-            others to adapt to market dynamics and foster long-term 
-            success."
+                p="Mosaic Holding Corporation executes a disciplined investment philosophy that harmonizes financial precision, ethical governance, and client-aligned outcomes. Our integrated framework combines rigorous market intelligence with diversified portfolio optimization and advanced risk mitigation - creating a dynamic engine for sustainable value creation across market cycles. "
               />
 
               <img className="w-[70%]" src="./investmentPage/2.png" alt="" />

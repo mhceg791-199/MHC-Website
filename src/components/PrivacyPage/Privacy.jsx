@@ -40,7 +40,7 @@ Information we may gather includes, but is not limited to:"
 or destruction. This includes encryption protocols, secure data storage, and stringent access controls."
         />
         <TitleWithList
-          title="DATA SHARING AND DISCLOUSRE"
+          title="DATA SHARING AND DISCLOSURE"
           text="MHC respects your privacy and does not share personal information with unaffiliated third parties except as outlined in this policy. Data may be shared under the following conditions:"
           list={[
             "Service Providers: Trusted partners that assist us in delivering our services, under strict confidentiality agreements.",
@@ -53,7 +53,7 @@ or destruction. This includes encryption protocols, secure data storage, and str
           text="Personal data is retained only for as long as is necessary to fulfill the purposes outlined in this policy or as required by law. Once the data is no longer needed, it is securely disposed of to prevent unauthorized access."
         />
         <TitleWithList
-          title="CHARGES TO THIS DATA POLICY"
+          title="CHANGES TO THIS PRIVACY POLICY"
           text="MHC reserves the right to amend this Privacy Policy to reflect changes in our practices, regulatory requirements, or other operational considerations. All updates will be published on our website, with the 'Last Updated' date indicating the most recent revisions."
         />
         <TitleWithList

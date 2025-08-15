@@ -29,7 +29,7 @@ function IndustriesPage() {
           img="/industryPage/1.webp"
           firstWord="Architecture and"
           secondWord="Urban Planning"
-          p="Mosaic Holding Corporation is deeply embedded in the architectural landscape. This division covers a broad spectrum of architectural services, from conceptual design and master planning to project execution. MHC leverages its expertise in this sector to foster innovation in both commercial and residential projects, blending creative vision with practicality. In 2024, the global architecture industry is valued at approximately $410 billion, driven by urbanization, sustainable design trends, and technological integration, and stock values in architecture firms have seen steady growth, with an average increase of 6-8% annually. "
+          p="Mosaic Holding Corporation commands a strong position in global architecture, delivering end-to-end services from conceptual design to project execution. Our architectural division drives innovation in both commercial and residential developments, merging aesthetic vision with functional practicality. Operating in a $410 billion global market (2024), we capitalize on urbanization trends, sustainable design demands, and digital transformation in the built environment. The sector continues demonstrating robust 6-8% annual growth, reflecting sustained value in architectural equities."
           icon="/homePage/icons/icon1.png"
           link="/arup"
         />
@@ -43,7 +43,7 @@ function IndustriesPage() {
           firstWord="Oil and"
           secondWord="Gas"
           type="horizontal"
-          p="The oil and gas industry remains one of the largest and most volatile, with a global market size of $4.5 trillion in 2024. Despite the energy transition toward renewables, the demand for oil and gas continues to dominate, driven by industrial, transportation, and energy needs. Mosaic Holding Corporation’s involvement in this sector aligns with its strategic interest in energy management and marine structures. "
+          p="MHC maintains strategic involvement in the $4.5 trillion global oil and gas sector, which continues to drive industrial and transportation markets despite energy transitions. Our activities balance traditional energy expertise with forward-looking sustainability initiatives, creating value across the energy spectrum."
           icon="/homePage/icons/icon3.png"
         />
       </div>
@@ -52,7 +52,7 @@ function IndustriesPage() {
           img="/industryPage/4.webp"
           firstWord="Marine and Offshore"
           secondWord="Structures"
-          p="Mosaic Holding Corporation brings specialized expertise in the design and development of marine and offshore structures. for the oil, gas, and renewable energy sectors, is valued at $128 billion in 2024. This industry includes projects like offshore wind farms, oil rigs, and port developments. Market drivers include the expansion of renewable energy initiatives (offshore wind) and the ongoing global demand for oil and gas."
+          p="Specializing in complex marine infrastructure, MHC delivers solutions for both traditional energy (oil rigs) and renewable projects (offshore wind farms). This $128 billion market (2024) reflects growing investment in energy transition infrastructure and port modernization worldwide. "
           icon="/homePage/icons/icon4.png"
         />
       </div>
@@ -62,7 +62,7 @@ function IndustriesPage() {
           firstWord="Energy "
           type="horizontal"
           secondWord="Management"
-          p="Mosaic Holding Corporation supports industries in managing their energy needs through sustainable and cost-efficient strategies. The industry has seen significant growth in 2024, with a global market value exceeding $46 billion. This division focuses on optimizing energy consumption in various sectors, implementing advanced technologies for energy storage, distribution, and generation. Whether through renewable energy integration or the enhancement of existing energy systems, MHC provides cutting-edge solutions to ensure efficient energy use and reduce environmental impact."
+          p="MHC's sustainable energy solutions help industrial clients optimize consumption through advanced storage and smart distribution technologies. Our $46 billion global energy management division combines renewable integration with legacy system optimization, reducing environmental impact while maintaining operational efficiency."
           icon="/homePage/icons/icon5.png"
         />
       </div>
