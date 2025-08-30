@@ -22,6 +22,7 @@ import KallerProjects from "./pages/ProjectsDetails/KallerProjects/KallerProject
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import MtAcrchProjects from "./pages/ProjectsDetails/MtAcrchProjects/MtAcrchProjects.jsx";
 import NewsPage from "./pages/News/NewsPage.jsx";
+import MosaicRealState from "./pages/ProjectsDetails/MosaicRealState/MosaicRealState.jsx";
 function App() {
   return (
     <>
@@ -36,6 +37,7 @@ function App() {
             <Route path="/tearms-conditions" element={<TermsPage />} />
             <Route path="/wolsey" element={<WolseyProjects />} />
             <Route path="/mt-arch" element={<MtAcrchProjects />} />
+            <Route path="/mosaic-realState" element={<MosaicRealState />} />
             <Route path="/mhceg" element={<MhcegProjects />} />
             <Route path="/arup" element={<ArupProjects />} />
             <Route path="/kaller" element={<KallerProjects />} />

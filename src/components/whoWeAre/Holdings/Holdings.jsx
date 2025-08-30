@@ -36,13 +36,18 @@ function Holdings() {
       text: "A Calgary-based MHC subsidiary established in 2005, MT-Arch merges bold creativity with hands-on project management. From schematic design to municipal compliance, the firm navigates complex regulations while prioritizing community value. Its full-spectrum services include development strategy, tendering, and construction oversight, shaping impactful environments across Alberta and beyond.",
       link: "/mt-arch",
     },
+    {
+      logo: "/signatureProjects/mosaicRealState.png",
+      text: "Mosaic Real Estate Holding owns the distinguished Dorchester Square Administrative Building, a premier asset in the heart of Calgary. This eleven-story office tower spans 100,000 square feet and is recognized for its architectural presence and prime location. Dorchester Square stands as a signature property within Calgary’s business landscape.",
+      link: "/mosaic-realState",
+    },
   ];
   return (
     <>
       <SectionHeader firstWord="HOLDINGS" link="/holdings" />
       <br />
       <br />
-      <div className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-6">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
         {holdings.map((h, index) => (
           <React.Fragment key={index}>
             <div className="col-span-1 px-5 border-lightGray onHover border-2 ">

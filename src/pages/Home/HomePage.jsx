@@ -43,9 +43,9 @@ function HomePage() {
       <div className="md:p-10 p-5">
         <Holdings />
       </div>
-      <div className="md:p-10 p-5">
+      {/* <div className="md:p-10 p-5">
         <SignatureProject />
-      </div>
+      </div> */}
     </>
   );
 }
