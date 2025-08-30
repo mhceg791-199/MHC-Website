@@ -33,7 +33,8 @@ function MosaicRealState() {
     logo: "/signatureProjects/mosaicRealstate/logo.png",
     title: { firstWord: "Mosaic Real State" },
     text: [
-      "Mosaic Real Estate Holding owns the distinguished Dorchester Square Administrative Building, a premier asset in the heart of Calgary. This eleven-story office tower spans 100,000 square feet and is recognized for its architectural presence and prime location. Dorchester Square stands as a signature property within Calgary’s business landscape.",
+      "Mosaic Real Estate Holding, established in 2025, is an ambitious and forward-thinking player in the property sector, laying a strong foundation for growth across residential, commercial, and administrative real estate domains. Though newly founded, the company has already made a significant strategic entry into the market with the acquisition of the well-known Dorchester Administrative Building—a premier administrative facility located in the heart of Calgary. This distinguished eleven-story tower, with a built-up area of 101,393 square feet, will continue its legacy as an",
+      "exclusive, top-tier administrative center, celebrated for its architectural distinction andn unrivaled location.Bolstered by its pivotal role within the renowned MHC group, Mosaic Real State Holding gains access to unparalleled resources and expertise, positioning the company to steward this iconic property with excellence and vision.",
     ],
     // link: "https://www.mt-arch.ca/",
   };
