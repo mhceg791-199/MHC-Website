@@ -28,6 +28,11 @@ function Holdings() {
       logo: "/signatureProjects/kaller.png",
       link: "/kaller",
     },
+    {
+      text: "Mosaic Real Estate",
+      logo: "/signatureProjects/mosaicRealstate/logo.png",
+      link: "/mosaic-realState",
+    },
   ];
   return (
     <>

@@ -346,6 +346,18 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     </ListItemPrefix>
                     MT-ARCH
                   </ListItem>
+                  <ListItem
+                    className="hover:bg-secondGold hover:text-white"
+                    onClick={() => handleNavigate("/mosaic-realState", "engineer")}
+                  >
+                    <ListItemPrefix>
+                      <ChevronRightIcon
+                        strokeWidth={3}
+                        className="h-3 w-5 opacity-0"
+                      />
+                    </ListItemPrefix>
+                    Mosaic Real Estate
+                  </ListItem>
                 </List>
               </AccordionBody>
             </Accordion>
