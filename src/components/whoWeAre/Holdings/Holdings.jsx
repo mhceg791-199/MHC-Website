@@ -50,15 +50,12 @@ function Holdings() {
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
         {holdings.map((h, index) => (
           <React.Fragment key={index}>
-            <div className="col-span-1 px-5 border-lightGray onHover border-2 ">
+            <div className="col-span-1 px-5 border-lightGray onHover border-2 cursor-pointer" onClick={() => handleNavigate(h.link, "firstSection")}>
               <div className="  py-0 pb-5 flex h-full flex-col ">
                 <img className=" p-5 w-3/4 m-auto my-0" src={h.logo} alt="" />
                 <Paragraph p={h.text} text={"center"} />
 
-                <div
-                  className="cursor-pointer"
-                  onClick={() => handleNavigate(h.link, "firstSection")}
-                >
+                <div>
                   <TextWirhArrow
                     className="justify-center opacity-0 mt-auto readMore"
                     text="Read More"
