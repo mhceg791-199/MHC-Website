@@ -59,4 +59,3 @@ function OurValues() {
 }
 
 export default OurValues;
-
