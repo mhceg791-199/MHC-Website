@@ -43,7 +43,7 @@ function MhcProjects() {
   const firstSectionDetails = {
     poster: "/signatureProjects/mhceg/poster.jpg",
     logo: "/signatureProjects/mhceg.png",
-    title: { firstWord: "MHCEG" },
+    title: { firstWord: "MHCEG Consultancy" },
     text: [
       "At MHCEG Consultancy, a subsidiary of Mosaic Holding Corporation, we deliver high-quality, customized engineering solutions with efficiency and precision. Our expert team ensures excellence through innovation, integrity, and technical expertise. By leveraging advanced technologies and sustainable practices, we develop tailored strategies that optimize performance and drive long-term success.",
     ],
