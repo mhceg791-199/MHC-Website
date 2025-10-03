@@ -50,7 +50,7 @@ function MtAcrchProjects() {
 
   useScrollToSection(refs);
   const firstSectionDetails = {
-    poster: "/signatureProjects/wolsey/poster.webp",
+    poster: "/signatureProjects/wolsey/poster2.jpg",
     logo: "/signatureProjects/mt--archCircle.png",
     title: { firstWord: "MT-ARCH", secondWord: "ARCHITECT" },
     text: [
