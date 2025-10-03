@@ -52,7 +52,7 @@ function Holdings() {
           <React.Fragment key={index}>
             <div className="col-span-1 px-5 border-lightGray onHover border-2 cursor-pointer" onClick={() => handleNavigate(h.link, "firstSection")}>
               <div className="  py-0 pb-5 flex h-full flex-col ">
-                <img className=" p-5 w-3/4 m-auto my-0" src={h.logo} alt="" />
+                <img className=" p-5  w-[45%] m-auto mb-0 mt-2" src={h.logo} alt="" />
                 <Paragraph p={h.text} text={"center"} />
 
                 <div className="md:my-3">

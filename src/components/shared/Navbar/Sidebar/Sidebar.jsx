@@ -122,7 +122,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
               <AccordionBody className="py-1">
                 <List className="p-0 !text-gray-500">
                   <ListItem
-                    className="hover:bg-secondGold hover:text-white"
+                    className="hover:bg-mainGold hover:text-white"
                     onClick={() => handleNavigate("/who-we-are", "values")}
                   >
                     <ListItemPrefix>
@@ -134,7 +134,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     Our values
                   </ListItem>
                   <ListItem
-                    className="hover:bg-secondGold hover:text-white"
+                    className="hover:bg-mainGold hover:text-white"
                     onClick={() => handleNavigate("/who-we-are", "journey")}
                   >
                     <ListItemPrefix>
@@ -146,7 +146,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     Our journey
                   </ListItem>
                   <ListItem
-                    className="hover:bg-secondGold hover:text-white"
+                    className="hover:bg-mainGold hover:text-white"
                     onClick={() => handleNavigate("/who-we-are", "investment")}
                   >
                     <ListItemPrefix>
@@ -191,7 +191,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
               <AccordionBody className="py-1">
                 <List className="p-0 !text-gray-500">
                   <ListItem
-                    className="hover:bg-secondGold hover:text-white"
+                    className="hover:bg-mainGold hover:text-white"
                     onClick={() =>
                       handleNavigate("/industries", "architechture")
                     }
@@ -204,7 +204,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     </ListItemPrefix>
                     Architecture and Urban planning                  </ListItem>
                   <ListItem
-                    className="hover:bg-secondGold hover:text-white"
+                    className="hover:bg-mainGold hover:text-white"
                     onClick={() => handleNavigate("/industries", "engineer")}
                   >
                     <ListItemPrefix>
@@ -216,7 +216,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     Engineering
                   </ListItem>
                   <ListItem
-                    className="hover:bg-secondGold hover:text-white"
+                    className="hover:bg-mainGold hover:text-white"
                     onClick={() => handleNavigate("/industries", "oil")}
                   >
                     <ListItemPrefix>
@@ -228,7 +228,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     Oil & Gas
                   </ListItem>
                   <ListItem
-                    className="hover:bg-secondGold hover:text-white"
+                    className="hover:bg-mainGold hover:text-white"
                     onClick={() => handleNavigate("/industries", "marine")}
                   >
                     <ListItemPrefix>
@@ -240,7 +240,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     Marine and Offshore Structures
                   </ListItem>
                   <ListItem
-                    className="hover:bg-secondGold hover:text-white"
+                    className="hover:bg-mainGold hover:text-white"
                     onClick={() => handleNavigate("/industries", "energy")}
                   >
                     <ListItemPrefix>
@@ -287,7 +287,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
               <AccordionBody className="py-1">
                 <List className="p-0  !text-gray-500">
                   <ListItem
-                    className="hover:bg-secondGold hover:text-white"
+                    className="hover:bg-mainGold hover:text-white"
                     onClick={() => handleNavigate("/wolsey", "architecture")}
                   >
                     <ListItemPrefix>
@@ -299,7 +299,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     Wolsey
                   </ListItem>
                   <ListItem
-                    className="hover:bg-secondGold hover:text-white"
+                    className="hover:bg-mainGold hover:text-white"
                     onClick={() => handleNavigate("/arup", "engineer")}
                   >
                     <ListItemPrefix>
@@ -311,7 +311,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     Arup
                   </ListItem>
                   <ListItem
-                    className="hover:bg-secondGold hover:text-white"
+                    className="hover:bg-mainGold hover:text-white"
                     onClick={() => handleNavigate("/kaller", "engineer")}
                   >
                     <ListItemPrefix>
@@ -323,7 +323,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     Kaller
                   </ListItem>
                   <ListItem
-                    className="hover:bg-secondGold hover:text-white"
+                    className="hover:bg-mainGold hover:text-white"
                     onClick={() => handleNavigate("/mhceg", "engineer")}
                   >
                     <ListItemPrefix>
@@ -335,7 +335,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     MHCEG
                   </ListItem>
                   <ListItem
-                    className="hover:bg-secondGold hover:text-white"
+                    className="hover:bg-mainGold hover:text-white"
                     onClick={() => handleNavigate("/mt-arch", "engineer")}
                   >
                     <ListItemPrefix>
@@ -347,7 +347,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     MT-ARCH
                   </ListItem>
                   <ListItem
-                    className="hover:bg-secondGold hover:text-white"
+                    className="hover:bg-mainGold hover:text-white"
                     onClick={() => handleNavigate("/mosaic-realState", "engineer")}
                   >
                     <ListItemPrefix>

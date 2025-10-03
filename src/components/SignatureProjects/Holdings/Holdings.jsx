@@ -47,7 +47,11 @@ function Holdings() {
             className="col-span-1 flex justify-start cursor-pointer "
             to={hold.link}
           >
-            <img className="me-3 object-cover p-1" src={hold.logo} alt="" />
+            <img
+              className="me-3 object-cover p-1 md:w-30 md:h-30"
+              src={hold.logo}
+              alt={hold.text}
+            />
           </Link>
           <p
             className={`mt-0 col-span-3 flex items-center justify-start ps-5 sm:text-small text-[12px] `}
