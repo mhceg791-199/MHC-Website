@@ -4,9 +4,9 @@ import useCountUp from "../../../Hooks/useCountUp";
 
 function MhcInNumber() {
   const { ref, inView } = useInView({ triggerOnce: true }); // Detects if in view once
-  const five = useCountUp(5, inView, 1000);
-  const twinty = useCountUp(20, inView, 4000);
-  const threeThouthan = useCountUp(3000, inView, 100000);
+  const five = useCountUp(5, inView, 3000);
+  const twinty = useCountUp(20, inView, 3000);
+  const threeThouthan = useCountUp(3000, inView, 3000);
   const numbersDetails = [
     {
       text: "Continents",

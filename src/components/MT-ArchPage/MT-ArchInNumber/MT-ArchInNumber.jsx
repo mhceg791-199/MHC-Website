@@ -4,10 +4,10 @@ import useCountUp from "../../../Hooks/useCountUp";
 
 function MTArchInNumber() {
   const { ref, inView } = useInView({ triggerOnce: true }); // Detects if in view once
-  const eighteen = useCountUp(18, inView, 6000);
-  const twoThouthanandfive = useCountUp(2005, inView, 30000);
-  const twintytwo = useCountUp(22, inView, 6500);
-  const oneandHalfThouthan = useCountUp(1500, inView, 20000);
+  const eighteen = useCountUp(18, inView, 3000);
+  const twoThouthanandfive = useCountUp(2005, inView, 3000);
+  const twintytwo = useCountUp(22, inView, 3000);
+  const oneandHalfThouthan = useCountUp(1500, inView, 3000);
   const numbersDetails = [
     {
       text: "ESTABLISHED",

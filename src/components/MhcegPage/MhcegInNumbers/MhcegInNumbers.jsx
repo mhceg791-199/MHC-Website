@@ -4,11 +4,11 @@ import useCountUp from "../../../Hooks/useCountUp";
 
 function MhcegInNumbers() {
   const { ref, inView } = useInView({ triggerOnce: true }); // Detects if in view once
-  const oneHundred = useCountUp(100, inView, 6000);
-  const nintyFive = useCountUp(95, inView, 5900);
-  const ten = useCountUp(10, inView, 2000);
-  const twenty = useCountUp(20, inView, 4000);
-  const oneThouthan = useCountUp(1000, inView, 20000);
+  const oneHundred = useCountUp(100, inView, 3000);
+  const nintyFive = useCountUp(95, inView, 3000);
+  const ten = useCountUp(10, inView, 3000);
+  const twenty = useCountUp(20, inView, 3000);
+  const oneThouthan = useCountUp(1000, inView, 3000);
   const numbersDetails = [
     {
       number: twenty,
