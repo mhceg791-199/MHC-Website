@@ -1,67 +1,43 @@
 .border-b-half {
   position: relative;
-  /* Position relative to place the pseudo-element */
+  display: inline-block;
 }
 
 .border-b-half::after {
   content: "";
   position: absolute;
-  bottom: -16px;
+  bottom: -8px; 
   left: 0;
-  width: 50%;
-  /* Start with half width */
-  height: 4px;
-  /* Adjust the height of the border */
-  background-color: var(--mainGold);
-  /* Use the mainGold variable */
+  width: 0;
+  height: 4px; 
+  background-color: var(--mainGold); 
   transition: width 0.3s ease;
-  /* Smooth transition for width change */
 }
 
 .border-b-half:hover::after {
-  width: 100%;
-  /* Expand to full width on hover */
+  width: 100%; 
 }
 
-h2:hover .border-b-half {
+.hoverOneLine {
+  position: relative;
+  display: inline-block;
+}
+
+.hoverOneLine::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: var(--mainGold);
+  transition: width 0.3s ease;
+}
+
+.hoverOneLine:hover::after {
   width: 100%;
-  transition: 0.3s;
 }
 
 .headerSection:hover {
   color: var(--mainGold);
-}
-
-.hoverOneLine span:first-child {
-  position: relative;
-}
-
-.hoverOneLine span:first-child::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  width: 100%;
-  height: 4px;
-  background-color: var(--mainGold);
-  transition: width 0.3s ease; /* Adjust the duration as needed */
-}
-
-.hoverOneLine span:last-child {
-  position: relative;
-}
-
-.hoverOneLine span:last-child::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  width: 0;
-  height: 4px;
-  background-color: var(--mainGold);
-  transition: width 0.3s ease; /* Adjust the duration as needed */
-}
-
-.hoverOneLine:hover span:last-child::after {
-  width: 100%;
 }

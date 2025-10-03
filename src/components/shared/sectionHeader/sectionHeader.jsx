@@ -10,36 +10,37 @@ function SectionHeader({
   line = true,
   link = "",
 }) {
-  return (
-    <>
-      <Link
-        to={link}
-        target="_blank"
-        className={`${
-          link ? "cursor-pointer" : "cursor-default"
-        } text-${fontSize}   headerSection font-bold `}
-      >
-        {type == "horizontal" ? (
-          <>
-            <span className={`${line ? "hoverOneLine" : ""}`}>
-              <span className=" ">{firstWord}</span>
-              <span> {secondWord}</span>
-            </span>
-          </>
-        ) : (
-          <>
-            <span
-              className={` ${
-                line ? "border-b-half" : ""
-              } sm:text-large text-[20px] font-semibold tracking-wider`}
-            >
-              <p className="my-0 leading-">{firstWord}</p>
-              <p className="leading-3 my-0">{secondWord}</p>
-            </span>
-          </>
-        )}
-      </Link>
-    </>
+
+  const content = type === "horizontal" ? (
+    <span className={`${line ? "hoverOneLine" : ""}`}>
+      <span>{firstWord}</span>
+      <span> {secondWord}</span>
+    </span>
+  ) : (
+    <span
+      className={`${
+        line ? "border-b-half" : ""
+      } sm:text-large text-[20px] font-semibold tracking-wider`}
+    >
+      <p className="my-0 leading-">{firstWord}</p>
+      <p className="leading-3 my-0">{secondWord}</p>
+    </span>
+  );
+
+  return link ? (
+    <Link
+      to={link}
+      target="_blank"
+      className={`cursor-pointer text-${fontSize} headerSection font-bold`}
+    >
+      {content}
+    </Link>
+  ) : (
+    <span
+      className={`cursor-default text-${fontSize} headerSection font-bold`}
+    >
+      {content}
+    </span>
   );
 }
 
