@@ -56,7 +56,7 @@ function KallerProjects() {
 
   useScrollToSection(refs);
   const firstSectionDetails = {
-    poster: "/signatureProjects/kaller/poster.webp",
+    poster: "/signatureProjects/kaller/poster.jpg",
     logo: "/signatureProjects/kaller.png",
     title: { firstWord: "Kaller", secondWord: "Architecture" },
     text: [
