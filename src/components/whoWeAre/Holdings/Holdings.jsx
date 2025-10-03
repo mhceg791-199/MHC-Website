@@ -55,7 +55,7 @@ function Holdings() {
                 <img className=" p-5 w-3/4 m-auto my-0" src={h.logo} alt="" />
                 <Paragraph p={h.text} text={"center"} />
 
-                <div>
+                <div className="md:my-3">
                   <TextWirhArrow
                     className="justify-center opacity-0 mt-auto readMore"
                     text="Read More"
