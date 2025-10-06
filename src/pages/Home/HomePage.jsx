@@ -30,7 +30,7 @@ function HomePage() {
           <img
             className={`${isScrolled ? "w-[28%]" : "w-[35%]"} p-2  `}
             src={isScrolled ? "/images/logoWithBlack.png" : "/images/logo.png"}
-            alt=""
+            alt="Mosaic Holding Corporation MHC"
           />
         </Link>
         <SidebarWithBurgerMenu inHomePage={!isScrolled} />

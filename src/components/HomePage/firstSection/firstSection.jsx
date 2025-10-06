@@ -1,4 +1,4 @@
-import React from "react";
+import firstSection from '../../../assets/homePage/firstSection.webm';
 
 function FirstSection() {
   return (
@@ -8,7 +8,7 @@ function FirstSection() {
         autoPlay
         muted
         loop
-        src="/homePage/firstSection.mp4"
+        src={firstSection}
       ></video>
     </>
   );

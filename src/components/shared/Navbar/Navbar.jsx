@@ -10,7 +10,7 @@ function Navbar() {
           <img
             className=" p-2 w-[24%]"
             src="/images/logoWithBlack.png"
-            alt=""
+            alt="Mosaic Holding Corporation MHC"
           />
         </Link>
         <SidebarWithBurgerMenu />

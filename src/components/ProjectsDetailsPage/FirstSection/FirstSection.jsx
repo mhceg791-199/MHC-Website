@@ -7,10 +7,10 @@ function FirstSection({ data, industries }) {
   const { poster, logo, title, text, link = "" } = data;
   return (
     <div className="">
-      <img className="w-full lg:h-[70vh] object-cover" src={poster} alt="" />
+      <img className="w-full lg:h-[70vh] object-cover" src={poster} alt={`${title.firstWord}`} />
       <div className="bg-lightGray relative translate-y-[-10%]  sm:mx-10  p-8 md:px-14">
         <div className="flex md:items-stretch items-center">
-          <img className="me-5 w-20 object-contain h-20" src={logo} alt="" />
+          <img className="me-5 w-20 object-contain h-20" src={logo} alt={`${title.firstWord}`} />
           <div className=" md:mb-0 mb-3">
             <SectionHeader
               firstWord={title.firstWord}

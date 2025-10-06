@@ -16,7 +16,7 @@ function CareersDetails() {
         <img
           className="w-full object-cover h-full"
           src="/careerPage/poster.jpg"
-          alt=""
+          alt="career Mosaic Holding Corporation MHC"
         />
       </div>
       <div className="bg-lightGray p-10 py-20">

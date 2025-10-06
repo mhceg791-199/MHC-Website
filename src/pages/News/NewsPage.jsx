@@ -20,7 +20,7 @@ function NewsPage() {
             <div className="mb-10 relative">
                 <img
                     src="/news/poster.webp"
-                    alt="News Poster"
+                    alt="News Poster Mosaic Holding Corporation MHC"
                     className="w-full h-72 object-cover rounded-2xl shadow-lg"
                 />
                 <h1 className="absolute bottom-6 left-8 text-xLarge font-bold text-white drop-shadow-lg">

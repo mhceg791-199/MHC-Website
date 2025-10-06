@@ -76,7 +76,7 @@ structures, oil and gas, and energy management."
                 >
                   <img
                     src={indexHovered === index ? hoveringIcon : icon}
-                    alt=""
+                    alt={`${name} Mosaic Holding Corporation MHC`}
                   />
                 </div>{" "}
                 <p className="text-center mt-2 paragraph font-bold">{name}</p>

@@ -31,7 +31,7 @@ function Investment() {
             <img
               className="w-full object-contain   relative"
               src="/homePage/investment.webp"
-              alt="investment approach"
+              alt="investment approach Mosaic Holding Corporation MHC"
             />
             <div className="InvestmentLayer   flex flex-col   lg:p-10 p-3">
               <h2 className="font-bold text-3xl text-white">INVESTMENT</h2>
