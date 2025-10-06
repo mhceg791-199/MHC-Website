@@ -1,4 +1,4 @@
-import  { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import SecondSection from "../../components/HomePage/secondSection/secondSection";
 import FirstSection from "../../components/HomePage/firstSection/firstSection";
 import SignatureProject from "../../components/HomePage/signatureProject/signatureProject";
@@ -6,6 +6,7 @@ import MhcInNumber from "../../components/HomePage/mhcInNumbers/mhcInNumber";
 import { Link } from "react-router-dom";
 import { SidebarWithBurgerMenu } from "../../components/shared/Navbar/Sidebar/Sidebar";
 import Holdings from "../../components/whoWeAre/Holdings/Holdings";
+import Loader from "../../components/shared/Loading/Loading";
 
 function HomePage() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,7 +36,7 @@ function HomePage() {
         </Link>
         <SidebarWithBurgerMenu inHomePage={!isScrolled} />
       </div>
-      <FirstSection />
+      {<Loader /> && <FirstSection />}
       <div ref={secondSection}>
         <SecondSection />
       </div>
