@@ -18,28 +18,28 @@ function InvestmentPage() {
   const investmentDetails = {
     pz1: {
       title: "Sophisticated Risk Mitigation Framework",
-      text: "Our risk management paradigm constitutes a fundamental pillar of our investment ethos, integrating cutting-edge analytical models with preemptive hedging strategies to navigate market volatility while optimizing performance. This sophisticated framework protects investor capital while enabling the confident pursuit of strategic objectives.",
+      text: "Our risk management paradigm forms a core pillar of our investment philosophy, integrating advanced analytical models with proactive hedging strategies to navigate market volatility and optimize performance. This comprehensive framework safeguards investor capital while empowering the confident pursuit of strategic growth objectives.",
     },
     pz2: {
       title: "Sustainable Value Creation Philosophy",
-      text: "Mosaic Holding Corporation cultivates enduring growth through a principled investment framework that synthesizes rigorous due diligence, comprehensive risk protocols, and unwavering ethical governance to deliver sustained financial excellence.",
+      text: "Mosaic Holding Corporation drives enduring growth through a disciplined investment framework that blends rigorous due diligence, structured risk controls, and steadfast ethical governance. This unified approach ensures sustained financial excellence while fostering resilience, accountability, and long-term stakeholder value.",
     },
     pz3: {
       title: "Fundamentals-Driven Investment Selection",
-      text: "We strategically allocate capital to enterprises demonstrating robust underlying economics, defensible market positions, and scalable operational models. This disciplined methodology prioritizes sustainable value accretion while optimizing capital preservation across market cycles.",
+      text: "We strategically deploy capital toward enterprises with strong fundamentals, resilient market positions, and scalable operational models. This disciplined methodology balances sustainable value creation with prudent capital preservation, ensuring consistent returns and enduring growth through all market cycles.",
     },
     normal1: {
       title: "Comprehensive Market Intelligence",
-      text: "Our investment methodology is steered by a cadre of specialized analysts who conduct exhaustive examination of macroeconomic trends, emerging sector opportunities, and global financial indicators. This disciplined approach facilitates dynamic, growth-oriented strategies that harmonize tactical responsiveness with structural stability for our clientele.",
+      text: "Our investment methodology is steered by a cadre of specialized analysts who conduct exhaustive examinations of macroeconomic trends, emerging sector opportunities, and global financial indicators. This disciplined approach facilitates dynamic, growth-oriented strategies that harmonize tactical responsiveness with structural stability for our clientele.",
     },
     normal2: {
       title: "Transparent Governance & Adaptive Execution",
-      text: "Mosaic Holding Corporation maintains rigorous transparency standards, providing stakeholders with granular performance analytics to foster institutional trust. Our nimble execution framework delivers bespoke solutions attuned to both client-specific requirements and prevailing market conditions, ensuring optimal alignment with long-term objectives.",
+      text: "Mosaic Holding Corporation upholds rigorous transparency standards, providing stakeholders with detailed performance analytics that reinforce institutional trust. Our adaptive execution model delivers bespoke, data-driven solutions aligned with client priorities and evolving market dynamics, ensuring precision and consistency across all operations.",
       className: "bg-[#E2C595]",
     },
     normal3: {
       title: "Strategically Diversified Asset Allocation",
-      text: "We employ deliberate diversification across geographies and industry verticals to construct resilient portfolios. This measured approach ensures consistent performance while maintaining strategic flexibility to capitalize on evolving global opportunities.",
+      text: "We employ deliberate diversification across geographies and industry verticals to construct resilient portfolios. This measured approach ensures consistent performance while maintaining strategic flexibility to capitalize on evolving global opportunities. Through continuous monitoring and adaptive rebalancing, we sustain optimal risk-adjusted returns and long-term portfolio strength.",
     },
   };
   return (
