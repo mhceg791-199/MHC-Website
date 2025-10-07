@@ -38,7 +38,7 @@ function App() {
             <Route path="/tearms-conditions" element={<TermsPage />} />
             <Route path="/wolsey" element={<WolseyProjects />} />
             <Route path="/mt-arch" element={<MtAcrchProjects />} />
-            <Route path="/mosaic-realState" element={<MosaicRealState />} />
+            <Route path="/mosaic-realestate" element={<MosaicRealState />} />
             <Route path="/mhceg" element={<MhcegProjects />} />
             <Route path="/arup" element={<ArupProjects />} />
             <Route path="/kaller" element={<KallerProjects />} />

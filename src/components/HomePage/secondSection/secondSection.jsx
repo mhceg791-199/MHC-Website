@@ -50,12 +50,11 @@ function SecondSection() {
       <div className="md:p-10 p-5  bg-lightGray">
         <SectionHeader firstWord="OUR" secondWord="IMPACT" />
         <Paragraph
-          p="Founded in 2023, Mosaic Holding Corporation (MHC) brings expertise in SME leveraged
-buyouts, acquiring mid-cap companies with strong track records. Collectively, MHC and its
-multiple subsidiaries take pride in owning and delivering over 4,000 projects across 20+
-countries. MHC provides critical technical, financial, and workforce support across industries
-including architecture, structural, electrical, and mechanical engineering, marine and offshore
-structures, oil and gas, and energy management."
+          p="Founded in 2023, Mosaic Holding Corporation (MHC) brings expertise in SME leveraged buyouts, 
+          acquiring mid-cap companies with strong track records. Collectively, MHC and its subsidiaries take 
+          pride in managing and delivering over 4,000 projects across more than 20 countries. MHC provides 
+          critical technical, financial, and workforce support in industries such as architecture, structural, 
+          electrical, and mechanical engineering, marine and offshore structures, oil and gas, and energy management."
         />
 
         <div className="grid md:grid-cols-3 lg:grid-cols-5 grid-cols-2 md:px-20 px-5 mt-10 ">

@@ -24,7 +24,7 @@ function WolseyInNumbers() {
     {
       number: oneHundred,
       icon: "+",
-      text: "Client",
+      text: "Clients",
     },
     {
       number: nintyFive,

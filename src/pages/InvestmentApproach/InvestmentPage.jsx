@@ -18,7 +18,7 @@ function InvestmentPage() {
   const investmentDetails = {
     pz1: {
       title: "Sophisticated Risk Mitigation Framework",
-      text: "Our risk management paradigm constitutes a fundamental pillar of our investment ethos, integrating cutting-edge analytical models with preemptive hedging strategies to navigate market volatility while optimizing performance. This sophisticated apparatus protects investor capital while enabling confident pursuit of strategic objectives.",
+      text: "Our risk management paradigm constitutes a fundamental pillar of our investment ethos, integrating cutting-edge analytical models with preemptive hedging strategies to navigate market volatility while optimizing performance. This sophisticated framework protects investor capital while enabling the confident pursuit of strategic objectives.",
     },
     pz2: {
       title: "Sustainable Value Creation Philosophy",

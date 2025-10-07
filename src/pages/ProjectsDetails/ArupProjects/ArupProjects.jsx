@@ -75,10 +75,10 @@ function ArupProjects() {
     logo: "/signatureProjects/arup.png",
     title: { firstWord: "ARUP DATTA", secondWord: "ARCHITECT" },
     text: [
-      "A proud subsidiary of Mosaic Holding Corporation, is a globally renowned multidisciplinary firm with over 40 years of expertise in exceptional design and architecture. Backed by a skilled team of architects, interior designers, and project managers, ADAL delivers innovative solutions across residential, commercial, and institutional sectors.",
-      "The firm excels in master planning, interior design, and diverse architectural projects, providing technical services such as building booklets and permit facilitation, ensuring seamless project execution.",
-      "ADAL’s founder, Arup Datta, is a celebrated architect and graduate of IIT Kharagpur, who brought his expertise to Canada in 1974 and founded the firm in 1988. His visionary leadership has guided ADAL to deliver award-winning designs across Canada, the USA, Europe, and beyond. Recognized for blending budget-consciousness with aesthetic excellence, Mr. Datta’s approach emphasizes functionality, sustainability, and community impact.",
-      "Operating in Canada, the USA, and across Asia and the Middle East, ADAL continues to shape transformative spaces worldwide, with a legacy rooted in innovation, quality, and enduring design.",
+      "A proud subsidiary of Mosaic Holding Corporation, ADAL is a globally renowned multidisciplinary firm with over 40 years of expertise in exceptional design and architecture. Backed by a skilled team of architects, interior designers, and project managers, ADAL delivers innovative solutions across residential, commercial, and institutional sectors.",
+      "The firm excels in master planning, interior design, and diverse architectural projects, providing technical services such as building booklets and permit facilitation to ensure seamless project execution.",
+      "ADAL’s founder, Arup Datta, is a celebrated architect and graduate of IIT Kharagpur who brought his expertise to Canada in 1974 and founded the firm in 1988. His visionary leadership has guided ADAL to deliver award-winning designs across Canada, the USA, Europe, and beyond. Recognized for blending budget consciousness with aesthetic excellence, Mr. Datta’s approach emphasizes functionality, sustainability, and community impact.",
+      "Operating in Canada, the USA, and across Asia and the Middle East, ADAL continues to shape transformative spaces worldwide — with a legacy rooted in innovation, quality, and enduring design.",
     ],
     link: "https://www.adal.ca/",
   };

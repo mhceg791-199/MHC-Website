@@ -7,7 +7,7 @@ function InvestmentBrief() {
       <div className="mt-28 text-center">
         <SectionHeader firstWord="INVESTMENT" secondWord="APPROACH" />
         
-        <div className="mt-6 max-w-4xl mx-auto">
+        <div className="mt-3 max-w-4xl mx-auto">
           <Paragraph
             p="Mosaic Holding Corporation executes a disciplined investment philosophy that harmonizes financial precision, ethical governance, and client-aligned outcomes. Our integrated framework combines rigorous market intelligence with diversified portfolio optimization and advanced risk mitigation - creating a dynamic engine for sustainable value creation across market cycles."
           />

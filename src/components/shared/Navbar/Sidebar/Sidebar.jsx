@@ -348,7 +348,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                   </ListItem>
                   <ListItem
                     className="hover:bg-mainGold hover:text-white"
-                    onClick={() => handleNavigate("/mosaic-realState", "engineer")}
+                    onClick={() => handleNavigate("/mosaic-realestate", "engineer")}
                   >
                     <ListItemPrefix>
                       <ChevronRightIcon

@@ -31,7 +31,7 @@ function Holdings() {
     {
       text: "Mosaic Real Estate",
       logo: "/signatureProjects/mosaicRealstate/logo.png",
-      link: "/mosaic-realState",
+      link: "/mosaic-realestate",
     },
   ];
   return (
