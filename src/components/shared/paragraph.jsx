@@ -5,12 +5,12 @@ function Paragraph({ p, text = "justify" }) {
 
   return (
     <p
-      className={`mt-5 sm:text-base text-[12px] text-${text} leading-relaxed text-textDark flex flex-wrap gap-[0.3rem]`}
+      className={`mt-5 sm:text-base text-[12px] text-${text} leading-relaxed text-textDark flex flex-wrap gap-[0.4rem]`}
     >
       {words.map((word, index) => (
         <span
           key={index}
-          className="transition-all duration-200 hover:scale-110 hover:text-mainGold hover:font-semibold cursor-default"
+          className="relative transition-colors duration-200 hover:text-mainGold hover:brightness-110 cursor-default"
         >
           {word}
         </span>
@@ -20,6 +20,7 @@ function Paragraph({ p, text = "justify" }) {
 }
 
 export default Paragraph;
+
 
 
 
