@@ -1,19 +1,18 @@
 import React from "react";
 
 function Paragraph({ p, text = "justify" }) {
-  // نقسم النص إلى كلمات منفصلة
   const words = p.split(" ");
 
   return (
     <p
-      className={`mt-5 sm:text-base text-[12px] text-${text} leading-relaxed text-textDark`}
+      className={`mt-5 sm:text-base text-[12px] text-${text} leading-relaxed text-textDark flex flex-wrap gap-[0.3rem]`}
     >
       {words.map((word, index) => (
         <span
           key={index}
-          className="inline-block transition-all duration-200 hover:scale-110 hover:text-mainGold hover:font-semibold cursor-default"
+          className="transition-all duration-200 hover:scale-110 hover:text-mainGold hover:font-semibold cursor-default"
         >
-          {word}{" "}
+          {word}
         </span>
       ))}
     </p>
@@ -21,6 +20,7 @@ function Paragraph({ p, text = "justify" }) {
 }
 
 export default Paragraph;
+
 
 
 
