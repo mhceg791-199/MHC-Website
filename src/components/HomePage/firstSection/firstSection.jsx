@@ -7,7 +7,6 @@ function FirstSection() {
         className="w-full h-[80vh] object-cover"
         autoPlay
         muted
-        loop
         src={firstSection}
       ></video>
     </>
