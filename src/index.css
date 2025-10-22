@@ -7,3 +7,7 @@
     --mainGold: #C5A363;
     --lightGray: "#EDEDED"
 }
+
+::selection {
+    background-color: rgba(197, 163, 99, .5);
+}
