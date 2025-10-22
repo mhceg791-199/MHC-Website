@@ -21,7 +21,7 @@ function Marquee() {
           ))}
         </div>
 
-        {/* Second version (بتخلي الحركة مستمرة) */}
+        {/* Second version  */}
         <div className="marquee flex items-center whitespace-nowrap bg-white py-3 px-8 space-x-16">
           {marqueeLinks.map((link, i) => (
             <Link
