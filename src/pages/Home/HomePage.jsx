@@ -59,7 +59,6 @@ import FirstSection from "../../components/HomePage/firstSection/firstSection";
 import { Link } from "react-router-dom";
 import { SidebarWithBurgerMenu } from "../../components/shared/Navbar/Sidebar/Sidebar";
 import Loader from "../../components/shared/Loading/Loading";
-import Marquee from "../../components/HomePage/Marquee/Marquee";
 import SecondSection from "../../components/HomePage/secondSection/secondSection";
 // import InfoSignature from "../../components/HomePage/infoSignature/infoSignature";
 // import SignatureSlider from "../../components/HomePage/Slider/slider";
@@ -105,7 +104,7 @@ function HomePage() {
       </div>
 
        {<Loader /> && <FirstSection scrollTarget={secondSection} />}
-      <Marquee />
+      {/* <Marquee /> */}
 
       <div ref={secondSection}>
         <SecondSection />
