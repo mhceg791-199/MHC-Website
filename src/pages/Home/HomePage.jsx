@@ -53,7 +53,6 @@
 
 // export default HomePage;
 
-
 import { useEffect, useRef, useState } from "react";
 import FirstSection from "../../components/HomePage/firstSection/firstSection";
 import { Link } from "react-router-dom";
@@ -64,12 +63,11 @@ import Marquee from "../../components/HomePage/marquee/marquee";
 
 import InfoSignature from "../../components/HomePage/infoSignature/infoSignature";
 import SignatureSlider from "../../components/HomePage/Slider/slider";
-// import Global from "../../components/HomePage/GlobeScene/Global";
+import Global from "../../components/HomePage/GlobeScene/Global";
 
 function HomePage() {
   const [isScrolled, setIsScrolled] = useState(false);
   const secondSection = useRef(null);
-  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -97,7 +95,9 @@ function HomePage() {
       >
         <Link to="/">
           <img
-            className={`${isScrolled ? "w-[28%]" : "w-[35%]"} p-2 transition-all duration-300`}
+            className={`${
+              isScrolled ? "w-[28%]" : "w-[35%]"
+            } p-2 transition-all duration-300`}
             src={isScrolled ? "/images/logoWithBlack.png" : "/images/logo.png"}
             alt="Mosaic Holding Corporation MHC"
           />
@@ -105,16 +105,15 @@ function HomePage() {
         <SidebarWithBurgerMenu inHomePage={!isScrolled} />
       </div>
 
-       {<Loader /> && <FirstSection scrollTarget={secondSection} />}
+      {<Loader /> && <FirstSection scrollTarget={secondSection} />}
       <Marquee />
 
       <div ref={secondSection}>
         <SecondSection />
       </div>
       <InfoSignature />
-      <SignatureSlider/>
-      {/*
-      <Global /> */}
+      <SignatureSlider />
+      <Global />
     </>
   );
 }

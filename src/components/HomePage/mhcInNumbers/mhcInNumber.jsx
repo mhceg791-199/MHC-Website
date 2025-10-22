@@ -1,47 +1,53 @@
-import React from "react";
 import { useInView } from "react-intersection-observer";
 import useCountUp from "../../../Hooks/useCountUp";
 
 function MhcInNumber() {
-  const { ref, inView } = useInView({ triggerOnce: true }); // Detects if in view once
+  const { ref, inView } = useInView({ triggerOnce: true });
+
   const five = useCountUp(5, inView, 3000);
-  const twinty = useCountUp(20, inView, 3000);
-  const threeThouthan = useCountUp(3000, inView, 3000);
+  const twenty = useCountUp(20, inView, 3000);
+  const threeThousand = useCountUp(3000, inView, 3000);
+
   const numbersDetails = [
-    {
-      text: "Continents",
-      number: five,
-    },
-    {
-      text: "Countries",
-      number: twinty,
-      icon: "+",
-    },
-    {
-      text: "Projects",
-      number: threeThouthan,
-      icon: "+",
-    },
+    { text: "Continents", number: five, max: 5 },
+    { text: "Countries", number: twenty, max: 20, icon: "+" },
+    { text: "Projects", number: threeThousand, max: 3000, icon: "+" },
   ];
+
   return (
-    <>
-      <div className="md:p-8 p-5 bg-mainGold mb-14 text-white">
-        <h2 className="text-xLarge font-bold mb-10">MHC in Numbers</h2>
-        <div ref={ref} className="grid grid-cols-3 gap-4  ">
-          {numbersDetails.map(({ icon, text, number }, index) => (
-            <React.Fragment key={index}>
-              <div className="col-span-1 text-center ">
-                <p className="md:text-large">{text}</p>
-                <div className="flex justify-center lg:text-[90px] md:text-[60px] text-[30px]  font-bold">
-                  <p>{number}</p>
-                  <p>{icon}</p> 
-                </div>
+    <div className="bg-[#0c0c0c] text-white mt-3 mb-14">
+      <h3 className="mb-3 font-bold  heading-3  md:text-left">
+        MHC in Numbers
+      </h3>
+
+      <div
+        ref={ref}
+        className="grid grid-cols-1 sm:grid-cols-3 gap-2 "
+      >
+        {numbersDetails.map(({ text, number, max, icon }, index) => {
+          const progress = Math.min((number / max) * 100, 100);
+
+          return (
+            <div key={index} className="flex flex-col items-center">
+              <p className="md:text-lg text-base mb-2 text-gray-300">{text}</p>
+
+              <div className="flex justify-center items-baseline heading-3 font-bold leading-none">
+                <span>{number}</span>
+                <span className=" ml-1">{icon}</span>
               </div>
-            </React.Fragment>
-          ))}
-        </div>
+
+            
+              <div className="w-3/4 h-4 bg-gray-800 mt-4 overflow-hidden border border-gray-600">
+                <div
+                  className="h-full bg-gradient-to-r from-mainGold to-yellow-400 transition-all duration-600 ease-linear"
+                  style={{ width: `${progress}%` }}
+                ></div>
+              </div>
+            </div>
+          );
+        })}
       </div>
-    </>
+    </div>
   );
 }
 

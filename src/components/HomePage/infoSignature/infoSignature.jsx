@@ -5,7 +5,7 @@ import BlockInfo from "../BlockInfo/BlockInfo";
 function InfoSignature() {
 
   return (
-    <div className="md:p-10 p-5">
+    <div className="md:p-10 p-5 bg-lightGray">
        <div className="heading-3 font-bold md:mt-6 leading-tight md:px-6">
         <SectionHeader firstWord="Holdings" />
       </div>
