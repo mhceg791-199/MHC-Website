@@ -63,7 +63,7 @@ import SecondSection from "../../components/HomePage/secondSection/secondSection
 import Marquee from "../../components/HomePage/marquee/marquee";
 
 import InfoSignature from "../../components/HomePage/infoSignature/infoSignature";
-// import SignatureSlider from "../../components/HomePage/Slider/slider";
+import SignatureSlider from "../../components/HomePage/Slider/slider";
 // import Global from "../../components/HomePage/GlobeScene/Global";
 
 function HomePage() {
@@ -112,8 +112,8 @@ function HomePage() {
         <SecondSection />
       </div>
       <InfoSignature />
-      {/*
       <SignatureSlider/>
+      {/*
       <Global /> */}
     </>
   );

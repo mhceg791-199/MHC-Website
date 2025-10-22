@@ -21,7 +21,7 @@ const  accordionitems = [
     {
       title: "Datta And Tayefi",
       content:
-        "A subsidiary of Mosaic Holding Corporation (MHC), DATTA & TAYEFI unites the legacies of Arup Datta Architect and Max Tayefi Architect  into a single, future-driven design practice. The firm blends decades of award-winning architectural excellence with a contemporary approach to sustainability, digital design, and cultural relevance. From civic landmarks to commercial and residential spaces, DATTA & TAYEFI creates environments that are intelligent, expressive, and deeply human — where heritage meets innovation and every structure tells a story of purpose, precision, and art.",
+        "A subsidiary of Mosaic Holding Corporation (MHC), DATTA & TAYEFI unites the legacies of Arup Datta Architect and Max Tayefi Architect into one forward-thinking design house. Blending decades of award-winning experience with a modern approach to sustainability, technology, and culture, the firm creates architecture that is intelligent, expressive, and human — where heritage meets innovation, and every structure tells a story of purpose and precision.",
       page: "/",
     },
     // {
