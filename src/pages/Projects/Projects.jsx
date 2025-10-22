@@ -7,6 +7,7 @@ export default function OurHistory() {
     <>
       <Navbar />
 
+
       {/* <section className="relative bg-black w-full h-screen overflow-hidden our-projects architechture">
         <img
           src={liveShape}
