@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import SectionHeader from "../../shared/sectionHeader/sectionHeader";
 import "./secondSection.css";
-import Paragraph from "../../shared/paragraph";
 import { useNavigate } from "react-router-dom";
-// import Icon from "../../../assets/icon.svg";
+import { FaChevronRight } from "react-icons/fa";
 
 function SecondSection() {
   const navigate = useNavigate();
@@ -47,11 +45,57 @@ function SecondSection() {
 
   return (
     <>
-      <div className="md:p-10 p-5  bg-lightGray">
-        <SectionHeader firstWord="OUR" secondWord="IMPACT" />
-        <Paragraph
-          p="Founded in 2023, Mosaic Holding Corporation (MHC) brings expertise in SME leveraged buyouts, acquiring mid-cap companies with strong track records. Collectively, MHC and its subsidiaries take pride in managing and delivering over 4,000 projects across more than 20 countries. MHC provides critical technical, financial, and workforce support in industries such as architecture, structural, electrical, and mechanical engineering, marine and offshore structures, oil and gas, and energy management."
-        />
+      <div className="md:p-10 p-2  bg-black">
+        <section className=" text-white w-full min-h-[80vh] flex flex-col md:flex-row items-center justify-center px-2 md:px-16 py-16">
+          {/* LEFT SIDE */}
+          <div className="w-full md:w-1/2 flex justify-start">
+            <h2 className="text-[50px] sm:text-[70px] md:text-[90px] lg:text-[110px] font-extrabold leading-none tracking-tight text-mainGold">
+              OUR <br /> <span className="pl-8 md:pl-16 inline-block"></span>{" "}
+              IMPACT
+            </h2>
+          </div>
+
+          {/* RIGHT SIDE */}
+          <div className="w-full md:w-1/2 mt-10 md:mt-0 md:pl-12">
+            <h3 className="heading-3 font-semibold mb-6 text-white">
+              <span className="bg-secondGold">We move like a boutique</span>,
+              deliver like a corporation, and think like a partner.
+            </h3>
+            <div className="flex gap-1">
+              <span className="mt-1 text-mainGold">
+                <FaChevronRight size={14} />
+              </span>
+              <p className="paragraph text-gray-300">
+                Founded in 2023, Mosaic Holding Corporation (MHC) is a
+                next-generation investment firm headquartered in Calgary, with
+                offices in Florida and Cairo. We build our own league —
+                acquiring mid-cap companies with strong track records and
+                accelerating their growth through an agile, customer-centric
+                model that blends creativity with corporate strength.
+              </p>
+            </div>
+            <div className="flex gap-1 my-5">
+              <span className="mt-1 text-mainGold">
+                <FaChevronRight size={14} />
+              </span>
+              <p className="paragraph text-gray-300">
+                Operating across architecture, engineering, marine structures,
+                oil & gas, and energy management, MHC and its subsidiaries
+                collectively take pride in delivering over 4,000 projects across
+                more than 20 countries.
+              </p>
+            </div>
+            <div className="flex gap-1">
+              <span className="mt-1 text-mainGold">
+                <FaChevronRight size={14} />
+              </span>
+              <p className="paragraph text-gray-300">
+                Bold in vision and fluid in execution, MHC stands apart — where
+                investment meets creation, and growth moves with purpose.{" "}
+              </p>
+            </div>
+          </div>
+        </section>
 
         <div className="grid md:grid-cols-3 lg:grid-cols-5 grid-cols-2 md:px-20 px-5 mt-10 ">
           {industries.map(({ icon, hoveringIcon, name, link }, index) => (
@@ -71,10 +115,13 @@ function SecondSection() {
                 >
                   <img
                     src={indexHovered === index ? hoveringIcon : icon}
-                    alt={`${name} Mosaic Holding Corporation MHC`}
+                    alt={name}
+                    loading="lazy"
                   />
                 </div>{" "}
-                <p className="text-center mt-2 paragraph font-bold">{name}</p>
+                <p className="text-center text-mainGold mt-2 paragraph font-bold">
+                  {name}
+                </p>
               </div>
             </React.Fragment>
           ))}
