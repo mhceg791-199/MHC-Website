@@ -7,7 +7,7 @@ function SignatureSlider() {
 
   return (
     <section>
-      <div className="heading-3 font-bold mb-6 leading-tight md:px-12 px-5">
+      <div className="heading-3 font-bold mb-6 mt-8 leading-tight md:px-12 px-5">
         <SectionHeader firstWord="The MHC" secondWord="Way" />
       </div>
       <Marquee speed={50} pauseOnHover gradient={false}>
