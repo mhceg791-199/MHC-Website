@@ -88,7 +88,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                       open === 1 ? "text-mainGold" : ""
                     }`}
                   >
-                    <i className="fa-solid fa-house text-xl pe-2"></i> HOME PAGE
+                    <i className="fa-solid fa-house text-xl pe-2"></i> HOME
                   </Typography>
                 </AccordionHeader>
               </ListItem>
