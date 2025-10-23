@@ -1,11 +1,19 @@
-import React from "react";
+import video from "../../../assets/whoWeAre/whoWeAre.webm";
+import fallback from "../../../assets/whoWeAre/mission/fallback.png";
+import FirstSectionByVideo from "../../shared/FirstSectionByVideo/FirstSectionByVideo";
+// import FirstSectionByVideo from "../../shared/FirstSectionVideo/FirstSectionByVideo";
 
 function FirstSection() {
   return (
     <>
-      <img src="/whoWeArePage/poster.jpg" alt="Mosaic Holding Corporation MHC who we are" />
+      <FirstSectionByVideo
+        videoSrc={video}
+        fallbackImg={fallback}
+        title="Who We Are"
+      />
     </>
   );
 }
 
 export default FirstSection;
+

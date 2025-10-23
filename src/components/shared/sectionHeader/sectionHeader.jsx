@@ -10,7 +10,6 @@ function SectionHeader({
   line = true,
   link = "",
 }) {
-
   const content = type === "horizontal" ? (
     <span className={`${line ? "hoverOneLine" : ""}`}>
       <span>{firstWord}</span>
@@ -20,10 +19,10 @@ function SectionHeader({
     <span
       className={`${
         line ? "border-b-half" : ""
-      } sm:text-large text-[20px] font-semibold tracking-wider`}
+      } sm:text-large tracking-wider`}
     >
       <p className="my-0 leading-">{firstWord}</p>
-      <p className="leading-3 my-0">{secondWord}</p>
+      <p className="leading-3 my-2">{secondWord}</p>
     </span>
   );
 
@@ -31,13 +30,13 @@ function SectionHeader({
     <Link
       to={link}
       target="_blank"
-      className={`cursor-pointer text-${fontSize} headerSection font-bold`}
+      className={`cursor-pointer   heading-3`}
     >
       {content}
     </Link>
   ) : (
     <span
-      className={`cursor-default text-${fontSize} headerSection font-bold`}
+      className={`cursor-default   heading-3`}
     >
       {content}
     </span>
@@ -45,3 +44,4 @@ function SectionHeader({
 }
 
 export default SectionHeader;
+
