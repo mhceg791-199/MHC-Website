@@ -1,9 +1,8 @@
-import React from "react";
 import "./map.css";
 function Map() {
   return (
     <>
-      <div className=" mb-3 ">
+      <div className="my-10">
         <iframe
           className="border-map"
           title="Google Map"

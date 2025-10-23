@@ -1,21 +1,26 @@
-import React, { useEffect } from "react";
-import FirstSection from "../shared/InformationsPages/FirstSection";
+import { useEffect } from "react";
 import TitleWithList from "../shared/InformationsPages/TitleWithList";
+import DescriptionAbout from "../shared/DescriptionAbout/DescriptionAbout";
 
 function Privacy() {
+  const paragraphs = [
+    "Mosaic Holding Corporation (MHC) is committed to safeguarding the privacy and security of all personal data collected in the course of our operations. This Privacy Policy outlines our protocols for collecting, using, storing, and disclosing personal information, in alignment with applicable data protection regulations. By engaging with our services, you acknowledge and consent to the terms outlined.",
+  ];
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <>
-      <FirstSection
-        firstWord="PRIVACY"
-        secondWord="POLICY"
-        paragraph="Mosaic Holding Corporation (MHC) is committed to safeguarding the privacy and security of all personal data collected in 
-          the course of our operations. This Privacy Policy outlines our protocols for collecting, using, storing, and disclosing personal 
-          information, in alignment with applicable data protection regulations. By engaging with our services, you acknowledge 
-          and consent to the terms outlined."
+      <div className="mt-[2.5rem] md:mt-[4.5rem]">
+        <DescriptionAbout
+        id="PRIVACY-mhc"
+        firstWord="Privacy"
+        secondWord="Policy"
+        paragraphs={paragraphs}
+        particleColors={["#C5A363", "#C5A363"]}
+        height = "h-[50vh]"
       />
+      </div>
       <div className="md:px-20 px-5">
         <TitleWithList
           title="INFORMATION COLLECTION"
@@ -67,5 +72,3 @@ Officer via the contact information provided on our official website."
 }
 
 export default Privacy;
-
-

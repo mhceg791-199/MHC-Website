@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-
-import FirstSection from "../shared/InformationsPages/FirstSection";
 import TitleWithText from "../shared/InformationsPages/TitleWithText";
+import DescriptionAbout from "../shared/DescriptionAbout/DescriptionAbout";
 
 function Terms() {
   useEffect(() => {
@@ -39,12 +38,18 @@ function Terms() {
         "These terms and conditions shall be governed by and interpreted in accordance with the laws of the jurisdiction in which MHC operates. Any disputes arising out of or in connection with these terms shall be subject to the exclusive jurisdiction of the courts in this region.",
     },
   ];
+  const paragraphs = [
+    "Welcome to Mosaic Holding Corporation’s (“MHC”) website. By accessing and using this site, you agree to comply with the terms and conditions outlined herein. If you do not agree with any part of these terms, please refrain from using our website.",
+  ];
   return (
-    <>
-      <FirstSection
-        firstWord="TERMS AND"
-        secondWord="CONDITIONS"
-        paragraph="Welcome to Mosaic Holding Corporation’s (“MHC”) website. By accessing and using this site, you agree to comply with the terms and conditions outlined herein. If you do not agree with any part of these terms, please refrain from using our website."
+    <div className="mt-[2.5rem] md:mt-[4.5rem]">
+      <DescriptionAbout
+        id="TERMS-mhc"
+        firstWord="Terms and"
+        secondWord="Conditions"
+        paragraphs={paragraphs}
+        particleColors={["#C5A363", "#C5A363"]}
+        height = "h-[50vh]"
       />
       <div className="md:px-20 px-3 mb-28">
         {terms.map(({ title, paragraph }, index) => (
@@ -53,7 +58,7 @@ function Terms() {
           </React.Fragment>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

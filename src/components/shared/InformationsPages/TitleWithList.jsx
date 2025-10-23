@@ -1,26 +1,39 @@
-import React from "react";
-import TitleWithText from "./TitleWithText";
 
-function TitleWithList({ title, text, list }) {
+import { motion } from "framer-motion";
+import { FaChevronRight } from "react-icons/fa";
+
+export default function TitleWithList({ title, text, list = [] }) {
   return (
-    <>
-      <div className="my-11">
-        <TitleWithText title={title} paragraph={text} />
+    <motion.div
+      className="my-10 p-6 rounded-2xl bg-white/5 backdrop-blur-lg border border-white/10 shadow-md transition hover:shadow-lg"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
+      <h3 className="heading-3 text-mainGold mb-4 tracking-wide">
+        {title}
+      </h3>
 
-        {list &&
-          list.map((text, index) => (
-            <React.Fragment key={index}>
-              <div className="flex items-center my-2 ">
-                <i class="fa-solid fa-circle text-xs text-mainGold "></i>{" "}
-                <p className={` sm:text-sm text-[12px] ms-3 text-justify`}>
-                  {text}
-                </p>
-              </div>
-            </React.Fragment>
+      <p className="leading-relaxed mb-5 text-justify">
+        {text}
+      </p>
+
+      {list.length > 0 && (
+        <ul className="space-y-3">
+          {list.map((item, i) => (
+            <li
+              key={i}
+              className="flex items-start gap-3 leading-relaxed"
+            >
+              <span className="mt-1 text-mainGold">
+                <FaChevronRight size={14} />
+              </span>
+              <span>{item}</span>
+            </li>
           ))}
-      </div>
-    </>
+        </ul>
+      )}
+    </motion.div>
   );
 }
-
-export default TitleWithList;
