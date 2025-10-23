@@ -36,7 +36,7 @@ const blocks = [
     img: `${b4}`,
     name: "Datta",
     category: "Architecture",
-    page: "/",
+    page: "/datta-and-tayefi",
   },
   // {
   //   top: "80%",

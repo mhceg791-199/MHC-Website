@@ -25,6 +25,7 @@ import NewsPage from "./pages/News/NewsPage.jsx";
 import MosaicRealState from "./pages/ProjectsDetails/MosaicRealState/MosaicRealState.jsx";
 import OurHistory from "./pages/Projects/Projects.jsx";
 import ScrollToTopButton from "./components/shared/ScrollToTopButton/ScrollToTopButton.jsx";
+import DattaAndTayefi from "./pages/ProjectsDetails/DattaAndTayefi/DattaAndTayefi.jsx";
 function App() {
   return (
     <>
@@ -41,6 +42,7 @@ function App() {
             <Route path="/wolsey" element={<WolseyProjects />} />
             <Route path="/mt-arch" element={<MtAcrchProjects />} />
             <Route path="/mosaic-realState" element={<MosaicRealState />} />
+            <Route path="/datta-and-tayefi" element={<DattaAndTayefi />} />
             <Route path="/mhceg" element={<MhcegProjects />} />
             <Route path="/arup" element={<ArupProjects />} />
             <Route path="/kaller" element={<KallerProjects />} />

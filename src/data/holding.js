@@ -7,7 +7,7 @@ const holdings = [
   {
     text: "Datta And Tayefi",
     logo: "/signatureProjects/datta.png",
-    link: "/",
+    link: "/datta-and-tayefi",
   },
   {
     text: "MHCEG Consultancy",

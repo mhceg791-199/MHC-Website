@@ -340,7 +340,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                   </ListItem>
                   <ListItem
                     className="hover:bg-mainGold hover:text-white"
-                    onClick={() => handleNavigate("/arup", "engineer")}
+                    onClick={() => handleNavigate("/datta-and-tayefi", "engineer")}
                   >
                     <ListItemPrefix>
                       <ChevronRightIcon
@@ -348,7 +348,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                         className="h-3 w-5 opacity-0"
                       />
                     </ListItemPrefix>
-                    Arup
+                    Datta And Tayefi
                   </ListItem>
                   <ListItem
                     className="hover:bg-mainGold hover:text-white"
@@ -374,7 +374,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     </ListItemPrefix>
                     MHCEG
                   </ListItem>
-                  <ListItem
+                  {/* <ListItem
                     className="hover:bg-mainGold hover:text-white"
                     onClick={() => handleNavigate("/mt-arch", "engineer")}
                   >
@@ -385,7 +385,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                       />
                     </ListItemPrefix>
                     MT-ARCH
-                  </ListItem>
+                  </ListItem> */}
                   <ListItem
                     className="hover:bg-mainGold hover:text-white"
                     onClick={() =>

@@ -1,7 +1,5 @@
-import { FaRegLightbulb } from "react-icons/fa";
 import SectionHeader from "../../shared/sectionHeader/sectionHeader";
 import Paragraph from "../../shared/paragraph";
-import { MdOutlineEngineering } from "react-icons/md";
 
 function EngineerCard() {
   return (
