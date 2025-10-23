@@ -54,7 +54,7 @@ function Carousel() {
                   <h5 className="font-bold mb-1 text-white">
                     {item.preph}
                   </h5>
-                  <p className="paragraph text-gray-100">
+                  <p className="paragraph text-gray-300">
                     {item.text}
                   </p>
                 </div>
