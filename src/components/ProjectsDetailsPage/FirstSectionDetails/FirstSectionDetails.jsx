@@ -1,4 +1,3 @@
-// import IndustryCard from "../../IndustryPage/IndustryCard/IndustryCard";
 
 import IndustryCard from "../../Holdings/IndustryCard/IndustryCard";
 
