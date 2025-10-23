@@ -45,10 +45,9 @@
 
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, FreeMode } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
-import "swiper/css/free-mode";
 import SectionHeader from "../../shared/sectionHeader/sectionHeader";
 import homeSlider from "../../../data/homeSlider";
 
@@ -60,21 +59,23 @@ function SignatureSlider() {
       </div>
 
       <Swiper
-        modules={[Autoplay, FreeMode]}
+        modules={[Autoplay]}
         slidesPerView="auto"
         spaceBetween={20}
         loop={true}
-        freeMode={true}
-        speed={6000} // سرعة التحرك
+        speed={6000}
         autoplay={{
           delay: 0,
           disableOnInteraction: false,
-          reverseDirection: false, // لو عايز الاتجاه العكسي خليه true
+          pauseOnMouseEnter: true, 
         }}
+        freeMode={true}
+        freeModeMomentum={false}
         allowTouchMove={false}
-        className="flex items-center"
+        className="!overflow-visible"
       >
-        {homeSlider.map((h, i) => (
+        {/* 🔁 نكرر العناصر مرتين علشان الحركة تبقى سلسة بدون توقف */}
+        {[...homeSlider, ...homeSlider].map((h, i) => (
           <SwiperSlide
             key={i}
             className="!w-80 !h-80 rounded-2xl overflow-hidden shadow-lg bg-black group relative"
