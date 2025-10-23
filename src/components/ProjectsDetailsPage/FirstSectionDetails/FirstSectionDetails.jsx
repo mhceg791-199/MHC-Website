@@ -1,3 +1,5 @@
+// import IndustryCard from "../../IndustryPage/IndustryCard/IndustryCard";
+
 import IndustryCard from "../../Holdings/IndustryCard/IndustryCard";
 
 function FirstSectionDetailss({ data, industries }) {
