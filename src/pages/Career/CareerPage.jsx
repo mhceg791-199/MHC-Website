@@ -1,15 +1,18 @@
-import React, { useContext } from "react";
+import DomeGallery from "../../components/CareerPage/CareerGallery/CareerGallery";
 import CareersDetails from "../../components/CareerPage/CareersDetails/CareersDetails";
-import CareerArea from "../../components/CareerPage/CareerArea/CareerArea";
 import Navbar from "../../components/shared/Navbar/Navbar";
-import { careerModalContext } from "../../context/CareerContext";
+// import ScrollCards from "../../components/whoWeAre/ScrollCards/ScrollCards";
 
 function CareerPage() {
-
   return (
     <>
       <Navbar />
+      <div style={{ width: "99vw", height: "80vh" }}>
+        <DomeGallery />
+      </div>
       <CareersDetails />
+
+      {/* <ScrollCards/> */}
       {/* <CareerArea /> */}
     </>
   );
