@@ -1,7 +1,4 @@
-import React, { useRef } from "react";
-import ProjectSlider from "../../../components/ProjectsDetailsPage/ProjectCard/projectSilder/SliderOfProjects";
-import FirstSection from "../../../components/ProjectsDetailsPage/FirstSection/FirstSection";
-import ProjectDetails from "../../../components/ProjectsDetailsPage/ProjectCard/ProjectDetails/ProjectDetails";
+import { useRef } from "react";
 import Navbar from "../../../components/shared/Navbar/Navbar";
 import useScrollToSection from "../../../Hooks/useScrollToSection";
 import {
@@ -15,7 +12,11 @@ import {
   FaUniversity,
   FaWarehouse,
 } from "react-icons/fa";
-import WolseyInNumbers from "../../../components/WolseyPage/wolsetInNumbers/wolseyInNumbers";
+import FirstSectionDetailss from "../../../components/ProjectsDetailsPage/FirstSectionDetails/FirstSectionDetails";
+import IndustriesOfHolding from "../../../components/ProjectsDetailsPage/IndustriesOfHolding/IndustriesOfHolding";
+import NumbersSection from "../../../components/shared/NumbersSection/NumbersSection";
+import { wolseyNumbers } from "../../../data/numbers/numbersSection";
+
 function WolseyProjects() {
   const industries = [
     {
@@ -61,7 +62,8 @@ function WolseyProjects() {
   };
 
   useScrollToSection(refs);
-  const firstSectionDetails = {
+
+  const FirstDetails = {
     poster: "/signatureProjects/wolsey/poster.webp",
     logo: "/signatureProjects/wolsey.png",
     title: { firstWord: "WOLSEY STRUCTURAL ", secondWord: "ENGINEERING" },
@@ -71,14 +73,21 @@ function WolseyProjects() {
     ],
     link: "https://www.wolsey.ca/",
   };
+
   return (
     <>
       <Navbar />
       <div ref={firstSectionRef}>
-        <FirstSection data={firstSectionDetails} industries={industries} />
+        <FirstSectionDetailss data={FirstDetails} />
       </div>
 
-      <WolseyInNumbers />
+      {industries && <IndustriesOfHolding industries={industries} />}
+
+      <NumbersSection
+      title="Wolsey in Numbers"
+      items={wolseyNumbers}
+      columns="sm:grid-cols-6"
+    />
     </>
   );
 }

@@ -35,7 +35,7 @@ function IndustriesOfHolding({ industries }) {
   };
   return (
     <>
-      <div className="md:p-10 p-5  bg-lightGray ">
+      <div className="md:p-10 p-5 md:mx-9 md:translate-y-[-25%] bg-lightGray rounded-[5px]">
         <SectionHeader firstWord="Industries" />
 
         <div className="  mt-10 ">
@@ -58,3 +58,4 @@ function IndustriesOfHolding({ industries }) {
 }
 
 export default IndustriesOfHolding;
+

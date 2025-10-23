@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import Navbar from "../../../components/shared/Navbar/Navbar.jsx";
 import useScrollToSection from "../../../Hooks/useScrollToSection.js";
-// import FirstSectionDetailss from "../../../components/ProjectsDetailsPage/FirstSectionDetails/FirstSectionDetails.jsx";
+import FirstSectionDetailss from "../../../components/ProjectsDetailsPage/FirstSectionDetails/FirstSectionDetails.jsx";
 
 function DattaAndTayefi() {
   // const industries = [
@@ -36,9 +36,9 @@ function DattaAndTayefi() {
   return (
     <>
       <Navbar />
-      {/* <div ref={firstSectionRef}>
+      <div ref={firstSectionRef}>
         <FirstSectionDetailss data={FirstDetails} />
-      </div> */}
+      </div>
     </>
   );
 }

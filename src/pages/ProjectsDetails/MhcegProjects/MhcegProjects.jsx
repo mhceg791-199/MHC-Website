@@ -1,5 +1,4 @@
-import React, { useRef } from "react";
-import FirstSection from "../../../components/ProjectsDetailsPage/FirstSection/FirstSection";
+import { useRef } from "react";
 import Navbar from "../../../components/shared/Navbar/Navbar";
 import useScrollToSection from "../../../Hooks/useScrollToSection";
 import {
@@ -10,7 +9,10 @@ import {
   FaLeaf,
 } from "react-icons/fa";
 
-import MhcegInNumbers from "../../../components/MhcegPage/MhcegInNumbers/MhcegInNumbers";
+import FirstSectionDetailss from "../../../components/ProjectsDetailsPage/FirstSectionDetails/FirstSectionDetails";
+import IndustriesOfHolding from "../../../components/ProjectsDetailsPage/IndustriesOfHolding/IndustriesOfHolding";
+import NumbersSection from "../../../components/shared/NumbersSection/NumbersSection";
+import { MHCEGNumbers } from "../../../data/numbers/numbersSection";
 function MhcProjects() {
   const industries = [
     {
@@ -40,8 +42,8 @@ function MhcProjects() {
   };
 
   useScrollToSection(refs);
-  const firstSectionDetails = {
-    poster: "/signatureProjects/mhceg/poster.jpg",
+  const FirstDetails = {
+    poster: "/signatureProjects/mhceg/poster.webp",
     logo: "/signatureProjects/mhceg.png",
     title: { firstWord: "MHCEG Consultancy" },
     text: [
@@ -53,10 +55,14 @@ function MhcProjects() {
     <>
       <Navbar />
       <div ref={firstSectionRef}>
-        <FirstSection data={firstSectionDetails} industries={industries} />
+        <FirstSectionDetailss data={FirstDetails} />
       </div>
-
-      <MhcegInNumbers />
+      {industries && <IndustriesOfHolding industries={industries} />}
+      <NumbersSection
+        title="MHCEG in Numbers"
+        items={MHCEGNumbers}
+        columns="sm:grid-cols-4"
+      />
     </>
   );
 }

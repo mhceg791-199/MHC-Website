@@ -1,5 +1,4 @@
-import React, { useRef } from "react";
-import FirstSection from "../../../components/ProjectsDetailsPage/FirstSection/FirstSection";
+import { useRef } from "react";
 import Navbar from "../../../components/shared/Navbar/Navbar";
 import useScrollToSection from "../../../Hooks/useScrollToSection";
 import {
@@ -12,7 +11,10 @@ import {
   FaBalanceScale,
   FaLayerGroup,
 } from "react-icons/fa";
-import KallerInNumbers from "../../../components/KallerPage/KallerWithNumber/KallerWithNumber";
+import FirstSectionDetailss from "../../../components/ProjectsDetailsPage/FirstSectionDetails/FirstSectionDetails";
+import IndustriesOfHolding from "../../../components/ProjectsDetailsPage/IndustriesOfHolding/IndustriesOfHolding";
+import NumbersSection from "../../../components/shared/NumbersSection/NumbersSection";
+import { KallerNumbers } from "../../../data/numbers/numbersSection";
 
 function KallerProjects() {
   const industries = [
@@ -55,8 +57,8 @@ function KallerProjects() {
   };
 
   useScrollToSection(refs);
-  const firstSectionDetails = {
-    poster: "/signatureProjects/kaller/poster.jpg",
+  const FirstDetails = {
+    poster: "/signatureProjects/kaller/poster.webp",
     logo: "/signatureProjects/kaller.png",
     title: { firstWord: "Kaller", secondWord: "Architecture" },
     text: [
@@ -68,9 +70,14 @@ function KallerProjects() {
     <>
       <Navbar />
       <div ref={firstSectionRef}>
-        <FirstSection data={firstSectionDetails} industries={industries} />
+        <FirstSectionDetailss data={FirstDetails}/>
       </div>
-      <KallerInNumbers />
+      {industries && <IndustriesOfHolding industries={industries} />}
+      <NumbersSection
+        title="MHCEG in Numbers"
+        items={KallerNumbers}
+        columns="sm:grid-cols-4"
+      />
     </>
   );
 }

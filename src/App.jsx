@@ -32,26 +32,26 @@ function App() {
       <Layout>
         <CareerModelProvider>
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/who-we-are" element={<WhoWeAre />} />
-            <Route path="/our-projects" element={<OurHistory />} />
+            <Route path="/" element={<HomePage />} /> {/*Done*/}
+            <Route path="/who-we-are" element={<WhoWeAre />} />  {/*Done*/}
+            <Route path="/our-projects" element={<OurHistory />} />  {/*Done*/}
             <Route path="/industries" element={<IndustriesPage />} />
             <Route path="/contact-us" element={<ContactPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/terms-conditions" element={<TermsPage />} />
-            <Route path="/wolsey" element={<WolseyProjects />} />
+            <Route path="/wolsey" element={<WolseyProjects />} /> {/*Done*/}
             <Route path="/mt-arch" element={<MtAcrchProjects />} />
             <Route path="/mosaic-realState" element={<MosaicRealState />} />
-            <Route path="/datta-and-tayefi" element={<DattaAndTayefi />} />
+            <Route path="/datta-and-tayefi" element={<DattaAndTayefi />} /> {/*Done*/}
             <Route path="/mhceg" element={<MhcegProjects />} />
             <Route path="/arup" element={<ArupProjects />} />
             <Route path="/kaller" element={<KallerProjects />} />
             <Route path="/careers" element={<CareerPage />} />
-            <Route path="/news" element={<NewsPage />} />
+            <Route path="/news" element={<NewsPage />} />  {/*Done*/}
             <Route path="/news/:id" element={<CareerPage />} />
             <Route path="/investment-approach" element={<InvestmentPage />} />
-            <Route path="/holdings" element={<HoldingsPage />} />
-            <Route path="*" element={<NotFoundPage />} />
+            <Route path="/holdings" element={<HoldingsPage />} />  {/*Done*/}
+            <Route path="*" element={<NotFoundPage />} /> {/*Done*/}
           </Routes>
         </CareerModelProvider>
         <ScrollToTopButton />
