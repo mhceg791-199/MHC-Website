@@ -1,3 +1,6 @@
+import mosaic from "../assets/signatureProjects/logo.webp";
+import mhceg from "../assets/signatureProjects/mhceg.webp";
+
 const holdings = [
   {
     text: "Wolsey",
@@ -11,7 +14,7 @@ const holdings = [
   },
   {
     text: "MHCEG Consultancy",
-    logo: "/signatureProjects/mhceg.png",
+    logo: mhceg,
     link: "/mhceg",
   },
   // {
@@ -26,7 +29,7 @@ const holdings = [
   },
   {
     text: "Mosaic Real Estate",
-    logo: "/signatureProjects/mosaicRealstate/logo.png",
+    logo: mosaic,
     link: "/mosaic-realState",
   },
 ];

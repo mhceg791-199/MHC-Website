@@ -23,7 +23,7 @@ const marqueeLinks = [
     name: "Kaller Architecture",
   },
   {
-    to: "#",
+    to: "/datta-and-tayefi",
     img: `${m4}`,
     name: "Datta And Tayefi",
   },
@@ -33,7 +33,7 @@ const marqueeLinks = [
   //   name: "MT-ARCH Architect",
   // },
   {
-    to: "#",
+    to: "/mosaic-realState",
     img: `${m6}`,
     name: "Mosaic Real Estate",
   },

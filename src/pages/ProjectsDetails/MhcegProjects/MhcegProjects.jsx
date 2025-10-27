@@ -13,6 +13,8 @@ import FirstSectionDetailss from "../../../components/ProjectsDetailsPage/FirstS
 import IndustriesOfHolding from "../../../components/ProjectsDetailsPage/IndustriesOfHolding/IndustriesOfHolding";
 import NumbersSection from "../../../components/shared/NumbersSection/NumbersSection";
 import { MHCEGNumbers } from "../../../data/numbers/numbersSection";
+import mhceg from "../../../assets/signatureProjects/mhceg.webp";
+
 function MhcProjects() {
   const industries = [
     {
@@ -44,7 +46,7 @@ function MhcProjects() {
   useScrollToSection(refs);
   const FirstDetails = {
     poster: "/signatureProjects/mhceg/poster.webp",
-    logo: "/signatureProjects/mhceg.png",
+    logo: mhceg,
     title: { firstWord: "MHCEG Consultancy" },
     text: [
       "At MHCEG Consultancy, a subsidiary of Mosaic Holding Corporation, we deliver high-quality, customized engineering solutions with efficiency and precision. Our expert team ensures excellence through innovation, integrity, and technical expertise. By leveraging advanced technologies and sustainable practices, we develop tailored strategies that optimize performance and drive long-term success.",

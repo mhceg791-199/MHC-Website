@@ -4,6 +4,8 @@ import useScrollToSection from "../../../Hooks/useScrollToSection.js";
 import { FaStore, FaHome, FaLandmark } from "react-icons/fa";
 import FirstSectionDetailss from "../../../components/ProjectsDetailsPage/FirstSectionDetails/FirstSectionDetails.jsx";
 import IndustriesOfHolding from "../../../components/ProjectsDetailsPage/IndustriesOfHolding/IndustriesOfHolding.jsx";
+import mosaic from "../../../assets/signatureProjects/logo.webp";
+
 function MosaicRealState() {
   const industries = [
     {
@@ -27,7 +29,7 @@ function MosaicRealState() {
   useScrollToSection(refs);
   const FirstDetails = {
     poster: "/signatureProjects/mosaicRealstate/poster.webp",
-    logo: "/signatureProjects/mosaicRealstate/logo.png",
+    logo: mosaic,
     title: { firstWord: "Mosaic Real Estate" },
     text: [
       "Mosaic Real Estate Holding, established in 2025, is an ambitious and forward-thinking player in the property sector, laying a strong foundation for growth across residential, commercial, and administrative real estate domains. Though newly founded, the company has already made a significant strategic entry into the market with the acquisition of the well-known Dorchester Administrative Building—a premier administrative facility located in the heart of Calgary.",
