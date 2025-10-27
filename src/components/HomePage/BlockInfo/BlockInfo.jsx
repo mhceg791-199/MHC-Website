@@ -44,7 +44,7 @@ const AnimatedBlock = React.memo(function AnimatedBlock({
         alt={block.name}
         loading="lazy"
         effect="blur"
-        className="w-16 h-16 filter grayscale group-hover:grayscale-0 transition duration-300"
+        className="w-14 h-14 filter grayscale group-hover:grayscale-0 transition duration-300"
       />
       <p className="text-sm text-gray-800 text-center mt-2">{block.name}</p>
     </motion.div>
