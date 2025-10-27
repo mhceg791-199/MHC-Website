@@ -33,7 +33,7 @@ const  accordionitems = [
     {
       title: "Mosaic Real Estate",
       content:
-        "Mosaic Real Estate Holding owns the distinguished Dorchester Square Administrative Building.",
+        "Mosaic Real Estate Holding, established in 2025, is an ambitious and forward-thinking player in the property sector, laying a strong foundation for growth across residential, commercial, and administrative real estate domains",
       page: "/mosaic-realState",
     },
 ];
