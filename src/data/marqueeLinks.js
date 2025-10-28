@@ -1,6 +1,6 @@
 import m1 from "../assets/signatureProjects/wolsey.webp";
 import m2 from "../assets/signatureProjects/mhceg.webp";
-import m3 from "../assets/signatureProjects/kaller.webp";
+import m3 from "../assets/signatureProjects/kaller.png";
 import m4 from "../assets/signatureProjects/datta.webp";
 // import m5 from "../assets/signatureProjects/mt--archCircle.webp";
 import m6 from "../assets/signatureProjects/logo.webp";
