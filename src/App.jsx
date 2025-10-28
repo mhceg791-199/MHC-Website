@@ -46,7 +46,7 @@ function App() {
             <Route path="/mhceg" element={<MhcegProjects />} />
             <Route path="/arup" element={<ArupProjects />} />
             <Route path="/kaller" element={<KallerProjects />} />
-            <Route path="/careers" element={<CareerPage />} />
+            <Route path="/people" element={<CareerPage />} />
             <Route path="/news" element={<NewsPage />} />  
             <Route path="/news/:id" element={<CareerPage />} />
             <Route path="/investment-approach" element={<InvestmentPage />} />

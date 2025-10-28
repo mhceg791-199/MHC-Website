@@ -517,7 +517,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                   <Typography
                     onClick={(e) => {
                       e.stopPropagation(); // Prevent the Accordion from opening
-                      navigate("/careers");
+                      navigate("/people");
                       setIsDrawerOpen(false);
                     }}
                     color="white"
@@ -526,7 +526,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     }`}
                   >
                     <i className="fa-solid fa-person-running text-xl pe-2"></i>{" "}
-                    CAREERS{" "}
+                    PEOPLE{" "}
                   </Typography>
                 </AccordionHeader>
               </ListItem>
