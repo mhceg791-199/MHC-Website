@@ -12,7 +12,7 @@ function CareerPage() {
       </div>
       <CareersDetails />
 
-      {/* <ScrollCards/> */}
+      {/* <ScrollCards/> */} 
       {/* <CareerArea /> */}
     </>
   );
