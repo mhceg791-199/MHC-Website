@@ -8,7 +8,7 @@ export default function OurValuesSection() {
 
   return (
     <section
-      className="relative text-white py-20 px-6 overflow-hidden h-[90vh] flex items-center justify-center"
+      className="relative text-white py-20 px-6 overflow-hidden md:h-[90vh] flex items-center justify-center"
     >
       {/* image background */}
       <img
