@@ -12,7 +12,7 @@ function Holdings() {
   const holdings = [
     {
       logo: "/whoWeArePage/wolsey.png",
-      text: "Founded in 2006 by Danny Wolsey, P.Eng., Wolsey Structural Engineering is a leader in innovative and sustainable structural solutions. Acquired by MHC in 2023, the firm has delivered 1,000+ projects across 10+ countries, specializing in resilient, high-performance designs for modern construction. Under Danny Wolsey’s leadership, Wolsey continues to deliver cost-effective. ",
+      text: "Founded in 2006, Wolsey Structural Engineering is a leader in innovative and sustainable structural solutions. Acquired by MHC in 2023, the firm has delivered 1,000+ projects across 10+ countries, specializing in resilient, high-performance designs for modern construction. Wolsey continues to deliver cost-effective. ",
       link: "/wolsey",
     },
 

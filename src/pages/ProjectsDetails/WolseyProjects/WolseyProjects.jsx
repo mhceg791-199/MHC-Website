@@ -68,8 +68,8 @@ function WolseyProjects() {
     logo: "/signatureProjects/wolsey.png",
     title: { firstWord: "WOLSEY STRUCTURAL ", secondWord: "ENGINEERING" },
     text: [
-      "Founded in 2006 by Danny Wolsey, P.Eng., Wolsey Structural Engineering is a leader in innovative and sustainable structural solutions. With a portfolio spanning thousands of projects across multiple industries, Wolsey specializes in designing resilient, high-performance structures that meet the evolving demands of modern construction.",
-      "In 2023, Wolsey Structural Engineering became part of Mosaic Holding Corporation, strengthening its reach and resources while maintaining its commitment to technical excellence and precision engineering. Under Danny Wolsey’s leadership, the firm continues to deliver cost-effective, structurally sound solutions that optimize efficiency, durability, and sustainability.",
+      "Founded in 2006, Wolsey Structural Engineering is a leader in innovative and sustainable structural solutions. With a portfolio spanning thousands of projects across multiple industries, Wolsey specializes in designing resilient, high-performance structures that meet the evolving demands of modern construction.",
+      "In 2023, Wolsey Structural Engineering became part of Mosaic Holding Corporation, strengthening its reach and resources while maintaining its commitment to technical excellence and precision engineering, the firm continues to deliver cost-effective, structurally sound solutions that optimize efficiency, durability, and sustainability.",
     ],
     link: "https://www.wolsey.ca/",
   };

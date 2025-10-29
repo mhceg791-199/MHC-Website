@@ -3,7 +3,7 @@ const  accordionitems = [
   {
       title: "Wolsey Structural Engineering",
       content:
-        "Founded in 2006 by Danny Wolsey, P.Eng., Wolsey Structural Engineering is a leader in innovative and sustainable structural solutions.",
+        "Founded in 2006, Wolsey Structural Engineering is a leader in innovative and sustainable structural solutions.",
       page: "/wolsey",
     },
     {
