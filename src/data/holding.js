@@ -1,5 +1,6 @@
 import mosaic from "../assets/signatureProjects/logo.webp";
 import mhceg from "../assets/signatureProjects/mhceg.webp";
+import indigenous from "../assets/signatureProjects/Indigenous.webp";
 
 const holdings = [
   {
@@ -31,6 +32,11 @@ const holdings = [
     text: "Mosaic Real Estate",
     logo: mosaic,
     link: "/mosaic-realState",
+  },
+  {
+    text: "Indigenous Mosaic Company",
+    logo: indigenous,
+    link: "/indigenous-mosaic",
   },
 ];
 

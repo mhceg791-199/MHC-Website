@@ -400,6 +400,18 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     </ListItemPrefix>
                     Mosaic Real Estate
                   </ListItem>
+                  <ListItem
+                    className="hover:bg-mainGold hover:text-white"
+                    onClick={() => handleNavigate("/indigenous-mosaic", "engineer")}
+                  >
+                    <ListItemPrefix>
+                      <ChevronRightIcon
+                        strokeWidth={3}
+                        className="h-3 w-5 opacity-0"
+                      />
+                    </ListItemPrefix>
+                    Indigenous Mosaic
+                  </ListItem>
                 </List>
               </AccordionBody>
             </Accordion>

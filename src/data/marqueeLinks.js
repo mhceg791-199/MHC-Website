@@ -3,6 +3,7 @@ import m2 from "../assets/signatureProjects/mhceg.webp";
 import m3 from "../assets/signatureProjects/kaller.png";
 import m4 from "../assets/signatureProjects/datta.webp";
 // import m5 from "../assets/signatureProjects/mt--archCircle.webp";
+import m5 from "../assets/signatureProjects/Indigenous.webp";
 import m6 from "../assets/signatureProjects/logo.webp";
 
 
@@ -32,6 +33,11 @@ const marqueeLinks = [
   //   img: `${m5}`,
   //   name: "MT-ARCH Architect",
   // },
+  {
+    to: "/indigenous-mosaic",
+    img: `${m5}`,
+    name: "Indigenous Mosaic Company",
+  },
   {
     to: "/mosaic-realState",
     img: `${m6}`,

@@ -36,6 +36,12 @@ const  accordionitems = [
         "Mosaic Real Estate Holding, established in 2025, is an ambitious and forward-thinking player in the property sector, laying a strong foundation for growth across residential, commercial, and administrative real estate domains",
       page: "/mosaic-realState",
     },
+    {
+      title: "Indigenous Mosaic Company",
+      content:
+        "Indigenous Mosaic Company (IMC) is an architecture and engineering powerhouse born from the partnership between Chiniki Group of Companies and Mosaic Holding Corporation.",
+      page: "/indigenous-mosaic",
+    },
 ];
 
 export default accordionitems;

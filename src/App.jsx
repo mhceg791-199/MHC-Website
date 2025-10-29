@@ -26,6 +26,7 @@ import MosaicRealState from "./pages/ProjectsDetails/MosaicRealState/MosaicRealS
 import OurHistory from "./pages/Projects/Projects.jsx";
 import ScrollToTopButton from "./components/shared/ScrollToTopButton/ScrollToTopButton.jsx";
 import DattaAndTayefi from "./pages/ProjectsDetails/DattaAndTayefi/DattaAndTayefi.jsx";
+import IndigenousProject from "./pages/ProjectsDetails/IndigenousProject/IndigenousProject.jsx";
 function App() {
   return (
     <>
@@ -43,6 +44,7 @@ function App() {
             <Route path="/mt-arch" element={<MtAcrchProjects />} />
             <Route path="/mosaic-realState" element={<MosaicRealState />} />
             <Route path="/datta-and-tayefi" element={<DattaAndTayefi />} /> 
+            <Route path="/indigenous-mosaic" element={<IndigenousProject />} /> 
             <Route path="/mhceg" element={<MhcegProjects />} />
             <Route path="/arup" element={<ArupProjects />} />
             <Route path="/kaller" element={<KallerProjects />} />

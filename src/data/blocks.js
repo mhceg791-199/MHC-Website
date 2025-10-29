@@ -4,6 +4,7 @@ import b3 from '../assets/signatureProjects/kaller.png';
 import b4 from '../assets/signatureProjects/datta.webp';
 // import b5 from '../assets/signatureProjects/mt--archCircle.webp';
 import b6 from '../assets/signatureProjects/logo.webp';
+import b7 from '../assets/signatureProjects/Indigenous.webp';
 
 const blocks = [
   {
@@ -53,6 +54,14 @@ const blocks = [
     name: "Mosaic",
     category: "RealEstate",
     page: "/mosaic-realState",
+  },
+  {
+    top: "65%",
+    left: "15%",
+    img: `${b7}`,
+    name: "Indigenous",
+    category: "Engineering",
+    page: "/indigenous-mosaic",
   },
 ];
 
