@@ -1,43 +1,65 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import SocialMedia from "./SocialMedia/SocialMedia";
 
-function Footer() {
-  const nav = useNavigate();
+const linksTop = [
+  { to: "/who-we-are", label: "About" },
+  { to: "/holdings", label: "Holdings" },
+  { to: "/our-projects", label: "Projects" },
+  { to: "/people", label: "Careers" },
+  { to: "/News", label: "News" },
+];
 
+const linksBottom = [
+  { to: "/contact-us", label: "Contact Us" },
+  { to: "/privacy-policy", label: "Privacy Policy" },
+  { to: "/tearms-conditions", label: "Terms & Conditions" },
+];
+
+function Footer() {
   return (
-    <>
-      <div className="grid md:grid-cols-10 grid-cols-1 px-5 py-3 gap-5 bg-mainGold text-white">
-        <div
-          className="md:col-span-2 col-span-1 flex justify-center lg:px-8 cursor-pointer"
-          onClick={() => nav("/")}
-        >
+    <footer className="grid md:grid-cols-10 grid-cols-1 px-5 py-3 gap-5 bg-mainGold text-white">
+      
+      {/* Logo */}
+      <div className="md:col-span-2 flex justify-center items-center lg:px-8">
+        <Link to="/" className="block">
           <img
             className="object-contain md:w-3/4 w-1/2 m-auto"
             src="/images/logo.png"
+            loading="lazy"
             alt="logo"
           />
-        </div>
-        <div className="md:col-span-5 col-span-1 flex md:items-start items-center flex-col justify-center  ">
-          <p className="text-md md:text-start text-center font-semibold">
-            <Link to="/who-we-are" className="me-2">About |</Link>
-            <Link to="/holdings" className="me-2">Holdings |</Link>
-            <Link to="/our-projects" className="me-2">Projects |</Link>
-            <Link to="/people" className="me-2">Careers |</Link>
-            <Link to="/News" className="me-2">News </Link>
-            <br />
-            <Link to="/contact-us" className="me-2">Contact Us |</Link>
-            <Link to="/privacy-policy" className="me-2">Privacy Policy |</Link>
-            <Link to="/tearms-conditions" className="me-2">Terms & Conditions </Link>
-          </p>
-          <p className="text-sm mt-2">
-            © 2024 Mosaic Holding Corporation, All rights reserved
-          </p>
-        </div>
-        <div className="md:col-span-3 col-span-1  justify-evenly  flex items-center">
-          <SocialMedia />
-        </div>
+        </Link>
       </div>
-    </>
+
+      {/* Links */}
+      <div className="md:col-span-5 flex flex-col items-center md:items-start justify-center">
+        
+        <nav className="flex flex-wrap justify-center md:justify-start gap-1 font-semibold">
+          {linksTop.map((l, i) => (
+            <Link key={i} to={l.to} className="me-1 hover:opacity-80">
+              {l.label} {i < linksTop.length - 1 && "|"}
+            </Link>
+          ))}
+        </nav>
+
+        <nav className="flex flex-wrap justify-center md:justify-start gap-1 mt-1 font-semibold">
+          {linksBottom.map((l, i) => (
+            <Link key={i} to={l.to} className="me-1 hover:opacity-80">
+              {l.label} {i < linksBottom.length - 1 && "|"}
+            </Link>
+          ))}
+        </nav>
+
+        <p className="text-sm mt-2 text-center md:text-left">
+          © 2024 Mosaic Holding Corporation, All rights reserved
+        </p>
+      </div>
+
+      {/* Social */}
+      <div className="md:col-span-3 flex justify-evenly items-center">
+        <SocialMedia />
+      </div>
+    </footer>
   );
 }
 

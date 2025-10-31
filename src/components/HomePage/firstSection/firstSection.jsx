@@ -1,6 +1,6 @@
 import { Typewriter } from "react-simple-typewriter";
 import firstSection from "../../../assets/homePage/firstSection.webm";
-import fallback from "../../../assets/homePage/fallback.png";
+import fallback from "../../../assets/homePage/fallback.webp";
 
 function FirstSection({ scrollTarget }) {
   const handleScrollDown = () => {
@@ -17,7 +17,8 @@ function FirstSection({ scrollTarget }) {
         autoPlay
         muted
         playsInline
-        preload="none"
+        preload="auto"
+        fetchPriority="high"
         poster={fallback}
         src={firstSection}
       ></video>

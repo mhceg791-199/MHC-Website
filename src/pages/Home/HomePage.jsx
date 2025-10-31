@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import React, { Suspense, useEffect, useRef, useState } from "react";
 import FirstSection from "../../components/HomePage/firstSection/firstSection";
 import { Link } from "react-router-dom";
 import { SidebarWithBurgerMenu } from "../../components/shared/Navbar/Sidebar/Sidebar";
@@ -8,22 +8,42 @@ import Marquee from "../../components/HomePage/marquee/marquee";
 
 import InfoSignature from "../../components/HomePage/infoSignature/infoSignature";
 import SignatureSlider from "../../components/HomePage/Slider/slider";
-import Global from "../../components/HomePage/GlobeScene/Global";
+// import Global from "../../components/HomePage/GlobeScene/Global";
+const Global = React.lazy(() =>
+  import("../../components/HomePage/GlobeScene/Global")
+);
 
 function HomePage() {
   const [isScrolled, setIsScrolled] = useState(false);
   const secondSection = useRef(null);
 
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (!secondSection.current) return;
+
+  //     const sectionTop = secondSection.current.offsetTop;
+  //     const sectionHeight = secondSection.current.offsetHeight;
+  //     const sectionBottom = sectionTop + sectionHeight;
+
+  //     // start from SecondSection
+  //     setIsScrolled(window.scrollY > sectionBottom);
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
   useEffect(() => {
     const handleScroll = () => {
       if (!secondSection.current) return;
 
       const sectionTop = secondSection.current.offsetTop;
-      const sectionHeight = secondSection.current.offsetHeight;
-      const sectionBottom = sectionTop + sectionHeight;
+      const sectionBottom = sectionTop + secondSection.current.offsetHeight;
 
-      // start from SecondSection
-      setIsScrolled(window.scrollY > sectionBottom);
+      const scrolled = window.scrollY > sectionBottom;
+
+      requestAnimationFrame(() => {
+        setIsScrolled((prev) => (prev !== scrolled ? scrolled : prev));
+      });
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -50,7 +70,7 @@ function HomePage() {
         <SidebarWithBurgerMenu inHomePage={!isScrolled} />
       </div>
 
-      {<Loader /> && <FirstSection scrollTarget={secondSection} />}
+      <FirstSection scrollTarget={secondSection} />
       <Marquee />
 
       <div ref={secondSection}>
@@ -58,7 +78,9 @@ function HomePage() {
       </div>
       <InfoSignature />
       <SignatureSlider />
-      <Global />
+      <Suspense fallback={null}>
+        <Global />
+      </Suspense>
     </>
   );
 }
