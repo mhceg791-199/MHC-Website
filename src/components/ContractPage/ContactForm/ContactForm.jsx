@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SectionHeader from "../../shared/sectionHeader/sectionHeader";
 
 export default function ContactForm() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -19,7 +20,9 @@ export default function ContactForm() {
         onSubmit={handleSubmit}
         className="w-full  bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-2 text-white"
       >
-        <h2 className="heading-3 mb-6 text-mainGold">Get in Touch</h2>
+        <h2 className="heading-3 mb-6 font-medium">
+          <SectionHeader firstWord="Get in Touch" />
+        </h2>
 
         <div className="mb-6">
           <label className="block text-black text-sm font-bold mb-2">

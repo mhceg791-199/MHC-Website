@@ -4,7 +4,7 @@ import SocialMedia from "./SocialMedia/SocialMedia";
 const linksTop = [
   { to: "/who-we-are", label: "About" },
   { to: "/holdings", label: "Holdings" },
-  { to: "/our-projects", label: "Projects" },
+  // { to: "/our-projects", label: "Projects" },
   { to: "/people", label: "Careers" },
   { to: "/News", label: "News" },
 ];
