@@ -54,14 +54,14 @@ function HomePage() {
     <>
       {/* Navbar */}
       <div
-        className={`flex justify-between items-center px-10 fixed top-0 left-0 right-0 z-40 transition-colors duration-500 ${
+        className={`flex justify-between items-center px-2 md:px-10 fixed top-0 left-0 right-0 z-40 transition-colors duration-500 ${
           isScrolled ? "bg-white animationNavbar" : "bg-[rgba(0,0,0,0.5)]"
         }`}
       >
         <Link to="/">
           <img
             className={`${
-              isScrolled ? "w-[28%]" : "w-[35%]"
+              isScrolled ? "w-1/2 md:w-[28%]" : "w-[35%]"
             } p-2 transition-all duration-300`}
             src={isScrolled ? "/images/logoWithBlack.png" : "/images/logo.png"}
             alt="Mosaic Holding Corporation MHC"
