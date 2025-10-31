@@ -38,6 +38,27 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
   const closeDrawer = () => setIsDrawerOpen(false);
   const navigate = useNavigate();
 
+  const accordionList = [
+    { name: "Wolsey", path: "/wolsey", section: "architecture" },
+    { name: "MHCEG", path: "/mhceg", section: "engineer" },
+    { name: "Kaller", path: "/kaller", section: "engineer" },
+    {
+      name: "Datta And Tayefi",
+      path: "/datta-and-tayefi",
+      section: "engineer",
+    },
+    {
+      name: "Mosaic Real Estate",
+      path: "/mosaic-realState",
+      section: "engineer",
+    },
+    {
+      name: "Indigenous Mosaic",
+      path: "/indigenous-mosaic",
+      section: "engineer",
+    },
+  ];
+
   return (
     <>
       <IconButton variant="text" size="lg" onClick={openDrawer}>
@@ -183,7 +204,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                   <Typography
                     onClick={(e) => {
                       e.stopPropagation(); // Prevent the Accordion from opening
-                      handleNavigate("/who-we-are", "firstSection")
+                      handleNavigate("/who-we-are", "firstSection");
                       setIsDrawerOpen(false);
                     }}
                     color="white"
@@ -192,7 +213,8 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     }`}
                   >
                     {/* <i className="fa-solid fa-sack-dollar "></i>  */}
-                    <i className="fa-solid fa-gears text-xl pe-2"></i>  WHO WE ARE{" "}
+                    <i className="fa-solid fa-gears text-xl pe-2"></i> WHO WE
+                    ARE{" "}
                   </Typography>
                 </AccordionHeader>
               </ListItem>
@@ -326,97 +348,27 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
               </ListItem>
               <AccordionBody className="py-1">
                 <List className="p-0  !text-gray-500">
-                  <ListItem
-                    className="hover:bg-mainGold hover:text-white"
-                    onClick={() => handleNavigate("/wolsey", "architecture")}
-                  >
-                    <ListItemPrefix>
-                      <ChevronRightIcon
-                        strokeWidth={3}
-                        className="h-3 w-5 opacity-0"
-                      />
-                    </ListItemPrefix>
-                    Wolsey
-                  </ListItem>
-                  <ListItem
-                    className="hover:bg-mainGold hover:text-white"
-                    onClick={() => handleNavigate("/datta-and-tayefi", "engineer")}
-                  >
-                    <ListItemPrefix>
-                      <ChevronRightIcon
-                        strokeWidth={3}
-                        className="h-3 w-5 opacity-0"
-                      />
-                    </ListItemPrefix>
-                    Datta And Tayefi
-                  </ListItem>
-                  <ListItem
-                    className="hover:bg-mainGold hover:text-white"
-                    onClick={() => handleNavigate("/kaller", "engineer")}
-                  >
-                    <ListItemPrefix>
-                      <ChevronRightIcon
-                        strokeWidth={3}
-                        className="h-3 w-5 opacity-0"
-                      />
-                    </ListItemPrefix>
-                    Kaller
-                  </ListItem>
-                  <ListItem
-                    className="hover:bg-mainGold hover:text-white"
-                    onClick={() => handleNavigate("/mhceg", "engineer")}
-                  >
-                    <ListItemPrefix>
-                      <ChevronRightIcon
-                        strokeWidth={3}
-                        className="h-3 w-5 opacity-0"
-                      />
-                    </ListItemPrefix>
-                    MHCEG
-                  </ListItem>
-                  {/* <ListItem
-                    className="hover:bg-mainGold hover:text-white"
-                    onClick={() => handleNavigate("/mt-arch", "engineer")}
-                  >
-                    <ListItemPrefix>
-                      <ChevronRightIcon
-                        strokeWidth={3}
-                        className="h-3 w-5 opacity-0"
-                      />
-                    </ListItemPrefix>
-                    MT-ARCH
-                  </ListItem> */}
-                  <ListItem
-                    className="hover:bg-mainGold hover:text-white"
-                    onClick={() =>
-                      handleNavigate("/mosaic-realState", "engineer")
-                    }
-                  >
-                    <ListItemPrefix>
-                      <ChevronRightIcon
-                        strokeWidth={3}
-                        className="h-3 w-5 opacity-0"
-                      />
-                    </ListItemPrefix>
-                    Mosaic Real Estate
-                  </ListItem>
-                  <ListItem
-                    className="hover:bg-mainGold hover:text-white"
-                    onClick={() => handleNavigate("/indigenous-mosaic", "engineer")}
-                  >
-                    <ListItemPrefix>
-                      <ChevronRightIcon
-                        strokeWidth={3}
-                        className="h-3 w-5 opacity-0"
-                      />
-                    </ListItemPrefix>
-                    Indigenous Mosaic
-                  </ListItem>
+                  {accordionList &&
+                    accordionList.map((item) => (
+                      <ListItem
+                        key={item.name}
+                        className="hover:bg-mainGold hover:text-white"
+                        onClick={() => handleNavigate(item.path, item.section)}
+                      >
+                        <ListItemPrefix>
+                          <ChevronRightIcon
+                            strokeWidth={3}
+                            className="h-3 w-5 opacity-0"
+                          />
+                        </ListItemPrefix>
+                        {item.name}
+                      </ListItem>
+                    ))}
                 </List>
               </AccordionBody>
             </Accordion>
 
-            <Accordion open={open === 1}>
+            {/* <Accordion open={open === 1}>
               {" "}
               <ListItem
                 className={`p-0 item hover:bg-transparent mainItem ${
@@ -442,13 +394,13 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                       open === 1 ? "text-mainGold" : ""
                     }`}
                   >
-                    {/* <i className="fa-solid fa-sack-dollar "></i>  */}
+                    
                     <i className="fa-solid fa-diagram-project text-xl pe-2"></i>{" "}
                     PROJECTS{" "}
                   </Typography>
                 </AccordionHeader>
               </ListItem>
-            </Accordion>
+            </Accordion> */}
 
             {/* <Accordion open={open === 1}>
               {" "}

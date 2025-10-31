@@ -1,13 +1,9 @@
-import React, { useRef } from "react";
-import ProjectSlider from "../../../components/ProjectsDetailsPage/ProjectCard/projectSilder/SliderOfProjects";
+import { useRef } from "react";
 import FirstSection from "../../../components/ProjectsDetailsPage/FirstSection/FirstSection";
-import ProjectDetails from "../../../components/ProjectsDetailsPage/ProjectCard/ProjectDetails/ProjectDetails";
 import Navbar from "../../../components/shared/Navbar/Navbar";
 import useScrollToSection from "../../../Hooks/useScrollToSection";
-import IndustriesOfHolding from "../../../components/ProjectsDetailsPage/IndustriesOfHolding/IndustriesOfHolding";
 import {
   FaCity,
-  FaPaintBrush,
   FaHome,
   FaBuilding,
   FaRegClipboard,

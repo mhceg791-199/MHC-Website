@@ -1,6 +1,4 @@
-import React from "react";
 import SectionHeader from "../../shared/sectionHeader/sectionHeader";
-import Paragraph from "../../shared/paragraph";
 
 function ContractDetails() {
   const details = [
@@ -28,7 +26,7 @@ function ContractDetails() {
         {details.map((d) => (
           <>
             <div className="flex items-center my-3">
-              <i class={` ${d.icon} text-mainGold me-2`}></i>
+              <i className={` ${d.icon} text-mainGold me-2`}></i>
               <p className={` sm:text-small md:text-2xl `}>{d.text}</p>
             </div>
           </>

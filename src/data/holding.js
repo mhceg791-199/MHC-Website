@@ -9,11 +9,6 @@ const holdings = [
     link: "/wolsey",
   },
   {
-    text: "Datta And Tayefi",
-    logo: "/signatureProjects/datta.png",
-    link: "/datta-and-tayefi",
-  },
-  {
     text: "MHCEG Consultancy",
     logo: mhceg,
     link: "/mhceg",
@@ -27,6 +22,11 @@ const holdings = [
     text: "Kaller Architecture",
     logo: "/signatureProjects/kaller.png",
     link: "/kaller",
+  },
+  {
+    text: "Datta And Tayefi",
+    logo: "/signatureProjects/datta.png",
+    link: "/datta-and-tayefi",
   },
   {
     text: "Mosaic Real Estate",

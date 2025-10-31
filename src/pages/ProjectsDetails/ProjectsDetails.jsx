@@ -1,4 +1,3 @@
-import React from "react";
 import FirstSection from "../../components/ProjectsDetailsPage/FirstSection/FirstSection";
 import ProjectCard from "../../components/ProjectsDetailsPage/ProjectCard/ProjectCard";
 
