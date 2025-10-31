@@ -20,7 +20,7 @@ export default function ContactForm() {
         onSubmit={handleSubmit}
         className="w-full  bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-2 text-white"
       >
-        <h2 className="heading-3 mb-6 font-medium">
+        <h2 className="heading-3 mb-6 font-medium text-black">
           <SectionHeader firstWord="Get in Touch" />
         </h2>
 
