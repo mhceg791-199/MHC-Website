@@ -1,6 +1,6 @@
 import IndustryCard from "../../Holdings/IndustryCard/IndustryCard";
 
-function FirstSectionDetailss({ data, industries }) {
+function FirstSectionDetailss({ data }) {
   //   const { poster, title } = data;
   const { poster, logo, title, text, link } = data;
 
