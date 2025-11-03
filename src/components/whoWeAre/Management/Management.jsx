@@ -19,7 +19,7 @@ const Management = React.forwardRef(() => {
           <img
             className="object-contain"
             src="/whoWeArePage/management.jpg"
-            alt=""
+            alt="management"
           />
         </div>
         <div className="col-span-4 lg:col-span-1  text-white bg-mainGold flex lg:text-large text-base flex-col justify-center items-center">

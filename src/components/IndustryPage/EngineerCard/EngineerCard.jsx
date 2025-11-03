@@ -8,7 +8,7 @@ function EngineerCard() {
         <img
           className="w-full lg:h-[70vh] object-cover"
           src="/industryPage/2.webp"
-          alt=""
+          alt="industry"
         />
         <div className="bg-lightGray relative translate-y-[-10%]  sm:mx-10  p-8 md:px-14">
           <div className="flex items-center">
@@ -16,7 +16,7 @@ function EngineerCard() {
               <img
                 className="w-[70%] "
                 src="/homePage/icons/icon2.png"
-                alt=""
+                alt="industry"
               />
             </div>{" "}
             <SectionHeader firstWord="Engineering Solutions" link="/wolsey" />

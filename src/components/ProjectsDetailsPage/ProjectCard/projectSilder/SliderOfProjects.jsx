@@ -55,7 +55,7 @@ function ProjectSlider({ data }) {
               <img
                 className="w-full h-full border-4 object-cover border-white"
                 src={src}
-                alt=""
+                alt="Slider"
               />
             </div>
           </React.Fragment>

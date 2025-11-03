@@ -12,11 +12,11 @@ function IndustryCard({
 }) {
   return (
     <div className="bg-bl mb-0">
-      <img className="w-full lg:h-[60vh] object-cover" src={img} alt="" />
+      <img className="w-full lg:h-[60vh] object-cover" src={img} alt={firstWord} />
       <div className="bg-lightGray relative md:translate-y-[-12%] translate-y-[-3%]  sm:mx-10  p-8 md:px-14">
         <div className="flex items-center">
           <div className=" border-[3px] me-5 border-mainGold text-mainGold rounded-full flex justify-center  w-16 h-16 items-center ">
-            <img className="w-[70%] " src={icon} alt="" />
+            <img className="w-[70%] " src={icon} alt={firstWord}/>
           </div>
           <SectionHeader
             firstWord={firstWord}

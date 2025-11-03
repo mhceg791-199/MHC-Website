@@ -1,4 +1,3 @@
-
 import IndustryCard from "../../Holdings/IndustryCard/IndustryCard";
 
 function FirstSectionDetailss({ data, industries }) {
@@ -14,6 +13,8 @@ function FirstSectionDetailss({ data, industries }) {
         className="w-full lg:h-[70vh] object-cover"
         src={poster}
         alt={title}
+        width={2500}
+        height={1474}
       />
 
       {/* containt details */}
