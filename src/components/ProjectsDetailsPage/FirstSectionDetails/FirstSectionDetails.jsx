@@ -1,10 +1,7 @@
 import IndustryCard from "../../Holdings/IndustryCard/IndustryCard";
 
 function FirstSectionDetailss({ data }) {
-  //   const { poster, title } = data;
   const { poster, logo, title, text, link } = data;
-
-  console.log(data);
 
   return (
     <div className="hoding-details">
