@@ -32,6 +32,7 @@ function HomePage() {
   //   window.addEventListener("scroll", handleScroll);
   //   return () => window.removeEventListener("scroll", handleScroll);
   // }, []);
+  
   useEffect(() => {
     const handleScroll = () => {
       if (!secondSection.current) return;

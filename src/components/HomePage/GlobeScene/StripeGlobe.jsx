@@ -138,7 +138,7 @@ export default function StripeGlobe({ maskMap }) {
         />
       ))}
 
-      <OrbitControls minDistance={1.4} maxDistance={3.5} />
+      {/* <OrbitControls minDistance={1.4} maxDistance={3.5} /> */}
     </group>
   );
 }

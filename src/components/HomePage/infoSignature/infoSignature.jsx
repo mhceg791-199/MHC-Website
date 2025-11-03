@@ -1,6 +1,6 @@
 import SectionHeader from "../../shared/sectionHeader/sectionHeader";
 import AccordionInfo from "../AccordionInfo/AccordionInfo";
-import BlockInfo from "../BlockInfo/BlockInfo";
+import Acquisition from "../BlockInfo/BlockInfo";
 
 function InfoSignature() {
 
@@ -14,7 +14,7 @@ function InfoSignature() {
         <AccordionInfo />
 
         {/* RIGHT SIDE */}
-        <BlockInfo />
+        <Acquisition />
       </section>
     </div>
   );
