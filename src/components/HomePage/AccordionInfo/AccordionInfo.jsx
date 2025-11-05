@@ -64,7 +64,7 @@ function AccordionInfo() {
             </button>
 
             <div
-              className={`overflow-hidden transition-all duration-300 ${
+              className={`overflow-hidden transition-all duration-0 ${
                 isOpen ? "max-h-40" : "max-h-0"
               }`}
             >
