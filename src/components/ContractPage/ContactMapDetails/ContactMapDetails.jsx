@@ -29,7 +29,7 @@ function ContactMapDetails() {
               rel="noopener noreferrer"
               className="text-gray-400 text-md hover:text-mainGold transition-colors duration-300"
             >
-              #200, 1302 4th Street SW, Calgary, AB T2R-0X8
+              #700-1333 8th St. SW, Calgary AB T2R 1M6
             </a>
           </div>
         </div>
