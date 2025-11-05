@@ -202,7 +202,7 @@ export default function HoldingsCircularCluster() {
         <div className="relative z-20">
           <div className="w-36 h-36 rounded-full bg-white shadow-xl border-4 border-[#C5A363] flex items-center justify-center">
             <img
-              src="/images/mhc.jpg"
+              src="/images/mhc.png"
               className="w-24 h-24 object-contain"
               alt="Main Logo"
             />
@@ -211,35 +211,48 @@ export default function HoldingsCircularCluster() {
 
         {/* Circular Companies */}
         {blocks.map((company, index) => {
-          const angle = (index / blocks.length) * 2 * Math.PI;
-          const randomOffset = Math.random() * 35 - 18;
-          const x = (radius + randomOffset) * Math.cos(angle);
-          const y = (radius + randomOffset) * Math.sin(angle);
+  const angle = (index / blocks.length) * 2 * Math.PI;
+  const randomOffset = Math.random() * 35 - 18;
+  const x = (radius + randomOffset) * Math.cos(angle);
+  const y = (radius + randomOffset) * Math.sin(angle);
 
-          return (
-            <div
-              key={index}
-              className="absolute transition-transform hover:scale-110"
-              style={{
-                left: `calc(50% + ${x}px)`,
-                top: `calc(50% + ${y}px)`,
-                transform: "translate(-50%, -50%)",
-                zIndex: 10,
-              }}
-            >
-              <div className="bg-white w-28  shadow-lg rounded-xl p-5 border border-gray-100">
-                <img
-                  src={company.img}
-                  alt={company.name}
-                  className="w-14 h-14 mx-auto object-contain"
-                />
-                <p className="text-sm text-gray-800 text-center mt-2">
-                 {company.name}
-               </p>
-              </div>
-            </div>
-          );
-        })}
+  return (
+    <div
+      key={index}
+      className="group absolute"
+      style={{
+        left: `calc(50% + ${x}px)`,
+        top: `calc(50% + ${y}px)`,
+        transform: "translate(-50%, -50%)",
+        zIndex: 10,
+      }}
+    >
+      {/* Card */}
+      <div className="bg-white w-28 shadow-lg rounded-xl p-5 border border-gray-100 transition-transform group-hover:scale-110 relative">
+        <img
+          src={company.img}
+          alt={company.name}
+          className="w-14 h-14 mx-auto object-contain"
+        />
+      </div>
+
+      {/* ✅ Tooltip Name (Appears Outside the Card) */}
+      <div
+        className="
+          absolute left-1/2 -bottom-7 
+          -translate-x-1/2 opacity-0 pointer-events-none
+          group-hover:opacity-100 group-hover:-bottom-12
+          transition-all duration-300
+          bg-black text-white text-xs px-3 py-1 rounded-lg shadow-lg
+          whitespace-nowrap
+        "
+      >
+        {company.name}
+      </div>
+    </div>
+  );
+})}
+
       </div>
     </div>
   );
