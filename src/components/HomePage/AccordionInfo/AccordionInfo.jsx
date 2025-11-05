@@ -25,7 +25,7 @@ function AccordionInfo() {
           <div key={index} className="border-b border-slate-200">
             <button
               onClick={() => toggleAccordion(index)}
-              className={`w-full flex justify-between items-center py-5 transition-colors duration-300 ${
+              className={`w-full flex justify-between items-center py-5 transition-colors duration-0 ${
                 isOpen
                   ? "text-mainGold font-semibold"
                   : "text-slate-800 hover:text-mainGold/70"
@@ -35,7 +35,7 @@ function AccordionInfo() {
                 {item.title}
               </span>
               <span
-                className={`transition-transform duration-300 ${
+                className={`transition-transform duration-0 ${
                   isOpen ? "rotate-180 text-mainGold" : "text-slate-800"
                 }`}
               >
