@@ -6,11 +6,11 @@ import SecondSection from "../../components/HomePage/secondSection/secondSection
 import Marquee from "../../components/HomePage/marquee/marquee";
 
 import InfoSignature from "../../components/HomePage/infoSignature/infoSignature";
-import SignatureSlider from "../../components/HomePage/Slider/slider";
+// import SignatureSlider from "../../components/HomePage/Slider/slider";
 // import Global from "../../components/HomePage/GlobeScene/Global";
-const Global = React.lazy(() =>
-  import("../../components/HomePage/GlobeScene/Global")
-);
+// const Global = React.lazy(() =>
+//   import("../../components/HomePage/GlobeScene/Global")
+// );
 
 function HomePage() {
   const [isScrolled, setIsScrolled] = useState(false);
