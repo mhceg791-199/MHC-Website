@@ -48,7 +48,7 @@ import marqueeLinks from "../../../data/marqueeLinks";
 function Marquee() {
   return (
     <div
-      className="absolute z-20 left-1/2 bottom-[110px] -translate-x-1/2 w-[min(80%,1024px)] overflow-hidden border-2 border-mainGold rounded-full bg-white group"
+      className="absolute z-20 left-1/2 bottom-[130px] md:bottom-[110px] -translate-x-1/2 w-[min(80%,1024px)] overflow-hidden border-2 border-mainGold rounded-full bg-white group"
       role="region"
       aria-label="Partners marquee"
     >

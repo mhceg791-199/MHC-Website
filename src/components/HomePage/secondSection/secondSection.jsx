@@ -97,7 +97,7 @@ function SecondSection() {
           </div>
         </section>
 
-        <div className="grid md:grid-cols-3 lg:grid-cols-5 grid-cols-2 md:px-20 px-5 mt-10 ">
+        <div className="grid md:grid-cols-3 lg:grid-cols-5 grid-cols-2 md:px-20 px-5 md:mt-10 ">
           {industries.map(({ icon, hoveringIcon, name, link }, index) => (
             <React.Fragment key={index}>
               <div

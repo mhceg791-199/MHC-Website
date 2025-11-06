@@ -49,7 +49,7 @@ function Terms() {
         secondWord="Conditions"
         paragraphs={paragraphs}
         particleColors={["#C5A363", "#C5A363"]}
-        height = "h-[50vh]"
+        height = "h-[24vh] md:h-[50vh]"
       />
       <div className="md:px-20 px-3 mb-28">
         {terms.map(({ title, paragraph }, index) => (

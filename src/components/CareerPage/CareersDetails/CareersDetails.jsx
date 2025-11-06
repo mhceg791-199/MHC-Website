@@ -26,12 +26,12 @@ function CareersDetails() {
         secondWord="Mosaic Holding Corporation"
         paragraphs={paragraphs}
         particleColors={["#C5A363", "#C5A363"]}
-        height = "h-[60vh]"
+        height = "h-[35vh] md:h-[60vh]"
       />
 
       <OurValuesSection />
 
-      <div className="bg-lightGray p-10 py-20">
+      <div className="bg-lightGray p-10 py-10 md:py-20">
         <h3 className="text-center text-mainGold heading-3 font-semibold">
           JOIN MHC TEAM NOW
         </h3>

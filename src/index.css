@@ -117,9 +117,9 @@
 }
 
 /* ✅ وقف الأنيميشن وقت الـ hover */
-.slider-wrapper:hover .slider-track {
+/* .slider-wrapper:hover .slider-track {
   animation-play-state: paused;
-}
+} */
 
 
 @keyframes scrollLeft {

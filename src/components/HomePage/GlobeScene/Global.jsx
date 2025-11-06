@@ -5,7 +5,7 @@ export default function Global() {
   return (
     <section
       className="
-        flex flex-col-reverse md:flex-row items-center justify-between w-full min-h-screen md:gap-8 gap-64 md:px-12 px-5 py-10
+        flex flex-col-reverse md:flex-row items-center justify-between w-full min-h-screen gap-8  md:px-12 px-5 py-10
          bg-[#050b11] text-white relative overflow-hidden"
     >
       {/* LEFT SIDE CONTENT */}

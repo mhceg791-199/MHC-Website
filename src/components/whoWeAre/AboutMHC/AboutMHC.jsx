@@ -36,7 +36,7 @@ function AboutMHC() {
       paragraphs3={paragraphs3}
       paragraphs4={paragraphs4}
       particleColors={["#C5A363", "#C5A363"]}
-      height="h-[85vh]"
+      height="h-[100vh] md:h-[85vh]"
     />
   );
 }

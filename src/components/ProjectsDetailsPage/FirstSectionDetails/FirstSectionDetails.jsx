@@ -15,7 +15,7 @@ function FirstSectionDetailss({ data }) {
       />
 
       {/* containt details */}
-      <div className="slider-container md:mx-5 overflow-hidden md:translate-y-[-25%]">
+      <div className="slider-container md:mx-5 overflow-hidden translate-y-[-5%] md:translate-y-[-25%]">
         <div className="mx-auto py-8">
           <IndustryCard
             img={logo}
