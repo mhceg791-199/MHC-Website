@@ -2,13 +2,11 @@ import React, { Suspense, useEffect, useRef, useState } from "react";
 import FirstSection from "../../components/HomePage/firstSection/firstSection";
 import { Link } from "react-router-dom";
 import { SidebarWithBurgerMenu } from "../../components/shared/Navbar/Sidebar/Sidebar";
-import Loader from "../../components/shared/Loading/Loading";
 import SecondSection from "../../components/HomePage/secondSection/secondSection";
 import Marquee from "../../components/HomePage/marquee/marquee";
 
 import InfoSignature from "../../components/HomePage/infoSignature/infoSignature";
 import SignatureSlider from "../../components/HomePage/Slider/slider";
-// import Global from "../../components/HomePage/GlobeScene/Global";
 const Global = React.lazy(() =>
   import("../../components/HomePage/GlobeScene/Global")
 );
@@ -17,22 +15,6 @@ function HomePage() {
   const [isScrolled, setIsScrolled] = useState(false);
   const secondSection = useRef(null);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (!secondSection.current) return;
-
-  //     const sectionTop = secondSection.current.offsetTop;
-  //     const sectionHeight = secondSection.current.offsetHeight;
-  //     const sectionBottom = sectionTop + sectionHeight;
-
-  //     // start from SecondSection
-  //     setIsScrolled(window.scrollY > sectionBottom);
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
-  
   useEffect(() => {
     const handleScroll = () => {
       if (!secondSection.current) return;

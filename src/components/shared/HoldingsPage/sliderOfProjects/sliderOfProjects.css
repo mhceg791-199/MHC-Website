@@ -1,19 +1,19 @@
-.pinned-image-container {
-    width: 300px; /* Set a fixed width for the container */
+/* .pinned-image-container {
+    width: 300px; 
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    perspective: 1000px; /* Add depth for the 3D effect */
+    perspective: 1000px; 
     transform-style: preserve-3d;
-    transition: transform 0.3s ease-out; /* Smooth return */
+    transition: transform 0.3s ease-out; 
   }
   
   .pinned-image-container img {
     width: 100%;
     height: auto;
-    transform-origin: center; /* Center is the pinned point */
-    transition: transform 0.1s ease; /* Smooth animation on hover */
+    transform-origin: center; 
+    transition: transform 0.1s ease; 
   }
-  
+   */

@@ -155,7 +155,6 @@
 
 // export default BlockInfo;
 
-import React from "react";
 import blocks from "../../../data/blocks";
 
 export default function HoldingsCircularCluster() {
@@ -239,9 +238,9 @@ export default function HoldingsCircularCluster() {
       {/* ✅ Tooltip Name (Appears Outside the Card) */}
       <div
         className="
-          absolute left-1/2 -bottom-7 
+          absolute left-1/2 -bottom-6 
           -translate-x-1/2 opacity-0 pointer-events-none
-          group-hover:opacity-100 group-hover:-bottom-12
+          group-hover:opacity-100 group-hover:-bottom-10
           transition-all duration-300
           bg-black text-white text-xs px-3 py-1 rounded-lg shadow-lg
           whitespace-nowrap
@@ -257,7 +256,7 @@ export default function HoldingsCircularCluster() {
     </div>
   );
 }
-
+////////////////////////////////////////////////////////////////////////////////////////
 // import React from "react";
 // import blocks from "../../../data/blocks";
 
