@@ -10,7 +10,7 @@ import InfoSignature from "../../components/HomePage/infoSignature/infoSignature
 // import Global from "../../components/HomePage/GlobeScene/Global";
 // const Global = React.lazy(() =>
 //   import("../../components/HomePage/GlobeScene/Global")
-// );
+// ); 
 
 function HomePage() {
   const [isScrolled, setIsScrolled] = useState(false);
