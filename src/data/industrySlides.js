@@ -22,8 +22,8 @@ const industrySlides = [
   },
   {
     img: img2,
-    firstWord: "Structural",
-    secondWord: "Engineering",
+    firstWord: "Structural Engineering",
+    secondWord: "",
     p: "Through Wolsey Structural Engineering, MHC delivers cutting-edge structural solutions that ensure building integrity and longevity. We specialize in resilient designs for high-rises and complex infrastructure, addressing both natural and operational stresses. This $112 billion market (2024) maintains steady 5.1% CAGR growth, underscoring the enduring need for structural innovation.",
     icon: icon2,
     link: "/wolsey",

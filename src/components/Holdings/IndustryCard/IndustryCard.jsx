@@ -21,7 +21,7 @@ function IndustryCard({
             >
               <img
                 src={img}
-                alt={firstWord + " " + secondWord}
+                alt={firstWord + "" + secondWord}
                 className="w-full h-full object-cover rounded-full"
               />
             </div>
