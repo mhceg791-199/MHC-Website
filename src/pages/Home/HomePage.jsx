@@ -5,12 +5,12 @@ import { SidebarWithBurgerMenu } from "../../components/shared/Navbar/Sidebar/Si
 import SecondSection from "../../components/HomePage/secondSection/secondSection";
 import Marquee from "../../components/HomePage/marquee/marquee";
 
-import InfoSignature from "../../components/HomePage/infoSignature/infoSignature";
+// import InfoSignature from "../../components/HomePage/infoSignature/infoSignature";
 import SignatureSlider from "../../components/HomePage/Slider/slider";
 // import Global from "../../components/HomePage/GlobeScene/Global";
-// const Global = React.lazy(() =>
-//   import("../../components/HomePage/GlobeScene/Global")
-// ); 
+const Global = React.lazy(() =>
+  import("../../components/HomePage/GlobeScene/Global")
+); 
 
 function HomePage() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,11 +60,11 @@ function HomePage() {
       <div ref={secondSection}>
         <SecondSection />
       </div>
-      <InfoSignature />
+      {/* <InfoSignature /> */}
       <SignatureSlider />
-      {/* <Suspense fallback={null}>
+      <Suspense fallback={null}>
         <Global />
-      </Suspense> */}
+      </Suspense>
     </>
   );
 }
