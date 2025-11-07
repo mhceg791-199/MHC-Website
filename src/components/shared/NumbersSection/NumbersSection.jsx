@@ -16,7 +16,7 @@ export default function NumbersSection({
   const numbers = items.map((item) => useCountUp(item.max, inView, duration));
 
   return (
-    <div className={`${bgColor} ${textColor} mt-3 md:p-8 p-5`}>
+    <div className={`${bgColor} ${textColor} mt-3`}>
       {title && (
         <h3 className="mb-3 font-bold heading-3 md:text-left text-center">
           {title}

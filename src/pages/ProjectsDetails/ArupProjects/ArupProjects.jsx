@@ -84,7 +84,9 @@ function ArupProjects() {
       <div ref={firstSectionRef}>
         <FirstSection data={firstSectionDetails} industries={industries} />
       </div>
-      <ArupInNumber />
+      <div className="md:p-8 p-5 bg-[#0c0c0c]">
+        <ArupInNumber />
+      </div>
     </>
   );
 }

@@ -82,12 +82,13 @@ function WolseyProjects() {
       </div>
 
       {industries && <IndustriesOfHolding industries={industries} />}
-
-      <NumbersSection
-      title="Wolsey in Numbers"
-      items={wolseyNumbers}
-      columns="sm:grid-cols-6"
-    />
+      <div className="md:p-8 p-5 bg-[#0c0c0c]">
+        <NumbersSection
+          title="Wolsey in Numbers"
+          items={wolseyNumbers}
+          columns="sm:grid-cols-6"
+        />
+      </div>
     </>
   );
 }

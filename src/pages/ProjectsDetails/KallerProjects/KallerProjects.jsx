@@ -70,14 +70,16 @@ function KallerProjects() {
     <>
       <Navbar />
       <div ref={firstSectionRef}>
-        <FirstSectionDetailss data={FirstDetails}/>
+        <FirstSectionDetailss data={FirstDetails} />
       </div>
       {industries && <IndustriesOfHolding industries={industries} />}
-      <NumbersSection
-        title="MHCEG in Numbers"
-        items={KallerNumbers}
-        columns="sm:grid-cols-4"
-      />
+      <div className="md:p-8 p-5 bg-[#0c0c0c]">
+        <NumbersSection
+          title="MHCEG in Numbers"
+          items={KallerNumbers}
+          columns="sm:grid-cols-4"
+        />
+      </div>
     </>
   );
 }

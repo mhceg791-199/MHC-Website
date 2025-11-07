@@ -35,3 +35,9 @@ export const KallerNumbers = [
   { text: "Established", max: 1984, icon: "+" },
   { text: "Projects", max: 1000, icon: "+" },
 ];
+
+export const MHCNumbers = [
+  { text: "Continents", max: 5, },
+  { text: "Countries", max: 20, icon: "+" },
+  { text: "Projects", max: 3000, icon: "+" },
+];

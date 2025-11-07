@@ -1,4 +1,4 @@
-import  { useRef } from "react";
+import { useRef } from "react";
 import FirstSection from "../../../components/ProjectsDetailsPage/FirstSection/FirstSection";
 import Navbar from "../../../components/shared/Navbar/Navbar";
 import useScrollToSection from "../../../Hooks/useScrollToSection";
@@ -13,36 +13,36 @@ import {
   FaHome,
 } from "react-icons/fa";
 function MtAcrchProjects() {
- const industries = [
-  {
-    name: "Residential Buildings",
-    icon: <FaHome />, // Better for homes/residential
-  },
-  {
-    name: "Commercial Buildings",
-    icon: <FaStore />, // Storefronts work well for commercial
-  },
-  {
-    name: "Office Spaces",
-    icon: <FaBuilding />, // Tall building fits office space
-  },
-  {
-    name: "Hospitality",
-    icon: <FaHotel />, // Specific to hotels/hospitality
-  },
-  {
-    name: "Industrial Buildings",
-    icon: <FaIndustry />, // Perfect for factories/industrial
-  },
-  {
-    name: "Mixed-Use Developments",
-    icon: <FaCity />, // Represents a mix of buildings/urban feel
-  },
-  {
-    name: "Apartments",
-    icon: <FaWarehouse />, // Multi-unit structure, better than tree
-  },
-];
+  const industries = [
+    {
+      name: "Residential Buildings",
+      icon: <FaHome />, // Better for homes/residential
+    },
+    {
+      name: "Commercial Buildings",
+      icon: <FaStore />, // Storefronts work well for commercial
+    },
+    {
+      name: "Office Spaces",
+      icon: <FaBuilding />, // Tall building fits office space
+    },
+    {
+      name: "Hospitality",
+      icon: <FaHotel />, // Specific to hotels/hospitality
+    },
+    {
+      name: "Industrial Buildings",
+      icon: <FaIndustry />, // Perfect for factories/industrial
+    },
+    {
+      name: "Mixed-Use Developments",
+      icon: <FaCity />, // Represents a mix of buildings/urban feel
+    },
+    {
+      name: "Apartments",
+      icon: <FaWarehouse />, // Multi-unit structure, better than tree
+    },
+  ];
   const firstSectionRef = useRef(null);
   const refs = {
     firstSection: firstSectionRef,
@@ -64,10 +64,11 @@ function MtAcrchProjects() {
     <>
       <Navbar />
       <div ref={firstSectionRef}>
-        <FirstSection data={firstSectionDetails}  industries={industries} />
+        <FirstSection data={firstSectionDetails} industries={industries} />
       </div>
-
-      <MTArchInNumber />
+      <div className="md:p-8 p-5 bg-[#0c0c0c]">
+        <MTArchInNumber />
+      </div>
     </>
   );
 }
