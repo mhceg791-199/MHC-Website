@@ -61,7 +61,7 @@ function HomePage() {
       <div ref={secondSection}>
         <SecondSection />
       </div>
-      <InfoSignature />
+      {/* <InfoSignature /> */}
       <SignatureSlider />
       <LazyGlobe/>
       {/* <Suspense fallback={null}>
