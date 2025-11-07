@@ -19,7 +19,7 @@ function MovingArc({ start, end, color = "#00ffff", height = 0.3, radius = 1, sp
   const endV = latLonToVector3(end[0], end[1], radius);
   const mid = startV.clone().lerp(endV, 0.5).normalize().multiplyScalar(radius + height);
   const curve = new THREE.CatmullRomCurve3([startV, mid, endV]);
-  const geom = useMemo(() => new THREE.TubeGeometry(curve, 200, 0.005, 8, false), [curve]);
+  const geom = useMemo(() => new THREE.TubeGeometry(curve, 60, 0.006, 6, false), [curve]);
 
   // Gradient texture للشريط
   const texture = useMemo(() => {
@@ -73,8 +73,8 @@ export default function StripeGlobe({ maskMap }) {
     ctx.drawImage(mask.image, 0, 0);
     const data = ctx.getImageData(0, 0, width, height).data;
 
-    for (let y = 0; y < height; y += 3) {
-      for (let x = 0; x < width; x += 3) {
+    for (let y = 0; y < height; y += 8) {
+      for (let x = 0; x < width; x += 8) {
         const i = (y * width + x) * 4;
         const brightness = data[i] / 255;
         if (brightness > 0.4) {

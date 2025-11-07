@@ -7,10 +7,11 @@ import Marquee from "../../components/HomePage/marquee/marquee";
 
 import InfoSignature from "../../components/HomePage/infoSignature/infoSignature";
 import SignatureSlider from "../../components/HomePage/Slider/slider";
+import LazyGlobe from "../../components/HomePage/GlobeScene/LazyGlobel";
 // import Global from "../../components/HomePage/GlobeScene/Global";
-const Global = React.lazy(() =>
-  import("../../components/HomePage/GlobeScene/Global")
-); 
+// const Global = React.lazy(() =>
+//   import("../../components/HomePage/GlobeScene/Global")
+// ); 
 
 function HomePage() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -62,9 +63,10 @@ function HomePage() {
       </div>
       <InfoSignature />
       <SignatureSlider />
-      <Suspense fallback={null}>
+      <LazyGlobe/>
+      {/* <Suspense fallback={null}>
         <Global />
-      </Suspense>
+      </Suspense> */}
     </>
   );
 }
