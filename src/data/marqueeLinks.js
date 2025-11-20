@@ -24,7 +24,7 @@ const marqueeLinks = [
     name: "Kaller Architecture",
   },
   {
-    to: "/datta-and-tayefi",
+    to: "https://www.dattatayefi.com/",
     img: `${m4}`,
     name: "Datta And Tayefi",
   },
