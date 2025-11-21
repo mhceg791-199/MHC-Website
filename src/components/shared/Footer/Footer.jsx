@@ -5,7 +5,7 @@ const linksTop = [
   { to: "/who-we-are", label: "About" },
   { to: "/holdings", label: "Holdings" },
   // { to: "/our-projects", label: "Projects" },
-  { to: "/career", label: "Careers" },
+  { to: "/career", label: "Career" },
   { to: "/News", label: "News" },
 ];
 
