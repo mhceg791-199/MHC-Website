@@ -76,6 +76,9 @@ function Marquee() {
                   decoding="async"
                 />
                 <span className="text-md md:text-lg font-medium">{link.name}</span>
+                {link.dots && (
+    <span className="opacity-0">{link.dots}</span>
+  )}
               </Link>
             ))}
           </div>

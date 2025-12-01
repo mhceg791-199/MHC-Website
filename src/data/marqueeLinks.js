@@ -12,21 +12,25 @@ const marqueeLinks = [
     to: "https://www.wolsey.ca/",
     img: `${m1}`,
     name: "Wolsey Structural Engineering",
+    dots: "",
   },
   {
     to: "https://mhc-eg.com/",
     img: `${m2}`,
     name: "MHCEG Consultancy",
+    dots: "",
   },
   {
     to: "https://www.kallerarchitects.com/",
     img: `${m3}`,
     name: "Kaller Architecture",
+    dots: "",
   },
   {
     to: "https://www.dattatayefi.com/",
     img: `${m4}`,
     name: "Datta And Tayefi",
+    dots: "",
   },
   // {
   //   to: "https://www.mt-arch.ca/",
@@ -39,10 +43,12 @@ const marqueeLinks = [
     name: "Indigenous Mosaic Company",
   },
   {
-    to: "/mosaic-realState",
-    img: `${m6}`,
-    name: "Mosaic Real Estate.",
-  },
+  to: "/mosaic-realState",
+  img: `${m6}`,
+  name: "Mosaic Real Estate",
+  dots: "..",
+},
+
   
 ];
 
