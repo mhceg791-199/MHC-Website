@@ -481,6 +481,38 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                   <Typography
                     onClick={(e) => {
                       e.stopPropagation(); // Prevent the Accordion from opening
+                      handleNavigate("/services", "firstSection");
+                      setIsDrawerOpen(false);
+                    }}
+                    color="white"
+                    className={`mr-auto font-normal itemText ${
+                      open === 1 ? "text-mainGold" : ""
+                    }`}
+                  >
+                    {/* <i className="fa-solid fa-sack-dollar "></i>  */}
+                    <i className="fa-brands fa-servicestack text-xl pe-2"></i> SERVICES{" "}
+                  </Typography>
+                </AccordionHeader>
+              </ListItem>
+            </Accordion>
+            <Accordion open={open === 1}>
+              {" "}
+              <ListItem
+                className={`p-0 item hover:bg-transparent mainItem ${
+                  open != 1 ? "bg-transparent" : "bg-transparent"
+                }`}
+                selected={open === 2}
+              >
+                <AccordionHeader className="border-b-0 p-3 px-0 !hover:text-mainGold ">
+                  <ListItemPrefix>
+                    <PlusIcon
+                      className={`mx-auto h-5 w-5 text-white borderIcon opacity-0  transition-transform `}
+                      condition={open == 2}
+                    />
+                  </ListItemPrefix>
+                  <Typography
+                    onClick={(e) => {
+                      e.stopPropagation(); // Prevent the Accordion from opening
                       navigate("/career");
                       setIsDrawerOpen(false);
                     }}

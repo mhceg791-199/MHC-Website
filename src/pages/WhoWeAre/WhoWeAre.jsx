@@ -5,6 +5,9 @@ import OurValues from "../../components/whoWeAre/OurValues/OurValues";
 import Navbar from "../../components/shared/Navbar/Navbar";
 import useScrollToSection from "../../Hooks/useScrollToSection";
 import CarouselSection from "../../components/whoWeAre/Carousel/CarouselSection";
+import HeroScroll from "../../components/whoWeAre/HeroScroll/HeroScroll";
+import DeliverAbout from "../../components/whoWeAre/DeliverAbout/DeliverAbout";
+// import ParallaxSection from "../../components/whoWeAre/ParallaxSection/ParallaxSection";
 // import ButtonHoloBlob from "../../components/whoWeAre/ButtonHoloBlob/ButtonHoloBlob";
 
 function WhoWeAre() {
@@ -25,6 +28,9 @@ function WhoWeAre() {
         <FirstSection />
       </div>
       <AboutMHC />
+      <HeroScroll/>
+      {/* <ParallaxSection/> */}
+      <DeliverAbout/>
       <CarouselSection />
       <OurValues />
       {/* <ButtonHoloBlob /> */}

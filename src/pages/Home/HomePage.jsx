@@ -1,13 +1,15 @@
-import React, { Suspense, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import FirstSection from "../../components/HomePage/firstSection/firstSection";
 import { Link } from "react-router-dom";
 import { SidebarWithBurgerMenu } from "../../components/shared/Navbar/Sidebar/Sidebar";
 import SecondSection from "../../components/HomePage/secondSection/secondSection";
 import Marquee from "../../components/HomePage/marquee/marquee";
-
-import InfoSignature from "../../components/HomePage/infoSignature/infoSignature";
-import SignatureSlider from "../../components/HomePage/Slider/slider";
+// import InfoSignature from "../../components/HomePage/infoSignature/infoSignature";
+// import SignatureSlider from "../../components/HomePage/Slider/slider";
 import LazyGlobe from "../../components/HomePage/GlobeScene/LazyGlobel";
+import WhoWeAreSection from "../../components/HomePage/WhoWeAreSection/WhoWeAreSection";
+import WhatWeDoSection from "../../components/HomePage/WhatWeDo/WhatWeDo";
+import MosaicModel from "../../components/HomePage/MosaicModel/MosaicModel";
 // import Global from "../../components/HomePage/GlobeScene/Global";
 // const Global = React.lazy(() =>
 //   import("../../components/HomePage/GlobeScene/Global")
@@ -62,7 +64,10 @@ function HomePage() {
         <SecondSection />
       </div>
       {/* <InfoSignature /> */}
-      <SignatureSlider />
+      {/* <SignatureSlider /> */}
+      <WhoWeAreSection/>
+      <WhatWeDoSection/>
+      <MosaicModel/>
       <LazyGlobe/>
       {/* <Suspense fallback={null}>
         <Global />

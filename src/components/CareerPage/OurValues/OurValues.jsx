@@ -8,7 +8,7 @@ export default function OurValuesSection() {
 
   return (
     <section
-      className="relative text-white py-20 px-6 overflow-hidden md:h-[90vh] flex items-center justify-center"
+      className="relative text-white py-20 px-6 overflow-hidden md:h-screen flex items-center justify-center"
     >
       {/* image background */}
       <img
@@ -22,8 +22,8 @@ export default function OurValuesSection() {
       <div className="absolute inset-0 bg-black/70"></div>
 
       {/* content */}
-      <div className="relative z-10 max-w-6xl mx-auto text-center">
-        <div className="mb-4">
+      <div className="relative z-10 max-w-6xl mx-auto text-center mb-2">
+        <div className="my-3">
         <SectionHeader firstWord="OUR VALUES"  />
 
         </div>

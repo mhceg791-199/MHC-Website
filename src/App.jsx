@@ -26,33 +26,35 @@ import OurHistory from "./pages/Projects/Projects.jsx";
 import ScrollToTopButton from "./components/shared/ScrollToTopButton/ScrollToTopButton.jsx";
 import DattaAndTayefi from "./pages/ProjectsDetails/DattaAndTayefi/DattaAndTayefi.jsx";
 import IndigenousProject from "./pages/ProjectsDetails/IndigenousProject/IndigenousProject.jsx";
+import ServicesPage from "./pages/Services/Services.jsx";
 function App() {
   return (
     <>
       <Layout>
         <CareerModelProvider>
           <Routes>
-            <Route path="/" element={<HomePage />} /> 
-            <Route path="/who-we-are" element={<WhoWeAre />} />  
-            <Route path="/our-projects" element={<OurHistory />} />  
+            <Route path="/" element={<HomePage />} />
+            <Route path="/who-we-are" element={<WhoWeAre />} />
+            <Route path="/our-projects" element={<OurHistory />} />
             <Route path="/industries" element={<IndustriesPage />} />
             <Route path="/contact-us" element={<ContactPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/terms-conditions" element={<TermsPage />} />
-            <Route path="/wolsey" element={<WolseyProjects />} /> 
+            <Route path="/wolsey" element={<WolseyProjects />} />
             <Route path="/mt-arch" element={<MtAcrchProjects />} />
             <Route path="/mosaic-realState" element={<MosaicRealState />} />
-            <Route path="/datta-and-tayefi" element={<DattaAndTayefi />} /> 
-            <Route path="/indigenous-mosaic" element={<IndigenousProject />} /> 
+            <Route path="/datta-and-tayefi" element={<DattaAndTayefi />} />
+            <Route path="/indigenous-mosaic" element={<IndigenousProject />} />
             <Route path="/mhceg" element={<MhcegProjects />} />
             <Route path="/arup" element={<ArupProjects />} />
             <Route path="/kaller" element={<KallerProjects />} />
             <Route path="/career" element={<CareerPage />} />
-            <Route path="/news" element={<NewsPage />} />  
+            <Route path="/news" element={<NewsPage />} />
             <Route path="/news/:id" element={<CareerPage />} />
             <Route path="/investment-approach" element={<InvestmentPage />} />
-            <Route path="/holdings" element={<HoldingsPage />} />  
-            <Route path="*" element={<NotFoundPage />} /> 
+            <Route path="/holdings" element={<HoldingsPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </CareerModelProvider>
         <ScrollToTopButton />

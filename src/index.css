@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+
 :root {
     --mainGold: #C5A363;
     --lightGray: "#EDEDED"
@@ -14,7 +20,7 @@
 
 @layer components {
   .heading-3 {
-    @apply text-base sm:text-2xl md:text-3xl;
+    @apply text-lg sm:text-2xl md:text-3xl;
   }
   .paragraph {
     @apply  leading-relaxed text-sm sm:text-base md:text-lg 
@@ -169,3 +175,101 @@
   justify-content: center;
   text-align: center;
 }
+
+.particle-bg {
+  background: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+  background-size: 4px 4px;
+  animation: floatParticle 6s infinite linear;
+  opacity: 0.12;
+}
+
+@keyframes floatParticle {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-20px); }
+}
+
+.neon-card {
+  box-shadow: 0 0 20px rgba(197, 163, 99, 0.4),
+              inset 0 0 10px rgba(197, 163, 99, 0.3);
+  transition: 0.3s;
+}
+
+.neon-card:hover {
+  box-shadow: 0 0 30px rgba(197, 163, 99, 0.6),
+              inset 0 0 15px rgba(197, 163, 99, 0.4);
+  transform: translateY(-6px);
+}
+
+.beam-line {
+  stroke-dasharray: 1500;       /* طول الخط */
+  stroke-dashoffset: 1500;      /* ابدأ من فوق */
+  animation: beamMove 3s linear infinite;
+}
+
+@keyframes beamMove {
+  0% {
+    stroke-dashoffset: 1500;    /* الشعاع فوق */
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 1;                 /* يلمع */
+  }
+  100% {
+    stroke-dashoffset: 0;       /* الشعاع نزل لأسفل */
+    opacity: 0.1;
+  }
+}
+
+
+.slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: scrollSlider 25s linear infinite;
+}
+
+@keyframes scrollSlider {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* .slide-card { */
+  /* width: 260px; */
+  /* min-height: 180px; */
+  /* padding: 20px;
+  text-align: center;
+  position: relative;
+} */
+
+/* .slide-img {
+  margin: auto;
+} */
+
+/* .slide-title {
+  font-weight: 600;
+  margin-top: 12px;
+  color: #fff;
+} */
+
+/* .slide-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  padding: 20px;
+  opacity: 0;
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */

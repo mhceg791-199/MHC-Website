@@ -24,7 +24,7 @@ function FirstSectionByVideo({
   }, []);
 
   return (
-    <section id="first-section" className={`relative w-full ${height} overflow-hidden`}>
+    <section id="first-section" className={`relative w-full ${height} overflow-hidden Holdings-page`}>
       {isVisible && (
         <video
           className="absolute inset-0 w-full h-full object-cover"
