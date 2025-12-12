@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function Hero() {
+  const nav = useNavigate();
   return (
     <section className="relative w-full h-[80vh] md:h-[100vh] overflow-hidden bg-[rgba(0,0,0,0.8)]">
       
@@ -18,7 +20,7 @@ export default function Hero() {
 
       {/* INNER SMALL RING (rotating right - clockwise) */}
       <motion.div
-        className="absolute inset-0 flex items-center justify-center"
+        className="absolute inset-0 hidden md:flex items-center justify-center"
         animate={{ rotate: 360 }}
         transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
       >
@@ -29,7 +31,7 @@ export default function Hero() {
       </motion.div>
 
       {/* TEXT ON TOP */}
-      <div className="absolute w-full top-[25%] text-center px-6 text-mainGold z-20">
+      <div className="absolute w-full top-[7%] md:top-[25%] text-center px-6 text-mainGold z-20">
         <h3 className="text-xl tracking-wide opacity-80">WHAT WE DO</h3>
 
         <h4 className="heading-3 font-bold mt-3 leading-snug">
@@ -46,9 +48,10 @@ export default function Hero() {
         </p>
 
         <button 
+          onClick={() => nav("services")}
           className="inline-block mt-6 bg-mainGold text-white py-3 px-6 rounded-lg font-semibold"
         >
-          Learn More About Our Services →
+          Learn More About Our Services
         </button>
       </div>
 

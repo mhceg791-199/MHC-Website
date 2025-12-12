@@ -84,7 +84,7 @@ export default function ArcWithLogo() {
       "
             style={{
               left: `calc(${leftShift} + ${x}px)`,
-              top: `${y}px`,
+              top: `${y + 15}px`,
               transform: "translate(-50%, -50%)", // تثبيت أفضل
               whiteSpace: "nowrap",
             }}

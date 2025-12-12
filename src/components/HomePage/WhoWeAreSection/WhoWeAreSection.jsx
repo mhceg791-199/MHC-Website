@@ -36,7 +36,7 @@ export default function WhoWeAreSection() {
     // الخلفية رمادية فاتحة جداً
     <section
       style={{ backgroundColor: COLORS.lightGray }}
-      className="relative w-full overflow-hidden text-gray-800 py-16"
+      className="relative w-full overflow-hidden text-gray-800 py-4 md:py-16"
     >
       {/* 1. تأثير النقش/الختم الذهبي الخفيف في الخلفية */}
       <div
@@ -48,7 +48,7 @@ export default function WhoWeAreSection() {
       ></div>
 
       <div className="relative z-10 container mx-auto px-6 max-w-7xl">
-        <div className="grid lg:grid-cols-12 gap-12">
+        <div className="grid lg:grid-cols-12 gap-2 md:gap-12">
           {/* العمود الأيسر: العنوان والقيمة الأساسية */}
           <div className="lg:col-span-5 space-y-8">
             <motion.h2
@@ -56,7 +56,7 @@ export default function WhoWeAreSection() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={textRevealVariants}
-              className="text-5xl lg:text-6xl font-extrabold leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight"
             >
               <span style={{ color: COLORS.mainGold }}>WHO WE ARE</span>
             </motion.h2>

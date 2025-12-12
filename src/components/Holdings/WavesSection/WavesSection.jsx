@@ -197,7 +197,7 @@ export default function WavesSection() {
 
   return (
     <>
-    <div className="relative w-full h-[450px]  overflow-hidden flex items-center justify-center">
+    <div className="relative w-full h-[290px] md:h-[450px]  overflow-hidden flex items-center justify-center">
       {/* TEXT */}
       <div className="text-center">
         <h3 className="heading-3 mb-4">
@@ -217,7 +217,7 @@ export default function WavesSection() {
       {/* WAVES */}
       <svg
         ref={svgRef}
-        className="absolute bottom-0 w-full"
+        className="absolute bottom-[-70px] md:bottom-0 w-full"
         height="260"
         viewBox="0 0 2000 260"
         fill="none"

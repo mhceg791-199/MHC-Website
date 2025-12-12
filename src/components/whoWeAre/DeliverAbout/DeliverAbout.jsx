@@ -544,13 +544,13 @@ import DeliverSlider from "./DeliverSlider";
 
 export default function RotatingLogosSection() {
   return (
-    <section className="relative w-full py-32 flex flex-col md:flex-row justify-center items-center gap-20 overflow-hidden">
+    <section className="relative w-full py-12 md:py-32 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-20 overflow-hidden">
 
       {/* --------------- BLOCK 1 --------------- */}
       <div
         className="
         relative 
-        w-[300px] h-[300px]
+        w-[390px] h-[390px]
         sm:w-[360px] sm:h-[360px]
         md:w-[450px] md:h-[450px]
         lg:w-[520px] lg:h-[520px]
@@ -573,12 +573,12 @@ export default function RotatingLogosSection() {
           absolute inset-0 
           flex flex-col items-center justify-center
           text-center px-4
-          z-20
-          max-w-[22rem]   /* مهم جداً */
+          z-20 w-[17rem]
+          md:max-w-[22rem]
           mx-auto
         "
         >
-          <h3 className="heading-3 text-mainGold font-bold mb-2 text-xl md:text-2xl">
+          <h3 className="text-[1.1rem] md:heading-3 text-mainGold font-bold mb-2 text-xl md:text-2xl">
             For Founders & Teams
           </h3>
 
@@ -592,7 +592,7 @@ export default function RotatingLogosSection() {
       <div
         className="
         relative 
-        w-[300px] h-[300px]
+        w-[390px] h-[390px]
         sm:w-[360px] sm:h-[360px]
         md:w-[450px] md:h-[450px]
         lg:w-[520px] lg:h-[520px]
@@ -614,12 +614,12 @@ export default function RotatingLogosSection() {
           absolute inset-0 
           flex flex-col items-center justify-center
           text-center px-4
-          z-20
-          max-w-[22rem]
+          z-20 w-[17rem]
+          md:max-w-[22rem]
           mx-auto
         "
         >
-          <h3 className="heading-3 text-mainGold font-bold mb-2 text-xl md:text-2xl">
+          <h3 className="text-[1.1rem] md:heading-3 text-mainGold font-bold mb-2 text-xl md:text-2xl">
             For Clients
           </h3>
 

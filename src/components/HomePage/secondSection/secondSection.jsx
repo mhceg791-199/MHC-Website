@@ -58,8 +58,8 @@ function SecondSection() {
           <div className="w-full md:w-1/2 flex flex-col justify-start">
             <h2 className="text-[40px] sm:text-[60px] md:text-[80px] lg:text-[85px] font-extrabold leading-none tracking-tight text-mainGold">
               OUR <br />
-              <span className="pl-4 md:pl-20 inline-block">IMPACT</span> <br />
-              <span className="pl-8 md:pl-32 inline-block text-mainGold">
+              <span className="pl-16 md:pl-20 inline-block">IMPACT</span> <br />
+              <span className="pl-32 md:pl-32 inline-block text-mainGold">
                 & VISION
               </span>
             </h2>
