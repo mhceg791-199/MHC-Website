@@ -573,7 +573,7 @@ export default function RotatingLogosSection() {
           absolute inset-0 
           flex flex-col items-center justify-center
           text-center px-4
-          z-20 w-[17rem]
+          z-20 w-[14rem]
           md:max-w-[22rem]
           mx-auto
         "
@@ -614,7 +614,7 @@ export default function RotatingLogosSection() {
           absolute inset-0 
           flex flex-col items-center justify-center
           text-center px-4
-          z-20 w-[17rem]
+          z-20 w-[14rem]
           md:max-w-[22rem]
           mx-auto
         "

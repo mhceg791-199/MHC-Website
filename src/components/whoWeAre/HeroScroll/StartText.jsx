@@ -18,7 +18,7 @@ export default function StartText({centerTitleRef}) {
           Growth
         </p>
 
-        <p className="fade-item paragraph mb-8 text-gray-400">
+        <p className="fade-item paragraph mb-1 md:mb-8 text-gray-400">
           Headquartered in Calgary, with strategic offices in Florida and Cairo,
           MHC is redefining how mid-cap companies grow, transform, and scale
           through:

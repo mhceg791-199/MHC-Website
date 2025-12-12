@@ -13,7 +13,7 @@ export default function HoldingsAbout() {
       secondWord=""
       paragraphs={paragraphs}
       particleColors={["#C5A363", "#C5A363"]}
-      height= "h-[35vh] md:h-[50vh]"
+      height= "h-[47vh] md:h-[50vh]"
     />
   )
 }
