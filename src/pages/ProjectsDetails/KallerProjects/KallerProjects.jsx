@@ -60,7 +60,7 @@ function KallerProjects() {
   const FirstDetails = {
     poster: "/signatureProjects/kaller/poster.webp",
     logo: "/signatureProjects/kaller.png",
-    title: { firstWord: "Kaller", secondWord: "Architecture" },
+    title: { firstWord: "Kaller Architecture", secondWord: "" },
     text: [
       "Kaller Architecture, founded by Joseph B. Kaller in 1984, specializes in residential, commercial, and interior design. The firm offers a full range of architectural and engineering services, with expertise in corporate interiors. They focus on delivering innovative, client-centered solutions. Kaller Architecture fosters strong, long-term client relationships through its commitment to integrity and excellence.",
     ],
