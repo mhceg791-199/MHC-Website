@@ -115,7 +115,7 @@ export default function HoldingsOrbit() {
 
   /* ================= JSX ================= */
   return (
-    <div className="relative w-full h-[700px] bg-[#faf9f7] flex items-center justify-center overflow-hidden">
+    <div className="relative w-full h-[470px] md:h-[700px] bg-[#faf9f7] flex items-center justify-center overflow-hidden">
       {/* ================= CENTER LOGO ================= */}
       <div className="absolute z-30 bg-white p-6 rounded-[40px] shadow-2xl">
         <img
