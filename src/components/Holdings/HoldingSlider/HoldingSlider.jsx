@@ -103,7 +103,7 @@ export default function HoldingSlider() {
       <h4 className="text-lg font-semibold text-gray-600">
         We invest where the world is built.
       </h4>
-      <p className="mb-8 text-center max-w-3xl mx-auto paragraph text-gray-600">
+      <p className="mb-8 text-center max-w-[19rem] md:max-w-3xl mx-auto paragraph text-gray-600">
         MHC focuses on sectors that shape economies and define nations:
       </p>
 
@@ -121,7 +121,7 @@ export default function HoldingSlider() {
       </div>
 
       {/* محتوى بعد الكاردس */}
-      <div className="text-center max-w-3xl mx-auto text-lg text-gray-800">
+      <div className="text-center paragraph max-w-[19rem] md:max-w-3xl  mx-auto text-lg text-gray-600">
         Together, they form a strategic network — connected, agile, and built for global expansion.
       </div>
 

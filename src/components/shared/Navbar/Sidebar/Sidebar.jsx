@@ -490,7 +490,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     }`}
                   >
                     {/* <i className="fa-solid fa-sack-dollar "></i>  */}
-                    <i className="fa-brands fa-servicestack text-xl pe-2"></i> SERVICES{" "}
+                    <i className="fa-solid fa-diagram-project text-xl pe-2"></i> SERVICES{" "}
                   </Typography>
                 </AccordionHeader>
               </ListItem>

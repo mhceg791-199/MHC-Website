@@ -208,7 +208,7 @@ export default function WavesSection() {
           We don’t collect companies. We build an ecosystem.
         </h4>
 
-        <p className="max-w-3xl mx-auto paragraph text-gray-600 mb-24">
+        <p className="max-w-3xl mx-auto paragraph text-gray-600 mb-24 px-2">
           Each company within Mosaic Holding Corporation represents a piece of a larger vision —
           a global investment ecosystem of industry leaders shaping cities, communities, and economies.
         </p>
@@ -261,7 +261,7 @@ export default function WavesSection() {
     </div>
 
     <div className="text-center">
-        <p className="max-w-3xl mx-auto paragraph text-gray-600 mb-6 md:mb-24">
+        <p className="max-w-3xl mx-auto paragraph text-gray-600 mb-6 md:mb-24 px-2">
           We acquire businesses with strong histories and proven excellence, then elevate them with modern investment strategy, advanced technology, operational discipline, and global reach.
           <br/>
           Every company keeps its identity.
