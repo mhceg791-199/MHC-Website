@@ -10,10 +10,12 @@ import LazyGlobe from "../../components/HomePage/GlobeScene/LazyGlobel";
 import WhoWeAreSection from "../../components/HomePage/WhoWeAreSection/WhoWeAreSection";
 import WhatWeDoSection from "../../components/HomePage/WhatWeDo/WhatWeDo";
 import MosaicModel from "../../components/HomePage/MosaicModel/MosaicModel";
+import FallingStars from "../../components/shared/FallingStars/FallingStars";
+import ChristmasOrnaments from "../../components/shared/ChristmasOrnaments/ChristmasOrnaments";
 // import Global from "../../components/HomePage/GlobeScene/Global";
 // const Global = React.lazy(() =>
 //   import("../../components/HomePage/GlobeScene/Global")
-// ); 
+// );
 
 function HomePage() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,6 +48,7 @@ function HomePage() {
         }`}
       >
         <Link to="/">
+          <FallingStars />
           <img
             className={`${
               isScrolled ? "w-1/2 md:w-[28%]" : "w-[35%]"
@@ -53,6 +56,17 @@ function HomePage() {
             src={isScrolled ? "/images/logoWithBlack.png" : "/images/logo.png"}
             alt="Mosaic Holding Corporation MHC"
           />
+
+          {/* Santa Hat */}
+          <div className="absolute -top-1 left-1 md:left-8 scale-x-[-1]">
+            <img
+              src="/images/santa-hat.png"
+              alt="Santa Hat"
+              className="w-10 md:w-16 rotate-[10deg] animate-santa"
+            />
+          </div>
+
+          <ChristmasOrnaments />
         </Link>
         <SidebarWithBurgerMenu inHomePage={!isScrolled} />
       </div>
@@ -65,10 +79,10 @@ function HomePage() {
       </div>
       {/* <InfoSignature /> */}
       {/* <SignatureSlider /> */}
-      <WhoWeAreSection/>
-      <WhatWeDoSection/>
-      <MosaicModel/>
-      <LazyGlobe/>
+      <WhoWeAreSection />
+      <WhatWeDoSection />
+      <MosaicModel />
+      <LazyGlobe />
       {/* <Suspense fallback={null}>
         <Global />
       </Suspense> */}
