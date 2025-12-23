@@ -31,9 +31,10 @@
 //     </div>
 //   );
 // }
-import React, { useEffect, useRef, useState, Suspense } from "react";
+import { useEffect, useRef, useState, Suspense } from "react";
+import Global from "./Global";
 
-const Global = React.lazy(() => import("./Global"));
+// const Global = React.lazy(() => import("./Global"));
 
 export default function LazyGlobe() {
   const ref = useRef();
