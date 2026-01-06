@@ -5,6 +5,9 @@ import m4 from "../assets/signatureProjects/datta.webp";
 // import m5 from "../assets/signatureProjects/mt--archCircle.webp";
 import m5 from "../assets/signatureProjects/Indigenous.webp";
 import m6 from "../assets/signatureProjects/logo.webp";
+import m7 from "../assets/signatureProjects/imports.webp";
+import m8 from "../assets/signatureProjects/mosaicPropertyManagement.webp";
+import m9 from "../assets/signatureProjects/engineering.webp";
 
 
 const marqueeLinks = [
@@ -38,7 +41,7 @@ const marqueeLinks = [
   //   name: "MT-ARCH Architect",
   // },
   {
-    to: "/indigenous-mosaic",
+    to: "https://indigenousmosaic.com/",
     img: `${m5}`,
     name: "Indigenous Mosaic Company",
   },
@@ -46,10 +49,23 @@ const marqueeLinks = [
   to: "https://mosaicrestate.com/",
   img: `${m6}`,
   name: "Mosaic Real Estate",
+},
+{
+  to: "/mosaic-imports",
+  img: `${m7}`,
+  name: "Mosaic Imports",
+},
+{
+  to: "/mosaic-property-management",
+  img: `${m8}`,
+  name: "Mosaic Property Management",
+},
+  {
+  to: "/",
+  img: `${m9}`,
+  name: "Mosaic Engineering",
   dots: "..",
 },
-
-  
 ];
 
 export default marqueeLinks;

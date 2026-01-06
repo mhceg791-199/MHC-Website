@@ -27,6 +27,8 @@ import ScrollToTopButton from "./components/shared/ScrollToTopButton/ScrollToTop
 import DattaAndTayefi from "./pages/ProjectsDetails/DattaAndTayefi/DattaAndTayefi.jsx";
 import IndigenousProject from "./pages/ProjectsDetails/IndigenousProject/IndigenousProject.jsx";
 import ServicesPage from "./pages/Services/Services.jsx";
+import MosaicImports from "./pages/ProjectsDetails/MosaicImports/MosaicImports.jsx";
+import MosaicPropertyManagement from "./pages/ProjectsDetails/MosaicPropertyManagement/MosaicPropertyManagement.jsx";
 function App() {
   return (
     <>
@@ -45,6 +47,8 @@ function App() {
             <Route path="/mosaic-realState" element={<MosaicRealState />} />
             <Route path="/datta-and-tayefi" element={<DattaAndTayefi />} />
             <Route path="/indigenous-mosaic" element={<IndigenousProject />} />
+            <Route path="/mosaic-imports" element={<MosaicImports />} />
+            <Route path="/mosaic-property-management" element={<MosaicPropertyManagement />} />
             <Route path="/mhceg" element={<MhcegProjects />} />
             <Route path="/arup" element={<ArupProjects />} />
             <Route path="/kaller" element={<KallerProjects />} />

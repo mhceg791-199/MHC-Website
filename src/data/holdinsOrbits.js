@@ -1,6 +1,9 @@
 import mosaic from "../assets/signatureProjects/logo.webp";
 import mhceg from "../assets/signatureProjects/mhceg.webp";
 import indigenous from "../assets/signatureProjects/Indigenous.webp";
+import mimports from "../assets/signatureProjects/imports.webp";
+import mpManagement from "../assets/signatureProjects/mosaicPropertyManagement.webp";
+import mEngineering from "../assets/signatureProjects/engineering.webp";
 
 import logoC from "/logo-c-removebg.png";
 
@@ -34,9 +37,10 @@ const holdinsOrbits = [
     mobile: true
   },
   {
-    text: "mhc",
-    logo: logoC,
-    mobile: false
+    text: "Mosaic Engineering ",
+    logo: mEngineering ,
+    link: "/holdings",
+    mobile: true
   },
   {
     text: "Datta And Tayefi",
@@ -55,21 +59,33 @@ const holdinsOrbits = [
     link: "https://mosaicrestate.com/",
     mobile: true
   },
-  {
-    text: "mhc",
-    logo: logoC,
-    mobile: false
-  },
+  // {
+  //   text: "mhc",
+  //   logo: logoC,
+  //   mobile: false
+  // },
   {
     text: "Indigenous Mosaic Company",
     logo: indigenous,
-    link: "/indigenous-mosaic",
+    link: "https://indigenousmosaic.com/",
     mobile: true
   },
   {
     text: "mhc",
     logo: logoC,
     mobile: false
+  },
+  {
+    text: "Mosaic Imports",
+    logo: mimports,
+    link: "/mosaic-imports",
+    mobile: true
+  },
+  {
+    text: "Mosaic Property Management",
+    logo: mpManagement,
+    link: "/mosaic-property-management",
+    mobile: true
   },
 ];
 

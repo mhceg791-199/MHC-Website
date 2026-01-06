@@ -57,6 +57,16 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
       path: "/indigenous-mosaic",
       section: "engineer",
     },
+    {
+      name: "Mosaic Imports",
+      path: "/mosaic-imports",
+      section: "engineer",
+    },
+    {
+      name: "Mosaic Property Management",
+      path: "/mosaic-property-management",
+      section: "engineer",
+    },
   ];
 
   return (
@@ -352,7 +362,7 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
                     accordionList.map((item) => (
                       <ListItem
                         key={item.name}
-                        className="hover:bg-mainGold hover:text-white"
+                        className="hover:bg-mainGold hover:text-white md:whitespace-nowrap"
                         onClick={() => handleNavigate(item.path, item.section)}
                       >
                         <ListItemPrefix>
