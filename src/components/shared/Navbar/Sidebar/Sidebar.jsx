@@ -67,6 +67,11 @@ export function SidebarWithBurgerMenu({ inHomePage }) {
       path: "/mosaic-property-management",
       section: "engineer",
     },
+    {
+      name: "Mosaic Engineering",
+      path: "/mosaic-engineering",
+      section: "engineer",
+    },
   ];
 
   return (

@@ -29,6 +29,7 @@ import IndigenousProject from "./pages/ProjectsDetails/IndigenousProject/Indigen
 import ServicesPage from "./pages/Services/Services.jsx";
 import MosaicImports from "./pages/ProjectsDetails/MosaicImports/MosaicImports.jsx";
 import MosaicPropertyManagement from "./pages/ProjectsDetails/MosaicPropertyManagement/MosaicPropertyManagement.jsx";
+import MosaicEngineering from "./pages/ProjectsDetails/MosaicEngineering/MosaicEngineering.jsx";
 function App() {
   return (
     <>
@@ -49,6 +50,7 @@ function App() {
             <Route path="/indigenous-mosaic" element={<IndigenousProject />} />
             <Route path="/mosaic-imports" element={<MosaicImports />} />
             <Route path="/mosaic-property-management" element={<MosaicPropertyManagement />} />
+            <Route path="/mosaic-engineering" element={<MosaicEngineering />} />
             <Route path="/mhceg" element={<MhcegProjects />} />
             <Route path="/arup" element={<ArupProjects />} />
             <Route path="/kaller" element={<KallerProjects />} />
