@@ -21,7 +21,7 @@ function MhcInNumber() {
     <NumbersSection
             title="MHC in Numbers"
             items={MHCNumbers}
-            columns="sm:grid-cols-3"
+            columns="sm:grid-cols-4"
           />
     </div>
     

@@ -40,4 +40,5 @@ export const MHCNumbers = [
   { text: "Continents", max: 5, },
   { text: "Countries", max: 20, icon: "+" },
   { text: "Projects", max: 3000, icon: "+" },
+  { text: "Professionals", max: 100, icon: "+" },
 ];

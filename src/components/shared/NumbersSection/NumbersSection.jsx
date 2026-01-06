@@ -23,14 +23,14 @@ export default function NumbersSection({
         </h3>
       )}
 
-      <div ref={ref} className={`grid grid-cols-1 ${columns} gap-6`}>
+      <div ref={ref} className={`grid grid-cols-1 ${columns} gap-1`}>
         {items.map(({ text, max, icon }, index) => {
           const number = numbers[index];
           const progress = Math.min((number / max) * 100, 100);
 
           return (
             <div key={index} className="flex flex-col items-center">
-              <p className="md:text-lg text-base mb-2 text-gray-300">{text}</p>
+              <p className="md:text-lg text-base mb-2 text-gray-300 whitespace-nowrap">{text}</p>
 
               <div className="flex justify-center items-baseline heading-3 font-bold leading-none">
                 <span>{number}</span>
