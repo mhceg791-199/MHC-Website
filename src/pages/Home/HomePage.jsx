@@ -10,8 +10,8 @@ import LazyGlobe from "../../components/HomePage/GlobeScene/LazyGlobel";
 import WhoWeAreSection from "../../components/HomePage/WhoWeAreSection/WhoWeAreSection";
 import WhatWeDoSection from "../../components/HomePage/WhatWeDo/WhatWeDo";
 import MosaicModel from "../../components/HomePage/MosaicModel/MosaicModel";
-import FallingStars from "../../components/shared/FallingStars/FallingStars";
-import ChristmasOrnaments from "../../components/shared/ChristmasOrnaments/ChristmasOrnaments";
+// import FallingStars from "../../components/shared/FallingStars/FallingStars";
+// import ChristmasOrnaments from "../../components/shared/ChristmasOrnaments/ChristmasOrnaments";
 // import Global from "../../components/HomePage/GlobeScene/Global";
 // const Global = React.lazy(() =>
 //   import("../../components/HomePage/GlobeScene/Global")
@@ -48,7 +48,7 @@ function HomePage() {
         }`}
       >
         <Link to="/">
-          <FallingStars />
+          {/* <FallingStars /> */}
           <img
             className={`${
               isScrolled ? "w-1/2 md:w-[28%]" : "w-[35%]"
@@ -58,7 +58,7 @@ function HomePage() {
           />
 
           {/* Santa Hat */}
-          <div className="absolute -top-1 left-1 md:left-8 scale-x-[-1]">
+          {/* <div className="absolute -top-1 left-1 md:left-8 scale-x-[-1]">
             <img
               src="/images/santa-hat.png"
               alt="Santa Hat"
@@ -66,7 +66,7 @@ function HomePage() {
             />
           </div>
 
-          <ChristmasOrnaments />
+          <ChristmasOrnaments /> */}
         </Link>
         <SidebarWithBurgerMenu inHomePage={!isScrolled} />
       </div>
