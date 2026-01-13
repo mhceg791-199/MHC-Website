@@ -78,7 +78,7 @@ const holdinsOrbits = [
   {
     text: "Mosaic Imports",
     logo: mimports,
-    link: "/mosaic-imports",
+    link: "https://www.mosaic-imports.com/",
     mobile: true
   },
   {

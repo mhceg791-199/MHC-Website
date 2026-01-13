@@ -51,7 +51,7 @@ const marqueeLinks = [
   name: "Mosaic Real Estate",
 },
 {
-  to: "/mosaic-imports",
+  to: "https://www.mosaic-imports.com/",
   img: `${m7}`,
   name: "Mosaic Imports",
 },

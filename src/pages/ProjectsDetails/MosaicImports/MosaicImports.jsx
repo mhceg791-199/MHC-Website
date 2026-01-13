@@ -7,20 +7,20 @@ import FirstSectionDetailss from "../../../components/ProjectsDetailsPage/FirstS
 import mosaic from "../../../assets/signatureProjects/imports.webp";
 
 function MosaicImports() {
-//   const industries = [
-//     {
-//       name: "Administrative",
-//       icon: <FaLandmark />, // Landmark = government/administrative offices
-//     },
-//     {
-//       name: "Residential Buildings",
-//       icon: <FaHome />, // Better for homes/residential
-//     },
-//     {
-//       name: "Commercial Buildings",
-//       icon: <FaStore />, // Storefronts work well for commercial
-//     },
-//   ];
+  //   const industries = [
+  //     {
+  //       name: "Administrative",
+  //       icon: <FaLandmark />, // Landmark = government/administrative offices
+  //     },
+  //     {
+  //       name: "Residential Buildings",
+  //       icon: <FaHome />, // Better for homes/residential
+  //     },
+  //     {
+  //       name: "Commercial Buildings",
+  //       icon: <FaStore />, // Storefronts work well for commercial
+  //     },
+  //   ];
   const firstSectionRef = useRef(null);
   const refs = {
     firstSection: firstSectionRef,
@@ -34,9 +34,9 @@ function MosaicImports() {
     text: [
       "Mosaic Imports is a specialized trading and sourcing arm under Mosaic Holding Corporation, created to support the full spectrum of construction, architecture, and engineering needs through high-quality imported materials and systems.",
       "The company focuses on identifying, sourcing, and supplying essential building and finishing materials from global markets — spanning structural, architectural, mechanical, electrical, plumbing, and interior requirements. Mosaic Imports operates as a standalone commercial entity, serving a broad client base that includes developers, contractors, engineering firms, architects, and project owners across multiple sectors.",
-      "By centralizing procurement expertise and global supplier relationships, Mosaic Imports enables efficiency, consistency, and reliability across projects of all scales — from individual developments to complex, multi-disciplinary builds."
+      "By centralizing procurement expertise and global supplier relationships, Mosaic Imports enables efficiency, consistency, and reliability across projects of all scales — from individual developments to complex, multi-disciplinary builds.",
     ],
-    // link: "/mosaic-imports",
+    link: "https://www.mosaic-imports.com/",
   };
   return (
     <>
@@ -44,14 +44,6 @@ function MosaicImports() {
       <div ref={firstSectionRef}>
         <FirstSectionDetailss data={FirstDetails} />
       </div>
-      {/* {industries && <IndustriesOfHolding industries={industries} />} */}
-      {/* <MTArchInNumber /> 
-      <NumbersSection
-              title="MT-Arch in Numbers"
-              items={MTArchNumbers}
-              columns="sm:grid-cols-4"
-            />
-      */}
     </>
   );
 }
