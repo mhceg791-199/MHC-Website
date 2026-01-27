@@ -39,7 +39,7 @@ const holdinsOrbits = [
   {
     text: "Mosaic Engineering ",
     logo: mEngineering ,
-    link: "/mosaic-engineering",
+    link: "https://mosaic-eng.com/",
     mobile: true
   },
   {

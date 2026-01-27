@@ -20,7 +20,7 @@ function MosaicEngineering() {
       "As a subsidiary of Mosaic Holding Corporation, Mosaic Engineering operates within a wider ecosystem of design, engineering, and development expertise — allowing it to move beyond siloed services toward fully coordinated, performance-driven engineering.",
       "We focus on the systems behind the structure: the forces, flows, and frameworks that allow projects to stand, operate, and endure."
     ],
-    // link: "/mosaic-imports",
+    link: "https://mosaic-eng.com/",
   };
   return (
     <>
