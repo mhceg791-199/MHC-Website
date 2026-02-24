@@ -84,7 +84,7 @@ const holdinsOrbits = [
   {
     text: "Mosaic Property Management",
     logo: mpManagement,
-    link: "/mosaic-property-management",
+    link: "https://mosaic-propmgmt.com/",
     mobile: true
   },
 ];
