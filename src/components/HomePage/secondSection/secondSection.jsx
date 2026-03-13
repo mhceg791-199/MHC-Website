@@ -48,13 +48,6 @@ function SecondSection() {
       <div className="md:p-10 p-2  bg-black">
         <section className=" text-white w-full min-h-[80vh] flex flex-col md:flex-row items-center justify-center px-2 md:px-16 py-16">
           {/* LEFT SIDE */}
-          {/* <div className="w-full md:w-1/2 flex justify-start">
-            <h2 className="text-[50px] sm:text-[70px] md:text-[90px] lg:text-[110px] font-extrabold leading-none tracking-tight text-mainGold">
-              OUR <br /> <span className="pl-8 md:pl-16 inline-block"></span>{" "}
-              IMPACT
-            </h2>
-          </div> */}
-          {/* LEFT SIDE */}
           <div className="w-full md:w-1/2 flex flex-col justify-start">
             <h2 className="text-[40px] sm:text-[60px] md:text-[80px] lg:text-[85px] font-extrabold leading-none tracking-tight text-mainGold">
               OUR <br />

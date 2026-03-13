@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import IndustryCard from "../../components/IndustryPage/IndustryCard/IndustryCard";
 import EngineerCard from "../../components/IndustryPage/EngineerCard/EngineerCard";
 

@@ -24,7 +24,7 @@
     ],
   },
   {
-    title: "INDUSTRY CAPABILITIES",
+    title: "Our subsidiaries specialize in",
     points: [
       "Architecture & Engineering (A&E)",
       "Structural engineering solutions",
