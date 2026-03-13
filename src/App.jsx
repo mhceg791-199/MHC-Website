@@ -30,6 +30,7 @@ import ServicesPage from "./pages/Services/Services.jsx";
 import MosaicImports from "./pages/ProjectsDetails/MosaicImports/MosaicImports.jsx";
 import MosaicPropertyManagement from "./pages/ProjectsDetails/MosaicPropertyManagement/MosaicPropertyManagement.jsx";
 import MosaicEngineering from "./pages/ProjectsDetails/MosaicEngineering/MosaicEngineering.jsx";
+import ScrollToTop from "./components/shared/ScrollToTop/ScrollToTop.jsx";
 function App() {
   return (
     <>
@@ -63,6 +64,7 @@ function App() {
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </CareerModelProvider>
+        <ScrollToTop/>
         <ScrollToTopButton />
       </Layout>
     </>
