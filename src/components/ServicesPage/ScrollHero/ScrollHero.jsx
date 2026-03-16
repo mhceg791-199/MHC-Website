@@ -157,7 +157,7 @@ export default function ScrollHero() {
 
           <ul className="text-gray-600 paragraph leading-relaxed">
             {block.points.map((p, idx) => (
-              <li key={idx}>. {p}</li>
+              <li key={idx}> {p}</li>
             ))}
           </ul>
         </div>
