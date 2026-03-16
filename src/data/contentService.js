@@ -4,7 +4,6 @@
     points: [
       "Initial consultation and vision alignment",
       "Strategic planning and risk mapping",
-      "Full Architecture & Engineering (A&E) delivery",
       "Integrated regional workflows and oversight",
       "Quality, speed, and contract management",
       "Lifecycle support and sustainability compliance",
