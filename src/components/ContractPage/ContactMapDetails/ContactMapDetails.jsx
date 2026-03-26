@@ -1,16 +1,11 @@
-import map from "../../../assets/world-map-gold.jpg"; 
+import map from "../../../assets/world-map-gold.jpg";
 
 function ContactMapDetails() {
   return (
     <div className=" w-full bg-black text-white rounded-b-sm overflow-hidden shadow-lg border border-mainGold/30">
       <div className="relative w-full border-8 bg-black border-black">
-        <img
-          src={map}
-          alt="map"
-          className="w-full object-cover h-64 md:h-72"
-        />
-                <div className="absolute inset-0 bg-black/50 to-transparent pointer-events-none"></div>
-
+        <img src={map} alt="map" className="w-full object-cover h-64 md:h-72" />
+        <div className="absolute inset-0 bg-black/50 to-transparent pointer-events-none"></div>
       </div>
 
       <div className="py-6 px-6">
@@ -47,8 +42,6 @@ function ContactMapDetails() {
             </a>
           </div>
         </div>
-
-        
       </div>
     </div>
   );
