@@ -23,8 +23,8 @@ const ResumeUpload = ({
           disabled
             ? "border-gray-200 bg-gray-50 cursor-not-allowed"
             : isDragging
-            ? "border-mainColor bg-gray-50"
-            : "border-gray-300 hover:border-mainColor"
+            ? "border-mainGold bg-gray-50"
+            : "border-gray-300 hover:border-mainGold"
         }`}
       >
         <input
