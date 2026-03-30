@@ -1,5 +1,5 @@
 import b1 from '../assets/signatureProjects/wolsey.webp';
-import b2 from '../assets/signatureProjects/mhceg.webp';
+import b2 from '../assets/signatureProjects/.webp';
 import b3 from '../assets/signatureProjects/kaller.png';
 import b4 from '../assets/signatureProjects/datta.webp';
 // import b5 from '../assets/signatureProjects/mt--archCircle.webp';
@@ -19,9 +19,9 @@ const blocks = [
     top: "10%",
     left: "45%",
     img: `${b2}`,
-    name: "MHCEG",
+    name: "",
     category: "Engineering",
-    page: "/mhceg",
+    page: "/",
   },
   {
     top: "45%",

@@ -1,13 +1,19 @@
-import { useContext } from "react";
+// import { useContext } from "react";
+// import { careerModalContext } from "../../../context/CareerContext";
 import Paragraph from "../../shared/paragraph";
-import { careerModalContext } from "../../../context/CareerContext";
 import DescriptionAbout from "../../shared/DescriptionAbout/DescriptionAbout";
-import OurValuesSection from "../OurValues/OurValues";
+import ApplicationForm from "../ApplicationForm/ApplicationForm";
 
 function CareersDetails() {
-  const { setOpen } = useContext(careerModalContext);
-  const openModal = () => {
-    setOpen(true);
+  // const { setOpen } = useContext(careerModalContext);
+  // const openModal = () => {
+  //   setOpen(true);
+  // };
+  const scrollToApplication = () => {
+    const element = document.getElementById("application-form-section");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
   const paragraphs = [
     "We Don’t Offer Jobs — We Build Careers.",
@@ -29,7 +35,6 @@ function CareersDetails() {
         height = "h-[35vh] md:h-[60vh]"
       />
 
-      <OurValuesSection />
 
       <div className="bg-lightGray p-10 py-10 md:py-20">
         <h3 className="text-center text-mainGold heading-3 font-semibold">
@@ -43,13 +48,15 @@ function CareersDetails() {
         </div>
         <div className="m-auto flex justify-center mt-10">
           <button
-            onClick={openModal}
+            // onClick={openModal}
+            onClick={scrollToApplication}
             className="bg-mainGold px-14 rounded-full text-white  py-4 heading-3 "
           >
             JOIN OUR TEAM
           </button>
         </div>
       </div>
+      <ApplicationForm/>
     </>
   );
 }
