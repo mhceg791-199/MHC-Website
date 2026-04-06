@@ -32,9 +32,9 @@ const MosaicImports = lazy(() => import("./pages/ProjectsDetails/MosaicImports/M
 const MosaicPropertyManagement = lazy(() => import("./pages/ProjectsDetails/MosaicPropertyManagement/MosaicPropertyManagement"));
 const MosaicEngineering = lazy(() => import("./pages/ProjectsDetails/MosaicEngineering/MosaicEngineering"));
 
-// Components (ممكن تسيبهم عادي أو تخليهم lazy لو تقال)
 import ScrollToTopButton from "./components/shared/ScrollToTopButton/ScrollToTopButton";
 import ScrollToTop from "./components/shared/ScrollToTop/ScrollToTop";
+import Loader from "./components/shared/Loading/Loading";
 
 function App() {
   return (
@@ -42,8 +42,8 @@ function App() {
       <CareerModelProvider>
         <Suspense
           fallback={
-            <div style={{ textAlign: "center", padding: "50px" }}>
-              Loading...
+            <div>
+              <Loader/>
             </div>
           }
         >
@@ -84,3 +84,79 @@ function App() {
 }
 
 export default App;
+
+
+// import HomePage from "./pages/Home/HomePage";
+
+// import Layout from "../layout";
+// import { Route, Routes } from "react-router-dom";
+// import WhoWeAre from "./pages/WhoWeAre/WhoWeAre";
+// import IndustriesPage from "./pages/Industries/Industries";
+// import ContactPage from "./pages/Contact/ContactPage";
+
+// import TermsPage from "./pages/Terms/TermsPage";
+// import PrivacyPolicyPage from "./pages/PrivacyPolicy/PrivacyPolicyPage";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+// import ArupProjects from "./pages/ProjectsDetails/ArupProjects/ArupProjects";
+// import WolseyProjects from "./pages/ProjectsDetails/WolseyProjects/WolseyProjects";
+// import CareerPage from "./pages/Career/CareerPage";
+// import CareerModelProvider from "./context/CareerContext";
+// import InvestmentPage from "./pages/InvestmentApproach/InvestmentPage";
+// import MhcegProjects from "./pages/ProjectsDetails/MhcegProjects/MhcegProjects";
+// import HoldingsPage from "./pages/Holdings/Holdings";
+// import KallerProjects from "./pages/ProjectsDetails/KallerProjects/KallerProjects";
+// import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+// import MtAcrchProjects from "./pages/ProjectsDetails/MtAcrchProjects/MtAcrchProjects.jsx";
+// import NewsPage from "./pages/News/NewsPage.jsx";
+// import MosaicRealState from "./pages/ProjectsDetails/MosaicRealState/MosaicRealState.jsx";
+// import OurHistory from "./pages/Projects/Projects.jsx";
+// import ScrollToTopButton from "./components/shared/ScrollToTopButton/ScrollToTopButton.jsx";
+// import DattaAndTayefi from "./pages/ProjectsDetails/DattaAndTayefi/DattaAndTayefi.jsx";
+// import IndigenousProject from "./pages/ProjectsDetails/IndigenousProject/IndigenousProject.jsx";
+// import ServicesPage from "./pages/Services/Services.jsx";
+// import MosaicImports from "./pages/ProjectsDetails/MosaicImports/MosaicImports.jsx";
+// import MosaicPropertyManagement from "./pages/ProjectsDetails/MosaicPropertyManagement/MosaicPropertyManagement.jsx";
+// import MosaicEngineering from "./pages/ProjectsDetails/MosaicEngineering/MosaicEngineering.jsx";
+// import ScrollToTop from "./components/shared/ScrollToTop/ScrollToTop.jsx";
+// function App() {
+//   return (
+//     <>
+//       <Layout>
+//         <CareerModelProvider>
+//           <Routes>
+//             <Route path="/" element={<HomePage />} />
+//             <Route path="/who-we-are" element={<WhoWeAre />} />
+//             <Route path="/our-projects" element={<OurHistory />} />
+//             <Route path="/industries" element={<IndustriesPage />} />
+//             <Route path="/contact-us" element={<ContactPage />} />
+//             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+//             <Route path="/terms-conditions" element={<TermsPage />} />
+//             <Route path="/wolsey" element={<WolseyProjects />} />
+//             <Route path="/mt-arch" element={<MtAcrchProjects />} />
+//             <Route path="/mosaic-realState" element={<MosaicRealState />} />
+//             <Route path="/datta-and-tayefi" element={<DattaAndTayefi />} />
+//             <Route path="/indigenous-mosaic" element={<IndigenousProject />} />
+//             <Route path="/mosaic-imports" element={<MosaicImports />} />
+//             <Route path="/mosaic-property-management" element={<MosaicPropertyManagement />} />
+//             <Route path="/mosaic-engineering" element={<MosaicEngineering />} />
+//             <Route path="/mhceg" element={<MhcegProjects />} />
+//             <Route path="/arup" element={<ArupProjects />} />
+//             <Route path="/kaller" element={<KallerProjects />} />
+//             <Route path="/career" element={<CareerPage />} />
+//             <Route path="/news" element={<NewsPage />} />
+//             <Route path="/news/:id" element={<CareerPage />} />
+//             <Route path="/investment-approach" element={<InvestmentPage />} />
+//             <Route path="/holdings" element={<HoldingsPage />} />
+//             <Route path="/services" element={<ServicesPage />} />
+//             <Route path="*" element={<NotFoundPage />} />
+//           </Routes>
+//         </CareerModelProvider>
+//         <ScrollToTop/>
+//         <ScrollToTopButton />
+//       </Layout>
+//     </>
+//   );
+// }
+
+// export default App;

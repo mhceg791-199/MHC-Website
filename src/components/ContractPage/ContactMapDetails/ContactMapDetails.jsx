@@ -1,4 +1,6 @@
 import map from "../../../assets/world-map-gold.jpg";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaEarthAmericas } from "react-icons/fa6";
 
 function ContactMapDetails() {
   return (
@@ -15,7 +17,7 @@ function ContactMapDetails() {
 
         {/* Address */}
         <div className="flex items-start gap-4 mt-6">
-          <i className="fa-solid fa-location-dot text-mainGold text-2xl mt-1"></i>
+          <FaLocationDot className="text-mainGold text-2xl mt-1" />
           <div>
             <h4 className="text-lg font-semibold">Address</h4>
             <a
@@ -31,7 +33,7 @@ function ContactMapDetails() {
 
         {/* Email */}
         <div className="flex items-start gap-4 mt-5">
-          <i className="fa-solid fa-earth-americas text-mainGold text-2xl mt-1"></i>
+          <FaEarthAmericas className="text-mainGold text-2xl mt-1" />
           <div>
             <h4 className="text-lg font-semibold">Do you have a Question?</h4>
             <a

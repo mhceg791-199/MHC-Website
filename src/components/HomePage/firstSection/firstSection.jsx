@@ -1,6 +1,7 @@
 import { Typewriter } from "react-simple-typewriter";
 import firstSection from "../../../assets/homePage/firstSection.webm";
 import fallback from "../../../assets/homePage/fallback.webp";
+import { FaArrowDown } from "react-icons/fa";
 
 function FirstSection({ scrollTarget }) {
   const handleScrollDown = () => {
@@ -53,7 +54,7 @@ function FirstSection({ scrollTarget }) {
         aria-label="Scroll Down"
         className="absolute z-20 bottom-10 left-1/2 transform -translate-x-1/2 text-mainGold animate-bounce"
       >
-        <i className="fa-solid fa-arrow-down text-lg sm:text-xl md:text-2xl lg:text-3xl"></i>
+        <FaArrowDown className="text-lg sm:text-xl md:text-2xl" />
       </button>
     </section>
   );
