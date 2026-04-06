@@ -1,41 +1,52 @@
-import HomePage from "./pages/Home/HomePage";
-
-import Layout from "../layout";
+import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import WhoWeAre from "./pages/WhoWeAre/WhoWeAre";
-import IndustriesPage from "./pages/Industries/Industries";
-import ContactPage from "./pages/Contact/ContactPage";
+import Layout from "../layout";
+import CareerModelProvider from "./context/CareerContext";
 
-import TermsPage from "./pages/Terms/TermsPage";
-import PrivacyPolicyPage from "./pages/PrivacyPolicy/PrivacyPolicyPage";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ArupProjects from "./pages/ProjectsDetails/ArupProjects/ArupProjects";
-import WolseyProjects from "./pages/ProjectsDetails/WolseyProjects/WolseyProjects";
-import CareerPage from "./pages/Career/CareerPage";
-import CareerModelProvider from "./context/CareerContext";
-import InvestmentPage from "./pages/InvestmentApproach/InvestmentPage";
-import MhcegProjects from "./pages/ProjectsDetails/MhcegProjects/MhcegProjects";
-import HoldingsPage from "./pages/Holdings/Holdings";
-import KallerProjects from "./pages/ProjectsDetails/KallerProjects/KallerProjects";
-import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
-import MtAcrchProjects from "./pages/ProjectsDetails/MtAcrchProjects/MtAcrchProjects.jsx";
-import NewsPage from "./pages/News/NewsPage.jsx";
-import MosaicRealState from "./pages/ProjectsDetails/MosaicRealState/MosaicRealState.jsx";
-import OurHistory from "./pages/Projects/Projects.jsx";
-import ScrollToTopButton from "./components/shared/ScrollToTopButton/ScrollToTopButton.jsx";
-import DattaAndTayefi from "./pages/ProjectsDetails/DattaAndTayefi/DattaAndTayefi.jsx";
-import IndigenousProject from "./pages/ProjectsDetails/IndigenousProject/IndigenousProject.jsx";
-import ServicesPage from "./pages/Services/Services.jsx";
-import MosaicImports from "./pages/ProjectsDetails/MosaicImports/MosaicImports.jsx";
-import MosaicPropertyManagement from "./pages/ProjectsDetails/MosaicPropertyManagement/MosaicPropertyManagement.jsx";
-import MosaicEngineering from "./pages/ProjectsDetails/MosaicEngineering/MosaicEngineering.jsx";
-import ScrollToTop from "./components/shared/ScrollToTop/ScrollToTop.jsx";
+
+// Lazy Pages
+const HomePage = lazy(() => import("./pages/Home/HomePage"));
+const WhoWeAre = lazy(() => import("./pages/WhoWeAre/WhoWeAre"));
+const IndustriesPage = lazy(() => import("./pages/Industries/Industries"));
+const ContactPage = lazy(() => import("./pages/Contact/ContactPage"));
+const TermsPage = lazy(() => import("./pages/Terms/TermsPage"));
+const PrivacyPolicyPage = lazy(() => import("./pages/PrivacyPolicy/PrivacyPolicyPage"));
+const ArupProjects = lazy(() => import("./pages/ProjectsDetails/ArupProjects/ArupProjects"));
+const WolseyProjects = lazy(() => import("./pages/ProjectsDetails/WolseyProjects/WolseyProjects"));
+const CareerPage = lazy(() => import("./pages/Career/CareerPage"));
+const InvestmentPage = lazy(() => import("./pages/InvestmentApproach/InvestmentPage"));
+const MhcegProjects = lazy(() => import("./pages/ProjectsDetails/MhcegProjects/MhcegProjects"));
+const HoldingsPage = lazy(() => import("./pages/Holdings/Holdings"));
+const KallerProjects = lazy(() => import("./pages/ProjectsDetails/KallerProjects/KallerProjects"));
+const NotFoundPage = lazy(() => import("./pages/NotFoundPage/NotFoundPage"));
+const MtAcrchProjects = lazy(() => import("./pages/ProjectsDetails/MtAcrchProjects/MtAcrchProjects"));
+const NewsPage = lazy(() => import("./pages/News/NewsPage"));
+const MosaicRealState = lazy(() => import("./pages/ProjectsDetails/MosaicRealState/MosaicRealState"));
+const OurHistory = lazy(() => import("./pages/Projects/Projects"));
+const DattaAndTayefi = lazy(() => import("./pages/ProjectsDetails/DattaAndTayefi/DattaAndTayefi"));
+const IndigenousProject = lazy(() => import("./pages/ProjectsDetails/IndigenousProject/IndigenousProject"));
+const ServicesPage = lazy(() => import("./pages/Services/Services"));
+const MosaicImports = lazy(() => import("./pages/ProjectsDetails/MosaicImports/MosaicImports"));
+const MosaicPropertyManagement = lazy(() => import("./pages/ProjectsDetails/MosaicPropertyManagement/MosaicPropertyManagement"));
+const MosaicEngineering = lazy(() => import("./pages/ProjectsDetails/MosaicEngineering/MosaicEngineering"));
+
+// Components (ممكن تسيبهم عادي أو تخليهم lazy لو تقال)
+import ScrollToTopButton from "./components/shared/ScrollToTopButton/ScrollToTopButton";
+import ScrollToTop from "./components/shared/ScrollToTop/ScrollToTop";
+
 function App() {
   return (
-    <>
-      <Layout>
-        <CareerModelProvider>
+    <Layout>
+      <CareerModelProvider>
+        <Suspense
+          fallback={
+            <div style={{ textAlign: "center", padding: "50px" }}>
+              Loading...
+            </div>
+          }
+        >
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/who-we-are" element={<WhoWeAre />} />
@@ -63,11 +74,12 @@ function App() {
             <Route path="/services" element={<ServicesPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
-        </CareerModelProvider>
-        <ScrollToTop/>
-        <ScrollToTopButton />
-      </Layout>
-    </>
+        </Suspense>
+      </CareerModelProvider>
+
+      <ScrollToTop />
+      <ScrollToTopButton />
+    </Layout>
   );
 }
 
