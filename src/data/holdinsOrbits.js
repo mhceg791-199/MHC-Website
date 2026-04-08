@@ -32,7 +32,7 @@ const holdinsOrbits = [
   },
   {
     text: "Kaller Architecture",
-    logo: "/signatureProjects/kaller.png",
+    logo: "/signatureProjects/kaller1.png",
     link: "https://www.kallerarchitects.com/",
     mobile: true
   },
