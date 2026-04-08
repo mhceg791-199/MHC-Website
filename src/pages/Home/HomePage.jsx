@@ -82,7 +82,9 @@ function HomePage() {
       <WhoWeAreSection />
       <WhatWeDoSection />
       <MosaicModel />
-      <LazyGlobe />
+       <div className="bg-black">
+        <LazyGlobe />
+       </div>
       {/* <Suspense fallback={null}>
         <Global />
       </Suspense> */}
