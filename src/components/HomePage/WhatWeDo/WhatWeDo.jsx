@@ -14,6 +14,7 @@ export default function Hero() {
         <img
           src="/logo-c.png"
           className="w-[400px] h-[400px] md:w-[1000px] md:h-[1000px] opacity-60"
+          alt="Rotating Logo"
         />
       </motion.div>
 
@@ -26,6 +27,7 @@ export default function Hero() {
         <img
           src="/logo-c.png"
           className="w-[250px] h-[250px] md:w-[550px] md:h-[550px] opacity-70"
+          alt="Rotating Logo"
         />
       </motion.div>
 

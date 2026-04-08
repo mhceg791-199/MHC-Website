@@ -39,7 +39,7 @@ export default function ArcWithLogo() {
       {/* ===== اللوجو ===== */}
       <div className="absolute top-[-42px] left-1/2 -translate-x-1/2">
         <div className="w-24 h-24 rounded-full border-4 border-white bg-white flex items-center justify-center animate-pulseSlow">
-          <img src="/logo-c.png" className="w-14 h-14" />
+          <img src="/logo-c.png" className="w-14 h-14" alt="MHC Logo" />
         </div>
       </div>
 
